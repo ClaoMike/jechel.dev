@@ -1,7 +1,9 @@
+import Title from './Title'
+
 const Header = () => {
   return (
     <div>
-        <h1>Claudiu Mihai Jechel</h1>
+        <Title />
         <p>Software Engineer</p>
     </div>
   )
