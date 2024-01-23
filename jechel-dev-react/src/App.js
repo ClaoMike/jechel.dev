@@ -7,9 +7,13 @@ import Moto from "./components/Moto";
 import AboutMe from "./components/AboutMe";
 
 function App() {
+  const style = {
+    fontFamily: 'Courier New, monospace',
+  };
+
   return (
     <Router>
-      <div className="App">
+      <div className="App" style={style}>
         <Header />
         <NavigationBar />
 
