@@ -1,10 +1,11 @@
 import Title from './Title'
+import Subtitle from './Subtitle'
 
 const Header = () => {
   return (
     <div>
         <Title />
-        <p>Software Engineer</p>
+        <Subtitle />
     </div>
   )
 }

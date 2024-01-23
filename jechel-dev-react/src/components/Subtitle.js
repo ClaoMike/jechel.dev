@@ -1,7 +1,7 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 
-const CenteredHeading = () => {
+const Subtitle = () => {
   return (
     <Container>
       <Box
@@ -12,10 +12,10 @@ const CenteredHeading = () => {
           justifyContent: 'center',
         }}
       >
-        <h1>Claudiu Mihai Jechel</h1>
+        <p>Software Engineer</p>
       </Box>
     </Container>
-  );
-};
+  )
+}
 
-export default CenteredHeading;
+export default Subtitle
