@@ -7,7 +7,7 @@ const mainStyles = {
       justifyContent: 'center',
     },
     
-    responsiveText: {
+    responsiveTitle: {
       fontSize: 'min(90px, 7vw)',
     },
   };

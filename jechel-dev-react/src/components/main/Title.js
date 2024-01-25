@@ -7,7 +7,7 @@ const CenteredHeading = () => {
   return (
     <Container>
       <Box sx={mainStyles.horizontalCenterStyle}>
-        <h1 style={mainStyles.responsiveText}>Claudiu Mihai Jechel</h1>
+        <h1 style={mainStyles.responsiveTitle}>Claudiu Mihai Jechel</h1>
       </Box>
     </Container>
   );
