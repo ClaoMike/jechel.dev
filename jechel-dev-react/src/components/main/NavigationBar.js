@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import horizontalCenterStyle from './mainStyles';
+import mainStyles from './mainStyles';
 
 const NavigationBar = () => {
   return (
     <Container>
-      <Box sx={horizontalCenterStyle}>
+      <Box sx={mainStyles.horizontalCenterStyle}>
         <nav>
           <Link to='/' style={{ marginRight: '10px' }}>Latest</Link>
           <Link to='/moto' style={{ marginRight: '10px' }}>Moto</Link>
