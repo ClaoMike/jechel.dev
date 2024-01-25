@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'
 import iframeStyle from './YouTubeVideoStyle'
 import { Stack } from '@mui/material'
+import { isMobile } from 'react-device-detect';
 
 const YouTubeVideo = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg'
