@@ -3,13 +3,13 @@
 ***
 
 ## Tech Stack 
-|  Tech      | Details (external libraries, etc.)                 |
-| ---------- | -------------------------------------------------- |
-| ~~HTML~~   |                                                    |
-| CSS        |                                                    |
-| JavaScript |                                                    |
-| React      | react-router-dom, react-device-detect, react-icons |
-| git        | GitHub, GitHub Pages                               |
+|  Tech      | Details (external libraries, etc.)                              |
+| ---------- | --------------------------------------------------------------- |
+| ~~HTML~~   |                                                                 |
+| CSS        |                                                                 |
+| JavaScript |                                                                 |
+| React      | react-router-dom, react-device-detect, react-icons, Material UI |
+| git        | GitHub, GitHub Pages                                            |
 
 ***
 

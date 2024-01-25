@@ -3,6 +3,7 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import mainStyles from './mainStyles';
 import { Stack } from '@mui/material';
+import { FaHotjar, FaMotorcycle, FaCodeBranch } from 'react-icons/fa';
 
 const NavigationBar = () => {
 
@@ -25,9 +26,9 @@ const NavigationBar = () => {
         <nav>
 
           <Stack direction="row" spacing={3}>
-            <Link to='/' style={{ ...navLinkStyle, ...(location.pathname === '/' && activeLinkStyle) }}>Latest</Link>
-            <Link to='/moto' style={{ ...navLinkStyle, ...(location.pathname === '/moto' && activeLinkStyle) }}>Moto</Link>
-            <Link to='/aboutMe' style={{ ...navLinkStyle, ...(location.pathname === '/aboutMe' && activeLinkStyle) }}>About Me</Link>
+            <Link to='/' style={{ ...navLinkStyle, ...(location.pathname === '/' && activeLinkStyle) }}>Latest <FaHotjar /></Link>
+            <Link to='/moto' style={{ ...navLinkStyle, ...(location.pathname === '/moto' && activeLinkStyle) }}>Moto <FaMotorcycle/></Link>
+            <Link to='/aboutMe' style={{ ...navLinkStyle, ...(location.pathname === '/aboutMe' && activeLinkStyle) }}>About Me <FaCodeBranch/></Link>
           </Stack>
           {/* Mobile Apps Video Games Movies Contact */}
         </nav>

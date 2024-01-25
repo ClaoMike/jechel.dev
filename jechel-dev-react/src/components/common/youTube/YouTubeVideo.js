@@ -3,6 +3,7 @@ import { Stack } from '@mui/material'
 import { isMobile } from 'react-device-detect';
 import { Paper } from '@mui/material';
 import ExternalLink from '../ExternalLink'
+import { FaYoutube, FaMapPin, FaFilm, FaAlignCenter } from 'react-icons/fa';
 
 import latestStyles from './youTubeStyles'
 
@@ -22,10 +23,10 @@ const YouTubeVideo = ({ link }) => {
             <img src={imageUrl} alt={altDescription} style={latestStyles.roundedImageStyle} />
           </div>
             <Stack spacing={2} direction="column">
-              <h3>{title}</h3>
-              <p><strong>Location: </strong>{location}</p>
-              <p>{description}</p>
-              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} />
+              <h3><FaFilm/> {title}</h3>
+              <p><FaMapPin/>{location}</p>
+              <p><FaAlignCenter/> {description}</p>
+              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<FaYoutube/>} />
             </Stack>
         </Stack>
       </Paper>
