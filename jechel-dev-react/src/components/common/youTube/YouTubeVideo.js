@@ -3,10 +3,14 @@ import { Stack } from '@mui/material'
 import { isMobile } from 'react-device-detect';
 import { Paper } from '@mui/material';
 import ExternalLink from '../ExternalLink'
-import { FaYoutube, FaMapPin, FaFilm, FaAlignCenter } from 'react-icons/fa';
+import EpisodeIcon from '../../main/EpisodeIcon';
+import PinPointIcon from '../../main/PinPointIcon'
+import TextIcon from '../../main/TextIcon';
+import YouTubeIcon from '../../main/YouTubeIcon';
 
 import latestStyles from './youTubeStyles'
 import mainStyles from '../../main/mainStyles';
+
 
 const YouTubeVideo = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg'
@@ -24,10 +28,10 @@ const YouTubeVideo = ({ link }) => {
             <img src={imageUrl} alt={altDescription} style={latestStyles.roundedImageStyle} />
           </div>
             <Stack spacing={2} direction="column">
-              <h3><FaFilm style={mainStyles.iconStyle}/> {title}</h3>
-              <p><FaMapPin style={mainStyles.iconStyle}/>{location}</p>
-              <p><FaAlignCenter style={mainStyles.iconStyle}/> {description}</p>
-              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<FaYoutube style={mainStyles.iconStyle}/>} />
+              <h3><EpisodeIcon/> {title}</h3>
+              <p><PinPointIcon/> {location}</p>
+              <p><TextIcon/> {description}</p>
+              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
             </Stack>
         </Stack>
       </Paper>

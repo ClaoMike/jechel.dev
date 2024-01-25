@@ -1,13 +1,13 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import mainStyles from './mainStyles';
-import { FaTerminal } from 'react-icons/fa';
+import SubtitleIcon from './SubtitleIcon';
 
 const Subtitle = () => {
   return (
     <Container>
       <Box sx={mainStyles.horizontalCenterStyle}>
-        <p><FaTerminal style={mainStyles.iconStyle}/> Software Engineer</p>
+        <p><SubtitleIcon/> Software Engineer</p>
       </Box>
     </Container>
   )

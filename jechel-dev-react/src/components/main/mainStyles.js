@@ -37,6 +37,10 @@ const mainStyles = {
       color: '#FFA732',
     },
 
+    flameColour: {
+      color: '#FF9800',
+    },
+
   };
   
   export default mainStyles;
