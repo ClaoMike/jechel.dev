@@ -1,36 +1,24 @@
-import { Link, useLocation } from 'react-router-dom'
+// import { useLo } from 'react-router-dom'
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import mainStyles from './mainStyles';
 import { Stack } from '@mui/material';
 import FlameIcon from '../icons/FlameIcon';
 import MotoIcon from '../icons/MotoIcon';
 import AboutMeIcon from '../icons/AboutMeIcon';
+import NavigationItem from './NavigationItem';
+
+import mainStyles from './mainStyles';
 
 const NavigationBar = () => {
-
-  const location = useLocation();
-
-  const navLinkStyle = {
-    ...mainStyles.linkStyle,
-    position: 'relative',
-    textDecoration: 'none', // no border below the links
-    // color: 'inherit',
-  };
-
-  const activeLinkStyle = {
-    borderBottom: '2px solid #000',
-  };
-
   return (
     <Container sx={mainStyles.navigationContainer}>
       <Box sx={mainStyles.horizontalCenterStyle}>
         <nav>
 
-          <Stack direction="row" spacing={3}>
-            <Link to='/' style={{ ...navLinkStyle, ...(location.pathname === '/' && activeLinkStyle) }}>Latest <FlameIcon/></Link>
-            <Link to='/moto' style={{ ...navLinkStyle, ...(location.pathname === '/moto' && activeLinkStyle) }}>Moto <MotoIcon/></Link>
-            <Link to='/aboutMe' style={{ ...navLinkStyle, ...(location.pathname === '/aboutMe' && activeLinkStyle) }}>About Me <AboutMeIcon/></Link>
+          <Stack direction="row" spacing={3}>            
+            <NavigationItem link={'/'} text={'Latest'} icon={<FlameIcon/>}/>
+            <NavigationItem link={'/moto'} text={'Moto'} icon={<MotoIcon/>}/>
+            <NavigationItem link={'/aboutMe'} text={'About Me'} icon={<AboutMeIcon/>}/>
           </Stack>
           {/* Mobile Apps Video Games Movies Contact */}
         </nav>
