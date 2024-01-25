@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types'
+import iframeStyle from './YouTubeVideoStyle'
 
 const YouTubeVideo = ({ link }) => {
   return (
     <>
     <iframe 
-      width="560" 
-      height="315" 
+      style={iframeStyle}
       src={link} 
       title="YouTube video player" 
-      frameBorder="0" 
       allow="web-share" 
-      allowFullScreen></iframe>
+      allowFullScreen>
+
+      </iframe>
     </>
   )
 }

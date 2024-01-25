@@ -1,17 +1,11 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
+import horizontalCenterStyle from './mainStyles';
 
 const Subtitle = () => {
   return (
     <Container>
-      <Box
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-        }}
-      >
+      <Box sx={horizontalCenterStyle}>
         <p>Software Engineer</p>
       </Box>
     </Container>

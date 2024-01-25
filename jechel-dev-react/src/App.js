@@ -6,14 +6,13 @@ import Latest from "./components/latest/Latest";
 import Moto from "./components/moto/Moto";
 import AboutMe from "./components/aboutMe/AboutMe";
 
+import main from './AppStyle';
+
 function App() {
-  const style = {
-    fontFamily: 'Courier New, monospace',
-  };
 
   return (
     <Router>
-      <div className="App" style={style}>
+      <div style={main}>
         <Header />
         <NavigationBar />
 
