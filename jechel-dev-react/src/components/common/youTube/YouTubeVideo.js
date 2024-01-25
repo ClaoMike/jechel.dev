@@ -6,6 +6,7 @@ import ExternalLink from '../ExternalLink'
 import { FaYoutube, FaMapPin, FaFilm, FaAlignCenter } from 'react-icons/fa';
 
 import latestStyles from './youTubeStyles'
+import mainStyles from '../../main/mainStyles';
 
 const YouTubeVideo = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg'
@@ -23,10 +24,10 @@ const YouTubeVideo = ({ link }) => {
             <img src={imageUrl} alt={altDescription} style={latestStyles.roundedImageStyle} />
           </div>
             <Stack spacing={2} direction="column">
-              <h3><FaFilm/> {title}</h3>
-              <p><FaMapPin/>{location}</p>
-              <p><FaAlignCenter/> {description}</p>
-              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<FaYoutube/>} />
+              <h3><FaFilm style={mainStyles.iconStyle}/> {title}</h3>
+              <p><FaMapPin style={mainStyles.iconStyle}/>{location}</p>
+              <p><FaAlignCenter style={mainStyles.iconStyle}/> {description}</p>
+              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<FaYoutube style={mainStyles.iconStyle}/>} />
             </Stack>
         </Stack>
       </Paper>

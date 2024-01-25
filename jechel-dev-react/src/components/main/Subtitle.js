@@ -7,7 +7,7 @@ const Subtitle = () => {
   return (
     <Container>
       <Box sx={mainStyles.horizontalCenterStyle}>
-        <p><FaTerminal/> Software Engineer</p>
+        <p><FaTerminal style={mainStyles.iconStyle}/> Software Engineer</p>
       </Box>
     </Container>
   )

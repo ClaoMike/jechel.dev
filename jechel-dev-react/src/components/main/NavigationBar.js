@@ -26,9 +26,9 @@ const NavigationBar = () => {
         <nav>
 
           <Stack direction="row" spacing={3}>
-            <Link to='/' style={{ ...navLinkStyle, ...(location.pathname === '/' && activeLinkStyle) }}>Latest <FaHotjar /></Link>
-            <Link to='/moto' style={{ ...navLinkStyle, ...(location.pathname === '/moto' && activeLinkStyle) }}>Moto <FaMotorcycle/></Link>
-            <Link to='/aboutMe' style={{ ...navLinkStyle, ...(location.pathname === '/aboutMe' && activeLinkStyle) }}>About Me <FaCodeBranch/></Link>
+            <Link to='/' style={{ ...navLinkStyle, ...(location.pathname === '/' && activeLinkStyle) }}>Latest <FaHotjar style={mainStyles.iconStyle}/></Link>
+            <Link to='/moto' style={{ ...navLinkStyle, ...(location.pathname === '/moto' && activeLinkStyle) }}>Moto <FaMotorcycle style={mainStyles.iconStyle}/></Link>
+            <Link to='/aboutMe' style={{ ...navLinkStyle, ...(location.pathname === '/aboutMe' && activeLinkStyle) }}>About Me <FaCodeBranch style={mainStyles.iconStyle}/></Link>
           </Stack>
           {/* Mobile Apps Video Games Movies Contact */}
         </nav>
