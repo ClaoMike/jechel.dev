@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaTerminal } from 'react-icons/fa';
-import mainStyles from './mainStyles';
+import mainStyles from '../main/mainStyles';
 
 const SubtitleIcon = () => {
     const style = {

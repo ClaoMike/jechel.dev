@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaCodeBranch } from 'react-icons/fa';
-import mainStyles from './mainStyles';
+import mainStyles from '../main/mainStyles';
 
 const AboutMeIcon = () => {
     const style = {

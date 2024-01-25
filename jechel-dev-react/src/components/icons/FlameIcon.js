@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaHotjar} from 'react-icons/fa';
-import mainStyles from './mainStyles';
+import mainStyles from '../main/mainStyles';
 
 const FlameIcon = () => {
     const style = {

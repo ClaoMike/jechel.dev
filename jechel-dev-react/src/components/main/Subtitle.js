@@ -1,7 +1,7 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import mainStyles from './mainStyles';
-import SubtitleIcon from './SubtitleIcon';
+import SubtitleIcon from '../icons/SubtitleIcon';
 
 const Subtitle = () => {
   return (

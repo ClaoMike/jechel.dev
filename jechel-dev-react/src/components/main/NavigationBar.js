@@ -3,9 +3,9 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import mainStyles from './mainStyles';
 import { Stack } from '@mui/material';
-import FlameIcon from './FlameIcon';
-import MotoIcon from './MotoIcon';
-import AboutMeIcon from './AboutMeIcon';
+import FlameIcon from '../icons/FlameIcon';
+import MotoIcon from '../icons/MotoIcon';
+import AboutMeIcon from '../icons/AboutMeIcon';
 
 const NavigationBar = () => {
 
