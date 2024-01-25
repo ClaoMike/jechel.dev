@@ -1,10 +1,10 @@
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 
-import Header from "./components/Header";
-import NavigationBar from "./components/NavigationBar";
-import Latest from "./components/Latest";
-import Moto from "./components/Moto";
-import AboutMe from "./components/AboutMe";
+import Header from "./components/main/Header";
+import NavigationBar from "./components/main/NavigationBar";
+import Latest from "./components/latest/Latest";
+import Moto from "./components/moto/Moto";
+import AboutMe from "./components/aboutMe/AboutMe";
 
 function App() {
   const style = {

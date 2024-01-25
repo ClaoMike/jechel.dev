@@ -1,4 +1,4 @@
-import YouTubeVideo from "./YouTubeVideo"
+import YouTubeVideo from "../common/YouTubeVideo"
 
 const Latest = () => {
   return (

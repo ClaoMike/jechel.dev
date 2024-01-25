@@ -1,4 +1,4 @@
-import ExternalLink from "./ExternalLink"
+import ExternalLink from "../common/ExternalLink"
 
 const AboutMeHeader = () => {
   return (
