@@ -15,6 +15,7 @@ const mainStyles = {
 
     linkStyle: {
       textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
+      color: '#3C0753',
     },
 
     navigationContainer: {
@@ -25,6 +26,17 @@ const mainStyles = {
       verticalAlign: 'middle', // Adjust the vertical alignment as needed
       marginTop: '-5px', // Add some margin at the top to shift the icons down
     },
+
+    mainColours: {
+      backgroundColor: '#FFFFFF',
+      color: '#000000'
+    },
+
+    linkHoverColour: {
+      textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
+      color: '#FFA732',
+    },
+
   };
   
   export default mainStyles;
