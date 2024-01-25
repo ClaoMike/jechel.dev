@@ -10,6 +10,10 @@ const mainStyles = {
     responsiveTitle: {
       fontSize: 'min(90px, 7vw)',
     },
+
+    linkStyle: {
+      textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
+    },
   };
   
   export default mainStyles;

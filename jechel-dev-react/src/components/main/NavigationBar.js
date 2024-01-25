@@ -2,15 +2,18 @@ import { Link } from 'react-router-dom'
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import mainStyles from './mainStyles';
+import { Stack } from '@mui/material';
 
 const NavigationBar = () => {
   return (
     <Container>
       <Box sx={mainStyles.horizontalCenterStyle}>
         <nav>
-          <Link to='/' style={{ marginRight: '10px' }}>Latest</Link>
-          <Link to='/moto' style={{ marginRight: '10px' }}>Moto</Link>
-          <Link to='/aboutMe' style={{ marginRight: '10px' }}>About Me</Link>
+          <Stack direction="row" spacing={3}>
+            <Link to='/' style={mainStyles.linkStyle}>Latest</Link>
+            <Link to='/moto' style={mainStyles.linkStyle}>Moto</Link>
+            <Link to='/aboutMe' style={mainStyles.linkStyle}>About Me</Link>
+          </Stack>
 
           {/* <Link to='/mobileApps' style={{ marginRight: '10px' }}>Mobile Apps</Link>
           <Link to='/videoGames' style={{ marginRight: '10px' }}>Video Games</Link>
