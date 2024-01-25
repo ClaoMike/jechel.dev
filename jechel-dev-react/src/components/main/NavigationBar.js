@@ -11,12 +11,12 @@ const NavigationBar = () => {
   const navLinkStyle = {
     ...mainStyles.linkStyle,
     position: 'relative',
-    textDecoration: 'none',
-    color: 'inherit', // Ensure the link text color is inherited from the parent
+    textDecoration: 'none', // no border below the links
+    // color: 'inherit',
   };
 
   const activeLinkStyle = {
-    borderBottom: '2px solid #000', // Solid line for the selected link
+    borderBottom: '2px solid #000',
   };
 
   return (
