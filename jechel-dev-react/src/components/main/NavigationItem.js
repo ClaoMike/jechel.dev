@@ -21,11 +21,12 @@ const NavigationItem = ({ link, text, icon}) => {
 
   const navLinkStyle = {
     ...mainStyles.linkStyle,
+    ...(isHovered ? mainStyles.linkHoverColour : {}), // Apply linkHoverColour if isHovered is true
     position: 'relative',
     textDecoration: 'none', // no border below the links
-    // color: 'inherit',
   };
 
+  
   const activeLinkStyle = {
     borderBottom: '2px solid #000',
   };
@@ -35,6 +36,7 @@ const NavigationItem = ({ link, text, icon}) => {
         <Link 
           to={link} 
           style={{ ...navLinkStyle, ...(location.pathname === link && activeLinkStyle) }}
+          // style={isHovered? mainStyles.linkHoverColour : mainStyles.linkStyle}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
