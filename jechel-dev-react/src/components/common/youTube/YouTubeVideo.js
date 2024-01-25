@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 import { Paper } from '@mui/material';
 import ExternalLink from '../ExternalLink'
 
-import latestStyles from './latestStyles'
+import latestStyles from './youTubeStyles'
 
 const YouTubeVideo = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg'

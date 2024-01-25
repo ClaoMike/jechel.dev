@@ -20,7 +20,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <Container>
+    <Container sx={mainStyles.navigationContainer}>
       <Box sx={mainStyles.horizontalCenterStyle}>
         <nav>
 

@@ -1,4 +1,4 @@
-import YouTubeVideo from "../common/youtubeVideo/YouTubeVideo"
+import YouTubeVideo from "../common/youTube/YouTubeVideo"
 import ExternalLink from "../common/ExternalLink"
 
 const Moto = () => {

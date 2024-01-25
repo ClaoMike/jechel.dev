@@ -1,4 +1,6 @@
 // mainStyles.js
+import { isMobile } from 'react-device-detect';
+
 const mainStyles = {
     horizontalCenterStyle: {
       display: 'flex',
@@ -13,6 +15,10 @@ const mainStyles = {
 
     linkStyle: {
       textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
+    },
+
+    navigationContainer: {
+      marginBottom: isMobile ? '20px' : '50px'
     },
   };
   

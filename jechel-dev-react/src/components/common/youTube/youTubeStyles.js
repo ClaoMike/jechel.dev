@@ -2,7 +2,7 @@ import { isMobile } from 'react-device-detect';
 
 const latestStyles = {
   paperStyle: {
-    backgroundColor: 'yellow',
+    backgroundColor: 'white',
     borderRadius: '10px', // Adjust the value as needed for rounded borders
     width: '80%', // Default width is 80% of the screen width
     maxWidth: '1000px', // Maximum width is 1000px
