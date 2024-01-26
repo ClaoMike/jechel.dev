@@ -9,7 +9,7 @@ import darkLightModeSwitchStyle from './darkLightModeSwitchStyle';
 import main from '../../../AppStyle';
 
 const DarkLightModeSwitch = () => {
-  const [checked, setChecked] = useState(false);
+  const [checked, setChecked] = useState(true);
 
   useEffect(() => {
     const theme = checked ? main.darkTheme : main.lightTheme;

@@ -24,7 +24,6 @@ const NavigationItem = ({ link, text, icon}) => {
     textDecoration: 'none', // no border below the links
   };
 
-  
   const activeLinkStyle = {
     borderBottom: '2px solid #000',
   };
