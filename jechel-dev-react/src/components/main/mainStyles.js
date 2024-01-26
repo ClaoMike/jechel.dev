@@ -27,11 +27,6 @@ const mainStyles = {
       marginTop: '-5px', // Add some margin at the top to shift the icons down
     },
 
-    mainColours: {
-      backgroundColor: '#FFFFFF',
-      color: '#000000'
-    },
-
     linkHoverColour: {
       textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
       color: '#FFA732',

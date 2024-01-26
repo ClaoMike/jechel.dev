@@ -37,11 +37,6 @@ const darkLightModeSwitchStyle = {
     containerConfig: {
         marginBottom: isMobile ? '20px' : '30px'
       },
-
-    //   isMobile ? '20px' : "20px"
-    //   isMobile ? '20px' : "59px"
-    //   isMobile ? '20px' : "30px"
-    //   isMobile ? '20px' : "24px"
     
 };
 

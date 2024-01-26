@@ -11,12 +11,10 @@ const NavigationItem = ({ link, text, icon}) => {
   
   const handleMouseEnter = () => {
     setIsHovered(true);
-    console.log(true)
   };
 
   const handleMouseLeave = () => {
     setIsHovered(false);
-    console.log(false)
   };
 
   const navLinkStyle = {
@@ -36,7 +34,6 @@ const NavigationItem = ({ link, text, icon}) => {
         <Link 
           to={link} 
           style={{ ...navLinkStyle, ...(location.pathname === link && activeLinkStyle) }}
-          // style={isHovered? mainStyles.linkHoverColour : mainStyles.linkStyle}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
