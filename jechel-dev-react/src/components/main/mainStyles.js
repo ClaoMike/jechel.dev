@@ -11,6 +11,7 @@ const mainStyles = {
     
     responsiveTitle: {
       fontSize: 'min(90px, 7vw)',
+      marginBottom: '20px'
     },
 
     linkStyle: {
