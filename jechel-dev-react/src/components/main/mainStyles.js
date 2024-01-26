@@ -13,10 +13,11 @@ const mainStyles = {
       marginBottom: '20px'
     },
 
-    linkStyle: {
-      textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
-      color: '#3C0753',
-    },
+    // linkStyle: {
+    //   textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
+    //   color: '#3C0753',
+    //   // #43766C
+    // },
 
     navigationContainer: {
       marginBottom: isMobile ? '20px' : '50px'

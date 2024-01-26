@@ -17,9 +17,16 @@ const main = {
         backgroundColor: '#000000',
         color: '#FFFFFF',
     },
-    
-    
-    
+
+    linkLightTheme: {
+        // color: '#3C0753'
+        color: '#E9A8F2'
+    },
+
+    linkDarkTheme: {
+        color: '#43766C',
+    },
+
 };
 
 export default main;

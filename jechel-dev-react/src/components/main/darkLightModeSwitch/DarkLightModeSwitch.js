@@ -13,10 +13,18 @@ const DarkLightModeSwitch = () => {
 
   useEffect(() => {
     const theme = checked ? main.darkTheme : main.lightTheme;
+    const linkTheme = checked ? main.linkDarkTheme : main.linkLightTheme;
     
     // Apply styles to the body element
     Object.keys(theme).forEach((style) => {
       document.body.style[style] = theme[style];
+    });
+
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        Object.keys(linkTheme).forEach(style => {
+            link.style[style] = linkTheme[style];
+        });
     });
 
     // Cleanup function to remove styles when the component unmounts
@@ -24,6 +32,14 @@ const DarkLightModeSwitch = () => {
       Object.keys(theme).forEach((style) => {
         document.body.style[style] = '';
       });
+
+      const links = document.querySelectorAll('a');
+        links.forEach(link => {
+            Object.keys(linkTheme).forEach(style => {
+                link.style[style] = '';
+            });
+        });
+
     };
   }, [checked]); // Run whenever the switch state changes
 
