@@ -12,7 +12,7 @@ const DarkLightModeSwitch = () => {
   
   return (
     <>
-        <Container>
+        <Container style={darkLightModeSwitchStyle.containerConfig}>
             <Box sx={mainStyles.horizontalCenterStyle}>
                 <Switch 
                     slotProps={{

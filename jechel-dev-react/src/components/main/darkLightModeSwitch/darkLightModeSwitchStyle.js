@@ -1,12 +1,13 @@
 import { switchClasses } from '@mui/joy';
+import { isMobile } from 'react-device-detect';
 
 const darkLightModeSwitchStyle = {
     switchConfiguration: {
         // sizes
-        "--Switch-trackRadius": "20px",
-        "--Switch-trackWidth": "59px",
-        "--Switch-trackHeight": "30px",
-        "--Switch-thumbSize": "24px",
+        "--Switch-trackRadius": isMobile ? '20px' : "20px",
+        "--Switch-trackWidth": isMobile ? '59px' : "70px",
+        "--Switch-trackHeight": isMobile ? '20px' : "30px",
+        "--Switch-thumbSize": isMobile ? '24px' : "35px",
 
         // colours
         // unchecked (default)
@@ -31,7 +32,16 @@ const darkLightModeSwitchStyle = {
     
     darktModeIcon: {
         color: '#FDE767' 
-    }
+    },
+
+    containerConfig: {
+        marginBottom: isMobile ? '20px' : '30px'
+      },
+
+    //   isMobile ? '20px' : "20px"
+    //   isMobile ? '20px' : "59px"
+    //   isMobile ? '20px' : "30px"
+    //   isMobile ? '20px' : "24px"
     
 };
 

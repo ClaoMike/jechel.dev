@@ -1,4 +1,3 @@
-// mainStyles.js
 import { isMobile } from 'react-device-detect';
 
 const mainStyles = {
