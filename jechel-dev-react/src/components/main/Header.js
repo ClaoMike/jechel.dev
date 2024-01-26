@@ -1,13 +1,13 @@
 import Title from './Title'
 import Subtitle from './Subtitle'
-import ModeSwitch from './ModeSwitch'
+import DarkLightModeSwitch from './darkLightModeSwitch/DarkLightModeSwitch'
 
 const Header = () => {
   return (
     <div>
         <Title />
         <Subtitle />
-        <ModeSwitch />
+        <DarkLightModeSwitch />
     </div>
   )
 }
