@@ -9,11 +9,11 @@ import darkLightModeSwitchStyle from './darkLightModeSwitchStyle';
 import main from '../../../AppStyle';
 
 const DarkLightModeSwitch = () => {
-  const [checked, setChecked] = useState(true);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const theme = checked ? main.darkTheme : main.lightTheme;
-    const linkTheme = checked ? main.linkDarkTheme : main.linkLightTheme;
+    const theme = darkMode ? main.darkTheme : main.lightTheme;
+    const linkTheme = darkMode ? main.linkDarkTheme : main.linkLightTheme;
     
     // Apply styles to the body element
     Object.keys(theme).forEach((style) => {
@@ -41,7 +41,7 @@ const DarkLightModeSwitch = () => {
         });
 
     };
-  }, [checked]); // Run whenever the switch state changes
+  }, [darkMode]); // Run whenever the switch state changes
 
   return (
     <Container style={darkLightModeSwitchStyle.containerConfig}>
@@ -50,11 +50,11 @@ const DarkLightModeSwitch = () => {
           slotProps={{
             input: { 'aria-label': 'Dark mode' },
             thumb: {
-              children: checked ? <NightsStayRoundedIcon style={darkLightModeSwitchStyle.darktModeIcon} /> : <WbSunnyRoundedIcon style={darkLightModeSwitchStyle.lightModeIcon} />,
+              children: darkMode ? <NightsStayRoundedIcon style={darkLightModeSwitchStyle.darktModeIcon} /> : <WbSunnyRoundedIcon style={darkLightModeSwitchStyle.lightModeIcon} />,
             },
           }}
-          checked={checked}
-          onChange={(event) => setChecked(event.target.checked)}
+          checked={darkMode}
+          onChange={(event) => setDarkMode(event.target.checked)}
           sx={darkLightModeSwitchStyle.switchConfiguration}
         />
       </Box>
