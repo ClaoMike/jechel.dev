@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types'
 import { Stack, Paper } from '@mui/material'
 import { isMobile } from 'react-device-detect';
-import ExternalLink from '../ExternalLink'
-import EpisodeIcon from '../../icons/EpisodeIcon';
-import PinPointIcon from '../../icons/PinPointIcon'
-import TextIcon from '../../icons/TextIcon';
-import YouTubeIcon from '../../icons/YouTubeIcon';
+import ExternalLink from './ExternalLink'
+import EpisodeIcon from '../icons/EpisodeIcon';
+import PinPointIcon from '../icons/PinPointIcon'
+import TextIcon from '../icons/YouTubeDescriptionIcon';
+import YouTubeIcon from '../icons/YouTubeIcon';
 
-import appStyle from '../../../AppStyle';
+import appStyle from '../../AppStyle';
 
 const YouTubeVideo = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg'

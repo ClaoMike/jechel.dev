@@ -18,7 +18,6 @@ const NavigationItem = ({ link, text, icon}) => {
   };
 
   const navLinkStyle = {
-    ...appStyle.linkStyle,
     ...(isHovered ? appStyle.linkHoverColour : {}), // Apply linkHoverColour if isHovered is true
     position: 'relative',
     textDecoration: 'none', // no border below the links

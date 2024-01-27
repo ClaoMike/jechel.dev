@@ -3,14 +3,9 @@ import { FaMapPin } from 'react-icons/fa';
 import appStyle from '../../AppStyle';
 
 const PinPointIcon = () => {
-    const style = {
-        ...appStyle.iconStyle,
-        color: '#B80000' 
-      };
-      
-      return (
-        <FaMapPin style={style}/>
-      )
+  return (
+    <FaMapPin style={appStyle.pinPointIcon}/>
+  )
 }
 
 export default PinPointIcon

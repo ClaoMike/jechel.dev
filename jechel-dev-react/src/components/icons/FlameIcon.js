@@ -3,14 +3,9 @@ import { FaHotjar} from 'react-icons/fa';
 import appStyle from '../../AppStyle';
 
 const FlameIcon = () => {
-    const style = {
-        ...appStyle.iconStyle,
-        color: '#FF9800' 
-      };
-      
-      return (
-        <FaHotjar style={style}/>
-      )
+  return (
+    <FaHotjar style={appStyle.flameIcon}/>
+  )
 }
 
 export default FlameIcon

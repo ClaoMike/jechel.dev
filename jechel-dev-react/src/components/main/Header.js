@@ -1,6 +1,6 @@
 import Title from './Title'
 import Subtitle from './Subtitle'
-import DarkLightModeSwitch from './darkLightModeSwitch/DarkLightModeSwitch'
+import DarkLightModeSwitch from './DarkLightModeSwitch'
 
 const Header = () => {
   return (

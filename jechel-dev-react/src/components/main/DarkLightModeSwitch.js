@@ -4,7 +4,7 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import NightsStayRoundedIcon from '@mui/icons-material/NightsStayRounded';
 import { Container, Box } from '@mui/material';
 
-import appStyle from '../../../AppStyle';
+import appStyle from '../../AppStyle';
 
 const DarkLightModeSwitch = () => {
   const [darkMode, setDarkMode] = useState(true);

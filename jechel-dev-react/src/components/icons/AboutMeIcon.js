@@ -2,15 +2,10 @@ import React from 'react'
 import { FaCodeBranch } from 'react-icons/fa';
 import appStyle from '../../AppStyle';
 
-const AboutMeIcon = () => {
-    const style = {
-        ...appStyle.iconStyle,
-        color: '#3E3232' 
-      };
-      
-      return (
-        <FaCodeBranch style={style}/>
-      )
+const AboutMeIcon = () => {      
+  return (
+    <FaCodeBranch style={appStyle.aboutMeIcon}/>
+  )
 }
 
 export default AboutMeIcon
