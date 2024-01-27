@@ -7,7 +7,7 @@ import PinPointIcon from '../../icons/PinPointIcon'
 import TextIcon from '../../icons/TextIcon';
 import YouTubeIcon from '../../icons/YouTubeIcon';
 
-import latestStyles from './youTubeStyles'
+import appStyle from '../../../AppStyle';
 
 const YouTubeVideo = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg'
@@ -19,10 +19,10 @@ const YouTubeVideo = ({ link }) => {
 
   return (
     <>
-      <Paper style={latestStyles.paperStyle}>
+      <Paper style={appStyle.paperStyle}>
         <Stack spacing={2} direction={isMobile ? 'column' : 'row'}>
-          <div style={latestStyles.imgContainerStyle}>
-            <img src={imageUrl} alt={altDescription} style={latestStyles.roundedImageStyle} />
+          <div style={appStyle.imgContainerStyle}>
+            <img src={imageUrl} alt={altDescription} style={appStyle.roundedImageStyle} />
           </div>
             <Stack spacing={2} direction="column">
               <h3><EpisodeIcon/> {title}</h3>
