@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaYoutube } from 'react-icons/fa';
-import mainStyles from '../main/mainStyles';
+import appStyle from '../../AppStyle';
 
 const YouTubeIcon = () => {
     const style = {
-        ...mainStyles.iconStyle,
+        ...appStyle.iconStyle,
         color: '#B80000' 
       };
       

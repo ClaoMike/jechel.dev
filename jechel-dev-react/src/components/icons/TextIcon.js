@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaAlignCenter} from 'react-icons/fa';
-import mainStyles from '../main/mainStyles';
+import appStyle from '../../AppStyle';
 
 const TextIcon = () => {
     const style = {
-        ...mainStyles.iconStyle,
+        ...appStyle.iconStyle,
         color: '#43766C' 
       };
       

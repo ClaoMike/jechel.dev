@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
-import mainStyles from '../main/mainStyles'
 import { useState } from 'react';
+import appStyle from '../../AppStyle';
 
 const ExternalLink = ({link, text, icon}) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -19,7 +19,7 @@ const ExternalLink = ({link, text, icon}) => {
           href={link} 
           target="_blank" 
           rel="noopener noreferrer" 
-          style={isHovered? mainStyles.linkHoverColour : mainStyles.linkStyle}
+          style={isHovered? appStyle.linkHoverColour : appStyle.linkStyle}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
           >{text} {icon}

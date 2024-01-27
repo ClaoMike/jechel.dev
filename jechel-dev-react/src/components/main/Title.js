@@ -1,13 +1,14 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import mainStyles from './mainStyles';
+
+import appStyle from '../../AppStyle';
 
 const CenteredHeading = () => {
 
   return (
     <Container>
-      <Box sx={mainStyles.horizontalCenterStyle}>
-        <h1 style={mainStyles.responsiveTitle}>Claudiu Mihai Jechel</h1>
+      <Box sx={appStyle.horizontalCenterStyle}>
+        <h1 style={appStyle.responsiveTitle}>Claudiu Mihai Jechel</h1>
       </Box>
     </Container>
   );

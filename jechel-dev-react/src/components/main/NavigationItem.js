@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom'
 
-import mainStyles from './mainStyles';
+import appStyle from '../../AppStyle';
 
 const NavigationItem = ({ link, text, icon}) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,8 +18,8 @@ const NavigationItem = ({ link, text, icon}) => {
   };
 
   const navLinkStyle = {
-    ...mainStyles.linkStyle,
-    ...(isHovered ? mainStyles.linkHoverColour : {}), // Apply linkHoverColour if isHovered is true
+    ...appStyle.linkStyle,
+    ...(isHovered ? appStyle.linkHoverColour : {}), // Apply linkHoverColour if isHovered is true
     position: 'relative',
     textDecoration: 'none', // no border below the links
   };

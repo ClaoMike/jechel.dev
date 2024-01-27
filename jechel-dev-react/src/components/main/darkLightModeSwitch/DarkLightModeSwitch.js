@@ -4,16 +4,15 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import NightsStayRoundedIcon from '@mui/icons-material/NightsStayRounded';
 import { Container, Box } from '@mui/material';
 
-import mainStyles from '../mainStyles';
 import darkLightModeSwitchStyle from './darkLightModeSwitchStyle';
-import main from '../../../AppStyle';
+import appStyle from '../../../AppStyle';
 
 const DarkLightModeSwitch = () => {
   const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
-    const theme = darkMode ? main.darkTheme : main.lightTheme;
-    const linkTheme = darkMode ? main.linkDarkTheme : main.linkLightTheme;
+    const theme = darkMode ? appStyle.darkTheme : appStyle.lightTheme;
+    const linkTheme = darkMode ? appStyle.linkDarkTheme : appStyle.linkLightTheme;
     
     // Apply styles to the body element
     Object.keys(theme).forEach((style) => {
@@ -45,7 +44,7 @@ const DarkLightModeSwitch = () => {
 
   return (
     <Container style={darkLightModeSwitchStyle.containerConfig}>
-      <Box sx={mainStyles.horizontalCenterStyle}>
+      <Box sx={appStyle.horizontalCenterStyle}>
         <Switch
           slotProps={{
             input: { 'aria-label': 'Dark mode' },

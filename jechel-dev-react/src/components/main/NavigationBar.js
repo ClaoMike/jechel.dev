@@ -7,12 +7,12 @@ import MotoIcon from '../icons/MotoIcon';
 import AboutMeIcon from '../icons/AboutMeIcon';
 import NavigationItem from './NavigationItem';
 
-import mainStyles from './mainStyles';
+import appStyle from '../../AppStyle';
 
 const NavigationBar = () => {
   return (
-    <Container sx={mainStyles.navigationContainer}>
-      <Box sx={mainStyles.horizontalCenterStyle}>
+    <Container sx={appStyle.navigationContainer}>
+      <Box sx={appStyle.horizontalCenterStyle}>
         <nav>
 
           <Stack direction="row" spacing={3}>            

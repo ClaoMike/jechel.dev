@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaMapPin } from 'react-icons/fa';
-import mainStyles from '../main/mainStyles';
+import appStyle from '../../AppStyle';
 
 const PinPointIcon = () => {
     const style = {
-        ...mainStyles.iconStyle,
+        ...appStyle.iconStyle,
         color: '#B80000' 
       };
       

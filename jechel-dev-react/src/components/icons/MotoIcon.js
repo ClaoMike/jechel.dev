@@ -1,10 +1,10 @@
 import React from 'react'
 import { FaMotorcycle } from 'react-icons/fa';
-import mainStyles from '../main/mainStyles';
+import appStyle from '../../AppStyle';
 
 const MotoIcon = () => {
     const style = {
-        ...mainStyles.iconStyle,
+        ...appStyle.iconStyle,
         color: '#820300'
       };
       
