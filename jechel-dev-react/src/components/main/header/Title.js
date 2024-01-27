@@ -1,17 +1,17 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import SubtitleIcon from '../icons/SubtitleIcon';
 
-import appStyle from '../../AppStyle';
+import appStyle from '../../../AppStyle';
 
-const Subtitle = () => {
+const CenteredHeading = () => {
+
   return (
     <Container>
       <Box sx={appStyle.horizontalCenterStyle}>
-        <p><SubtitleIcon/> Software Engineer</p>
+        <h1 style={appStyle.responsiveTitle}>Claudiu Mihai Jechel</h1>
       </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default Subtitle
+export default CenteredHeading;

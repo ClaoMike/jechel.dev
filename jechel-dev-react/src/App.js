@@ -1,7 +1,7 @@
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 
-import Header from "./components/main/Header";
-import NavigationBar from "./components/main/NavigationBar";
+import Header from "./components/main/header/Header";
+import NavigationBar from "./components/main/navigationBar/NavigationBar";
 import Latest from "./components/latest/Latest";
 import Moto from "./components/moto/Moto";
 import AboutMe from "./components/aboutMe/AboutMe";

@@ -2,12 +2,12 @@
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import { Stack } from '@mui/material';
-import FlameIcon from '../icons/FlameIcon';
-import MotoIcon from '../icons/MotoIcon';
-import AboutMeIcon from '../icons/AboutMeIcon';
+import FlameIcon from '../../icons/FlameIcon';
+import MotoIcon from '../../icons/MotoIcon';
+import AboutMeIcon from '../../icons/AboutMeIcon';
 import NavigationItem from './NavigationItem';
 
-import appStyle from '../../AppStyle';
+import appStyle from '../../../AppStyle';
 
 const NavigationBar = () => {
   return (

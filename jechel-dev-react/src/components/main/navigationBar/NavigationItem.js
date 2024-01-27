@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom'
 
-import appStyle from '../../AppStyle';
+import appStyle from '../../../AppStyle';
 
 const NavigationItem = ({ link, text, icon}) => {
   const [isHovered, setIsHovered] = useState(false);
