@@ -1,6 +1,6 @@
-import Title from './Title'
-import Subtitle from './Subtitle'
-import DarkLightModeSwitch from './DarkLightModeSwitch'
+import Title from './Title';
+import Subtitle from './Subtitle';
+import DarkLightModeSwitch from './DarkLightModeSwitch';
 
 const Header = () => {
   return (
@@ -9,7 +9,7 @@ const Header = () => {
         <Subtitle />
         <DarkLightModeSwitch />
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

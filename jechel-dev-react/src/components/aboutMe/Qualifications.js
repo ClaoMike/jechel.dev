@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink"
+import ExternalLink from "../common/ExternalLink";
 
 const Qualifications = () => {
   return (
@@ -15,7 +15,7 @@ const Qualifications = () => {
             </li>
         </ul>
     </>
-  )
-}
+  );
+};
 
-export default Qualifications
+export default Qualifications;

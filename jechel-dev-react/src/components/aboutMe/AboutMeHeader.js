@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink"
+import ExternalLink from "../common/ExternalLink";
 
 const AboutMeHeader = () => {
   return (
@@ -11,7 +11,7 @@ const AboutMeHeader = () => {
             <ExternalLink link='https://www.linkedin.com/in/claudiumihaijechel/' text='LinkedIn' />
         </p>
     </>
-  )
-}
+  );
+};
 
-export default AboutMeHeader
+export default AboutMeHeader;

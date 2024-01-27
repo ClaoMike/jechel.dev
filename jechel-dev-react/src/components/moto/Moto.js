@@ -1,5 +1,5 @@
-import YouTubeVideo from "../common/YouTubeVideo"
-import ExternalLink from "../common/ExternalLink"
+import YouTubeVideo from "../common/YouTubeVideo";
+import ExternalLink from "../common/ExternalLink";
 
 const Moto = () => {
   return (
@@ -11,7 +11,7 @@ const Moto = () => {
         <h3>Latest video</h3>
         <YouTubeVideo link='https://www.youtube.com/embed/i6CfPYxzAFM?si=QgQfUI5fVQCtJXEK' />
     </>
-  )
-}
+  );
+};
 
-export default Moto
+export default Moto;

@@ -1,7 +1,7 @@
-// import { useLo } from 'react-router-dom'
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
+import { Container, Box } from '@mui/material';
+
 import { Stack } from '@mui/material';
+
 import FlameIcon from '../../icons/FlameIcon';
 import MotoIcon from '../../icons/MotoIcon';
 import AboutMeIcon from '../../icons/AboutMeIcon';
@@ -24,8 +24,7 @@ const NavigationBar = () => {
         </nav>
       </Box>
     </Container>
-    
-  )
-}
+  );
+};
 
-export default NavigationBar
+export default NavigationBar;

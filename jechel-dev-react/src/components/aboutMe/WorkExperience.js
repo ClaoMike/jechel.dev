@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink"
+import ExternalLink from "../common/ExternalLink";
 
 const WorkExperience = () => {
   return (
@@ -31,7 +31,7 @@ const WorkExperience = () => {
             <li>Integrated new features, performed bug fixes, conducted code reviews, beta testing, unit/UI/snapshot testing, and held daily stand- ups with my colleagues and weekly meetings with clients using the Scrum agile framework within a continuous integration and deployment pipeline.</li>
         </ul>
     </>
-  )
-}
+  );
+};
 
-export default WorkExperience
+export default WorkExperience;

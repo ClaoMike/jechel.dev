@@ -1,5 +1,5 @@
-import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
+import { Container, Box } from '@mui/material';
+
 import SubtitleIcon from '../../icons/SubtitleIcon';
 
 import appStyle from '../../../AppStyle';
@@ -11,7 +11,7 @@ const Subtitle = () => {
         <p><SubtitleIcon/> Software Engineer</p>
       </Box>
     </Container>
-  )
-}
+  );
+};
 
-export default Subtitle
+export default Subtitle;

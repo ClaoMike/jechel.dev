@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink"
+import ExternalLink from "../common/ExternalLink";
 
 const AcademicPapers = () => {
   return (
@@ -10,7 +10,7 @@ const AcademicPapers = () => {
             </li>
         </ul>
     </>
-  )
-}
+  );
+};
 
-export default AcademicPapers
+export default AcademicPapers;

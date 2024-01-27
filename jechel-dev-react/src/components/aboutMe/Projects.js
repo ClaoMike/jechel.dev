@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink"
+import ExternalLink from "../common/ExternalLink";
 
 const Projects = () => {
   return (
@@ -18,7 +18,7 @@ const Projects = () => {
             <li>Used a traditional Procedural Content Generation (PCG) technique to generate each level.</li>
         </ul>
     </>
-  )
-}
+  );
+};
 
-export default Projects
+export default Projects;

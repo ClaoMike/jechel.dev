@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+
+import { Container, Box } from '@mui/material';
 import { Switch } from '@mui/joy';
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import NightsStayRoundedIcon from '@mui/icons-material/NightsStayRounded';
-import { Container, Box } from '@mui/material';
 
 import appStyle from '../../../AppStyle';
 

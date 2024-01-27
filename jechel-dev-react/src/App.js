@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import Header from "./components/main/header/Header";
 import NavigationBar from "./components/main/navigationBar/NavigationBar";
@@ -22,6 +22,6 @@ function App() {
       </div>
     </Router>
   );
-}
+};
 
 export default App;

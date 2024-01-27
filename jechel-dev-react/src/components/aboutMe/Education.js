@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink"
+import ExternalLink from "../common/ExternalLink";
 
 const Education = () => {
   return (
@@ -10,7 +10,7 @@ const Education = () => {
             - Manchester, UK - 09/2019 - 07/2023
         </p>
     </>
-  )
-}
+  );
+};
 
-export default Education
+export default Education;
