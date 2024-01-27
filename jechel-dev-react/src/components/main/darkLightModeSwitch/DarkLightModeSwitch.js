@@ -4,7 +4,6 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import NightsStayRoundedIcon from '@mui/icons-material/NightsStayRounded';
 import { Container, Box } from '@mui/material';
 
-import darkLightModeSwitchStyle from './darkLightModeSwitchStyle';
 import appStyle from '../../../AppStyle';
 
 const DarkLightModeSwitch = () => {
@@ -43,18 +42,18 @@ const DarkLightModeSwitch = () => {
   }, [darkMode]); // Run whenever the switch state changes
 
   return (
-    <Container style={darkLightModeSwitchStyle.containerConfig}>
+    <Container style={appStyle.containerConfig}>
       <Box sx={appStyle.horizontalCenterStyle}>
         <Switch
           slotProps={{
             input: { 'aria-label': 'Dark mode' },
             thumb: {
-              children: darkMode ? <NightsStayRoundedIcon style={darkLightModeSwitchStyle.darktModeIcon} /> : <WbSunnyRoundedIcon style={darkLightModeSwitchStyle.lightModeIcon} />,
+              children: darkMode ? <NightsStayRoundedIcon style={appStyle.darktModeIcon} /> : <WbSunnyRoundedIcon style={appStyle.lightModeIcon} />,
             },
           }}
           checked={darkMode}
           onChange={(event) => setDarkMode(event.target.checked)}
-          sx={darkLightModeSwitchStyle.switchConfiguration}
+          sx={appStyle.switchConfiguration}
         />
       </Box>
     </Container>
