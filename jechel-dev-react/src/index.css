@@ -1,4 +1,35 @@
+body {
+  background-color: #FFFFFF;
+  color: #000000;
+
+  font-family: 'Courier New', monospace;
+  font-size: min(30px, 4vw);
+  margin: 0;
+  padding: 0;
+}
+
 a {
     text-decoration: none;
+    color: #3C0753;
+}
+
+a:hover {
+  color: #FFA732;
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: #000000;
+    color: #FFFFFF;
   }
-  
+
+  a {
+    color: #43766C;
+  }
+
+  a:hover {
+    color: #00bfea;
+  }
+
+}
