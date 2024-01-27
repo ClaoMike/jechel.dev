@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect';
 import { switchClasses } from '@mui/joy';
 
-const common = {
+const bodyConfig = {
     fontFamily: 'Courier New, monospace',
     fontSize: 'min(30px, 4vw)',
     margin: '0px',
@@ -14,6 +14,33 @@ const iconCommon = {
 };
 
 const appStyle = {
+    // main themes
+    lightTheme: {
+        ...bodyConfig,
+        backgroundColor: '#FFFFFF',
+        color: '#000000',
+    },
+
+    darkTheme: {
+        ...bodyConfig,
+        backgroundColor: '#000000',
+        color: '#FFFFFF',
+    },
+
+    // link themes
+    linkHoverColour: {
+        color: '#FFA732',
+    },
+
+    linkLightTheme: {
+        // color: '#3C0753'
+        color: '#E9A8F2'
+    },
+
+    linkDarkTheme: {
+        color: '#43766C',
+    },
+
     horizontalCenterStyle: {
         display: 'flex',
         flexDirection: 'column',
@@ -30,40 +57,6 @@ const appStyle = {
         marginBottom: isMobile ? '20px' : '50px'
     },
   
-    iconStyle: {
-        verticalAlign: 'middle', // Adjust the vertical alignment as needed
-        marginTop: '-5px', // Add some margin at the top to shift the icons down
-    },
-  
-    linkHoverColour: {
-        textDecoration: 'none', // Set textDecoration to 'none' to remove the underline
-        color: '#FFA732',
-    },
-  
-    flameColour: {
-        color: '#FF9800',
-    },
-
-    lightTheme: {
-        ...common,
-        backgroundColor: '#FFFFFF',
-        color: '#000000',
-    },
-
-    darkTheme: {
-        ...common,
-        backgroundColor: '#000000',
-        color: '#FFFFFF',
-    },
-
-    linkLightTheme: {
-        // color: '#3C0753'
-        color: '#E9A8F2'
-    },
-
-    linkDarkTheme: {
-        color: '#43766C',
-    },
     // youtube
     paperStyle: {
         backgroundColor: 'white',
@@ -167,14 +160,9 @@ const appStyle = {
         color: '#B80000'
     },
 
-    // navigation items
-    navigationLink : {
-        
-    },
-
     activeLink: {
         borderBottom: '2px solid #000',
-      },
+    },
     //
 
 };
