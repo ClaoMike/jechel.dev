@@ -169,7 +169,12 @@ const appStyle = {
 
     // navigation items
     navigationLink : {
+        
     },
+
+    activeLink: {
+        borderBottom: '2px solid #000',
+      },
     //
 
 };

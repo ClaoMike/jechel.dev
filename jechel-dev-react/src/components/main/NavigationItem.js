@@ -17,21 +17,19 @@ const NavigationItem = ({ link, text, icon}) => {
     setIsHovered(false);
   };
 
-  const navLinkStyle = {
-    ...(isHovered ? appStyle.linkHoverColour : {}), // Apply linkHoverColour if isHovered is true
-    position: 'relative',
-    textDecoration: 'none', // no border below the links
+  const linkStyle = {
+    ...(isHovered ? appStyle.linkHoverColour : {}),
   };
 
-  const activeLinkStyle = {
-    borderBottom: '2px solid #000',
+  const borderStyle = {
+    ...(location.pathname === link && appStyle.activeLink),
   };
 
   return (
     <>
         <Link 
           to={link} 
-          style={{ ...navLinkStyle, ...(location.pathname === link && activeLinkStyle) }}
+          style={{ ...linkStyle, ...borderStyle }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
