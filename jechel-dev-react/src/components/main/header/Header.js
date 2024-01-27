@@ -7,7 +7,7 @@ const Header = () => {
     <div>
         <Title />
         <Subtitle />
-        {/* <DarkLightModeSwitch /> */}
+        <DarkLightModeSwitch />
     </div>
   );
 };

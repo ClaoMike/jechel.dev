@@ -1,48 +1,26 @@
 import { useState, useEffect } from 'react';
-
-import { useMediaQuery } from "react-responsive";
-
 import { Container, Box } from '@mui/material';
 import { Switch } from '@mui/joy';
 import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 import NightsStayRoundedIcon from '@mui/icons-material/NightsStayRounded';
 
 import appStyle from '../../../AppStyle';
+import { useMediaQuery } from "react-responsive";
 
 const DarkLightModeSwitch = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [isDark, setIsDark] = useState(false);
+
+  const prefersDarkMode = useMediaQuery({
+    query: '(prefers-color-scheme: dark)'
+  });
 
   useEffect(() => {
-    const theme = darkMode ? appStyle.darkTheme : appStyle.lightTheme;
-    const linkTheme = darkMode ? appStyle.linkDarkTheme : appStyle.linkLightTheme;
-    
-    // Apply styles to the body element
-    Object.keys(theme).forEach((style) => {
-      document.body.style[style] = theme[style];
-    });
+    setIsDark(prefersDarkMode);
+  }, [prefersDarkMode]);
 
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        Object.keys(linkTheme).forEach(style => {
-            link.style[style] = linkTheme[style];
-        });
-    });
-
-    // Cleanup function to remove styles when the component unmounts
-    return () => {
-      Object.keys(theme).forEach((style) => {
-        document.body.style[style] = '';
-      });
-
-      const links = document.querySelectorAll('a');
-        links.forEach(link => {
-            Object.keys(linkTheme).forEach(style => {
-                link.style[style] = '';
-            });
-        });
-
-    };
-  }, [darkMode]); // Run whenever the switch state changes
+  const toggleDarkMode = () => {
+    setIsDark(prevIsDark => !prevIsDark);
+  };
 
   return (
     <Container style={appStyle.containerConfig}>
@@ -51,11 +29,11 @@ const DarkLightModeSwitch = () => {
           slotProps={{
             input: { 'aria-label': 'Dark mode' },
             thumb: {
-              children: darkMode ? <NightsStayRoundedIcon style={appStyle.darktModeIcon} /> : <WbSunnyRoundedIcon style={appStyle.lightModeIcon} />,
+              children: isDark ? <NightsStayRoundedIcon style={appStyle.darkModeIcon} /> : <WbSunnyRoundedIcon style={appStyle.lightModeIcon} />,
             },
           }}
-          checked={darkMode}
-          onChange={(event) => setDarkMode(event.target.checked)}
+          checked={isDark}
+          onChange={toggleDarkMode}
           sx={appStyle.switchConfiguration}
         />
       </Box>
