@@ -1,11 +1,16 @@
 body {
   background-color: #FFFFFF;
   color: #000000;
-
   font-family: 'Courier New', monospace;
   font-size: min(30px, 4vw);
   margin: 0;
-  padding: 0;
+}
+
+#root {
+  background-color: #FFFFFF;
+  color: #000000;
+  height: 100vh; /* Occupy 100% of viewport height */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport height */
 }
 
 a {
@@ -32,4 +37,35 @@ a:hover {
     color: #00bfea;
   }
 
+  #root {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+
+}
+
+.dark-theme #root {
+  background-color: #000000 !important;
+  color: #FFFFFF !important;
+}
+
+.dark-theme a {
+  color: #43766C;
+}
+
+.dark-theme a:hover {
+  color: #00bfea;
+}
+
+.light-theme #root {
+  background-color: #FFFFFF !important;
+  color: #000000 !important;
+}
+
+.light-theme a {
+  color: #3C0753;
+}
+
+.light-theme a:hover {
+  color: #FFA732;
 }
