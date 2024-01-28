@@ -16,10 +16,6 @@ const NavigationItem = ({ link, text, icon}) => {
     setIsHovered(false);
   };
 
-  const linkStyle = {
-    ...(isHovered ? appStyle.linkHoverColour : {}),
-  };
-
   const borderStyle = {
     ...(location.pathname === link && appStyle.activeLink),
   };
@@ -28,7 +24,7 @@ const NavigationItem = ({ link, text, icon}) => {
     <>
         <Link 
           to={link} 
-          style={{ ...linkStyle, ...borderStyle }}
+          style={{  ...borderStyle }}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
         >
