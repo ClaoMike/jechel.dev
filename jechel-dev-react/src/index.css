@@ -1,13 +1,10 @@
 :root {
   --primary-background-color: #FFFFFF;
   --primary-text-color: #000000;
-  --link-color: #3C0753;
-  /* 
-  --link-hover-color: #FFA732;
-  --dark-background-color: #000000;
-  --dark-text-color: #FFFFFF;
-  --dark-link-color: #43766C;
-  --dark-link-hover-color: #00bfea; */
+  --link-color-light: #3C0753;
+  --link-hover-color-light: #FFA732;
+  --link-color-dark: #43766C;
+  --link-hover-color-dark: #00bfea;
 }
 
 body {
@@ -25,24 +22,19 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--link-color);
 }
 
-a:hover {
-  color: #FFA732;
+a, .light-theme a  {
+  color: var(--link-color-light);
+}
+
+a:hover, .light-theme a:hover {
+  color: var( --link-hover-color-light);
 }
 
 .light-theme #root {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
-}
-
-.light-theme a {
-  color: var(--link-color);
-}
-
-.light-theme a:hover {
-  color: #FFA732;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,11 +45,11 @@ a:hover {
   }
 
   a {
-    color: #43766C;
+    color: var(--link-color-dark);
   }
 
   a:hover {
-    color: #00bfea;
+    color: var(--link-hover-color-dark);
   }
 
 }
@@ -68,9 +60,9 @@ a:hover {
 }
 
 .dark-theme a {
-  color: #43766C;
+  color: var(--link-color-dark);
 }
 
 .dark-theme a:hover {
-  color: #00bfea;
+  color: var(--link-hover-color-dark);
 }
