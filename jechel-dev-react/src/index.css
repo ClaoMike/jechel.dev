@@ -1,32 +1,55 @@
+:root {
+  --primary-background-color: #FFFFFF;
+  --primary-text-color: #000000;
+  --link-color: #3C0753;
+  /* 
+  --link-hover-color: #FFA732;
+  --dark-background-color: #000000;
+  --dark-text-color: #FFFFFF;
+  --dark-link-color: #43766C;
+  --dark-link-hover-color: #00bfea; */
+}
+
 body {
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
   font-family: 'Courier New', monospace;
   font-size: min(30px, 4vw);
   margin: 0;
 }
 
-#root {
-  background-color: #FFFFFF;
-  color: #000000;
+#root { /* body applies to root as root is a kid of body */
   height: 100vh; /* Occupy 100% of viewport height */
   overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport height */
 }
 
 a {
     text-decoration: none;
-    color: #3C0753;
+    color: var(--link-color);
 }
 
 a:hover {
   color: #FFA732;
 }
 
+.light-theme #root {
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+.light-theme a {
+  color: var(--link-color);
+}
+
+.light-theme a:hover {
+  color: #FFA732;
+}
+
 @media (prefers-color-scheme: dark) {
 
   body {
-    background-color: #000000;
-    color: #FFFFFF;
+    background-color: var(--primary-text-color);
+    color: var(--primary-background-color);
   }
 
   a {
@@ -37,16 +60,11 @@ a:hover {
     color: #00bfea;
   }
 
-  #root {
-    background-color: #000000;
-    color: #FFFFFF;
-  }
-
 }
 
 .dark-theme #root {
-  background-color: #000000 !important;
-  color: #FFFFFF !important;
+  background-color: var(--primary-text-color);
+  color: var(--primary-background-color);
 }
 
 .dark-theme a {
@@ -55,17 +73,4 @@ a:hover {
 
 .dark-theme a:hover {
   color: #00bfea;
-}
-
-.light-theme #root {
-  background-color: #FFFFFF !important;
-  color: #000000 !important;
-}
-
-.light-theme a {
-  color: #3C0753;
-}
-
-.light-theme a:hover {
-  color: #FFA732;
 }
