@@ -1,4 +1,6 @@
 /* !!! FOR THE DARK/LIGHT SWITCH THUMB AND TRACK COLOURS, CHECK THE CSS IN AppStyle.js !!! */
+
+/* Colours */
 :root {
   --primary-background-color: #FFFFFF;
   --primary-text-color: #000000;
@@ -22,6 +24,7 @@
   --youtube-container-shadow: #3C0753;
 }
 
+/* LIGHT THEME */
 body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
@@ -56,6 +59,7 @@ a:hover, .light-theme a:hover {
   border-bottom: 2px solid var(--primary-text-color);
 }
 
+/* DARK THEME */
 @media (prefers-color-scheme: dark) {
 
   body {
@@ -94,11 +98,7 @@ a:hover, .light-theme a:hover {
   border-bottom: 2px solid var(--primary-background-color);
 }
 
-.icon-config {
-  vertical-align: middle; /* Adjust the vertical alignment as needed */
-  margin-top: -5px; /* Add some margin at the top to shift the icons down */
-}
-
+/* ONE WAY THEME */
 .about-me-icon {
   color: var(--icon-about-me); 
 }

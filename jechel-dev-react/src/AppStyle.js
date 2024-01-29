@@ -70,6 +70,11 @@ const appStyle = {
         marginBottom: isMobile ? '20px' : '30px'
     },
 
+    iconConfig: {
+        verticalAlign: 'middle', /* Adjust the vertical alignment as needed */
+        marginTop: '-5px',
+    },
+
 };
 
 export default appStyle;
