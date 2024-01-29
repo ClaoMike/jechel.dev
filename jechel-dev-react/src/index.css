@@ -5,6 +5,15 @@
   --link-hover-color-light: #FFA732;
   --link-color-dark: #43766C;
   --link-hover-color-dark: #00bfea;
+
+  --icon-about-me: #3E3232;
+  --icon-episode: #765827;
+  --icon-flame: #FF9800;
+  --icon-moto: #820300;
+  --icon-pinpoint: #B80000;
+  --icon-subtitle: #3C0753;
+  --icon-youtube-description: #43766C;
+  --icon-youtube: #B80000;
 }
 
 body {
@@ -85,33 +94,33 @@ a:hover, .light-theme a:hover {
 }
 
 .about-me-icon {
-  color: #3E3232; 
+  color: var(--icon-about-me); 
 }
 
 .episode-icon {
-  color: #765827;
+  color: var(--icon-episode);
 }
 
 .flame-icon {
-  color: #FF9800;
+  color: var(--icon-flame);
 }
 
 .moto-icon {
-  color: #820300;
+  color: var(--icon-moto);
 }
 
 .pinpoint-icon {
-  color: #B80000;
+  color: var(--icon-youtube);
 }
 
 .subtitle-icon {
-  color: #3C0753; 
+  color: var(--icon-subtitle); 
 }
 
 .youtube-description-icon {
-  color: #43766C;
+  color: var(--icon-youtube-description);
 }
 
 .youtube-icon {
-  color: #B80000;
+  color: var(--icon-youtube);
 }
