@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Container, Box } from '@mui/material';
 import { Switch } from '@mui/joy';
-import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
-import NightsStayRoundedIcon from '@mui/icons-material/NightsStayRounded';
+import DarkModeIcon from '../../icons/DarkModeIcon';
+import LightModeIcon from '../../icons/LightModeIcon';
 
 import appStyle from '../../../AppStyle';
 import { useMediaQuery } from "react-responsive";
@@ -39,7 +39,7 @@ const DarkLightModeSwitch = () => {
           slotProps={{
             input: { 'aria-label': 'Dark mode' },
             thumb: {
-              children: isDark ? <NightsStayRoundedIcon style={appStyle.darkModeIcon} /> : <WbSunnyRoundedIcon style={appStyle.lightModeIcon} />,
+              children: isDark ? <DarkModeIcon /> : <LightModeIcon />,
             },
           }}
           checked={isDark}

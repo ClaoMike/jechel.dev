@@ -68,14 +68,6 @@ const appStyle = {
         },
     },
 
-    lightModeIcon: {
-        color: '#D04848' 
-    },
-    
-    darktModeIcon: {
-        color: '#FDE767' 
-    },
-
     containerConfig: {
         marginBottom: isMobile ? '20px' : '30px'
     },

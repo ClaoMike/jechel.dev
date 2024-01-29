@@ -11,9 +11,11 @@
   --icon-flame: #FF9800;
   --icon-moto: #820300;
   --icon-pinpoint: #B80000;
-  --icon-subtitle: #3C0753;
   --icon-youtube-description: #43766C;
   --icon-youtube: #B80000;
+
+  --icon-switch-light-mode: #D04848;
+  --icon-switch-dark-mode: #FDE767;
 }
 
 body {
@@ -114,7 +116,7 @@ a:hover, .light-theme a:hover {
 }
 
 .subtitle-icon {
-  color: var(--icon-subtitle); 
+  color: var(--link-color-light); 
 }
 
 .youtube-description-icon {
@@ -123,4 +125,12 @@ a:hover, .light-theme a:hover {
 
 .youtube-icon {
   color: var(--icon-youtube);
+}
+
+.switch-light-mode-icon {
+  color: var(--icon-switch-light-mode);
+}
+
+.switch-dark-mode-icon  {
+  color: var(--icon-switch-dark-mode);
 }
