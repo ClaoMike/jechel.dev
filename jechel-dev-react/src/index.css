@@ -2,10 +2,13 @@
 
 /* Colours */
 :root {
-  --primary-background-color: #FFFFFF;
-  --primary-text-color: #000000;
-  --link-color-light: #3C0753;
-  --link-hover-color-light: #FFA732;
+  --light-background-color: #FFF3CF;
+  --light-text-color: #000000;
+  --light-link-color: #637A9F;
+  --light-hover-color-hover: #4F6F52;
+  --light-youtube-container-background-color: #C9D7DD;
+  --light-youtube-container-shadow-color: #E8C872;
+  
   --link-color-dark: #43766C;
   --link-hover-color-dark: #00bfea;
 
@@ -17,16 +20,13 @@
   --icon-youtube-description: #43766C;
   --icon-youtube: #B80000;
 
-  --icon-switch-light-mode: #D04848;
+  --icon-switch-light-mode: #FFB534;
   --icon-switch-dark-mode: #FDE767;
-
-  --youtube-container-background: #820300;
-  --youtube-container-shadow: #3C0753;
 }
 
 /* LIGHT THEME */
 body {
-  background-color: var(--primary-background-color);
+  background-color: var(--light-background-color);
   color: var(--primary-text-color);
   font-family: 'Courier New', monospace;
   font-size: min(30px, 4vw);
@@ -43,11 +43,11 @@ a {
 }
 
 a, .light-theme a  {
-  color: var(--link-color-light);
+  color: var(--light-link-color);
 }
 
 a:hover, .light-theme a:hover {
-  color: var( --link-hover-color-light);
+  color: var(--light-hover-color-hover);
 }
 
 .light-theme #root {
@@ -120,7 +120,7 @@ a:hover, .light-theme a:hover {
 }
 
 .subtitle-icon {
-  color: var(--link-color-light); 
+  color: var(--light-link-color); 
 }
 
 .youtube-description-icon {
@@ -140,6 +140,6 @@ a:hover, .light-theme a:hover {
 }
 
 .youtube-container {
-  background-color: var(--youtube-container-background);
-  box-shadow: 0 0 100px 0 var(--youtube-container-shadow);
+  background-color: var(--light-youtube-container-background-color);
+  box-shadow: 0 0 100px 0 var(--light-youtube-container-shadow-color);
 }

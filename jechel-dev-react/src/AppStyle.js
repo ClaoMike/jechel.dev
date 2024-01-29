@@ -51,10 +51,11 @@ const appStyle = {
 
         // colours
         // unchecked (default)
-        '--Switch-trackBackground': '#83C0C1', 
-        '--Switch-thumbBackground': '#FFFFFF',
+        '--Switch-trackBackground': '#FF9843', 
+        '--Switch-thumbBackground': '#3468C0',
         '&:hover': {
-            '--Switch-trackBackground': '#0A1D56',
+            '--Switch-trackBackground': '#3468C0',
+            '--Switch-thumbBackground': '#86A7FC',
         },
 
         // checked

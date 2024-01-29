@@ -24,12 +24,12 @@ const YouTubeVideo = ({ link }) => {
           <div style={appStyle.imgContainerStyle}>
             <img src={imageUrl} alt={altDescription} style={appStyle.roundedImageStyle} />
           </div>
-            <Stack spacing={2} direction="column">
-              <h3><EpisodeIcon/> {title}</h3>
-              <p><PinPointIcon/> {location}</p>
-              <p><TextIcon/> {description}</p>
-              <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
-            </Stack>
+          <Stack spacing={2} direction="column">
+            <h3><EpisodeIcon/> {title}</h3>
+            <p><PinPointIcon/> {location}</p>
+            <p><TextIcon/> {description}</p>
+            <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
+          </Stack>
         </Stack>
     </>
   );
