@@ -1,32 +1,14 @@
-import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
-import appStyle from '../../../AppStyle';
-
 const NavigationItem = ({ link, text, icon}) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   const location = useLocation();
-  
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
-  const borderStyle = {
-    ...(location.pathname === link && appStyle.activeLink),
-  };
+  const className = location.pathname === link ? 'navigation-item-border' : '';
 
   return (
     <>
         <Link 
-          to={link} 
-          style={{  ...borderStyle }}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
+          className={className}
+          to={link}
         >
           {text} {icon}
         </Link>

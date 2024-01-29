@@ -125,10 +125,6 @@ const appStyle = {
         ...iconCommon,
         color: '#B80000'
     },
-
-    activeLink: {
-        borderBottom: '2px solid #000',
-    },
     //
 
 };

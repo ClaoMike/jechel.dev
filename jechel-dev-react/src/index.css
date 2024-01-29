@@ -37,6 +37,10 @@ a:hover, .light-theme a:hover {
   color: var(--primary-text-color);
 }
 
+.navigation-item-border, .light-theme .navigation-item-border {
+  border-bottom: 2px solid var(--primary-text-color);
+}
+
 @media (prefers-color-scheme: dark) {
 
   body {
@@ -52,6 +56,10 @@ a:hover, .light-theme a:hover {
     color: var(--link-hover-color-dark);
   }
 
+  .navigation-item-border {
+    border-bottom: 2px solid var(--primary-background-color);
+  }
+
 }
 
 .dark-theme #root {
@@ -65,4 +73,8 @@ a:hover, .light-theme a:hover {
 
 .dark-theme a:hover {
   color: var(--link-hover-color-dark);
+}
+
+.dark-theme .navigation-item-border {
+  border-bottom: 2px solid var(--primary-background-color);
 }
