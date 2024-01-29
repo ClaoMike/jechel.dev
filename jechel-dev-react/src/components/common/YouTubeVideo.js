@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Stack, Paper } from '@mui/material';
+import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 
 import ExternalLink from './ExternalLink';
@@ -20,8 +20,7 @@ const YouTubeVideo = ({ link }) => {
 
   return (
     <>
-      <Paper style={appStyle.paperStyle}>
-        <Stack spacing={2} direction={isMobile ? 'column' : 'row'}>
+        <Stack spacing={2} direction={isMobile ? 'column' : 'row'} className='youtube-container' style={appStyle.paperStyle}>
           <div style={appStyle.imgContainerStyle}>
             <img src={imageUrl} alt={altDescription} style={appStyle.roundedImageStyle} />
           </div>
@@ -32,7 +31,6 @@ const YouTubeVideo = ({ link }) => {
               <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
             </Stack>
         </Stack>
-      </Paper>
     </>
   );
 };

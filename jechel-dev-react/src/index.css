@@ -1,3 +1,4 @@
+/* !!! FOR THE DARK/LIGHT SWITCH THUMB AND TRACK COLOURS, CHECK THE CSS IN AppStyle.js !!! */
 :root {
   --primary-background-color: #FFFFFF;
   --primary-text-color: #000000;
@@ -16,6 +17,9 @@
 
   --icon-switch-light-mode: #D04848;
   --icon-switch-dark-mode: #FDE767;
+
+  --youtube-container-background: #820300;
+  --youtube-container-shadow: #3C0753;
 }
 
 body {
@@ -133,4 +137,9 @@ a:hover, .light-theme a:hover {
 
 .switch-dark-mode-icon  {
   color: var(--icon-switch-dark-mode);
+}
+
+.youtube-container {
+  background-color: var(--youtube-container-background);
+  box-shadow: 0 0 100px 0 var(--youtube-container-shadow);
 }
