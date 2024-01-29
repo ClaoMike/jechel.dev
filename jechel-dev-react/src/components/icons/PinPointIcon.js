@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const PinPointIcon = () => {
   return (
-    <FaMapPin style={appStyle.pinPointIcon}/>
+    <FaMapPin className='icon-config pinpoint-icon '/>
   );
 };
 

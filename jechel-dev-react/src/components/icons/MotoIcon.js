@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const MotoIcon = () => {
   return (
-    <FaMotorcycle style={appStyle.motoIcon}/>
+    <FaMotorcycle className='icon-config moto-icon '/>
   );
 };
 

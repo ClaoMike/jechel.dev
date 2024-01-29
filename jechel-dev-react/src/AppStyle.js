@@ -1,11 +1,6 @@
 import { isMobile } from 'react-device-detect';
 import { switchClasses } from '@mui/joy';
 
-const iconCommon = {
-    verticalAlign: 'middle', // Adjust the vertical alignment as needed
-    marginTop: '-5px', // Add some margin at the top to shift the icons down
-};
-
 const appStyle = {
     horizontalCenterStyle: {
         display: 'flex',
@@ -84,48 +79,6 @@ const appStyle = {
     containerConfig: {
         marginBottom: isMobile ? '20px' : '30px'
     },
-    //
-
-    aboutMeIcon: {
-        ...iconCommon,
-        color: '#3E3232' 
-    },
-
-    episodeIcon: {
-        ...iconCommon,
-        color: '#765827' 
-    },
-
-    flameIcon: {
-        ...iconCommon,
-        color: '#FF9800'
-    },
-
-    motoIcon: {
-        ...iconCommon,
-        color: '#820300'
-    },
-
-    pinPointIcon: {
-        ...iconCommon,
-        color: '#B80000'
-    },
-
-    subtitleIcon: {
-        ...iconCommon,
-        color: '#3C0753' 
-    },
-
-    youTubeDescriptionIcon: {
-        ...iconCommon,
-        color: '#43766C'
-    },
-
-    youTubeIcon: {
-        ...iconCommon,
-        color: '#B80000'
-    },
-    //
 
 };
 

@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const YouTubeDescriptionIcon = () => {
   return (
-    <FaAlignCenter style={appStyle.youTubeDescriptionIcon}/>
+    <FaAlignCenter className='icon-config youtube-description-icon '/>
   );
 };
 

@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const EpisodeIcon = () => {      
   return (
-    <FaFilm style={appStyle.episodeIcon}/>
+    <FaFilm className='icon-config episode-icon '/>
   );
 };
 

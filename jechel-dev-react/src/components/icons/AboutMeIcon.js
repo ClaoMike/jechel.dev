@@ -4,7 +4,9 @@ import appStyle from '../../AppStyle';
 
 const AboutMeIcon = () => {      
   return (
-    <FaCodeBranch style={appStyle.aboutMeIcon}/>
+    <FaCodeBranch 
+    className='icon-config about-me-icon '
+    />
   );
 };
 

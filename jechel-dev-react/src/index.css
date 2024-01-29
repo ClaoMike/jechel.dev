@@ -78,3 +78,40 @@ a:hover, .light-theme a:hover {
 .dark-theme .navigation-item-border {
   border-bottom: 2px solid var(--primary-background-color);
 }
+
+.icon-config {
+  vertical-align: middle; /* Adjust the vertical alignment as needed */
+  margin-top: -5px; /* Add some margin at the top to shift the icons down */
+}
+
+.about-me-icon {
+  color: #3E3232; 
+}
+
+.episode-icon {
+  color: #765827;
+}
+
+.flame-icon {
+  color: #FF9800;
+}
+
+.moto-icon {
+  color: #820300;
+}
+
+.pinpoint-icon {
+  color: #B80000;
+}
+
+.subtitle-icon {
+  color: #3C0753; 
+}
+
+.youtube-description-icon {
+  color: #43766C;
+}
+
+.youtube-icon {
+  color: #B80000;
+}

@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const SubtitleIcon = () => {
   return (
-    <FaTerminal style={appStyle.subtitleIcon}/>
+    <FaTerminal className='icon-config subtitle-icon '/>
   );
 };
 

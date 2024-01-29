@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const FlameIcon = () => {
   return (
-    <FaHotjar style={appStyle.flameIcon}/>
+    <FaHotjar className='icon-config flame-icon '/>
   );
 };
 

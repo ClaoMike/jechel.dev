@@ -4,7 +4,7 @@ import appStyle from '../../AppStyle';
 
 const YouTubeIcon = () => {
   return (
-    <FaYoutube style={appStyle.youTubeIcon}/>
+    <FaYoutube className='icon-config youtube-icon '/>
   );
 };
 
