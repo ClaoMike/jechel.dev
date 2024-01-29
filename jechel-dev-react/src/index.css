@@ -2,16 +2,25 @@
 
 /* Colours */
 :root {
+  /* LIGHT */
   --light-background-color: #FFF3CF;
   --light-text-color: #000000;
   --light-link-color: #637A9F;
   --light-hover-color-hover: #4F6F52;
-  --light-youtube-container-background-color: #C9D7DD;
-  --light-youtube-container-shadow-color: #E8C872;
-  
-  --link-color-dark: #43766C;
-  --link-hover-color-dark: #00bfea;
+  --light-youtube-container-background-color: #2D3250;
+  --light-youtube-container-shadow-color: #F6ECA9;
+  --light-navigation-item-border-colour: #4F6F52;
 
+  /* DARK */
+  --dark-background-color: #11235A;
+  --dark-text-color: #DCF2F1;
+  --dark-link-color: #F2F7A1;
+  --dark-hover-color-hover: #088395;
+  --dark-youtube-container-background-color: #365486;
+  --dark-youtube-container-shadow-color: #E8C872;
+  --dark-navigation-item-border-colour: #F6B17A;
+
+  /* ONE-WAY */
   --icon-about-me: #3E3232;
   --icon-episode: #765827;
   --icon-flame: #FF9800;
@@ -21,7 +30,7 @@
   --icon-youtube: #B80000;
 
   --icon-switch-light-mode: #FFB534;
-  --icon-switch-dark-mode: #FDE767;
+  --icon-switch-dark-mode: #FFB534;
 }
 
 /* LIGHT THEME */
@@ -51,51 +60,78 @@ a:hover, .light-theme a:hover {
 }
 
 .light-theme #root {
-  background-color: var(--primary-background-color);
-  color: var(--primary-text-color);
+  background-color: var(--light-background-color);
+  color: var(--light-text-color);
 }
 
 .navigation-item-border, .light-theme .navigation-item-border {
-  border-bottom: 2px solid var(--primary-text-color);
+  border-bottom: 2px solid var(--light-navigation-item-border-colour);
+}
+
+.youtube-container, .light-theme .youtube-container {
+  background-color: var(--light-youtube-container-shadow-color);
+  box-shadow: 0 0 100px 0 var(--light-youtube-container-shadow-color);
+}
+
+.subtitle-icon, .light-theme .subtitle-icon {
+  color: var(--light-link-color); 
 }
 
 /* DARK THEME */
 @media (prefers-color-scheme: dark) {
 
   body {
-    background-color: var(--primary-text-color);
-    color: var(--primary-background-color);
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
   }
 
   a {
-    color: var(--link-color-dark);
+    color: var(--dark-link-color);
   }
 
   a:hover {
-    color: var(--link-hover-color-dark);
+    color: var(--dark-hover-color-hover);
   }
 
   .navigation-item-border {
-    border-bottom: 2px solid var(--primary-background-color);
+    border-bottom: 2px solid var(--dark-navigation-item-border-colour);
+  }
+
+  .youtube-container {
+    background-color: var(--dark-youtube-container-background-color);
+    box-shadow: 0 0 100px 0 var(--dark-youtube-container-shadow-color);
+  }
+
+  .subtitle-icon{
+    color: var(--dark-link-color); 
   }
 
 }
 
 .dark-theme #root {
-  background-color: var(--primary-text-color);
-  color: var(--primary-background-color);
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
 }
 
 .dark-theme a {
-  color: var(--link-color-dark);
+  color: var(--dark-link-color);
 }
 
 .dark-theme a:hover {
-  color: var(--link-hover-color-dark);
+  color: var(--dark-hover-color-hover);
 }
 
 .dark-theme .navigation-item-border {
-  border-bottom: 2px solid var(--primary-background-color);
+  border-bottom: 2px solid var(--dark-navigation-item-border-colour);
+}
+
+.dark-theme .youtube-container {
+  background-color: var(--dark-youtube-container-background-color);
+  box-shadow: 0 0 100px 0 var(--dark-youtube-container-shadow-color);
+}
+
+.dark-theme .subtitle-icon{
+  color: var(--dark-link-color); 
 }
 
 /* ONE WAY THEME */
@@ -119,10 +155,6 @@ a:hover, .light-theme a:hover {
   color: var(--icon-youtube);
 }
 
-.subtitle-icon {
-  color: var(--light-link-color); 
-}
-
 .youtube-description-icon {
   color: var(--icon-youtube-description);
 }
@@ -137,9 +169,4 @@ a:hover, .light-theme a:hover {
 
 .switch-dark-mode-icon  {
   color: var(--icon-switch-dark-mode);
-}
-
-.youtube-container {
-  background-color: var(--light-youtube-container-background-color);
-  box-shadow: 0 0 100px 0 var(--light-youtube-container-shadow-color);
 }

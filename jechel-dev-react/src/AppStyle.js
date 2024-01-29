@@ -51,7 +51,7 @@ const appStyle = {
 
         // colours
         // unchecked (default)
-        '--Switch-trackBackground': '#FF9843', 
+        '--Switch-trackBackground': '#E8C872', 
         '--Switch-thumbBackground': '#3468C0',
         '&:hover': {
             '--Switch-trackBackground': '#3468C0',
@@ -60,9 +60,11 @@ const appStyle = {
 
         // checked
         [`&.${switchClasses.checked}`]: {
-            '--Switch-trackBackground': '#0A1D56',
+            '--Switch-trackBackground': '#DCF2F1',
+            '--Switch-thumbBackground': '#3468C0',
             '&:hover': {
-                '--Switch-trackBackground': '#83C0C1',
+                '--Switch-trackBackground': '#3468C0',
+                '--Switch-thumbBackground': '#86A7FC',
             },
         },
     },
