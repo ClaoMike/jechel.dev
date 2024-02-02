@@ -3,11 +3,11 @@ import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 
 import ExternalLink from '../common/ExternalLink';
-import EpisodeIcon from '../icons/EpisodeIcon';
 import PinPointIcon from '../icons/PinPointIcon'
 import TextIcon from '../icons/YouTubeDescriptionIcon';
 import YouTubeIcon from '../icons/YouTubeIcon';
 import YouTubeImage from '../common/YouTubeImage';
+import YouTubeTitle from '../common/YouTubeTitle';
 
 import appStyle from '../../AppStyle';
 
@@ -26,7 +26,7 @@ const YouTubeLatest = ({ link }) => {
           <YouTubeImage style={appStyle.imageContainerStyleLatest} imageUrl={imageUrl} altDescription={altDescription} />
           
           <Stack spacing={2} direction="column">
-            <h3><EpisodeIcon/> {title}</h3>
+            <YouTubeTitle title={title} />
             <p><PinPointIcon/> {location}</p>
             <p><TextIcon/> {description}</p>
             <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />

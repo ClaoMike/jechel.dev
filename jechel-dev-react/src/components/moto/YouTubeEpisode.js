@@ -1,4 +1,7 @@
 import YouTubeImage from '../common/YouTubeImage';
+import YouTubeTitle from '../common/YouTubeTitle';
+
+import { Stack } from '@mui/material';
 
 import Accordion from '@mui/joy/Accordion';
 import AccordionDetails from '@mui/joy/AccordionDetails';
@@ -11,7 +14,11 @@ const YouTubeEpisode = ({ videoInstance }) => {
     <Accordion>
 
       <AccordionSummary>
-        <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
+        <Stack spacing={2} direction="row">
+          <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
+          <YouTubeTitle title={videoInstance.title} />
+        </Stack>
+        
       </AccordionSummary>
       
       <AccordionDetails>
