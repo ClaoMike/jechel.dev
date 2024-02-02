@@ -1,12 +1,26 @@
 import { isMobile } from 'react-device-detect';
 import { switchClasses } from '@mui/joy';
 
+const HCenter = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+};
+
+const minimumMargin = {
+    marginLeft: '5vw',
+    marginRight: '5vw',
+};
+
 const appStyle = {
     horizontalCenterStyle: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
+        ...HCenter
+    },
+
+    youTubeEpisodes: {
+        ...HCenter,
+        ...minimumMargin
     },
 
     responsiveTitle: {
