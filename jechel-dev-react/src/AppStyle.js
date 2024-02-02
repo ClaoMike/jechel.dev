@@ -13,6 +13,12 @@ const minimumMargin = {
     marginRight: '5vw',
 };
 
+const imageContainerStyle = {
+    width: '100%', // Full width initially
+    margin: isMobile ? '0 auto' : '0', // Center the image horizontally on mobile
+    overflow: 'hidden', // Ensures the rounded corners are visible
+};
+
 const appStyle = {
     horizontalCenterStyle: {
         ...HCenter
@@ -41,11 +47,15 @@ const appStyle = {
         padding: '20px', // Add padding as needed
     },
     
-    imgContainerStyle: {
-        width: '100%', // Full width initially
+    imageContainerStyleLatest: {
+        ...imageContainerStyle,
         maxWidth: isMobile ? '80%' : '40%', // Adjusted width based on device
-        margin: isMobile ? '0 auto' : '0', // Center the image horizontally on mobile
+    },
+
+    imageContainerStyleYouTubeEpisode: {
+        width: '100%', // Full width initially
         overflow: 'hidden', // Ensures the rounded corners are visible
+        maxWidth: isMobile ? '20%' : '30%', // Adjusted width based on device
     },
     
     roundedImageStyle: {

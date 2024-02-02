@@ -7,6 +7,7 @@ import EpisodeIcon from '../icons/EpisodeIcon';
 import PinPointIcon from '../icons/PinPointIcon'
 import TextIcon from '../icons/YouTubeDescriptionIcon';
 import YouTubeIcon from '../icons/YouTubeIcon';
+import YouTubeImage from '../common/YouTubeImage';
 
 import appStyle from '../../AppStyle';
 
@@ -21,15 +22,16 @@ const YouTubeLatest = ({ link }) => {
   return (
     <>
         <Stack spacing={2} direction={isMobile ? 'column' : 'row'} className='youtube-container' style={appStyle.paperStyle}>
-          <div style={appStyle.imgContainerStyle}>
-            <img src={imageUrl} alt={altDescription} style={appStyle.roundedImageStyle} />
-          </div>
+          
+          <YouTubeImage style={appStyle.imageContainerStyleLatest} imageUrl={imageUrl} altDescription={altDescription} />
+          
           <Stack spacing={2} direction="column">
             <h3><EpisodeIcon/> {title}</h3>
             <p><PinPointIcon/> {location}</p>
             <p><TextIcon/> {description}</p>
             <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
           </Stack>
+        
         </Stack>
     </>
   );

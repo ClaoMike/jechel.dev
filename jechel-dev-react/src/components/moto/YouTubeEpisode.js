@@ -1,6 +1,9 @@
+import YouTubeImage from '../common/YouTubeImage';
+
 import Accordion from '@mui/joy/Accordion';
 import AccordionDetails from '@mui/joy/AccordionDetails';
 import AccordionSummary from '@mui/joy/AccordionSummary';
+
 import appStyle from '../../AppStyle';
 
 const YouTubeEpisode = ({ videoInstance }) => {
@@ -8,9 +11,7 @@ const YouTubeEpisode = ({ videoInstance }) => {
     <Accordion>
 
       <AccordionSummary>
-        <div style={appStyle.imgContainerStyle}>
-            <img src={videoInstance.imageUrl} alt={videoInstance.altDescription} style={appStyle.roundedImageStyle} />
-        </div>
+        <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
       </AccordionSummary>
       
       <AccordionDetails>
