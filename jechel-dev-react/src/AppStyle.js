@@ -65,34 +65,6 @@ const appStyle = {
     },
     //
 
-    // switch
-    switchConfiguration: {
-        // sizes
-        "--Switch-trackRadius": isMobile ? '20px' : "20px",
-        "--Switch-trackWidth": isMobile ? '59px' : "70px",
-        "--Switch-trackHeight": isMobile ? '20px' : "30px",
-        "--Switch-thumbSize": isMobile ? '24px' : "35px",
-
-        // colours
-        // unchecked (default)
-        '--Switch-trackBackground': '#E8C872', 
-        '--Switch-thumbBackground': '#3468C0',
-        '&:hover': {
-            '--Switch-trackBackground': '#3468C0',
-            '--Switch-thumbBackground': '#86A7FC',
-        },
-
-        // checked
-        [`&.${switchClasses.checked}`]: {
-            '--Switch-trackBackground': '#DCF2F1',
-            '--Switch-thumbBackground': '#3468C0',
-            '&:hover': {
-                '--Switch-trackBackground': '#3468C0',
-                '--Switch-thumbBackground': '#86A7FC',
-            },
-        },
-    },
-
     containerConfig: {
         marginBottom: isMobile ? '20px' : '30px'
     },
