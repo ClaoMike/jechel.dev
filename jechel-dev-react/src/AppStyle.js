@@ -80,6 +80,10 @@ const appStyle = {
         height: "100%",
     },
 
+    headerConfig: {
+        marginBottom: '3vh',
+    },
+
 };
 
 export default appStyle;
