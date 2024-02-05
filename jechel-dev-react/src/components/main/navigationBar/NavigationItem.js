@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const NavigationItem = ({ link, text, icon}) => {
   const location = useLocation();
-  const className = location.pathname === link ? 'navigation-item-border' : '';
+  const className = location.pathname === link ? 'navigation_item' : '';
 
   return (
     <>
