@@ -1,27 +1,59 @@
+:root {
+  --background: white;
+  --text-primary: black;
+  --text-secondary: royalblue;
+  --accent: purple;
+}
+
+[data-theme='dark'] {
+  --background: black;
+  --text-primary: white;
+  --text-secondary: grey;
+  --accent: darkred;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: var(--background);
+  color: var(--text-primary);
+
+  font-family: 'Courier New', monospace;
+  font-size: min(30px, 4vw);
+
+  height: 100vh;
+  overflow-y: auto;
+
+  transition: all .5s;
+}
+
 /* !!! FOR THE DARK/LIGHT SWITCH THUMB AND TRACK COLOURS, CHECK THE CSS IN AppStyle.js !!! */
 
 /* Colours */
-:root {
+/* :root { */
   /* LIGHT */
-  --light-background-color: #FFF3CF;
+  /* --light-background-color: #FFF3CF;
   --light-text-color: #000000;
   --light-link-color: #637A9F;
   --light-hover-color-hover: #4F6F52;
   --light-youtube-container-background-color: #2D3250;
   --light-youtube-container-shadow-color: #F6ECA9;
-  --light-navigation-item-border-colour: #4F6F52;
+  --light-navigation-item-border-colour: #4F6F52; */
 
   /* DARK */
-  --dark-background-color: #11235A;
+  /* --dark-background-color: #11235A;
   --dark-text-color: #DCF2F1;
   --dark-link-color: #F2F7A1;
   --dark-hover-color-hover: #088395;
   --dark-youtube-container-background-color: #365486;
   --dark-youtube-container-shadow-color: #E8C872;
-  --dark-navigation-item-border-colour: #F6B17A;
+  --dark-navigation-item-border-colour: #F6B17A; */
 
   /* ONE-WAY */
-  --icon-about-me: #3E3232;
+  /* --icon-about-me: #3E3232;
   --icon-episode: #765827;
   --icon-flame: #FF9800;
   --icon-moto: #820300;
@@ -31,23 +63,23 @@
 
   --icon-switch-light-mode: #FFB534;
   --icon-switch-dark-mode: #FFB534;
-}
+} */
 
 /* LIGHT THEME */
-body {
+/* body {
   background-color: var(--light-background-color);
   color: var(--primary-text-color);
   font-family: 'Courier New', monospace;
   font-size: min(30px, 4vw);
   margin: 0;
-}
+} */
 
-#root { /* body applies to root as root is a kid of body */
-  height: 100vh; /* Occupy 100% of viewport height */
-  overflow-y: auto; /* Allow vertical scrolling if content exceeds viewport height */
-}
+/* #root { body applies to root as root is a kid of body */
+  /* height: 100vh; Occupy 100% of viewport height */
+  /* overflow-y: auto; Allow vertical scrolling if content exceeds viewport height */
+/* } */
 
-a {
+/* a {
     text-decoration: none;
 }
 
@@ -75,10 +107,10 @@ a:hover, .light-theme a:hover {
 
 .subtitle-icon, .light-theme .subtitle-icon {
   color: var(--light-link-color); 
-}
+} */
 
 /* DARK THEME */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
 
   body {
     background-color: var(--dark-background-color);
@@ -119,9 +151,9 @@ a:hover, .light-theme a:hover {
 
 .dark-theme a:hover {
   color: var(--dark-hover-color-hover);
-}
+} */
 
-.dark-theme .navigation-item-border {
+/* .dark-theme .navigation-item-border {
   border-bottom: 2px solid var(--dark-navigation-item-border-colour);
 }
 
@@ -132,10 +164,10 @@ a:hover, .light-theme a:hover {
 
 .dark-theme .subtitle-icon{
   color: var(--dark-link-color); 
-}
+} */
 
 /* ONE WAY THEME */
-.about-me-icon {
+/* .about-me-icon {
   color: var(--icon-about-me); 
 }
 
@@ -169,4 +201,4 @@ a:hover, .light-theme a:hover {
 
 .switch-dark-mode-icon  {
   color: var(--icon-switch-dark-mode);
-}
+} */
