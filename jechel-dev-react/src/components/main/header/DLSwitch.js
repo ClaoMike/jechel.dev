@@ -7,6 +7,18 @@ import DarkModeIcon from '../../icons/DarkModeIcon';
 import LightModeIcon from '../../icons/LightModeIcon';
 
 const DLSwitch = ({theme, setTheme}) => {
+    const rootStyles = getComputedStyle(document.documentElement);
+    const borderSize = "0px 0px 1px 2px ";
+
+    const offColor        = rootStyles.getPropertyValue('--switch-offColor');
+    const offHandleColor  = rootStyles.getPropertyValue('--switch-offHandleColor');
+    const onColor         = rootStyles.getPropertyValue('--switch-onColor');
+    const onHandleColor   = rootStyles.getPropertyValue('--switch-onHandleColor');
+    const boxShadow       = borderSize.concat(rootStyles.getPropertyValue('--switch-boxShadow'));// always on, except when pressed
+    const activeBoxShadow = borderSize.concat(rootStyles.getPropertyValue('--switch-activeBoxShadow'));// on only when pressed
+    const checkedHandleIconColour = rootStyles.getPropertyValue('--switch-checkedHandleIcon');
+    const uncheckedHandleIconColour = rootStyles.getPropertyValue('--switch-uncheckedHandleIcon');
+
     const [checked, setChecked] = useState(false);
 
     useEffect(() => {
@@ -15,12 +27,6 @@ const DLSwitch = ({theme, setTheme}) => {
           setTheme(defaultDark ? 'dark' : 'light');
           setChecked(defaultDark);
         }
-
-         // save colours in index.css and use this to retrieve them
-        //  const rootStyles = getComputedStyle(document.documentElement);
-        //  const myColor = rootStyles.getPropertyValue('--icon-episode');
-        //  console.log(myColor);
-
       }, []);
 
       const switchTheme = () => {
@@ -29,7 +35,6 @@ const DLSwitch = ({theme, setTheme}) => {
         setTheme(newTheme);
         setChecked(!checked);
       };
-    
 
     return (
     <Switch
@@ -68,11 +73,11 @@ const DLSwitch = ({theme, setTheme}) => {
             }
 
             // design - colours
-            offColor="#E8C872"
-            offHandleColor="#3468C0"
+            offColor={offColor}
+            offHandleColor={offHandleColor}
 
-            onColor="#3468C0"
-            onHandleColor="#86A7FC"
+            onColor={onColor}
+            onHandleColor={onHandleColor}
 
             // design - sizes
             handleDiameter={isMobile ? 30 : 40}
@@ -80,8 +85,8 @@ const DLSwitch = ({theme, setTheme}) => {
             height={isMobile ? 12.5 : 25}
             width={isMobile ? 50 : 70}
 
-            boxShadow="0px 0px 1px 2px #B80000" // always on, except when pressed
-            activeBoxShadow="0px 0px 1px 2px #fffc35" // on only when pressed
+            boxShadow={boxShadow} // always on, except when pressed
+            activeBoxShadow={activeBoxShadow} // on only when pressed
         />
   )
 }

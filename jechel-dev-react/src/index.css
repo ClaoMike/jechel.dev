@@ -10,6 +10,7 @@
   --youtube-container-background: #2D3250;
   --youtube-container-shadow: #F6ECA9;
 
+  /* DEFINED ONLY ONCE */
   --icon-about-me: #3E3232;
   --icon-episode: #765827;
   --icon-flame: #FF9800;
@@ -17,6 +18,16 @@
   --icon-pinpoint: #B80000;
   --icon-youtube-description: #43766C;
   --icon-youtube: #B80000;
+
+  /* SWITCH COLOURS */
+  --switch-offColor: #E8C872;
+  --switch-offHandleColor: #3468C0;
+  --switch-onColor: #3468C0;
+  --switch-onHandleColor: #86A7FC;
+  --switch-boxShadow: #B80000;
+  --switch-activeBoxShadow: #fffc35;
+  --switch-checkedHandleIcon: orange;
+  --switch-uncheckedHandleIcon: orange;
 }
 
 [data-theme='dark'] {
