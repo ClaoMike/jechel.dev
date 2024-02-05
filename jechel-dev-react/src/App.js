@@ -7,7 +7,6 @@ import Moto from "./components/moto/Moto";
 import AboutMe from "./components/aboutMe/AboutMe";
 
 import useLocalStorage from 'use-local-storage';
-import DLSwitch from "./components/main/header/DLSwitch";
 
 function App() {
 
@@ -19,8 +18,6 @@ function App() {
       <div className="App" data-theme={theme}>
         <Header />
         <NavigationBar />
-
-        <DLSwitch />
 
         <Routes>
           <Route path='/' element={<Latest />} />
