@@ -19,7 +19,7 @@ const DLSwitch = ({theme, setTheme}) => {
     const activeBoxShadow = borderSize.concat(rootStyles.getPropertyValue('--switch-activeBoxShadow'));// on only when pressed
 
     const [checked, setChecked] = useState(false);
-
+    
     useEffect(() => {
         if (typeof window !== 'undefined') {
           const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;

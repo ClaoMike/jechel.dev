@@ -1,5 +1,4 @@
 import { isMobile } from 'react-device-detect';
-import { switchClasses } from '@mui/joy';
 
 const HCenter = {
     display: 'flex',
