@@ -1,4 +1,6 @@
 import Switch from "react-switch";
+import { isMobile } from 'react-device-detect';
+
 import useLocalStorage from 'use-local-storage';
 import { useState } from 'react';
 
@@ -16,6 +18,11 @@ const DLSwitch = () => {
         const newTheme = theme === 'light' ? 'dark' : 'light';
         setChecked(!checked);
         setTheme(newTheme);
+
+        // save colours in index.css and use this to retrieve them
+        const rootStyles = getComputedStyle(document.documentElement);
+        const myColor = rootStyles.getPropertyValue('--icon-episode');
+        console.log(myColor);
     };
     
     return (
@@ -62,10 +69,13 @@ const DLSwitch = () => {
             onHandleColor="#86A7FC"
 
             // design - sizes
-            handleDiameter={40}
+            handleDiameter={isMobile ? 30 : 40}
 
-            // height={40}
-            width={70}
+            height={isMobile ? 12.5 : 25}
+            width={isMobile ? 50 : 70}
+
+            boxShadow="0px 0px 1px 2px #B80000" // always on, except when pressed
+            activeBoxShadow="0px 0px 1px 2px #fffc35" // on only when pressed
         />
     );
 }
