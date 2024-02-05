@@ -74,6 +74,13 @@ const appStyle = {
         marginTop: '-5px',
     },
 
+    switchIconConfig: {
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        height: "100%",
+    },
+
 };
 
 export default appStyle;

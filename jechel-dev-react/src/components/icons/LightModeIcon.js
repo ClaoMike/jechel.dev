@@ -2,7 +2,7 @@ import WbSunnyRoundedIcon from '@mui/icons-material/WbSunnyRounded';
 
 const LightModeIcon = () => {
   return (
-    <WbSunnyRoundedIcon className='switch-light-mode-icon' />
+    <WbSunnyRoundedIcon className='dlswitch-icon' />
   );
 };
 

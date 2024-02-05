@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 
 import DarkModeIcon from '../../icons/DarkModeIcon';
 import LightModeIcon from '../../icons/LightModeIcon';
+import appStyle from "../../../AppStyle";
 
 const DLSwitch = ({theme, setTheme}) => {
     const rootStyles = getComputedStyle(document.documentElement);
@@ -16,8 +17,6 @@ const DLSwitch = ({theme, setTheme}) => {
     const onHandleColor   = rootStyles.getPropertyValue('--switch-onHandleColor');
     const boxShadow       = borderSize.concat(rootStyles.getPropertyValue('--switch-boxShadow'));// always on, except when pressed
     const activeBoxShadow = borderSize.concat(rootStyles.getPropertyValue('--switch-activeBoxShadow'));// on only when pressed
-    const checkedHandleIconColour = rootStyles.getPropertyValue('--switch-checkedHandleIcon');
-    const uncheckedHandleIconColour = rootStyles.getPropertyValue('--switch-uncheckedHandleIcon');
 
     const [checked, setChecked] = useState(false);
 
@@ -47,27 +46,13 @@ const DLSwitch = ({theme, setTheme}) => {
             checkedIcon={false}
 
             uncheckedHandleIcon={
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        height: "100%",
-                        color: "orange",
-                    }}>
+                <div style={appStyle.switchIconConfig}>
                     <DarkModeIcon/>
                 </div>
             }
 
             checkedHandleIcon={
-                <div
-                    style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        alignItems: "center",
-                        height: "100%",
-                        color: "orange",
-                    }}>
+                <div style={appStyle.switchIconConfig}>
                     <LightModeIcon/>
                 </div>
             }
