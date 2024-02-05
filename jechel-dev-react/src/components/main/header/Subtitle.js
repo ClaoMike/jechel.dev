@@ -12,7 +12,7 @@ const Subtitle = () => {
         <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">            
           <SubtitleIcon/>
           <p>Software Engineer</p>
-          <DLSwitch />
+          {/* <DLSwitch /> */}
         </Stack>
       </Box>
     </Container>

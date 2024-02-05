@@ -7,29 +7,14 @@ import { useState } from 'react';
 import DarkModeIcon from '../../icons/DarkModeIcon';
 import LightModeIcon from '../../icons/LightModeIcon';
 
-const DLSwitch = ({}) => {
-    
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light' )
-    const [checked, setChecked] = useState(false);
-    
-    const switchTheme = ()  => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setChecked(!checked);
-        setTheme(newTheme);
+const NewDLSwitch = () => {
 
-        // save colours in index.css and use this to retrieve them
-        const rootStyles = getComputedStyle(document.documentElement);
-        const myColor = rootStyles.getPropertyValue('--icon-episode');
-        console.log(myColor);
-    };
-    
+
     return (
-        <Switch
+    <Switch
             // functionality 
-            onChange={switchTheme} 
-            checked={checked} 
+            // onChange={switchTheme} 
+            // checked={checked} 
 
             // icons
             uncheckedIcon={false}
@@ -77,7 +62,7 @@ const DLSwitch = ({}) => {
             boxShadow="0px 0px 1px 2px #B80000" // always on, except when pressed
             activeBoxShadow="0px 0px 1px 2px #fffc35" // on only when pressed
         />
-    );
+  )
 }
 
-export default DLSwitch;
+export default NewDLSwitch
