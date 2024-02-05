@@ -1,11 +1,11 @@
 import Title from './Title';
 import Subtitle from './Subtitle';
 
-const Header = () => {
+const Header = ({theme, setTheme}) => {
   return (
     <div>
         <Title />
-        <Subtitle />
+        <Subtitle theme={theme} setTheme={setTheme} />
     </div>
   );
 };

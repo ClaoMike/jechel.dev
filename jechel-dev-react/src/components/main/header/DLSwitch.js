@@ -1,32 +1,38 @@
 import Switch from "react-switch";
 import { isMobile } from 'react-device-detect';
 
-import useLocalStorage from 'use-local-storage';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import DarkModeIcon from '../../icons/DarkModeIcon';
 import LightModeIcon from '../../icons/LightModeIcon';
 
-const DLSwitch = ({}) => {
-    
-    const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light' )
+const DLSwitch = ({theme, setTheme}) => {
     const [checked, setChecked] = useState(false);
-    
-    const switchTheme = ()  => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setChecked(!checked);
-        setTheme(newTheme);
 
-        // save colours in index.css and use this to retrieve them
-        const rootStyles = getComputedStyle(document.documentElement);
-        const myColor = rootStyles.getPropertyValue('--icon-episode');
-        console.log(myColor);
-    };
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+          const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          setTheme(defaultDark ? 'dark' : 'light');
+          setChecked(defaultDark);
+        }
+
+         // save colours in index.css and use this to retrieve them
+        //  const rootStyles = getComputedStyle(document.documentElement);
+        //  const myColor = rootStyles.getPropertyValue('--icon-episode');
+        //  console.log(myColor);
+
+      }, []);
+
+      const switchTheme = () => {
+        const newTheme = theme === 'light' ? 'dark' : 'light';
+        window.localStorage.setItem('theme', newTheme);
+        setTheme(newTheme);
+        setChecked(!checked);
+      };
     
+
     return (
-        <Switch
+    <Switch
             // functionality 
             onChange={switchTheme} 
             checked={checked} 
@@ -77,7 +83,7 @@ const DLSwitch = ({}) => {
             boxShadow="0px 0px 1px 2px #B80000" // always on, except when pressed
             activeBoxShadow="0px 0px 1px 2px #fffc35" // on only when pressed
         />
-    );
+  )
 }
 
-export default DLSwitch;
+export default DLSwitch
