@@ -2,12 +2,11 @@ import PropTypes from 'prop-types';
 import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 
-import ExternalLink from '../common/ExternalLink';
-import YouTubeIcon from '../icons/YouTubeIcon';
 import YouTubeImage from '../common/YouTubeImage';
 import YouTubeTitle from '../common/YouTubeTitle';
 import YouTubeLocation from '../common/YouTubeLocation';
 import YouTubeDescription from '../common/YouTubeDescription';
+import YouTubeRedirectLink from '../common/YouTubeRedirectLink';
 
 import appStyle from '../../AppStyle';
 
@@ -29,7 +28,7 @@ const YouTubeLatest = ({ link }) => {
             <YouTubeTitle title={title} />
             <YouTubeLocation location={location}/>
             <YouTubeDescription description={description}/>
-            <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
+            <YouTubeRedirectLink link={youTubeLink}/>
           </Stack>
         
         </Stack>

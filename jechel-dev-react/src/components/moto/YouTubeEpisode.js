@@ -2,6 +2,7 @@ import YouTubeImage from '../common/YouTubeImage';
 import YouTubeTitle from '../common/YouTubeTitle';
 import YouTubeLocation from '../common/YouTubeLocation';
 import YouTubeDescription from '../common/YouTubeDescription';
+import YouTubeRedirectLink from '../common/YouTubeRedirectLink';
 
 import { Stack } from '@mui/material';
 
@@ -27,6 +28,7 @@ const YouTubeEpisode = ({ videoInstance }) => {
         <Stack spacing={2} direction="column">
           <YouTubeLocation location={videoInstance.location}/>
           <YouTubeDescription description={videoInstance.description}/>
+          <YouTubeRedirectLink link={videoInstance.youTubeLink}/>
         </Stack>
       </AccordionDetails>
     
