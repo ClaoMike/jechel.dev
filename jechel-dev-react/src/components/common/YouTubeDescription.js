@@ -2,7 +2,7 @@ import TextIcon from '../icons/YouTubeDescriptionIcon';
 
 const YouTubeDescription = ({description}) => {
   return (
-    <p><TextIcon/> {description}</p>
+    <p className='episode-text-font episode-text-colour'><TextIcon/> {description}</p>
   )
 }
 

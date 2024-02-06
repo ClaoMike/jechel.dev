@@ -63,6 +63,17 @@ body {
   transition: all .5s;
 }
 
+/* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
+.episode-text-font {
+  font-family: 'Courier New', monospace;
+  font-size: min(30px, 4vw);
+}
+
+.episode-text-colour {
+  color: var(--text-primary);
+}
+/* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually --- END */
+
 a {
     text-decoration: none;
     color: var(--link);

@@ -4,7 +4,8 @@ const ExternalLink = ({link, text, icon}) => {
   return (
     <>
         <a 
-          href={link} 
+          href={link}
+          className='episode-text-font'
           target="_blank" 
           rel="noopener noreferrer" 
           >{text} {icon}
