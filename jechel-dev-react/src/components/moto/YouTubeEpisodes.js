@@ -10,7 +10,7 @@ const YouTubeEpisodes = ({ videoInstances }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <AccordionGroup sx={ appStyle.youTubeEpisodes }>
+    <AccordionGroup sx={ appStyle.youTubeEpisodes } transition="0.2s ease" >
         {videoInstances.map( (videoInstance) => (
             <YouTubeEpisode key={videoInstance.ID} videoInstance={videoInstance} index={index} setIndex={setIndex} />
         ))}
