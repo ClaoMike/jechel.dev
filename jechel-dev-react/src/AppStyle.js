@@ -7,6 +7,10 @@ const HCenter = {
     justifyContent: 'center',
 };
 
+const Transition = {
+    transition: 'all .5s',
+};
+
 const minimumMargin = {
     marginLeft: '5vw',
     marginRight: '5vw',
@@ -33,14 +37,24 @@ const appStyle = {
         marginBottom: '20px'
     },
 
-    navigationContainer: {
-        marginBottom: isMobile ? '20px' : '50px',
+    navigationBox: {
+        ...Transition,
+        width: '100%',
+        height: isMobile ? '20px' : '50px',
+    },
+
+    navigationStack: {
+        ...HCenter,
+        ...Transition,
         position: 'sticky',
         top: '0',
-        transition: 'all .5s',
-        paddingBottom: isMobile ? '20px' : '50px',
-        paddingTop: isMobile ? '20px' : '50px',
         zIndex: '1000',
+    },
+
+    nav: {
+        ...HCenter,
+        ...Transition,
+        width: '100%',
     },
   
     // youtube

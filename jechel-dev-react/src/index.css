@@ -117,8 +117,11 @@ a:hover{
   color: var(--dlswitch-icon);
 }
 
-.sticky-component {
+.navigation-bar-background {
   background-color: var(--background);
-  /* // TODO */
-  /* background: linear-gradient(to bottom, var(--background), rgba(255, 255, 255, 0) 95%); */ 
+}
+
+.navigation-bar-bottom-background {
+  background-color: var(--background);
+  background: linear-gradient(to bottom, var(--background), rgba(255, 255, 255, 0)); 
 }
