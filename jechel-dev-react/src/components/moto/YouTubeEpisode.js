@@ -12,9 +12,14 @@ import AccordionSummary from '@mui/joy/AccordionSummary';
 
 import appStyle from '../../AppStyle';
 
-const YouTubeEpisode = ({ videoInstance }) => {
+const YouTubeEpisode = ({ videoInstance, index, setIndex }) => {
   return (
-    <Accordion>
+    <Accordion
+      expanded={index === videoInstance.ID}
+      onChange={(event, expanded) => {
+        setIndex(expanded ? videoInstance.ID : null);
+      }}
+    >
 
       <AccordionSummary>
         <Stack spacing={2} direction="row">
