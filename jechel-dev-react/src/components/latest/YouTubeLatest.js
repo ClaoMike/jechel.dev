@@ -3,11 +3,11 @@ import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 
 import ExternalLink from '../common/ExternalLink';
-import TextIcon from '../icons/YouTubeDescriptionIcon';
 import YouTubeIcon from '../icons/YouTubeIcon';
 import YouTubeImage from '../common/YouTubeImage';
 import YouTubeTitle from '../common/YouTubeTitle';
 import YouTubeLocation from '../common/YouTubeLocation';
+import YouTubeDescription from '../common/YouTubeDescription';
 
 import appStyle from '../../AppStyle';
 
@@ -28,7 +28,7 @@ const YouTubeLatest = ({ link }) => {
           <Stack spacing={2} direction="column">
             <YouTubeTitle title={title} />
             <YouTubeLocation location={location}/>
-            <p><TextIcon/> {description}</p>
+            <YouTubeDescription description={description}/>
             <ExternalLink link={youTubeLink} text={'Watch it on YouTube'} icon={<YouTubeIcon/>} />
           </Stack>
         
