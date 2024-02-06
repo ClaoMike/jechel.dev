@@ -116,3 +116,9 @@ a:hover{
 .dlswitch-icon {
   color: var(--dlswitch-icon);
 }
+
+.sticky-component {
+  background-color: var(--background);
+  /* // TODO */
+  /* background: linear-gradient(to bottom, var(--background), rgba(255, 255, 255, 0) 95%); */ 
+}

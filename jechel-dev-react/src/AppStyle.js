@@ -34,7 +34,12 @@ const appStyle = {
     },
 
     navigationContainer: {
-        marginBottom: isMobile ? '20px' : '50px'
+        marginBottom: isMobile ? '20px' : '50px',
+        position: 'sticky',
+        top: '0',
+        transition: 'all .5s',
+        paddingBottom: isMobile ? '20px' : '50px',
+        paddingTop: isMobile ? '20px' : '50px',
     },
   
     // youtube

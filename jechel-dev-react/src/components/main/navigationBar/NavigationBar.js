@@ -10,8 +10,9 @@ import NavigationItem from './NavigationItem';
 import appStyle from '../../../AppStyle';
 
 const NavigationBar = () => {
+
   return (
-    <Container sx={appStyle.navigationContainer}>
+    <Container sx={appStyle.navigationContainer} className={'sticky-component'} maxWidth={false} >
       <Box sx={appStyle.horizontalCenterStyle}>
         <nav>
 
