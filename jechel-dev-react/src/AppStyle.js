@@ -40,6 +40,7 @@ const appStyle = {
         transition: 'all .5s',
         paddingBottom: isMobile ? '20px' : '50px',
         paddingTop: isMobile ? '20px' : '50px',
+        zIndex: '1000',
     },
   
     // youtube
