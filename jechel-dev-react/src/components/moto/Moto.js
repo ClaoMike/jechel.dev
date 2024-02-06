@@ -1,6 +1,8 @@
 import ExternalLink from "../common/ExternalLink";
 import YouTubeEpisodes from "./YouTubeEpisodes";
 import YouTubeVideo from "../common/YouTubeVideo";
+import YouTubeIcon from '../icons/YouTubeIcon';
+
 import appStyle from "../../AppStyle";
 
 const Moto = () => {
@@ -85,7 +87,7 @@ const Moto = () => {
   return (
     <>
       <div style={appStyle.youTubeEpisodes}>
-        <p >Watch me riding my motorcycle through Europe on <ExternalLink link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' /></p>
+        <p >Watch me riding my motorcycle through Europe on <ExternalLink link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' icon={<YouTubeIcon/>}/></p>
       </div>
       <YouTubeEpisodes videoInstances={videoInstances}/>
     </>
