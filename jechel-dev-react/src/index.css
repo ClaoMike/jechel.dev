@@ -78,7 +78,7 @@ a:hover{
 
 .youtube-container {
   background-color: var(--youtube-container-background);
-  box-shadow: 0 0 100px 0 var(--youtube-container-shadow);
+  box-shadow: 0 0 20px 0 var(--youtube-container-shadow);
 }
 
 .subtitle-icon {
