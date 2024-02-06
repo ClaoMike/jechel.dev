@@ -1,5 +1,6 @@
 import YouTubeImage from '../common/YouTubeImage';
 import YouTubeTitle from '../common/YouTubeTitle';
+import YouTubeLocation from '../common/YouTubeLocation';
 
 import { Stack } from '@mui/material';
 
@@ -22,8 +23,9 @@ const YouTubeEpisode = ({ videoInstance }) => {
       </AccordionSummary>
       
       <AccordionDetails>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        <Stack spacing={2} direction="row">
+          <YouTubeLocation location={videoInstance.location}/>
+        </Stack>
       </AccordionDetails>
     
     </Accordion>
