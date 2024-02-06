@@ -26,7 +26,7 @@ const DLSwitch = ({theme, setTheme}) => {
           setTheme(defaultDark ? 'dark' : 'light');
           setChecked(defaultDark);
         }
-      }, []);
+      }, [setTheme]);
 
       const switchTheme = () => {
         const newTheme = theme === 'light' ? 'dark' : 'light';
