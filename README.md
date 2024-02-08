@@ -14,6 +14,10 @@
 ***
 
 ## Commands
+- Install rimraf (REQUIRED for generating the production build)
+```console
+npm install rimraf --save-dev
+```
 - Install all nodes
 ```console
 npm install
