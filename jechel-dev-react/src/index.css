@@ -10,6 +10,11 @@
   --dark-2: #6DA4AA;
   --dark-3: #647D87;
   --dark-4: #F6D776;
+
+  /* DEFINED ONLY ONCE */
+  --astral-entity: #FFC436;
+  --sky-light: #89CFF3;
+  --sky-dark: #0C356A;
 }
 
 :root {
@@ -20,12 +25,7 @@
   --link-hover: var(--light-3);
 
   --navigation-item-border: var(--light-3);
-
   --youtube-container-background: var(--light-4);
-  --youtube-container-shadow: #F6ECA9;
-
-  --dlswitch-icon: orange;
-
   --container-border: var(--light-2);
 
   /* DEFINED ONLY ONCE */
@@ -38,12 +38,13 @@
   --icon-youtube: #B80000;
 
   /* SWITCH COLOURS */
-  --switch-offColor: #E8C872;
-  --switch-offHandleColor: #3468C0;
-  --switch-onColor: #3468C0;
-  --switch-onHandleColor: #86A7FC;
-  --switch-boxShadow: #B80000;
-  --switch-activeBoxShadow: #fffc35;
+  --switch-offColor: var(--sky-light);
+  --switch-offHandleColor: var(--sky-light);
+  --switch-onColor: var(--sky-dark);
+  --switch-onHandleColor: var(--sky-dark);
+  --switch-boxShadow: var(--light-3);
+  --switch-activeBoxShadow: var(--astral-entity);
+  --dlswitch-icon: var(--astral-entity);
 }
 
 [data-theme='dark'] {
@@ -56,9 +57,6 @@
   --navigation-item-border: #F6B17A;
 
   --youtube-container-background: #365486;
-  --youtube-container-shadow: #E8C872;
-
-  --dlswitch-icon: red;
 
   --container-border: #E8C872;
 }
