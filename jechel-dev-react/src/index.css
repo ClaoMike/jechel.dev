@@ -6,20 +6,22 @@
   --light-4: #F6D776;
 
   /* dark palette */
-  --dark-1: #FAEF9B;
-  --dark-2: #6DA4AA;
-  --dark-3: #647D87;
-  --dark-4: #F6D776;
+  --dark-1: #000000;
+  --dark-2: #005B41;
+  --dark-3: #232D3F;
+  --dark-4: #5C8374;
 
   /* DEFINED ONLY ONCE */
   --astral-entity: #FFC436;
   --sky-light: #89CFF3;
   --sky-dark: #0C356A;
+  --white: #DCF2F1;
+  --black: #000000;
 }
 
 :root {
   --background: var(--light-1);
-  --text-primary: #000000;
+  --text-primary: var(--black);
 
   --link: var(--light-2);
   --link-hover: var(--light-3);
@@ -48,17 +50,15 @@
 }
 
 [data-theme='dark'] {
-  --background: #11235A;
-  --text-primary: #DCF2F1;
+  --background: var(--dark-1);
+  --text-primary: var(--white);
 
-  --link: #F2F7A1;
-  --link-hover: #088395;
+  --link: var(--dark-2);
+  --link-hover: var(--dark-3);
 
-  --navigation-item-border: #F6B17A;
-
-  --youtube-container-background: #365486;
-
-  --container-border: #E8C872;
+  --navigation-item-border: var(--dark-3);
+  --youtube-container-background: var(--dark-4);
+  --container-border: var(--dark-2);
 }
 
 body {
@@ -104,7 +104,6 @@ a:hover{
 }
 
 .youtube-container {
-  background-color: var(--youtube-container-background);
   border: 2px solid var(--container-border);
 }
 
@@ -159,7 +158,6 @@ a:hover{
   border: 2px solid var(--container-border);
   border-radius: 10px;
   padding: 10px;
-  background-color: var(--youtube-container-background);
 }
 
 .accordion__panel {
