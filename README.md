@@ -14,6 +14,10 @@
 ***
 
 ## Commands
+- Install all nodes
+```console
+npm install
+```
 - Start development server
 ```console
 npm start
