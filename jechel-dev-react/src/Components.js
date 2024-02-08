@@ -45,8 +45,6 @@ import NavigationItem from "components/main/navigationBar/NavigationItem";
 
 // moto
 import Moto from "components/moto/Moto";
-import YouTubeEpisode from "components/moto/YouTubeEpisode";
-import YouTubeEpisodes from "components/moto/YouTubeEpisodes";
 
 export {
     // common 
@@ -96,6 +94,4 @@ export {
 
     // moto
     Moto,
-    YouTubeEpisode,
-    YouTubeEpisodes,
 }
