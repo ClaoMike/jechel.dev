@@ -1,4 +1,4 @@
-import PinPointIcon from "../icons/PinPointIcon";
+import { PinPointIcon } from "Components";
 
 const YouTubeLocation = ({location}) => {
   return (

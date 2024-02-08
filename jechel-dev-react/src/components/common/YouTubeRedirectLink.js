@@ -1,5 +1,4 @@
-import { ExternalLink } from "Components";
-import YouTubeIcon from '../icons/YouTubeIcon';
+import { ExternalLink, YouTubeIcon } from "Components";
 
 const YouTubeRedirectLink = ({link}) => {
   return (

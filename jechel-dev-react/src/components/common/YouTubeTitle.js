@@ -1,4 +1,4 @@
-import EpisodeIcon from '../icons/EpisodeIcon';
+import { EpisodeIcon } from "Components";
 
 const YouTubeTitle = ({ title }) => {
   return (

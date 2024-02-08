@@ -10,6 +10,18 @@ import WorkExperience from "components/aboutMe/WorkExperience";
 import Skills from "components/aboutMe/Skills";
 import AboutMeHeader from "components/aboutMe/AboutMeHeader";
 
+// icons
+import AboutMeIcon from "components/icons/AboutMeIcon";
+import DarkModeIcon from "components/icons/DarkModeIcon";
+import EpisodeIcon from "components/icons/EpisodeIcon";
+import FlameIcon from "components/icons/FlameIcon";
+import LightModeIcon from "components/icons/LightModeIcon";
+import MotoIcon from "components/icons/MotoIcon";
+import PinPointIcon from "components/icons/PinPointIcon";
+import SubtitleIcon from "components/icons/SubtitleIcon";
+import YouTubeDescriptionIcon from "components/icons/YouTubeDescriptionIcon";
+import YouTubeIcon from "components/icons/YouTubeIcon";
+
 export {
     ExternalLink,
     AcademicPapers,
@@ -19,4 +31,14 @@ export {
     WorkExperience,
     Skills,
     AboutMeHeader,
+    AboutMeIcon,
+    DarkModeIcon,
+    EpisodeIcon,
+    FlameIcon,
+    LightModeIcon,
+    MotoIcon,
+    PinPointIcon,
+    SubtitleIcon,
+    YouTubeDescriptionIcon,
+    YouTubeIcon,
 }

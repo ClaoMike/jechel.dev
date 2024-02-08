@@ -1,11 +1,7 @@
-import { Box } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 
-import { Stack } from '@mui/material';
-
-import FlameIcon from '../../icons/FlameIcon';
-import MotoIcon from '../../icons/MotoIcon';
-import AboutMeIcon from '../../icons/AboutMeIcon';
 import NavigationItem from './NavigationItem';
+import { FlameIcon, MotoIcon, AboutMeIcon } from 'Components';
 
 import appStyle from '../../../AppStyle';
 

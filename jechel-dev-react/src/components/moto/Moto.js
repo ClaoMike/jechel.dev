@@ -1,7 +1,8 @@
 import { ExternalLink } from "Components";
 import YouTubeEpisodes from "./YouTubeEpisodes";
 import YouTubeVideo from "../common/YouTubeVideo";
-import YouTubeIcon from '../icons/YouTubeIcon';
+
+import { YouTubeIcon } from "Components";
 
 import appStyle from "../../AppStyle";
 
