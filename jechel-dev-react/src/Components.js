@@ -1,5 +1,11 @@
 // common
 import ExternalLink from "components/common/ExternalLink";
+import YouTubeDescription from "components/common/YouTubeDescription";
+import YouTubeImage from "components/common/YouTubeImage";
+import YouTubeLocation from "components/common/YouTubeLocation";
+import YouTubeRedirectLink from "components/common/YouTubeRedirectLink";
+import YouTubeTitle from "components/common/YouTubeTitle";
+import YouTubeVideo from "components/common/YouTubeVideo";
 
 // About Me
 import AcademicPapers from "components/aboutMe/AcademicPapers";
@@ -22,8 +28,36 @@ import SubtitleIcon from "components/icons/SubtitleIcon";
 import YouTubeDescriptionIcon from "components/icons/YouTubeDescriptionIcon";
 import YouTubeIcon from "components/icons/YouTubeIcon";
 
+// latest
+import Latest from "components/latest/Latest";
+import YouTubeLatest from "components/latest/YouTubeLatest";
+
+// main - header
+import DLSwitch from "components/main/header/DLSwitch";
+import Header from "components/main/header/Header";
+import Subtitle from "components/main/header/Subtitle";
+import Title from "components/main/header/Title";
+
+// main - navigationBar
+import NavigationBar from "components/main/navigationBar/NavigationBar";
+import NavigationItem from "components/main/navigationBar/NavigationItem";
+
+// moto
+import Moto from "components/moto/Moto";
+import YouTubeEpisode from "components/moto/YouTubeEpisode";
+import YouTubeEpisodes from "components/moto/YouTubeEpisodes";
+
 export {
+    // common 
     ExternalLink,
+    YouTubeDescription,
+    YouTubeImage,
+    YouTubeLocation,
+    YouTubeRedirectLink,
+    YouTubeTitle,
+    YouTubeVideo,
+
+    // aboutMe
     AcademicPapers,
     Qualifications,
     Projects,
@@ -31,6 +65,8 @@ export {
     WorkExperience,
     Skills,
     AboutMeHeader,
+
+    //icons
     AboutMeIcon,
     DarkModeIcon,
     EpisodeIcon,
@@ -41,4 +77,23 @@ export {
     SubtitleIcon,
     YouTubeDescriptionIcon,
     YouTubeIcon,
+
+    // latest
+    Latest,
+    YouTubeLatest,
+
+    // main - header
+    DLSwitch,
+    Header,
+    Subtitle,
+    Title,
+
+    // main - navigationBar
+    NavigationBar,
+    NavigationItem,
+
+    // moto
+    Moto,
+    YouTubeEpisode,
+    YouTubeEpisodes,
 }
