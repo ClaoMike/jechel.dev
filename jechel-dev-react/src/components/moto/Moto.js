@@ -1,5 +1,17 @@
 import { ExternalLink, YouTubeEpisodes, YouTubeVideo, YouTubeIcon } from "Components";
 import appStyle from "AppStyle";
+// import 'react-accessible-accordion/dist/fancy-example.css';
+
+import {
+  Accordion,
+  AccordionItem,
+  AccordionItemHeading,
+  AccordionItemButton,
+  AccordionItemPanel,
+} from 'react-accessible-accordion';
+
+import { Stack } from '@mui/material';
+import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription } from 'Components';
 
 const Moto = () => {
 
@@ -79,13 +91,39 @@ const Moto = () => {
   videoInstances.push(videoInstance_3);
   videoInstances.push(videoInstance_2);
   videoInstances.push(videoInstance_1);
-
+  
   return (
     <>
       <div style={appStyle.youTubeEpisodes}>
         <p >Watch me riding my motorcycle through Europe on <ExternalLink link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' icon={<YouTubeIcon/>}/></p>
       </div>
-      <YouTubeEpisodes videoInstances={videoInstances}/>
+      
+      <Accordion allowZeroExpanded>
+        {videoInstances.map((videoInstance) => (
+    
+          <AccordionItem key={videoInstance.ID}>
+        
+            <AccordionItemHeading>
+              <AccordionItemButton>
+                <Stack spacing={2} direction="row">
+                  <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
+                  <YouTubeTitle title={videoInstance.title} />
+                </Stack>
+              </AccordionItemButton>
+            </AccordionItemHeading>
+            
+            <AccordionItemPanel>
+              <Stack spacing={2} direction="column">
+                <YouTubeLocation location={videoInstance.location}/>
+                <YouTubeDescription description={videoInstance.description}/>
+                <YouTubeRedirectLink link={videoInstance.youTubeLink}/>
+              </Stack>
+            </AccordionItemPanel>
+      
+          </AccordionItem>
+        ))}
+      </Accordion>
+
     </>
   );
 };
