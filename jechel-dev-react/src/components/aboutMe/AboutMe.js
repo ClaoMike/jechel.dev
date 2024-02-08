@@ -1,4 +1,3 @@
-// import AcademicPapers from "./AcademicPapers";
 import AcademicPapers from "./AcademicPapers";
 import Qualifications from "./Qualifications";
 import Projects from "./Projects";

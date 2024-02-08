@@ -1,4 +1,4 @@
-import ExternalLink from "../common/ExternalLink";
+import { ExternalLink } from "Components";
 
 const AcademicPapers = () => {
   return (
