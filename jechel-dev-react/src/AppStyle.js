@@ -104,6 +104,14 @@ const appStyle = {
         marginBottom: '3vh',
     },
 
+    accordion: {
+        ...HCenter,
+    },
+
+    accordionItem: {
+        width: '90%',
+        maxWidth: '1000px',
+    },
 };
 
 export default appStyle;

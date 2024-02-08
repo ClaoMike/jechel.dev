@@ -1,6 +1,5 @@
 import { ExternalLink, YouTubeEpisodes, YouTubeVideo, YouTubeIcon } from "Components";
 import appStyle from "AppStyle";
-// import 'react-accessible-accordion/dist/fancy-example.css';
 
 import {
   Accordion,
@@ -98,10 +97,10 @@ const Moto = () => {
         <p >Watch me riding my motorcycle through Europe on <ExternalLink link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' icon={<YouTubeIcon/>}/></p>
       </div>
       
-      <Accordion allowZeroExpanded>
+      <Accordion allowZeroExpanded style={appStyle.accordion}>
         {videoInstances.map((videoInstance) => (
     
-          <AccordionItem key={videoInstance.ID}>
+          <AccordionItem key={videoInstance.ID} style={appStyle.accordionItem}>
         
             <AccordionItemHeading>
               <AccordionItemButton>

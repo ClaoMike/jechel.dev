@@ -136,3 +136,22 @@ a:hover{
   background-color: var(--background);
   background: linear-gradient(to bottom, var(--background), rgba(255, 255, 255, 0)); 
 }
+
+/*  */
+
+.accordion__button {
+  border: 10px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.accordion__panel {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  padding: 10px;
+}
+
+.accordion {
+  display: flex; /* or display: grid; */
+  gap: 10px;
+}
