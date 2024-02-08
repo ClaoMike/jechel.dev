@@ -1,9 +1,4 @@
-import YouTubeImage from '../common/YouTubeImage';
-import YouTubeTitle from '../common/YouTubeTitle';
-import YouTubeLocation from '../common/YouTubeLocation';
-import YouTubeDescription from '../common/YouTubeDescription';
-import YouTubeRedirectLink from '../common/YouTubeRedirectLink';
-
+import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription } from 'Components';
 import { Stack } from '@mui/material';
 
 import Accordion from '@mui/joy/Accordion';

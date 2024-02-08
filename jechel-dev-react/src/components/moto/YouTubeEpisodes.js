@@ -1,4 +1,4 @@
-import YouTubeEpisode from "./YouTubeEpisode";
+import { YouTubeEpisode } from "Components";
 
 import AccordionGroup from '@mui/joy/AccordionGroup';
 

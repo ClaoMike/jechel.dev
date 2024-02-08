@@ -8,6 +8,7 @@ import YouTubeTitle from "components/common/YouTubeTitle";
 import YouTubeVideo from "components/common/YouTubeVideo";
 
 // About Me
+import AboutMe from "components/aboutMe/AboutMe";
 import AcademicPapers from "components/aboutMe/AcademicPapers";
 import Qualifications from "components/aboutMe/Qualifications";
 import Projects from "components/aboutMe/Projects";
@@ -58,6 +59,7 @@ export {
     YouTubeVideo,
 
     // aboutMe
+    AboutMe,
     AcademicPapers,
     Qualifications,
     Projects,

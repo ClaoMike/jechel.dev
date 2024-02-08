@@ -1,7 +1,5 @@
 import { Box, Stack } from '@mui/material';
-
-import NavigationItem from './NavigationItem';
-import { FlameIcon, MotoIcon, AboutMeIcon } from 'Components';
+import { FlameIcon, MotoIcon, AboutMeIcon, NavigationItem } from 'Components';
 
 import appStyle from '../../../AppStyle';
 

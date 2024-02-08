@@ -1,9 +1,9 @@
-import YouTubeVideo from "./YouTubeLatest";
+import { YouTubeLatest } from "Components";
 
 const Latest = () => {
   return (
     <>
-        <YouTubeVideo link='https://www.youtube.com/embed/i6CfPYxzAFM?si=QgQfUI5fVQCtJXEK' />
+        <YouTubeLatest link='https://www.youtube.com/embed/i6CfPYxzAFM?si=QgQfUI5fVQCtJXEK' />
     </>
   );
 };

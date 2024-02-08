@@ -1,6 +1,5 @@
 import { Container, Box, Stack } from '@mui/material';
-import { SubtitleIcon } from 'Components';
-import DLSwitch from "./DLSwitch";
+import { SubtitleIcon, DLSwitch } from 'Components';
 
 import appStyle from '../../../AppStyle';
 
