@@ -35,7 +35,7 @@ npm run build
 - Style everything -> Decide on some external library (such as ```Material-UI```)
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
-    - When obtaining the production build, auto-copy it to the ```docs``` folder
+    - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
 - Build server
 - Host server on cloud
 - Integrate the YouTube API
