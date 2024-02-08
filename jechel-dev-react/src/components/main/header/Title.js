@@ -1,6 +1,5 @@
 import { Container, Box } from '@mui/material';
-
-import appStyle from '../../../AppStyle';
+import appStyle from "AppStyle";
 
 const CenteredHeading = () => {
   return (

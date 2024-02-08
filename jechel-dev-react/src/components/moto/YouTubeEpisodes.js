@@ -1,10 +1,7 @@
-import { YouTubeEpisode } from "Components";
-
-import AccordionGroup from '@mui/joy/AccordionGroup';
-
-import appStyle from "../../AppStyle";
-
 import { useState } from 'react';
+import AccordionGroup from '@mui/joy/AccordionGroup';
+import { YouTubeEpisode } from "Components";
+import appStyle from "AppStyle";
 
 const YouTubeEpisodes = ({ videoInstances }) => {
   const [index, setIndex] = useState(0);

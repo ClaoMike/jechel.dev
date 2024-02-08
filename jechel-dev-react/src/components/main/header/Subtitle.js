@@ -1,7 +1,6 @@
 import { Container, Box, Stack } from '@mui/material';
 import { SubtitleIcon, DLSwitch } from 'Components';
-
-import appStyle from '../../../AppStyle';
+import appStyle from "AppStyle";
 
 const Subtitle = ({theme, setTheme}) => {
   return (

@@ -1,5 +1,5 @@
 import { FaMapPin } from 'react-icons/fa';
-import appStyle from '../../AppStyle';
+import appStyle from "AppStyle";
 
 const PinPointIcon = () => {
   return (

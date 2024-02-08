@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeDescription, YouTubeRedirectLink } from 'Components';
-import appStyle from '../../AppStyle';
+import appStyle from "AppStyle";
 
 const YouTubeLatest = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg';

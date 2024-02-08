@@ -1,7 +1,6 @@
 import { Box, Stack } from '@mui/material';
 import { FlameIcon, MotoIcon, AboutMeIcon, NavigationItem } from 'Components';
-
-import appStyle from '../../../AppStyle';
+import appStyle from "AppStyle";
 
 const NavigationBar = () => {
 

@@ -1,4 +1,4 @@
-import appStyle from '../../AppStyle';
+import appStyle from "AppStyle";
 
 const YouTubeImage = ({style, imageUrl, altDescription}) => {
   return (

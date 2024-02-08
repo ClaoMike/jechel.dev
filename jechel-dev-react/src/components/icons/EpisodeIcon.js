@@ -1,5 +1,5 @@
 import { FaFilm } from 'react-icons/fa';
-import appStyle from '../../AppStyle';
+import appStyle from "AppStyle";
 
 const EpisodeIcon = () => {      
   return (

@@ -1,6 +1,5 @@
 import { ExternalLink, YouTubeEpisodes, YouTubeVideo, YouTubeIcon } from "Components";
-
-import appStyle from "../../AppStyle";
+import appStyle from "AppStyle";
 
 const Moto = () => {
 

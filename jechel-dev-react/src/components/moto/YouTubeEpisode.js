@@ -1,11 +1,9 @@
-import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription } from 'Components';
 import { Stack } from '@mui/material';
-
 import Accordion from '@mui/joy/Accordion';
 import AccordionDetails from '@mui/joy/AccordionDetails';
 import AccordionSummary from '@mui/joy/AccordionSummary';
-
-import appStyle from '../../AppStyle';
+import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription } from 'Components';
+import appStyle from "AppStyle";
 
 const YouTubeEpisode = ({ videoInstance, index, setIndex }) => {
   return (

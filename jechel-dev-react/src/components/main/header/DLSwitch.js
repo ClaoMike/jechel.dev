@@ -2,9 +2,7 @@ import Switch from "react-switch";
 import { isMobile } from 'react-device-detect';
 import { useEffect, useState } from 'react';
 import { DarkModeIcon, LightModeIcon } from "Components";
-import appStyle from "../../../AppStyle";
-
-
+import appStyle from "AppStyle";
 
 const DLSwitch = ({theme, setTheme}) => {
     const rootStyles = getComputedStyle(document.documentElement);
