@@ -1,16 +1,32 @@
 :root {
-  --background: #FFF3CF;
+  /* light palette */
+  --light-1: #FAEF9B;
+  --light-2: #6DA4AA;
+  --light-3: #647D87;
+  --light-4: #F6D776;
+
+  /* dark palette */
+  --dark-1: #FAEF9B;
+  --dark-2: #6DA4AA;
+  --dark-3: #647D87;
+  --dark-4: #F6D776;
+}
+
+:root {
+  --background: var(--light-1);
   --text-primary: #000000;
 
-  --link: #637A9F;
-  --link-hover: #4F6F52;
+  --link: var(--light-2);
+  --link-hover: var(--light-3);
 
-  --navigation-item-border: #4F6F52;
+  --navigation-item-border: var(--light-3);
 
-  --youtube-container-background: #2D3250;
+  --youtube-container-background: var(--light-4);
   --youtube-container-shadow: #F6ECA9;
 
   --dlswitch-icon: orange;
+
+  --container-border: var(--light-2);
 
   /* DEFINED ONLY ONCE */
   --icon-about-me: #3E3232;
@@ -43,6 +59,8 @@
   --youtube-container-shadow: #E8C872;
 
   --dlswitch-icon: red;
+
+  --container-border: #E8C872;
 }
 
 body {
@@ -89,7 +107,7 @@ a:hover{
 
 .youtube-container {
   background-color: var(--youtube-container-background);
-  box-shadow: 0 0 20px 0 var(--youtube-container-shadow);
+  border: 2px solid var(--container-border);
 }
 
 .subtitle-icon {
@@ -140,18 +158,19 @@ a:hover{
 /*  */
 
 .accordion__button {
-  border: 10px solid rgb(255, 255, 255);
+  border: 2px solid var(--container-border);
+  border-radius: 10px;
+  padding: 10px;
+  background-color: var(--youtube-container-background);
+}
+
+.accordion__panel {
+  border: 2px solid var(--container-border);
   border-radius: 10px;
   padding: 10px;
 }
 
-.accordion__panel {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 2px;
-  padding: 10px;
-}
-
 .accordion {
-  display: flex; /* or display: grid; */
+  display: flex;
   gap: 10px;
 }

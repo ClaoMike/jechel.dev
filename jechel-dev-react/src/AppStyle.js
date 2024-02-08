@@ -1,3 +1,4 @@
+import { useLayoutEffect } from 'react';
 import { isMobile } from 'react-device-detect';
 
 const HCenter = {
