@@ -93,6 +93,7 @@ body {
 a {
     text-decoration: none;
     color: var(--link);
+    cursor: alias;
 }
 
 a:hover{
@@ -158,6 +159,7 @@ a:hover{
   border: 2px solid var(--container-border);
   border-radius: 10px;
   padding: 10px;
+  cursor: pointer;
 }
 
 .accordion__panel {
@@ -169,4 +171,8 @@ a:hover{
 .accordion {
   display: flex;
   gap: 10px;
+}
+
+.press-pointer {
+  cursor: pointer;
 }

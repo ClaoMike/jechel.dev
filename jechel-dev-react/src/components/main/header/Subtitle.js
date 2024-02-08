@@ -9,7 +9,7 @@ const Subtitle = ({theme, setTheme}) => {
         <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">            
           <SubtitleIcon/>
           <p>Software Engineer</p>
-          <DLSwitch theme={theme} setTheme={setTheme}/>
+          <DLSwitch theme={theme} setTheme={setTheme} className="press-pointer"/>
         </Stack>
       </Box>
     </Container>

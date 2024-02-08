@@ -2,7 +2,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const NavigationItem = ({ link, text, icon}) => {
   const location = useLocation();
-  const className = location.pathname === link ? 'navigation_item' : '';
+  const className = location.pathname === link ? 'navigation_item press-pointer ' : 'press-pointer';
 
   return (
     <>
