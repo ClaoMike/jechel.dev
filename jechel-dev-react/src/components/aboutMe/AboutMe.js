@@ -1,10 +1,4 @@
-import AcademicPapers from "./AcademicPapers";
-import Qualifications from "./Qualifications";
-import Projects from "./Projects";
-import Education from "./Education";
-import WorkExperience from "./WorkExperience";
-import Skills from "./Skills";
-import AboutMeHeader from "./AboutMeHeader";
+import { AcademicPapers, Qualifications, Projects, Education, WorkExperience, Skills, AboutMeHeader } from "Components";
 
 const AboutMe = () => {
   return (
