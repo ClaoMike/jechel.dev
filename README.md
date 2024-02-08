@@ -34,8 +34,9 @@ npm run build
 ***
 
 ## ToDo
-- Center everything
-- Refactor the YouYube item
+- Add some kind of Press me icon on the YouTube episodes in the moto section
+- Center everything in About Me section
+- ~~Refactor the YouYube item~~
 - Style everything -> Decide on some external library (such as ```Material-UI```)
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
