@@ -1,16 +1,8 @@
-import { ExternalLink, YouTubeVideo, YouTubeIcon } from "Components";
-import appStyle from "AppStyle";
-
-import {
-  Accordion,
-  AccordionItem,
-  AccordionItemHeading,
-  AccordionItemButton,
-  AccordionItemPanel,
-} from 'react-accessible-accordion';
-
+import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 import { Stack } from '@mui/material';
-import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription } from 'Components';
+
+import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription, ExternalLink, YouTubeVideo, YouTubeIcon } from 'Components';
+import appStyle from "AppStyle";
 
 const Moto = () => {
 
@@ -73,6 +65,7 @@ const Moto = () => {
 
   const videoInstances = [];
 
+  const videoInstance_trailer = new YouTubeVideo(0, episode_trailer_imageUrl, episode_trailer_altDescription, episode_trailer_title, episode_trailer_location, episode_trailer_description, episode_trailer_youTubeLink);
   const videoInstance_1 = new YouTubeVideo(1, episode_1_imageUrl, episode_1_altDescription, episode_1_title, episode_1_location, episode_1_description, episode_1_youTubeLink);
   const videoInstance_2 = new YouTubeVideo(2, episode_2_imageUrl, episode_2_altDescription, episode_2_title, episode_2_location, episode_2_description, episode_2_youTubeLink);
   const videoInstance_3 = new YouTubeVideo(3, episode_3_imageUrl, episode_3_altDescription, episode_3_title, episode_3_location, episode_3_description, episode_3_youTubeLink);
@@ -80,7 +73,6 @@ const Moto = () => {
   const videoInstance_5 = new YouTubeVideo(5, episode_5_imageUrl, episode_5_altDescription, episode_5_title, episode_5_location, episode_5_description, episode_5_youTubeLink);
   const videoInstance_6 = new YouTubeVideo(6, episode_6_imageUrl, episode_6_altDescription, episode_6_title, episode_6_location, episode_6_description, episode_6_youTubeLink);
   const videoInstance_7 = new YouTubeVideo(7, episode_7_imageUrl, episode_7_altDescription, episode_7_title, episode_7_location, episode_7_description, episode_7_youTubeLink);
-  const videoInstance_trailer = new YouTubeVideo(8, episode_trailer_imageUrl, episode_trailer_altDescription, episode_trailer_title, episode_trailer_location, episode_trailer_description, episode_trailer_youTubeLink);
 
   videoInstances.push(videoInstance_trailer);
   videoInstances.push(videoInstance_7);
@@ -97,10 +89,10 @@ const Moto = () => {
         <p >Watch me riding my motorcycle through Europe on <ExternalLink link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' icon={<YouTubeIcon/>}/></p>
       </div>
       
-      <Accordion allowZeroExpanded style={appStyle.accordion}>
+      <Accordion allowZeroExpanded style={appStyle.accordion} preExpanded={[videoInstances[0].ID]}>
         {videoInstances.map((videoInstance) => (
     
-          <AccordionItem key={videoInstance.ID} style={appStyle.accordionItem}>
+          <AccordionItem uuid={videoInstance.ID} key={videoInstance.ID} style={appStyle.accordionItem}>
         
             <AccordionItemHeading>
               <AccordionItemButton>
