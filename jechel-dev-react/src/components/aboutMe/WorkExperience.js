@@ -4,10 +4,10 @@ const WorkExperience = () => {
   return (
     <>
         <h3>Work Experience</h3>
-        <h2>
+        <h4>
             IOS Software Engineer, Intern at &nbsp;
             <ExternalLink link='https://www.apadmi.com/' text='Apadmi' />
-        </h2>
+        </h4>
 
         <small>Manchester, UK 09/2021 - 07/2022</small>
         
