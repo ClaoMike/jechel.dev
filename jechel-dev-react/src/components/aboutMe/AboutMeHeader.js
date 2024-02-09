@@ -1,15 +1,17 @@
 import { ExternalLink } from "Components";
+import { Stack } from '@mui/material';
+import { ResumeIcon, GithubIcon, LinkedinIcon } from "Components";
 
 const AboutMeHeader = () => {
   return (
     <>
-        <h2>About Me</h2>
-
-        <p>Check out my &nbsp;
-            <ExternalLink link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text='Resume' /> | &nbsp;
-            <ExternalLink link='https://github.com/ClaoMike' text='GitHub' /> | &nbsp;
-            <ExternalLink link='https://www.linkedin.com/in/claudiumihaijechel/' text='LinkedIn' />
-        </p>
+      <Stack direction="row" justifyContent="center" alignItems="center" spacing={0}>
+        <ExternalLink link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text='Resume' icon={<ResumeIcon />}/>
+        <p> &nbsp; | &nbsp; </p>
+        <ExternalLink link='https://github.com/ClaoMike' text='GitHub' icon={<GithubIcon />} /> 
+        <p> &nbsp; | &nbsp; </p>
+        <ExternalLink link='https://www.linkedin.com/in/claudiumihaijechel/' text='LinkedIn' icon={<LinkedinIcon />} />
+      </Stack>
     </>
   );
 };
