@@ -112,6 +112,11 @@ const appStyle = {
         width: '90%',
         maxWidth: '1000px',
     },
+
+    mePhoto: {
+        width: isMobile ? '60%' : "30%",
+        borderRadius: "20%",
+    },
 };
 
 export default appStyle;
