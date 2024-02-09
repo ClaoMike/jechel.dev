@@ -4,7 +4,7 @@ import appStyle from "AppStyle";
 const ResumeIcon = () => {      
   return (
     <SimCardDownloadIcon
-      className='about-me-icon'
+      className='resume-icon'
       style={appStyle.iconConfig}
     />
   );

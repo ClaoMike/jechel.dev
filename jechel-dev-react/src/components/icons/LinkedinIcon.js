@@ -4,7 +4,7 @@ import appStyle from "AppStyle";
 const LinkedinIcon = () => {      
   return (
     <LinkedInIcon 
-      className='about-me-icon'
+      className='linkedin-icon'
       style={appStyle.iconConfig}
     />
   );

@@ -38,6 +38,9 @@
   --icon-pinpoint: #B80000;
   --icon-youtube-description: #43766C;
   --icon-youtube: #B80000;
+  --icon-github: #28007d;
+  --icon-linkedin: #0066c8;
+  --icon-resume: #9B4444;
 
   /* SWITCH COLOURS */
   --switch-offColor: var(--sky-light);
@@ -144,6 +147,18 @@ a:hover{
 
 .dlswitch-icon {
   color: var(--dlswitch-icon);
+}
+
+.resume-icon {
+  color: var(--icon-resume);
+}
+
+.github-icon {
+  color: var(--icon-github);
+}
+
+.linkedin-icon {
+  color: var(--icon-linkedin);
 }
 
 .navigation-bar-background {

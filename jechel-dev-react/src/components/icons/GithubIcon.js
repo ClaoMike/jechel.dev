@@ -4,7 +4,7 @@ import appStyle from "AppStyle";
 const GithubIcon = () => {      
   return (
     <GitHubIcon
-      className='about-me-icon'
+      className='github-icon'
       style={appStyle.iconConfig}
     />
   );
