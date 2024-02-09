@@ -34,14 +34,18 @@ npm run build
 ***
 
 ## ToDo
-- Add some kind of Press me icon on the YouTube episodes in the moto section
-- Center everything in About Me section
+### Sprint 1
+- ~~Add some kind of Press me icon on the YouTube episodes in the moto section~~
+- ~~Center everything in About Me section~~
 - ~~Refactor the YouYube item~~
+- Complete the About Me section
 - Style everything -> Decide on some external library (such as ```Material-UI```)
+### Sprint 2
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
     - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
     - ~~Absolute imports~~
+### Sprint 3
 - Build server
 - Host server on cloud
 - Integrate the YouTube API
