@@ -102,7 +102,6 @@ const Moto = () => {
                   <Stack spacing={2} direction="row" alignItems="center">
                     <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
                     <YouTubeTitle title={videoInstance.title} />
-                    <ExpandMoreIcon />
                   </Stack>
                   <ExpandMoreIcon />
                 </Stack>
