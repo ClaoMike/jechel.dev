@@ -155,7 +155,7 @@ a:hover{
   background: linear-gradient(to bottom, var(--background), rgba(255, 255, 255, 0)); 
 }
 
-/*  */
+/* Accordions do not have style or sx props :( */
 
 .accordion__button {
   border: 2px solid var(--container-border);

@@ -6,7 +6,6 @@ import YouTubeLocation from "components/common/YouTubeLocation";
 import YouTubeRedirectLink from "components/common/YouTubeRedirectLink";
 import YouTubeTitle from "components/common/YouTubeTitle";
 import YouTubeVideo from "components/common/YouTubeVideo";
-import YouTUbeVideos from "components/common/YouTubeVideos";
 
 // About Me
 import AboutMe from "components/aboutMe/AboutMe";
@@ -56,7 +55,6 @@ export {
     YouTubeRedirectLink,
     YouTubeTitle,
     YouTubeVideo,
-    YouTUbeVideos,
 
     // aboutMe
     AboutMe,
