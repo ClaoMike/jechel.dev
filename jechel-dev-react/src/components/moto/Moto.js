@@ -1,5 +1,6 @@
 import { Accordion, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
 import { Stack } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription, ExternalLink, YouTubeVideo, YouTubeIcon } from 'Components';
 import appStyle from "AppStyle";
@@ -96,10 +97,16 @@ const Moto = () => {
         
             <AccordionItemHeading>
               <AccordionItemButton>
-                <Stack spacing={2} direction="row" alignItems="center">
-                  <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
-                  <YouTubeTitle title={videoInstance.title} />
+                
+                <Stack spacing={2} direction="row" justifyContent="space-between" alignItems="center">
+                  <Stack spacing={2} direction="row" alignItems="center">
+                    <YouTubeImage style={appStyle.imageContainerStyleYouTubeEpisode} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
+                    <YouTubeTitle title={videoInstance.title} />
+                    <ExpandMoreIcon />
+                  </Stack>
+                  <ExpandMoreIcon />
                 </Stack>
+                
               </AccordionItemButton>
             </AccordionItemHeading>
             
