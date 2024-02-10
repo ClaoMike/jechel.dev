@@ -10,10 +10,11 @@ import { Stack } from '@mui/material';
   // const languages = ['English', 'Romanian'];
   // const otherSkills = ['JavaFX', 'JUnit'];
 
-const AnimatedSkill = ({ skill }) => {
+const AnimatedSkill = ({ skill, translation }) => {
+  
   const props = useSpring({
-    from: { transform: 'translateX(-115vw)' },
-    to: { transform: 'translateX(115vw)' },
+    from: { transform: `translateX(-${translation}vw)` },
+    to: { transform: `translateX(${translation}vw)` },
     loop: { reverse: true },
     config: { duration: 8000 },
   });
@@ -25,11 +26,11 @@ const AnimatedSkill = ({ skill }) => {
   );
 };
 
-const Skill = ({ skillsList }) => {
+const Skill = ({ skillsList, translation }) => {
   return (
     <div style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
       {skillsList.map((skill, index) => (
-        <AnimatedSkill key={index} skill={skill} />
+        <AnimatedSkill key={index} skill={skill} translation={translation} />
       ))}
     </div>
   );
@@ -44,7 +45,7 @@ const Skills = () => {
 
   return (
     <Stack>
-      <Skill skillsList={skillsIOS} />
+      <Skill skillsList={skillsIOS} translation={115}/>
     </Stack>
     
   );
