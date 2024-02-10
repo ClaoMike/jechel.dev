@@ -2,13 +2,20 @@ import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';
 
 const Skills = () => {
-  const mySkills = "Swift | SwiftUI | UIKit Swift | SwiftUI | UIKitSwift | SwiftUI | UIKitSwift | SwiftUI | UIKit";
+  const skillsIOS = ['Swift', 'SwiftUI', 'UIKit', 'CocoaPods', 'fastlane', 'Unit/UI/Snapshot Testing', 'XCTest', 'Firebase', 'TestFlight', 'Git', 'CI/CD'];
+  const skillsWEB = ['HTML', 'CSS', 'JavaScript', 'React'];
+  const gameDevSkills = ['OOP', 'Java', 'libGDX', 'C#', 'Unity 2D', 'Python', 'Phaser 3'];
+  const wordProcessingSkills = ['LATEX'];
+  const videoEditingSkills = ['Procreate','Final Cut Pro', 'GarageBand'];
+  const languages = ['English', 'Romanian'];
+  const otherSkills = ['JavaFX', 'JUnit'];
+
   const [initialPosition, setInitialPosition] = useState(-100);
 
   useEffect(() => {
-    const textLength = mySkills.length;
+    const textLength = skillsIOS.length;
     setInitialPosition(-textLength * 40); // Adjust the multiplier as needed
-  }, [mySkills]);
+  }, [skillsIOS]);
 
   function LetterAnimation() {
     const props = useSpring({
@@ -20,7 +27,7 @@ const Skills = () => {
     return (
       <div style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100px', whiteSpace: 'nowrap' }}>
         <animated.div style={props}>
-          {mySkills}
+          {skillsIOS}
         </animated.div>
       </div>
     );
@@ -29,9 +36,6 @@ const Skills = () => {
   return (
     <>
       <LetterAnimation />
-      <p>
-        Swift | SwiftUI | UIKit | CocoaPods | fastlane | Unit/UI/Snapshot Testing | XCTest | Firebase | TestFlight | Git | CI/CD | OOP | Java | libGDX | JavaFX | JUnit | C# | Unity 2D | Python | Phaser 3 | LATEX | Procreate | Final Cut Pro | GarageBand | Frontend | Backend | Full-stack | IOS Development | Game Development | Web Development | Video Editing | English, Romanian - All professional proficiency or above
-      </p>
     </>
   );
 };
