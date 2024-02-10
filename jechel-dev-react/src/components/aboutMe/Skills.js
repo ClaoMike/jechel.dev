@@ -10,10 +10,10 @@ import { useSpring, animated } from 'react-spring';
 
 const SkillItem = ({ skill }) => {
   const props = useSpring({
-    from: { transform: 'translateX(-150vw)' },
-    to: { transform: 'translateX(150vw)' },
+    from: { transform: 'translateX(-110vw)' },
+    to: { transform: 'translateX(110vw)' },
     loop: { reverse: true },
-    config: { duration: 5000 },
+    config: { duration: 8000 },
   });
 
   return (
