@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
+import { isMobile } from 'react-device-detect';
 
 import { Stack } from '@mui/material';
 
@@ -11,10 +12,10 @@ import { Stack } from '@mui/material';
   // const otherSkills = ['JavaFX', 'JUnit'];
 
 const AnimatedSkill = ({ skill, translation }) => {
-  
+
   const props = useSpring({
-    from: { transform: `translateX(-${translation}vw)` },
-    to: { transform: `translateX(${translation}vw)` },
+    from: { transform: `translateX(-${isMobile ? translation[1] : translation[0]}vw)` },
+    to: { transform: `translateX(${isMobile ? translation[1] : translation[0]}vw)` },
     loop: { reverse: true },
     config: { duration: 8000 },
   });
@@ -45,7 +46,7 @@ const Skills = () => {
 
   return (
     <Stack>
-      <Skill skillsList={skillsIOS} translation={115}/>
+      <Skill skillsList={skillsIOS} translation={[115, 200]}/>
     </Stack>
     
   );
