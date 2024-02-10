@@ -116,6 +116,7 @@ const appStyle = {
     mePhoto: {
         width: isMobile ? '60%' : "30%",
         borderRadius: "20%",
+        marginBottom: '2vh',
     },
 };
 
