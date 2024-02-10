@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSpring, animated } from 'react-spring';
 
+import { Stack } from '@mui/material';
+
 // const skillsWEB = ['HTML', 'CSS', 'JavaScript', 'React'];
   // const gameDevSkills = ['OOP', 'Java', 'libGDX', 'C#', 'Unity 2D', 'Python', 'Phaser 3'];
   // const wordProcessingSkills = ['LATEX'];
@@ -8,10 +10,10 @@ import { useSpring, animated } from 'react-spring';
   // const languages = ['English', 'Romanian'];
   // const otherSkills = ['JavaFX', 'JUnit'];
 
-const SkillItem = ({ skill }) => {
+const AnimatedSkill = ({ skill }) => {
   const props = useSpring({
-    from: { transform: 'translateX(-110vw)' },
-    to: { transform: 'translateX(110vw)' },
+    from: { transform: 'translateX(-115vw)' },
+    to: { transform: 'translateX(115vw)' },
     loop: { reverse: true },
     config: { duration: 8000 },
   });
@@ -23,6 +25,16 @@ const SkillItem = ({ skill }) => {
   );
 };
 
+const Skill = ({ skillsList }) => {
+  return (
+    <div style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      {skillsList.map((skill, index) => (
+        <AnimatedSkill key={index} skill={skill} />
+      ))}
+    </div>
+  );
+};
+
 const Skills = () => {
   const skillsIOS = [
     'Swift', 'SwiftUI', 'UIKit', 'CocoaPods', 'fastlane', 
@@ -31,11 +43,10 @@ const Skills = () => {
   ];
 
   return (
-    <div style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      {skillsIOS.map((skill, index) => (
-        <SkillItem key={index} skill={skill} />
-      ))}
-    </div>
+    <Stack>
+      <Skill skillsList={skillsIOS} />
+    </Stack>
+    
   );
 };
 
