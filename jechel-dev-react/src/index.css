@@ -80,8 +80,6 @@ body {
   overflow-y: auto;
 
   transition: all .5s;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
