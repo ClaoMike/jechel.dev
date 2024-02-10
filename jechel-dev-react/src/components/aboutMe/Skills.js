@@ -4,7 +4,7 @@ import { isMobile } from 'react-device-detect';
 
 import { Stack } from '@mui/material';
 
-// const skillsWEB = ['HTML', 'CSS', 'JavaScript', 'React'];
+// 
   // const gameDevSkills = ['OOP', 'Java', 'libGDX', 'C#', 'Unity 2D', 'Python', 'Phaser 3'];
   // const wordProcessingSkills = ['LATEX'];
   // const videoEditingSkills = ['Procreate','Final Cut Pro', 'GarageBand'];
@@ -38,15 +38,18 @@ const Skill = ({ skillsList, translation }) => {
 };
 
 const Skills = () => {
-  const skillsIOS = [
+  const skill_IOS = [
     'Swift', 'SwiftUI', 'UIKit', 'CocoaPods', 'fastlane', 
     'Unit/UI/Snapshot Testing', 'XCTest', 'Firebase', 
     'TestFlight', 'Git', 'CI/CD'
   ];
 
+  const skill_WEB = ['HTML', 'CSS', 'JavaScript', 'React'];
+
   return (
     <Stack>
-      <Skill skillsList={skillsIOS} translation={[115, 200]}/>
+      <Skill skillsList={skill_IOS} translation={[115, 200]}/>
+      <Skill skillsList={skill_WEB} translation={[70, 90]}/>
     </Stack>
     
   );
