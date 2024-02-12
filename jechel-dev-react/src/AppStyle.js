@@ -117,6 +117,7 @@ const appStyle = {
         width: isMobile ? '60%' : "30%",
         borderRadius: "20%",
         marginBottom: '2vh',
+        maxWidth: '500px',
     },
 };
 
