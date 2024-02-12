@@ -217,7 +217,7 @@ a:hover{
 }
 
 .cloud {
-  left: -150vw;
+  left: -300vw;
   position: relative;
   animation: move 11s linear 1s infinite;
   width: max-content;

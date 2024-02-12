@@ -1,14 +1,18 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Stack } from '@mui/material';
-// import './Skills.css'; // Import your CSS file
 
 const Skills = () => {
   const cloudRef = useRef(null);
+  // const [leftPosition, setLeftPosition] = useState('-150vw'); // Default left position
 
   useEffect(() => {
     const handleResize = () => {
       if (cloudRef.current) {
         const width = cloudRef.current.offsetWidth;
+        const newPosition = `-${width}px`; // Calculate the new left position based on the width
+        
+        // setLeftPosition(newPosition);
+        
         const moveAnimation = `
           @keyframes move {
             from {
@@ -26,7 +30,7 @@ const Skills = () => {
       }
     };
 
-    handleResize(); // Update animation on initial render
+    handleResize();
 
     window.addEventListener('resize', handleResize);
 
