@@ -4,12 +4,12 @@ import { useSpring, animated } from 'react-spring';
 import { Stack } from '@mui/material';
 
 const AnimatedSkill = ({ skill }) => {
-  const translation = 115;
+  const translation = 1000;
   const speed = 8000;
 
   const props = useSpring({
-    from: { transform: `translateX(-${translation}vw)` },
-    to: { transform: `translateX(${translation}vw)` },
+    from: { transform: `translateX(-${translation}px)` },
+    to: { transform: `translateX(${translation}px)` },
     loop: { reverse: true },
     config: { duration: speed },
   });
