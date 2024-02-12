@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Stack } from '@mui/material';
 import appStyle from 'AppStyle';
 
@@ -9,7 +9,6 @@ const Skills = () => {
     const handleResize = () => {
       if (cloudRef.current) {
         const width = cloudRef.current.offsetWidth;
-        const newPosition = `-${width}px`;
         
         const moveAnimation = `
           @keyframes move {
