@@ -1,56 +1,38 @@
-import React from 'react';
-import { useSpring, animated } from 'react-spring';
-
+import React, { useEffect } from 'react';
 import { Stack } from '@mui/material';
-
-const AnimatedSkill = ({ skill }) => {
-  const translation = 1000;
-  const speed = 8000;
-
-  const props = useSpring({
-    from: { transform: `translateX(-${translation}px)` },
-    to: { transform: `translateX(${translation}px)` },
-    loop: { reverse: true },
-    config: { duration: speed },
-  });
-
-  return (
-    <animated.p style={{ ...props, margin: '0 10px', whiteSpace: 'nowrap' }}>
-      {skill}
-    </animated.p>
-  );
-};
-
-const Skill = ({ skillsList}) => {
-  return (
-    <div style={{ overflow: 'hidden', position: 'relative', width: '100%', height: '100px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-      {skillsList.map((skill, index) => (
-        <AnimatedSkill key={index} skill={skill} />
-      ))}
-    </div>
-  );
-};
+// import './Skills.css'; // Import your CSS file
 
 const Skills = () => {
-  const skill_IOS = [
-    'Swift', 'SwiftUI', 'UIKit', 'CocoaPods', 'fastlane', 
-    'Unit/UI/Snapshot Testing', 'XCTest', 'Firebase', 
-    'TestFlight', 'Git', 'CI/CD'
-  ];
+  useEffect(() => {
+    const cloudElement = document.querySelector('.cloud');
+    if (cloudElement) {
+      const cloudWidth = cloudElement.offsetWidth;
 
-  const skill_WEB = ['HTML', 'CSS', 'JavaScript', 'React'];
-  const skill_GameDev = ['OOP', 'Java', 'libGDX', 'C#', 'Unity 2D', 'Python', 'Phaser 3'];
-  const wordProcessingSkills = ['LATEX'];
-  const videoEditingSkills = ['Procreate','Final Cut Pro', 'GarageBand'];
-  const languages = ['English', 'Romanian'];
-  const otherSkills = ['JavaFX', 'JUnit'];
+      // Generate the CSS animation dynamically
+      const moveAnimation = `
+        @keyframes move {
+          from {
+            left: -${cloudWidth}px; /* Start the animation from the left side of the cloud element */
+          }
+          to {
+            left: 100vw; /* Move the element to the right side of the viewport */
+          }
+        }
+      `;
+
+      // Create a style element and inject the animation style dynamically into the document's head
+      const styleElement = document.createElement('style');
+      styleElement.textContent = moveAnimation;
+      document.head.appendChild(styleElement);
+    }
+  }, []); // This effect runs once after the component mounts
 
   return (
     <Stack>
-      {/* TODO: translation and speed must be calculated dynamically! */}
-      <Skill skillsList={skill_IOS} /> 
+      <div className='cloud-container'>
+        <div className='cloud'> Swift SwiftUI UIKit CocoaPods fastlane Unit/UI/Snapshot Testing XCTest Firebase TestFlight Git CI/CD </div>
+      </div>
     </Stack>
-    
   );
 };
 
