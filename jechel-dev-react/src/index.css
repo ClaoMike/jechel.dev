@@ -191,19 +191,3 @@ a:hover{
 .press-pointer {
   cursor: pointer;
 }
-
-.cloud-container {
-  position: relative;
-  width: 100%; /* Adjust as needed */
-  overflow: hidden; /* Prevent child elements from expanding the scroll area */
-}
-
-.cloud {
-  left: -300vw;
-  position: relative;
-  animation: move 11s linear 1s infinite;
-  width: max-content;
-  height: 100px;
-  overflow: hidden;
-  white-space: nowrap;
-}
