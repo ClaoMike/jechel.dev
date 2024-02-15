@@ -1,23 +1,24 @@
+import appStyle from "AppStyle";
 import { ExternalLink } from "Components";
+import { ResumeIcon, GithubIcon, LinkedinIcon } from "Components";
+import { ExternalLinkWithIcon } from "Components";
 
 const Projects = () => {
   return (
-    <>
-        <h3>Projects</h3>
-        <h4>
+    <div style={appStyle.skillsSection}>
+        <h2>Projects</h2>
+        <h3>
             Spatium Explorationis
-            (<ExternalLink link='https://github.com/ClaoMike/AE' text='GitHub' />)
-        </h4>
-        <p>
-            Third-Year Project - &nbsp;
-            <ExternalLink link='https://www.manchester.ac.uk/' text='University of Manchester' />
-        </p>
+            (<ExternalLinkWithIcon link='https://github.com/ClaoMike/AE' text='GitHub' icon={<GithubIcon />} />)
+        </h3>
         <ul>
-            <li>Developed a top-down 2D video game using Java, libGDX, Procreate and GarageBand.</li>
-            <li>The objective of the game is to play as a space-faring dog who explores Pluto and locates a broken satellite at the end of a maze. The scope of the game is to play as an explorer space dog to find the broken satellite on Pluto, located at the maze exit.</li>
-            <li>Used a traditional Procedural Content Generation (PCG) technique to generate each level.</li>
+          <li>This was my third-year project I built during my studies at the <ExternalLink link='https://www.manchester.ac.uk/' text='University of Manchester' />.</li>
+          <li>Served as the foundation for my <ExternalLink link='resources/Thesis.pdf' text='How to build a video game using Procedural Content Generation?' /> paper.</li>
+          <li>Developed a top-down 2D video game using Java, libGDX, Procreate and GarageBand.</li>
+          <li>The objective of the game is to play as a space-faring dog who explores Pluto and locates a broken satellite at the end of a maze. The scope of the game is to play as an explorer space dog to find the broken satellite on Pluto, located at the maze exit.</li>
+          <li>Used a traditional Procedural Content Generation (PCG) technique to generate each level.</li>
         </ul>
-    </>
+    </div>
   );
 };
 
