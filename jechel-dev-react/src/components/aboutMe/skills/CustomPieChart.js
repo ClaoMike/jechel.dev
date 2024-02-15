@@ -5,9 +5,6 @@ import { Stack } from '@mui/material';
 
 const CustomPieChart = ({ category, data }) => {
   return (
-    // Set better colours so that they are visible on both modes
-    // Assign random Colours
-    // Maybe animate if it's not too difficult
     <Stack
         direction="column"
         justifyContent="center"
@@ -28,11 +25,11 @@ const CustomPieChart = ({ category, data }) => {
         label={({ dataEntry }) => dataEntry.title}
         labelStyle={(index) => ({
           fill: data[index].color,
-          fontSize: '5px',
-          fontFamily: 'sans-serif',
+          fontSize: '4px',
+          fontFamily: 'Courier New, monospace',
         })}
         radius={30}
-        labelPosition={data.length == 1 ? 0 : 110}
+        labelPosition={data.length === 1 ? 0 : 110}
       />
     </Stack>
     
