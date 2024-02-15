@@ -1,6 +1,4 @@
 import appStyle from "AppStyle";
-import { ExternalLink } from "Components";
-import { Stack } from "@mui/material";
 import Qualifcation from "./Qualifcation";
 
 const Qualifications = () => {
