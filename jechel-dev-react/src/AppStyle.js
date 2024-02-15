@@ -131,7 +131,7 @@ const appStyle = {
     },
 
     pieChartLabel: {
-        fontSize: '4px',
+        fontSize: '5px',
         fontFamily: 'Courier New, monospace',
     },
       

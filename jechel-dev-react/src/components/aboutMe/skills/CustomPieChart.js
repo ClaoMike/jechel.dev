@@ -6,8 +6,8 @@ import appStyle from 'AppStyle';
 const CustomPieChart = ({ category, data }) => {
     const lineWidth = 15;
     const animationDuration = '1000';
-    const radius = 30;
-    const labelPosition = 110;
+    const radius = 20;
+    const labelPosition = 120;
 
     return (
         <Stack
