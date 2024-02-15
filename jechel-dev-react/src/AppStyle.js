@@ -119,6 +119,21 @@ const appStyle = {
         marginBottom: '2vh',
         maxWidth: '500px',
     },
+
+    skillsSection: {
+        marginLeft: '10vw',
+        marginRight: '10vw',
+    },
+
+    pieChart: {
+        width: isMobile ? '120px' : '300px',
+        overflow: 'visible',
+    },
+
+    pieChartLabel: {
+        fontSize: '4px',
+        fontFamily: 'Courier New, monospace',
+    },
       
 };
 

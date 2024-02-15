@@ -6,7 +6,14 @@ import appStyle from 'AppStyle';
 
 const SkillsSection = () => {  
   return (
-    <Stack direction="row" spacing={2} justifyContent="space-evenly" alignItems="center" flexWrap="wrap" className='skills_section' >
+    <Stack 
+      direction="row" 
+      spacing={2} 
+      justifyContent="space-evenly" 
+      alignItems="center" 
+      flexWrap="wrap"
+      style={appStyle.skillsSection}
+    >
       <CustomPieChart category={'IOS'} data={skills.data_IOS} />
       <CustomPieChart category={'Web'} data={skills.data_WEB} />
       <CustomPieChart category={'Game Development'} data={skills.data_GAMEDEV} />
