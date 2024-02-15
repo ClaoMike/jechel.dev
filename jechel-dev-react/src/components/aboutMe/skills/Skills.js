@@ -7,11 +7,11 @@ const skills = {
     
         { title: 'fastlane', value: 9, color: '#EC8F5E' },
         { title: 'Unit/UI/Snapshot Testing', value: 9, color: '#F3B664' },
-        { title: 'XCTest', value: 9, color: '#F1EB90' },
+        { title: 'XCTest', value: 9, color: '#11235A' }, //
         { title: 'Firebase', value: 9, color: '#9FBB73' },
     
         { title: 'TestFlight', value: 9, color: '#004225' },
-        { title: 'git', value: 9, color: '#F5F5DC' },
+        { title: 'git', value: 9, color: '#8CB9BD' }, //
         { title: 'CI/CD', value: 10, color: '#FFB000' },
       ],
     
@@ -30,7 +30,7 @@ const skills = {
     
         { title: 'Unity 2D', value: 14, color: '#EC8F5E' },
         { title: 'Python', value: 14, color: '#F3B664' },
-        { title: 'Phaser 3', value: 16, color: '#F1EB90' },
+        { title: 'Phaser 3', value: 16, color: '#11235A' },//
       ],
     
       data_WORDPROCESSING: [
