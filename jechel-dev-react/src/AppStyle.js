@@ -112,6 +112,34 @@ const appStyle = {
         width: '90%',
         maxWidth: '1000px',
     },
+
+    mePhoto: {
+        width: isMobile ? '60%' : "30%",
+        borderRadius: "20%",
+        marginBottom: '2vh',
+        maxWidth: '500px',
+    },
+
+    skillsSection: {
+        marginLeft: '10vw',
+        marginRight: '10vw',
+    },
+
+    pieChart: {
+        width: isMobile ? '120px' : '300px',
+        overflow: 'visible',
+    },
+
+    pieChartLabel: {
+        fontSize: '5px',
+        fontFamily: 'Courier New, monospace',
+    },
+
+    workExperienceSubsection: {
+        padding: '0px', 
+        margin: '0px'
+    },
+      
 };
 
 export default appStyle;

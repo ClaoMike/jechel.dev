@@ -1,15 +1,21 @@
-import { ExternalLink } from "Components";
+import { ExternalLinkWithIcon } from "Components";
+import { Stack } from '@mui/material';
+import { ResumeIcon, GithubIcon, LinkedinIcon } from "Components";
+import appStyle from "AppStyle";
 
 const AboutMeHeader = () => {
   return (
     <>
-        <h2>About Me</h2>
+    <Stack direction="column" justifyContent="center" alignItems="center" spacing={2} style={appStyle.headerConfig}>
+      <img src='resources/me.JPEG' alt='Me' style={appStyle.mePhoto}/>
 
-        <p>Check out my &nbsp;
-            <ExternalLink link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text='Resume' /> | &nbsp;
-            <ExternalLink link='https://github.com/ClaoMike' text='GitHub' /> | &nbsp;
-            <ExternalLink link='https://www.linkedin.com/in/claudiumihaijechel/' text='LinkedIn' />
-        </p>
+      <Stack direction="row" justifyContent="center" alignItems="center" spacing={0}>
+        <ExternalLinkWithIcon link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text='Resume' icon={<ResumeIcon />}/> &nbsp; 
+        <ExternalLinkWithIcon link='https://github.com/ClaoMike' text='GitHub' icon={<GithubIcon />} /> &nbsp; 
+        <ExternalLinkWithIcon link='https://www.linkedin.com/in/claudiumihaijechel/' text='LinkedIn' icon={<LinkedinIcon />} />
+      </Stack>
+
+      </Stack>
     </>
   );
 };
