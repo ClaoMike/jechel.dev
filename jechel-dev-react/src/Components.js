@@ -11,7 +11,7 @@ import ExternalLinkWithIcon from "components/common/ExternalLinkWithIcon";
 // About Me
 import AboutMe from "components/aboutMe/AboutMe";
 import AcademicPapers from "components/aboutMe/AcademicPapers";
-import Qualifications from "components/aboutMe/Qualifications";
+import Qualifications from "components/aboutMe/qualifications/Qualifications";
 import Projects from "components/aboutMe/projects/Projects";
 import Education from "components/aboutMe/Education";
 import WorkExperience from "components/aboutMe/WorkExperience";
