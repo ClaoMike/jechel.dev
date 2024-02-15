@@ -7,7 +7,7 @@ const CustomPieChart = ({ data }) => {
         data={data} 
         lineWidth={15} 
         rounded 
-        style={{ height: '500px' }} 
+        style={{ height: '15vw' }} 
         label={({ dataEntry }) => dataEntry.title}
         
 

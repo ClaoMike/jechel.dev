@@ -5,7 +5,7 @@ import skills from './Skills';
 
 const SkillsSection = () => {  
   return (
-    <Stack>
+    <Stack direction="row"  >
       <CustomPieChart data={skills.data_IOS} />
       <CustomPieChart data={skills.data_WEB} />
       <CustomPieChart data={skills.data_GAMEDEV} />
