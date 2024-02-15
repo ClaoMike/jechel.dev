@@ -12,7 +12,7 @@ import ExternalLinkWithIcon from "components/common/ExternalLinkWithIcon";
 import AboutMe from "components/aboutMe/AboutMe";
 import AcademicPapers from "components/aboutMe/AcademicPapers";
 import Qualifications from "components/aboutMe/Qualifications";
-import Projects from "components/aboutMe/Projects";
+import Projects from "components/aboutMe/projects/Projects";
 import Education from "components/aboutMe/Education";
 import WorkExperience from "components/aboutMe/WorkExperience";
 import SkillsSection from "components/aboutMe/skills/SkillsSection";

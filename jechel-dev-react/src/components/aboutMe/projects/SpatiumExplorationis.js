@@ -1,12 +1,8 @@
-import appStyle from "AppStyle";
-import { ExternalLink } from "Components";
-import { ResumeIcon, GithubIcon, LinkedinIcon } from "Components";
-import { ExternalLinkWithIcon } from "Components";
+import { ExternalLink, GithubIcon, ExternalLinkWithIcon } from "Components";
 
-const Projects = () => {
+const SpatiumExplorationis = () => {
   return (
-    <div style={appStyle.skillsSection}>
-        <h2>Projects</h2>
+    <div>
         <h3>
             Spatium Explorationis
             (<ExternalLinkWithIcon link='https://github.com/ClaoMike/AE' text='GitHub' icon={<GithubIcon />} />)
@@ -19,7 +15,7 @@ const Projects = () => {
           <li>Used a traditional Procedural Content Generation (PCG) technique to generate each level.</li>
         </ul>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default SpatiumExplorationis
