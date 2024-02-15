@@ -1,5 +1,6 @@
 import React from 'react'
 import { PieChart } from 'react-minimal-pie-chart';
+import { isMobile } from 'react-device-detect';
 
 const CustomPieChart = ({ data }) => {
   return (
@@ -8,11 +9,10 @@ const CustomPieChart = ({ data }) => {
         lineWidth={15} 
         rounded 
         style={{ 
-            width: '300px',
+            width: isMobile ? '120px' : '300px',
+            overflow: 'visible',
         }} 
         label={({ dataEntry }) => dataEntry.title}
-        
-
         labelStyle={(index) => ({
           fill: data[index].color,
           fontSize: '5px',
