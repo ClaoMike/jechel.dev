@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-const ExternalLink = ({link, text}) => {
+const ExternalLinkWithIcon = ({link, text, icon}) => {
   return (
     <>
         <a 
@@ -8,16 +8,16 @@ const ExternalLink = ({link, text}) => {
           className='episode-text-font'
           target="_blank" 
           rel="noopener noreferrer" 
-          >{text}
+          >{text} {icon}
         </a>
     </>
   )
 }
 
-ExternalLink.propTypes = {
+ExternalLinkWithIcon.propTypes = {
     link: PropTypes.string.isRequired,
     text: PropTypes.string.isRequired
   }
   
 
-export default ExternalLink
+export default ExternalLinkWithIcon

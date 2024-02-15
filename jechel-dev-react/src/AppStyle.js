@@ -134,6 +134,11 @@ const appStyle = {
         fontSize: '5px',
         fontFamily: 'Courier New, monospace',
     },
+
+    workExperienceSubsection: {
+        padding: '0px', 
+        margin: '0px'
+    },
       
 };
 

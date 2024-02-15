@@ -6,6 +6,7 @@ import YouTubeLocation from "components/common/YouTubeLocation";
 import YouTubeRedirectLink from "components/common/YouTubeRedirectLink";
 import YouTubeTitle from "components/common/YouTubeTitle";
 import YouTubeVideo from "components/common/YouTubeVideo";
+import ExternalLinkWithIcon from "components/common/ExternalLinkWithIcon";
 
 // About Me
 import AboutMe from "components/aboutMe/AboutMe";
@@ -52,6 +53,7 @@ import Moto from "components/moto/Moto";
 export {
     // common 
     ExternalLink,
+    ExternalLinkWithIcon,
     YouTubeDescription,
     YouTubeImage,
     YouTubeLocation,
