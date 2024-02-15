@@ -14,7 +14,7 @@ import Qualifications from "components/aboutMe/Qualifications";
 import Projects from "components/aboutMe/Projects";
 import Education from "components/aboutMe/Education";
 import WorkExperience from "components/aboutMe/WorkExperience";
-import Skills from "components/aboutMe/Skills";
+import SkillsSection from "components/aboutMe/skills/SkillsSection";
 import AboutMeHeader from "components/aboutMe/AboutMeHeader";
 
 // icons
@@ -66,7 +66,7 @@ export {
     Projects,
     Education,
     WorkExperience,
-    Skills,
+    SkillsSection as Skills,
     AboutMeHeader,
 
     //icons
