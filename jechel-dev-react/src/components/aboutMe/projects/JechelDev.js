@@ -1,4 +1,4 @@
-import { ExternalLink, GithubIcon, ExternalLinkWithIcon } from "Components";
+import { GithubIcon, ExternalLinkWithIcon } from "Components";
 
 const JechelDev = () => {
   return (
