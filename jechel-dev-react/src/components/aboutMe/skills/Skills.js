@@ -1,14 +1,14 @@
 const colours = {
-  colour1: '#8E7AB5',
-  colour2: '#B784B7',
-  colour3: '#E493B3',
-  colour4: '#EEA5A6',
-  colour5: '#EC8F5E',
-  colour6: '#11235A',
-  colour7: '#11235A',
-  colour8: '#9FBB73',
+  colour1: '#3330E4',
+  colour2: '#15F5BA',
+  colour3: '#F72798',
+  colour4: '#9B4444',
+  colour5: '#FF8911',
+  colour6: '#910A67',
+  colour7: '#0D9276',
+  colour8: '#FF004D',
   colour9: '#004225',
-  colour10: '#8CB9BD',
+  colour10: '#16FF00',
   colour11: '#FFB000',
 };
 
