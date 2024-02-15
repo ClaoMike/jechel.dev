@@ -119,22 +119,6 @@ const appStyle = {
         marginBottom: '2vh',
         maxWidth: '500px',
     },
-
-    skillContainer: { 
-        position: 'relative', 
-        width: '100%', 
-        overflow: 'hidden' 
-    },
-
-    skill: {
-        left: '-300vw',
-        position: 'relative',
-        animation: 'move 11s linear 1s infinite',
-        width: 'max-content',
-        height: '100px',
-        overflow: 'hidden',
-        whiteSpace: 'nowrap'
-      },
       
 };
 
