@@ -4,6 +4,11 @@ import { Stack } from '@mui/material';
 import appStyle from 'AppStyle';
 
 const CustomPieChart = ({ category, data }) => {
+    const lineWidth = 15;
+    const animationDuration = '1000';
+    const radius = 30;
+    const labelPosition = 110;
+
     return (
         <Stack
             direction="column"
@@ -14,18 +19,18 @@ const CustomPieChart = ({ category, data }) => {
             <p> {category} </p>
             <PieChart 
                 data={data} 
-                lineWidth={15} 
+                lineWidth={lineWidth} 
                 rounded 
                 animate
-                animationDuration='1000'
+                animationDuration={animationDuration}
                 style={appStyle.pieChart} 
                 label={({ dataEntry }) => dataEntry.title}
                 labelStyle={(index) => ({
                     ...appStyle.pieChartLabel,
                     fill: data[index].color,
                 })}
-                radius={30}
-                labelPosition={data.length === 1 ? 0 : 110}
+                radius={radius}
+                labelPosition={data.length === 1 ? 0 : labelPosition}
             />
         </Stack>
     )
