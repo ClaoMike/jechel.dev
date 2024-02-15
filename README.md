@@ -40,6 +40,7 @@ npm run build
 - ~~Refactor the YouYube item~~
 - ~~Complete the About Me section~~
 - ~~Style everything -> Decide on some external library (such as ```Material-UI```)~~
+- Update skills' pie chart sizes for mobile
 - Cleanup
 - Add version section on the bottom
 ### Sprint 2
