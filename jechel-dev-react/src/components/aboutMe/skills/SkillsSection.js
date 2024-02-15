@@ -7,11 +7,11 @@ import appStyle from 'AppStyle';
 const SkillsSection = () => {  
   return (
     <Stack direction="row" spacing={2} justifyContent="space-evenly" alignItems="center" flexWrap="wrap" className='skills_section' >
-      <CustomPieChart data={skills.data_IOS} />
-      <CustomPieChart data={skills.data_WEB} />
-      <CustomPieChart data={skills.data_GAMEDEV} />
-      <CustomPieChart data={skills.data_WORDPROCESSING} />
-      <CustomPieChart data={skills.data_VIDEOEDITING} />
+      <CustomPieChart category={'IOS'} data={skills.data_IOS} />
+      <CustomPieChart category={'Web'} data={skills.data_WEB} />
+      <CustomPieChart category={'Game Development'} data={skills.data_GAMEDEV} />
+      <CustomPieChart category={'Word Processing'} data={skills.data_WORDPROCESSING} />
+      <CustomPieChart category={'Video Editing'} data={skills.data_VIDEOEDITING} />
     </Stack>
     
   );
