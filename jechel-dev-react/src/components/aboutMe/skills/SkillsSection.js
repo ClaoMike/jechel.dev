@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import { PieChart } from 'react-minimal-pie-chart';
+import CustomPieChart from './CustomPieChart';
 
 const SkillsSection = () => {
 
@@ -55,41 +55,7 @@ const SkillsSection = () => {
 
   return (
     <Stack>
-
-      <PieChart 
-        data={data_IOS} 
-        lineWidth={15} 
-        rounded 
-        style={{ height: '500px' }} 
-        label={({ dataEntry }) => dataEntry.title}
-        
-
-        labelStyle={(index) => ({
-          fill: data_IOS[index].color,
-          fontSize: '5px',
-          fontFamily: 'sans-serif',
-        })}
-        radius={42}
-        labelPosition={110}
-      />
-
-    <PieChart 
-        data={data_WEB} 
-        lineWidth={15} 
-        rounded 
-        style={{ height: '500px' }} 
-        label={({ dataEntry }) => dataEntry.title}
-        
-
-        labelStyle={(index) => ({
-          fill: data_WEB[index].color,
-          fontSize: '5px',
-          fontFamily: 'sans-serif',
-        })}
-        radius={42}
-        labelPosition={110}
-      />
-
+      <CustomPieChart data={data_IOS} />
     </Stack>
     
   );
