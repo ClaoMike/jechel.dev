@@ -41,10 +41,10 @@
   --icon-github: #28007d;
   --icon-linkedin: #0066c8;
   --icon-resume: #9B4444;
-  --icon-react:;
-  --icon-javascript:;
-  --icon-html:;
-  --icon-css:;
+  --icon-react: #087a9f;
+  --icon-javascript: #dab92d;
+  --icon-html: #dd4b25;
+  --icon-css: #254bdd;
 
   /* SWITCH COLOURS */
   --switch-offColor: var(--sky-light);
@@ -216,4 +216,8 @@ a:hover{
 }
 .article {
   flex:1;
+}
+
+.foo {
+  margin-top: 50px;
 }
