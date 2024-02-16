@@ -43,7 +43,7 @@ const CustomPieChart = ({ category, data }) => {
                             dominantBaseline="central"
                             textAnchor="middle"
                             style={{
-                                fontSize: '5px',
+                                ...appStyle.pieChartLabel,
                                 fill: dataEntry.color,
                             }}
                         >
@@ -59,7 +59,7 @@ const CustomPieChart = ({ category, data }) => {
                                     y={y}
                                     dx={dx}
                                     dy={dy}
-                                    textAnchor={dx < 0 ?  'end' : 'start'}
+                                    textAnchor={data.length === 1 ? 'center' : (dx < 0 ?  'end' : 'start')}
                                 >
                                     {dataEntry.title}
                                 </tspan>
