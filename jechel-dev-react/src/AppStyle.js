@@ -126,7 +126,7 @@ const appStyle = {
     },
 
     pieChart: {
-        width: isMobile ? '120px' : '300px',
+        width: isMobile ? '300px' : '300px',
         overflow: 'visible',
     },
 

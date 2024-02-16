@@ -20,7 +20,7 @@ const skills = {
         { title: 'CocoaPods',                 value: 9,   color: colours.colour4 },
     
         { title: 'fastlane',                  value: 9,   color: colours.colour5 },
-        { title: 'Unit/UI/Snapshot Testing',  value: 9,   color: colours.colour6 },
+        { title: 'Unit/UI Snapshot Testing',  value: 9,   color: colours.colour6 },
         { title: 'XCTest',                    value: 9,   color: colours.colour7 },
         { title: 'Firebase',                  value: 9,   color: colours.colour8 },
     
