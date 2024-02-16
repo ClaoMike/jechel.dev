@@ -80,6 +80,8 @@ body {
   overflow-y: auto;
 
   transition: all .5s;
+
+  display:flex; flex-direction:column;
 }
 
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
@@ -190,4 +192,7 @@ a:hover{
 
 .press-pointer {
   cursor: pointer;
+}
+.article {
+  flex:1;
 }

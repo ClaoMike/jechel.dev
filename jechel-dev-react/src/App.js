@@ -9,17 +9,20 @@ function App() {
   return (
     <Router>
       <div className="App" data-theme={theme}>
+
         <Header theme={theme} setTheme={setTheme} />
         <NavigationBar />
 
-        <Routes>
-          <Route path='/' element={<Latest />} />
-          <Route path='/moto' element={<Moto />} />
-          <Route path='/aboutMe' element={<AboutMe />} />
-        </Routes>
-
+        <div className="article">
+          <Routes>
+            <Route path='/' element={<Latest />} />
+            <Route path='/moto' element={<Moto />} />
+            <Route path='/aboutMe' element={<AboutMe />} />
+          </Routes>
+        </div>
+        
         <VersionSection />
-
+        
       </div>
     </Router>
   );

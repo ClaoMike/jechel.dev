@@ -10,7 +10,7 @@ import { FaReact } from "react-icons/fa";
 
 const VersionSection = () => {
     return (
-        <div style={appStyle.horizontalCenterStyle}>
+        <div style={appStyle.horizontalCenterStyle} className='foo'>
             <Tooltip placement="top" title={
                 <Stack
                 direction="row"
