@@ -41,6 +41,10 @@
   --icon-github: #28007d;
   --icon-linkedin: #0066c8;
   --icon-resume: #9B4444;
+  --icon-react: #087a9f;
+  --icon-javascript: #dab92d;
+  --icon-html: #dd4b25;
+  --icon-css: #254bdd;
 
   /* SWITCH COLOURS */
   --switch-offColor: var(--sky-light);
@@ -80,6 +84,9 @@ body {
   overflow-y: auto;
 
   transition: all .5s;
+
+  display:flex; 
+  flex-direction:column;
 }
 
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
@@ -159,6 +166,22 @@ a:hover{
   color: var(--icon-linkedin);
 }
 
+.react-icon {
+  color: var(--icon-react);
+}
+
+.javascript-icon {
+  color: var(--icon-javascript);
+}
+
+.html-icon {
+  color: var(--icon-html);
+}
+
+.css-icon {
+  color: var(--icon-css);
+}
+
 .navigation-bar-background {
   background-color: var(--background);
 }
@@ -190,4 +213,11 @@ a:hover{
 
 .press-pointer {
   cursor: pointer;
+}
+.article {
+  flex:1;
+}
+
+.foo {
+  margin-top: 50px;
 }
