@@ -38,8 +38,11 @@ npm run build
 - ~~Add some kind of Press me icon on the YouTube episodes in the moto section~~
 - ~~Center everything in About Me section~~
 - ~~Refactor the YouYube item~~
-- Complete the About Me section
-- Style everything -> Decide on some external library (such as ```Material-UI```)
+- ~~Complete the About Me section~~
+- ~~Style everything -> Decide on some external library (such as ```Material-UI```)~~
+- Update skills' pie chart sizes for mobile
+- Cleanup
+- Add version section on the bottom
 ### Sprint 2
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
