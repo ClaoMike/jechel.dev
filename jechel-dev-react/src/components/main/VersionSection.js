@@ -1,31 +1,27 @@
 import appStyle from 'AppStyle'
-import React from 'react'
-import Tooltip from '@mui/material/Tooltip';
 import { Stack } from '@mui/material';
 
-import HtmlIcon from '@mui/icons-material/Html';
-import CssIcon from '@mui/icons-material/Css';
-import JavascriptIcon from '@mui/icons-material/Javascript';
-import { FaReact } from "react-icons/fa";
+import ReactIcon from 'components/icons/ReactIcon';
+import JSIcon from 'components/icons/JSIcon';
+import HTMLIcon from 'components/icons/HTMLIcon';
+import CSSIcon from 'components/icons/CSSIcon';
 
 const VersionSection = () => {
     return (
         <div style={appStyle.horizontalCenterStyle} className='foo'>
-            <Tooltip placement="top" title={
                 <Stack
                 direction="row"
                 justifyContent="space-evenly"
                 alignItems="center"
                 spacing={1}
                 >
-                    <FaReact/>
-                    <JavascriptIcon />
-                    <HtmlIcon />
-                    <CssIcon/>
+                    <ReactIcon/>
+                    <JSIcon/>
+                    <HTMLIcon/>
+                    <CSSIcon/>
                 </Stack>
-            }>
                 <p> Version 1.0.0 </p>
-            </Tooltip>
+
     </div>
   )
 }

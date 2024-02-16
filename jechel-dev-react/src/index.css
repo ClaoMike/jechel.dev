@@ -41,6 +41,10 @@
   --icon-github: #28007d;
   --icon-linkedin: #0066c8;
   --icon-resume: #9B4444;
+  --icon-react:;
+  --icon-javascript:;
+  --icon-html:;
+  --icon-css:;
 
   /* SWITCH COLOURS */
   --switch-offColor: var(--sky-light);
@@ -160,6 +164,22 @@ a:hover{
 
 .linkedin-icon {
   color: var(--icon-linkedin);
+}
+
+.react-icon {
+  color: var(--icon-react);
+}
+
+.javascript-icon {
+  color: var(--icon-javascript);
+}
+
+.html-icon {
+  color: var(--icon-html);
+}
+
+.css-icon {
+  color: var(--icon-css);
 }
 
 .navigation-bar-background {
