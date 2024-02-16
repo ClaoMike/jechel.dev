@@ -1,4 +1,3 @@
-import React, { useRef, useEffect, useState } from 'react';
 import { PieChart } from 'react-minimal-pie-chart';
 import { Stack } from '@mui/material';
 import appStyle from 'AppStyle';
@@ -8,15 +7,6 @@ const CustomPieChart = ({ category, data }) => {
     const animationDuration = '1000';
     const radius = 30;
     const labelPosition = 120;
-    const parentRef = useRef(null);
-    const [parentWidth, setParentWidth] = useState(0);
-
-    useEffect(() => {
-        // Access the clientWidth of the parent element using the ref
-        if (parentRef.current) {
-            setParentWidth(parentRef.current.clientWidth);
-        }
-    }, []);
 
     return (
         <Stack
@@ -26,7 +16,7 @@ const CustomPieChart = ({ category, data }) => {
             spacing={1}
         >
             <p>{category}</p>
-            <div ref={parentRef} style={{ position: 'relative' }}>
+            <div style={{ position: 'relative' }}>
                 <PieChart
                     data={data}
                     lineWidth={lineWidth}
