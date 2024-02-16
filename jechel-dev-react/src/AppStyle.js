@@ -121,8 +121,8 @@ const appStyle = {
     },
 
     skillsSection: {
-        marginLeft: '10vw',
-        marginRight: '10vw',
+        marginLeft: isMobile ? '5vw' :'10vw',
+        marginRight: isMobile ? '5vw' :'10vw',
     },
 
     pieChart: {
