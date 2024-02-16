@@ -43,18 +43,18 @@ npm run build
 - ~~Update skills' pie chart sizes for mobile~~
 - ~~Fix bugs~~
 - ~~New resume~~
-- Add version section on the bottom
+- ~~Add version section on the bottom~~
 - Cleanup
+- Upload the browser's icon
 ### Sprint 2
-- Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
-- Automate as much as possible
-    - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
-    - ~~Absolute imports~~
-### Sprint 3
 - Build server
 - Host server on cloud
 - Integrate the YouTube API
 - Research the cookies topic
 - Add the ```contact me form``` and ```subscribe to my email``` features
-
+### Sprint 3
+- Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
+- Automate as much as possible
+    - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
+    - ~~Absolute imports~~
 ***
