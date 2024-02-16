@@ -81,7 +81,8 @@ body {
 
   transition: all .5s;
 
-  display:flex; flex-direction:column;
+  display:flex; 
+  flex-direction:column;
 }
 
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
