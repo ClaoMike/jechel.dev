@@ -44,13 +44,13 @@ const DLSwitch = ({theme, setTheme}) => {
 
             uncheckedHandleIcon={
                 <div style={appStyle.switchIconConfig}>
-                    <DarkModeIcon/>
+                    <LightModeIcon/>
                 </div>
             }
 
             checkedHandleIcon={
                 <div style={appStyle.switchIconConfig}>
-                    <LightModeIcon/>
+                    <DarkModeIcon/>
                 </div>
             }
 
