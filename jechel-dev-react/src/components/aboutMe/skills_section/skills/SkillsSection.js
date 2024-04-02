@@ -1,8 +1,8 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import skills from './Skills';
-import appStyle from 'AppStyle';
-
+import skills from '../Skills';
+// import appStyle from 'AppStyle';
+import style from './SkillsSectionStyle';
 import { CustomPieChart } from "Components";
 
 const SkillsSection = () => {  
@@ -13,7 +13,7 @@ const SkillsSection = () => {
       justifyContent="space-evenly" 
       alignItems="center" 
       flexWrap="wrap"
-      style={appStyle.skillsSection}
+      style={style}
     >
       <CustomPieChart category={'IOS'} data={skills.data_IOS} />
       <CustomPieChart category={'Web'} data={skills.data_WEB} />
