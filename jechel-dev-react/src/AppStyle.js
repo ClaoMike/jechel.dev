@@ -113,13 +113,6 @@ const appStyle = {
         maxWidth: '1000px',
     },
 
-    mePhoto: {
-        width: isMobile ? '60%' : "30%",
-        borderRadius: "20%",
-        marginBottom: '2vh',
-        maxWidth: '500px',
-    },
-
     skillsSection: {
         marginLeft: isMobile ? '5vw' :'10vw',
         marginRight: isMobile ? '5vw' :'10vw',
