@@ -1,11 +1,10 @@
-import appStyle from "AppStyle";
 import { ExternalLink } from "Components";
-
 import { Stack } from "@mui/material";
+import style from "./EducationStyle";
 
 const Education = () => {
   return (
-    <div style={appStyle.skillsSection}>
+    <div style={style}>
         <h2>Education</h2>
         <h3>Honours Bachelor of Science in Computer Science with Industrial Experience</h3>
         <ul>
