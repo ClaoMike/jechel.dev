@@ -1,6 +1,5 @@
 import appStyle from "AppStyle";
-import SpatiumExplorationis from "./SpatiumExplorationis";
-import JechelDev from "./JechelDev";
+import { SpatiumExplorationis, JechelDev } from "Components";
 
 const Projects = () => {
   return (

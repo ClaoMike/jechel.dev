@@ -1,5 +1,6 @@
 import appStyle from "AppStyle";
-import Qualifcation from "./Qualifcation";
+
+import { Qualifcation } from "Components";
 
 const Qualifications = () => {
   return (

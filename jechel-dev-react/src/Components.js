@@ -17,6 +17,10 @@ import Education from "components/aboutMe/Education";
 import WorkExperience from "components/aboutMe/WorkExperience";
 import SkillsSection from "components/aboutMe/skills/SkillsSection";
 import AboutMeHeader from "components/aboutMe/AboutMeHeader";
+import SpatiumExplorationis from "components/aboutMe/projects/SpatiumExplorationis";
+import JechelDev from "components/aboutMe/projects/JechelDev";
+import Qualifcation from "components/aboutMe/qualifications/Qualifcation";
+import CustomPieChart from "components/aboutMe/skills/CustomPieChart";
 
 // icons
 import AboutMeIcon from "components/icons/AboutMeIcon";
@@ -70,6 +74,10 @@ export {
     WorkExperience,
     SkillsSection as Skills,
     AboutMeHeader,
+    SpatiumExplorationis,
+    JechelDev,
+    Qualifcation,
+    CustomPieChart,
 
     //icons
     AboutMeIcon,

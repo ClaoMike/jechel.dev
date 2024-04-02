@@ -1,8 +1,9 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import CustomPieChart from './CustomPieChart';
 import skills from './Skills';
 import appStyle from 'AppStyle';
+
+import { CustomPieChart } from "Components";
 
 const SkillsSection = () => {  
   return (
