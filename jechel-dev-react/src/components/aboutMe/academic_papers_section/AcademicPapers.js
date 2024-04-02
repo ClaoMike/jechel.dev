@@ -1,9 +1,9 @@
-import appStyle from "AppStyle";
 import { ExternalLink } from "Components";
+import style from "./AcademicPapersStyle";
 
 const AcademicPapers = () => {
   return (
-    <div style={appStyle.skillsSection}>
+    <div style={style}>
         <h2>Academic papers</h2>
         <ul>
             <li>

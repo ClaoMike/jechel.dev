@@ -10,7 +10,7 @@ import ExternalLinkWithIcon from "components/common/ExternalLinkWithIcon";
 
 // About Me
 import AboutMe from "components/aboutMe/AboutMe";
-import AcademicPapers from "components/aboutMe/AcademicPapers";
+import AcademicPapers from "components/aboutMe/academic_papers_section/AcademicPapers";
 import Qualifications from "components/aboutMe/qualifications_section/qualifications/Qualifications";
 import Projects from "components/aboutMe/projects_section/projects/Projects";
 import Education from "components/aboutMe/Education";
