@@ -112,16 +112,6 @@ const appStyle = {
         width: '90%',
         maxWidth: '1000px',
     },
-
-    skillsSection: {
-        marginLeft: isMobile ? '5vw' :'10vw',
-        marginRight: isMobile ? '5vw' :'10vw',
-    },
-
-    workExperienceSubsection: {
-        padding: '0px', 
-        margin: '0px'
-    },
       
 };
 

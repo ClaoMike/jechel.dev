@@ -1,11 +1,11 @@
-import appStyle from "AppStyle";
 import { ExternalLink } from "Components";
+import style from "./WorkExperienceStyle";
 
 const WorkExperience = () => {
   return (
-    <div style={appStyle.skillsSection}>
+    <div style={style.mainDiv}>
         <h2>Work Experience</h2>
-        <h3 style={appStyle.workExperienceSubsection}>
+        <h3 style={style.workExperienceSubsection}>
             IOS Software Engineer, Intern at <ExternalLink link='https://www.apadmi.com/' text='Apadmi' />
         </h3>
 

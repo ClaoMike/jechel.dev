@@ -14,7 +14,7 @@ import AcademicPapers from "components/aboutMe/academic_papers_section/AcademicP
 import Qualifications from "components/aboutMe/qualifications_section/qualifications/Qualifications";
 import Projects from "components/aboutMe/projects_section/projects/Projects";
 import Education from "components/aboutMe/education_section/Education";
-import WorkExperience from "components/aboutMe/WorkExperience";
+import WorkExperience from "components/aboutMe/work_experience_section/WorkExperience";
 import SkillsSection from "components/aboutMe/skills_section/skills/SkillsSection";
 import AboutMeHeader from "components/aboutMe/about_me_header/AboutMeHeader";
 import SpatiumExplorationis from "components/aboutMe/projects_section/SpatiumExplorationis";
