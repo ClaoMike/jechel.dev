@@ -44,7 +44,7 @@ npm run build
 - ~~Fix bugs~~
 - ~~New resume~~
 - ~~Add version section on the bottom~~
-- Imports refactoring
+- ~~Imports refactoring~~
 - CSS file for each component
 - Mock data
 - Improve views
@@ -57,6 +57,7 @@ npm run build
 - Login page
 - Edit data
 - Upload the browser's icon
+
 ### Sprint 2
 - Database schema
 - Normalization
@@ -70,6 +71,7 @@ npm run build
 - Dockerize
 
 ### Sprint 4
+- Automatic version update
 - Host server on cloud
 
 ### Sprint 5
