@@ -1,9 +1,9 @@
-import appStyle from "AppStyle";
 import { SpatiumExplorationis, JechelDev } from "Components";
+import style from "./ProjectsStyle";
 
 const Projects = () => {
   return (
-    <div style={appStyle.skillsSection}>
+    <div style={style}>
         <h2>Projects</h2>
         <JechelDev/>
         <SpatiumExplorationis/>
