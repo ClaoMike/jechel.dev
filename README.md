@@ -44,15 +44,38 @@ npm run build
 - ~~Fix bugs~~
 - ~~New resume~~
 - ~~Add version section on the bottom~~
-- Cleanup
+- Imports refactoring
+- CSS file for each component
+- Mock data
+- Improve views
+- Under maintenance
+- Contact form
+- Subscribe to my email
+- Websites
+- Mobile apps
+- Video games
+- Login page
+- Edit data
 - Upload the browser's icon
 ### Sprint 2
-- Build server
-- Host server on cloud
-- Integrate the YouTube API
-- Research the cookies topic
-- Add the ```contact me form``` and ```subscribe to my email``` features
+- Database schema
+- Normalization
+- PostgreSQL db
+
 ### Sprint 3
+- Setup API
+- Connect with db
+- Connect with frontend
+- Integrate the YouTube API
+- Dockerize
+
+### Sprint 4
+- Host server on cloud
+
+### Sprint 5
+- Cookies
+
+### Sprint 6
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
     - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
