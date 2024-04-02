@@ -1,6 +1,6 @@
 import { PieChart } from 'react-minimal-pie-chart';
 import { Stack } from '@mui/material';
-import appStyle from 'AppStyle';
+import style from './CustomPieChartStyle';
 
 const CustomPieChart = ({ category, data }) => {
     const lineWidth = 15;
@@ -16,14 +16,14 @@ const CustomPieChart = ({ category, data }) => {
             spacing={1}
         >
             <p>{category}</p>
-            <div style={{ position: 'relative' }}>
+            <div style={style.mainDivPosition}>
                 <PieChart
                     data={data}
                     lineWidth={lineWidth}
                     rounded
                     animate
                     animationDuration={animationDuration}
-                    style={appStyle.pieChart}
+                    style={style.pieChart}
                     label={({ x, y, dx, dy, dataEntry }) => (
                         <text
                             x={x}
@@ -33,7 +33,7 @@ const CustomPieChart = ({ category, data }) => {
                             dominantBaseline="central"
                             textAnchor="middle"
                             style={{
-                                ...appStyle.pieChartLabel,
+                                ...style.pieChartLabel,
                                 fill: dataEntry.color,
                             }}
                         >

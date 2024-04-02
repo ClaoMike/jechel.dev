@@ -125,16 +125,6 @@ const appStyle = {
         marginRight: isMobile ? '5vw' :'10vw',
     },
 
-    pieChart: {
-        width: '300px',
-        overflow: 'visible',
-    },
-
-    pieChartLabel: {
-        fontSize: '5px',
-        fontFamily: 'Courier New, monospace',
-    },
-
     workExperienceSubsection: {
         padding: '0px', 
         margin: '0px'

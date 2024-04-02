@@ -20,7 +20,7 @@ import AboutMeHeader from "components/aboutMe/AboutMeHeader";
 import SpatiumExplorationis from "components/aboutMe/projects_section/SpatiumExplorationis";
 import JechelDev from "components/aboutMe/projects_section/JechelDev";
 import Qualifcation from "components/aboutMe/qualifications_section/Qualifcation";
-import CustomPieChart from "components/aboutMe/skills/CustomPieChart";
+import CustomPieChart from "components/aboutMe/skills/custom_pie_chart/CustomPieChart";
 
 // icons
 import AboutMeIcon from "components/icons/AboutMeIcon";
