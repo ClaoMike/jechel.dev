@@ -1,7 +1,7 @@
 // common
 import ExternalLink from "components/common/ExternalLink";
 import YouTubeDescription from "components/common/YouTubeDescription";
-import YouTubeImage from "components/common/YouTubeImage";
+import YouTubeImage from "components/common/YouTubeImage/YouTubeImage";
 import YouTubeLocation from "components/common/YouTubeLocation";
 import YouTubeRedirectLink from "components/common/YouTubeRedirectLink";
 import YouTubeTitle from "components/common/YouTubeTitle";
