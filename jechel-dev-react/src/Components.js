@@ -11,15 +11,15 @@ import ExternalLinkWithIcon from "components/common/ExternalLinkWithIcon";
 // About Me
 import AboutMe from "components/aboutMe/AboutMe";
 import AcademicPapers from "components/aboutMe/AcademicPapers";
-import Qualifications from "components/aboutMe/qualifications/Qualifications";
-import Projects from "components/aboutMe/projects/projects/Projects";
+import Qualifications from "components/aboutMe/qualifications_section/qualifications/Qualifications";
+import Projects from "components/aboutMe/projects_section/projects/Projects";
 import Education from "components/aboutMe/Education";
 import WorkExperience from "components/aboutMe/WorkExperience";
 import SkillsSection from "components/aboutMe/skills/SkillsSection";
 import AboutMeHeader from "components/aboutMe/AboutMeHeader";
-import SpatiumExplorationis from "components/aboutMe/projects/SpatiumExplorationis";
-import JechelDev from "components/aboutMe/projects/JechelDev";
-import Qualifcation from "components/aboutMe/qualifications/Qualifcation";
+import SpatiumExplorationis from "components/aboutMe/projects_section/SpatiumExplorationis";
+import JechelDev from "components/aboutMe/projects_section/JechelDev";
+import Qualifcation from "components/aboutMe/qualifications_section/Qualifcation";
 import CustomPieChart from "components/aboutMe/skills/CustomPieChart";
 
 // icons

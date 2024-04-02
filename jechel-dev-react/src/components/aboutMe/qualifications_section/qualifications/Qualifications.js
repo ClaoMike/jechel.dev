@@ -1,10 +1,9 @@
-import appStyle from "AppStyle";
-
 import { Qualifcation } from "Components";
+import style from "./QualificationsStyle";
 
 const Qualifications = () => {
   return (
-    <div style={appStyle.skillsSection}>
+    <div style={style}>
       <h2>Qualifications</h2>
       <ul>
         <li>
