@@ -1,11 +1,11 @@
 import HtmlIcon from '@mui/icons-material/Html';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 import { isMobile } from 'react-device-detect';
 
 const HTMLIcon = () => {
   return (
     <HtmlIcon 
-        style={appStyle.iconConfig}
+        style={style}
         className='html-icon'
         sx={{ fontSize: isMobile ? 30 : 50 }}
     />

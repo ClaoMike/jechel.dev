@@ -1,11 +1,11 @@
 import { FaHotjar} from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const FlameIcon = () => {
   return (
     <FaHotjar 
         className='flame-icon'
-        style={appStyle.iconConfig}
+        style={style}
       />
   );
 };

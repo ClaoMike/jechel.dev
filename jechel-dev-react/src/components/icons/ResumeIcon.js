@@ -1,11 +1,11 @@
 import SimCardDownloadIcon from '@mui/icons-material/SimCardDownload';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const ResumeIcon = () => {      
   return (
     <SimCardDownloadIcon
       className='resume-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

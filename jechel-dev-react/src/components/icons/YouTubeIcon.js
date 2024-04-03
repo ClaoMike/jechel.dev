@@ -1,11 +1,11 @@
 import { FaYoutube } from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const YouTubeIcon = () => {
   return (
     <FaYoutube 
       className='youtube-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

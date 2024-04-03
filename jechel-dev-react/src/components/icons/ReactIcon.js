@@ -1,5 +1,5 @@
 import { FaReact } from "react-icons/fa";
-import appStyle from "AppStyle";
+import style from './IconStyle';
 import { IconContext } from "react-icons";
 import { isMobile } from 'react-device-detect';
 
@@ -8,7 +8,7 @@ const ReactIcon = () => {
     <IconContext.Provider value={{size: isMobile ? '30px' : '50px', className: "react-icon" }}>
     <div>
       <FaReact
-        style={appStyle.iconConfig}
+        style={style}
       />
     </div>
   </IconContext.Provider>

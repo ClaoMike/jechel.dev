@@ -1,11 +1,11 @@
 import { FaMotorcycle } from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const MotoIcon = () => {
   return (
     <FaMotorcycle 
       className='moto-icon '
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

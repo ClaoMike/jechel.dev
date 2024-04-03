@@ -1,11 +1,11 @@
 import { FaCodeBranch } from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const AboutMeIcon = () => {      
   return (
     <FaCodeBranch 
       className='about-me-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

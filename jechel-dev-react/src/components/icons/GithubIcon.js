@@ -1,11 +1,11 @@
 import GitHubIcon from '@mui/icons-material/GitHub';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const GithubIcon = () => {      
   return (
     <GitHubIcon
       className='github-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

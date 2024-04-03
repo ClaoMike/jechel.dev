@@ -1,11 +1,11 @@
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const LinkedinIcon = () => {      
   return (
     <LinkedInIcon 
       className='linkedin-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

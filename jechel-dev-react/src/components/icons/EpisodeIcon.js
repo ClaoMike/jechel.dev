@@ -1,11 +1,11 @@
 import { FaFilm } from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const EpisodeIcon = () => {      
   return (
     <FaFilm 
       className='episode-icon' 
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

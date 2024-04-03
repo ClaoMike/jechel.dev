@@ -1,11 +1,11 @@
 import { FaTerminal } from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const SubtitleIcon = () => {
   return (
     <FaTerminal 
       className='subtitle-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

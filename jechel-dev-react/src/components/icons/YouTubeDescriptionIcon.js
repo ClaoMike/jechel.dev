@@ -1,11 +1,11 @@
 import { FaAlignCenter} from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const YouTubeDescriptionIcon = () => {
   return (
     <FaAlignCenter 
       className='youtube-description-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };

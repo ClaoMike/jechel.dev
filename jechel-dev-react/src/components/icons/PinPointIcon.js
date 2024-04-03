@@ -1,11 +1,11 @@
 import { FaMapPin } from 'react-icons/fa';
-import appStyle from "AppStyle";
+import style from './IconStyle';
 
 const PinPointIcon = () => {
   return (
     <FaMapPin 
       className='pinpoint-icon'
-      style={appStyle.iconConfig}
+      style={style}
     />
   );
 };
