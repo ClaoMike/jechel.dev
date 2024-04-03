@@ -42,10 +42,10 @@ import Latest from "components/latest/Latest";
 import YouTubeLatest from "components/latest/youtube/YouTubeLatest";
 
 // main - header
-import DLSwitch from "components/main/header/dark_light_toggle_switch/DLSwitch";
-import Header from "components/main/header/Header";
-import Subtitle from "components/main/header/Subtitle";
-import Title from "components/main/header/Title";
+import DLSwitch from "components/main/header_section/dark_light_toggle_switch/DLSwitch";
+import Header from "components/main/header_section/header/Header";
+import Subtitle from "components/main/header_section/Subtitle";
+import Title from "components/main/header_section/Title";
 
 // main - navigationBar
 import NavigationBar from "components/main/navigationBar/NavigationBar";

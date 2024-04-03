@@ -1,9 +1,9 @@
 import { Title, Subtitle } from 'Components';
-import appStyle from "AppStyle";
+import style from './HeaderStyle';
 
 const Header = ({theme, setTheme}) => {
   return (
-    <div style={appStyle.headerConfig}>
+    <div style={style}>
         <Title />
         <Subtitle theme={theme} setTheme={setTheme} />
     </div>
