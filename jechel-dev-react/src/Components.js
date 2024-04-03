@@ -39,7 +39,7 @@ import YouTubeIcon from "components/icons/YouTubeIcon";
 
 // latest
 import Latest from "components/latest/Latest";
-import YouTubeLatest from "components/latest/YouTubeLatest";
+import YouTubeLatest from "components/latest/youtube/YouTubeLatest";
 
 // main - header
 import DLSwitch from "components/main/header/DLSwitch";

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeDescription, YouTubeRedirectLink } from 'Components';
-import appStyle from "AppStyle";
+import style from './YouTubeLatestStyle';
 
 const YouTubeLatest = ({ link }) => {
   const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg';
@@ -14,9 +14,9 @@ const YouTubeLatest = ({ link }) => {
 
   return (
     <>
-        <Stack spacing={2} direction={isMobile ? 'column' : 'row'} className='youtube-container' style={appStyle.paperStyle}>
+        <Stack spacing={2} direction={isMobile ? 'column' : 'row'} className='youtube-container' style={style.mainStack}>
           
-          <YouTubeImage style={appStyle.imageContainerStyleLatest} imageUrl={imageUrl} altDescription={altDescription} />
+          <YouTubeImage style={style.image} imageUrl={imageUrl} altDescription={altDescription} />
           
           <Stack spacing={2} direction="column">
             <YouTubeTitle title={title} />
