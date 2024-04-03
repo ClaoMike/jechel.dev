@@ -42,7 +42,7 @@ import Latest from "components/latest/Latest";
 import YouTubeLatest from "components/latest/youtube/YouTubeLatest";
 
 // main - header
-import DLSwitch from "components/main/header/DLSwitch";
+import DLSwitch from "components/main/header/dark_light_toggle_switch/DLSwitch";
 import Header from "components/main/header/Header";
 import Subtitle from "components/main/header/Subtitle";
 import Title from "components/main/header/Title";

@@ -2,7 +2,7 @@ import Switch from "react-switch";
 import { isMobile } from 'react-device-detect';
 import { useEffect, useState } from 'react';
 import { DarkModeIcon, LightModeIcon } from "Components";
-import appStyle from "AppStyle";
+import style from "./DLSwitchStyle";
 
 const DLSwitch = ({theme, setTheme}) => {
     const rootStyles = getComputedStyle(document.documentElement);
@@ -43,13 +43,13 @@ const DLSwitch = ({theme, setTheme}) => {
             checkedIcon={false}
 
             uncheckedHandleIcon={
-                <div style={appStyle.switchIconConfig}>
+                <div style={style}>
                     <LightModeIcon/>
                 </div>
             }
 
             checkedHandleIcon={
-                <div style={appStyle.switchIconConfig}>
+                <div style={style}>
                     <DarkModeIcon/>
                 </div>
             }
