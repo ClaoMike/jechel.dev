@@ -45,7 +45,7 @@ import YouTubeLatest from "components/latest/youtube/YouTubeLatest";
 import DLSwitch from "components/main/header_section/dark_light_toggle_switch/DLSwitch";
 import Header from "components/main/header_section/header/Header";
 import Subtitle from "components/main/header_section/subtitle/Subtitle";
-import Title from "components/main/header_section/Title";
+import Title from "components/main/header_section/title/Title";
 
 // main - navigationBar
 import NavigationBar from "components/main/navigationBar/NavigationBar";
