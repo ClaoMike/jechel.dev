@@ -1,11 +1,11 @@
 import { Container, Box, Stack } from '@mui/material';
 import { SubtitleIcon, DLSwitch } from 'Components';
-import appStyle from "AppStyle";
+import style from './SubtitleStyle';
 
 const Subtitle = ({theme, setTheme}) => {
   return (
     <Container>
-      <Box sx={appStyle.horizontalCenterStyle}>
+      <Box sx={style}>
         <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">            
           <SubtitleIcon/>
           <p>Software Engineer</p>
