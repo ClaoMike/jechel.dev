@@ -10,7 +10,7 @@ const AboutMeHeader = () => {
 
         <Stack direction="row" justifyContent="center" alignItems="center" spacing={0}>
           <ExternalLinkWithIcon link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text={STRINGS.aboutMe.socialMedia.resume} icon={<ResumeIcon />}/> &nbsp; 
-          <ExternalLinkWithIcon link='https://github.com/ClaoMike' text={STRINGS.aboutMe.socialMedia.github} icon={<GithubIcon />} /> &nbsp; 
+          <ExternalLinkWithIcon link='https://github.com/ClaoMike' text={STRINGS.GITHUB} icon={<GithubIcon />} /> &nbsp; 
           <ExternalLinkWithIcon link='https://www.linkedin.com/in/claudiumihaijechel/' text={STRINGS.aboutMe.socialMedia.linkedIn} icon={<LinkedinIcon />} />
         </Stack>
 

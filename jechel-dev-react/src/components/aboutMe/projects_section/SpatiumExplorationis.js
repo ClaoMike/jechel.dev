@@ -1,18 +1,18 @@
-import { ExternalLink, GithubIcon, ExternalLinkWithIcon } from "Components";
+import { ExternalLink, GithubIcon, ExternalLinkWithIcon, STRINGS } from "Components";
 
 const SpatiumExplorationis = () => {
   return (
     <div>
         <h3>
-            Spatium Explorationis
-            (<ExternalLinkWithIcon link='https://github.com/ClaoMike/AE' text='GitHub' icon={<GithubIcon />} />)
+            {STRINGS.aboutMe.projects.project1.title}
+            (<ExternalLinkWithIcon link='https://github.com/ClaoMike/AE' text={STRINGS.GITHUB} icon={<GithubIcon />} />)
         </h3>
         <ul>
-          <li>This was my third-year project I built during my studies at the <ExternalLink link='https://www.manchester.ac.uk/' text='University of Manchester' />.</li>
-          <li>Served as the foundation for my <ExternalLink link='resources/Thesis.pdf' text='How to build a video game using Procedural Content Generation?' /> paper.</li>
-          <li>Developed a top-down 2D video game using Java, libGDX, Procreate and GarageBand.</li>
-          <li>The objective of the game is to play as a space-faring dog who explores Pluto and locates a broken satellite at the end of a maze. The scope of the game is to play as an explorer space dog to find the broken satellite on Pluto, located at the maze exit.</li>
-          <li>Used a traditional Procedural Content Generation (PCG) technique to generate each level.</li>
+          <li>{STRINGS.aboutMe.projects.project1.line1 + STRINGS.EMPTY_SPACE}<ExternalLink link='https://www.manchester.ac.uk/' text={STRINGS.UNIVERSITY_OF_MANCHESTER} />{STRINGS.DOT}</li>
+          <li>{STRINGS.aboutMe.projects.project1.line2 + STRINGS.EMPTY_SPACE}<ExternalLink link='resources/Thesis.pdf' text={STRINGS.aboutMe.academicPapers.paper1} />{STRINGS.DOT}</li>
+          <li>{STRINGS.aboutMe.projects.project1.line3}</li>
+          <li>{STRINGS.aboutMe.projects.project1.line4}</li>
+          <li>{STRINGS.aboutMe.projects.project1.line5}</li>
         </ul>
     </div>
   )

@@ -4,6 +4,9 @@ const STRINGS = {
     REDIRECT_TO_YOUTUBE: 'Watch it on YouTube',
     VERTICAL_SEPARATOR: '|',
     AND_SMALL: 'and',
+    GITHUB: 'GitHub',
+    UNIVERSITY_OF_MANCHESTER: 'University of Manchester',
+    DOT: '.',
 
     main: {
         title: 'Claudiu Mihai Jechel',
@@ -24,7 +27,6 @@ const STRINGS = {
     aboutMe: {
         socialMedia: {
             resume: 'Resume',
-            github: 'GitHub',
             linkedIn: 'LinkedIn'
         },
 
@@ -72,10 +74,20 @@ const STRINGS = {
             paper1: 'How to build a video game using Procedural Content Generation?'
         },
 
-        projects: {},
+        projects: {
+            title: 'Projects',
+            project1: {
+                title: 'Spatium Explorationis',
+                line1: 'This was my third-year project I built during my studies at the',
+                line2: 'Served as the foundation for ',
+                line3: 'Developed a top-down 2D video game using Java, libGDX, Procreate and GarageBand.',
+                line4: 'The objective of the game is to play as a space-faring dog who explores Pluto and locates a broken satellite at the end of a maze. The scope of the game is to play as an explorer space dog to find the broken satellite on Pluto, located at the maze exit.',
+                line5: 'Used a traditional Procedural Content Generation (PCG) technique to generate each level.',
+            }
+        },
 
         qualifications: {},
-        
+
     }
 
 };
