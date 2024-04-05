@@ -65,7 +65,12 @@ const STRINGS = {
                 location: 'Manchester, UK',
                 date: '09/2019 - 07/2023'
             },
-        }
+        },
+
+        academicPapers: {
+            title: 'Academic papers',
+            paper1: 'How to build a video game using Procedural Content Generation?'
+        },
     }
 
 };
