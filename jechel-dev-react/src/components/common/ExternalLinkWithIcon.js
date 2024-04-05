@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 const ExternalLinkWithIcon = ({link, text, icon}) => {
   return (
     <>

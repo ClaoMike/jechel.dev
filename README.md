@@ -48,6 +48,7 @@ npm run build
 - ~~CSS file for each component~~
 - ~~Mock data~~
 - Strings file
+- Add the highschool education
 - Improve views
 - Under maintenance
 - Contact form

@@ -1,12 +1,12 @@
-import { ExternalLink } from "Components";
+import { ExternalLink, STRINGS } from "Components";
 import { Stack } from "@mui/material";
 import style from "./EducationStyle";
 
 const Education = () => {
   return (
     <div style={style}>
-        <h2>Education</h2>
-        <h3>Honours Bachelor of Science in Computer Science with Industrial Experience</h3>
+        <h2>{STRINGS.aboutMe.education.title}</h2>
+        <h3>{STRINGS.aboutMe.education.ed1.title}</h3>
         <ul>
           <li>
             <Stack
@@ -16,7 +16,7 @@ const Education = () => {
               spacing={0.5}
             >
               <ExternalLink link='https://www.manchester.ac.uk/' text='University of Manchester' />
-              <small>Manchester, UK | 09/2019 - 07/2023</small>
+              <small>{STRINGS.aboutMe.education.ed1.location + STRINGS.EMPTY_SPACE + STRINGS.VERTICAL_SEPARATOR + STRINGS.EMPTY_SPACE + STRINGS.aboutMe.education.ed1.date}</small>
             </Stack>
           </li>
         </ul>

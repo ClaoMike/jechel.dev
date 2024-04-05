@@ -57,6 +57,15 @@ const STRINGS = {
                 }
             }
         },
+
+        education: {
+            title: 'Education',
+            ed1: {
+                title: 'Honours Bachelor of Science in Computer Science with Industrial Experience',
+                location: 'Manchester, UK',
+                date: '09/2019 - 07/2023'
+            },
+        }
     }
 
 };
