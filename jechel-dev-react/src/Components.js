@@ -46,6 +46,7 @@ import DLSwitch from "components/main/header_section/dark_light_toggle_switch/DL
 import Header from "components/main/header_section/header/Header";
 import Subtitle from "components/main/header_section/subtitle/Subtitle";
 import Title from "components/main/header_section/title/Title";
+import VersionSection from "components/main/version_section/VersionSection";
 
 // main - navigationBar
 import NavigationBar from "components/main/navBar/navigationBar/NavigationBar";
@@ -110,6 +111,9 @@ export {
     // main - navigationBar
     NavigationBar,
     NavigationItem,
+
+    // main - version section
+    VersionSection,
 
     // moto
     Moto,

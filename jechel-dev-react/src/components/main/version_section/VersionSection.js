@@ -1,14 +1,13 @@
-import appStyle from 'AppStyle'
 import { Stack } from '@mui/material';
-
 import ReactIcon from 'components/icons/ReactIcon';
 import JSIcon from 'components/icons/JSIcon';
 import HTMLIcon from 'components/icons/HTMLIcon';
 import CSSIcon from 'components/icons/CSSIcon';
+import style from './VersionSectionStyle';
 
 const VersionSection = () => {
     return (
-        <div style={appStyle.horizontalCenterStyle} className='foo'>
+        <div style={style} className='foo'>
                 <Stack
                 direction="row"
                 justifyContent="space-evenly"

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState } from 'react';
-import { Header, NavigationBar, Latest, Moto, AboutMe } from "Components";
-import VersionSection from "components/main/VersionSection";
+import { Header, NavigationBar, Latest, Moto, AboutMe, VersionSection } from "Components";
 
 function App() {
   const [theme, setTheme] = useState('');
