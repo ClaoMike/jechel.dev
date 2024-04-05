@@ -1,5 +1,5 @@
 import { Box, Stack } from '@mui/material';
-import { FlameIcon, MotoIcon, AboutMeIcon, NavigationItem } from 'Components';
+import { FlameIcon, MotoIcon, AboutMeIcon, NavigationItem, STRINGS } from 'Components';
 import style from './NavigationBarStyle';
 
 const NavigationBar = () => {
@@ -11,9 +11,9 @@ const NavigationBar = () => {
       
       <nav style={style.nav} className={'navigation-bar-background'}>
         <Stack direction="row" spacing={3} >            
-          <NavigationItem link={'/'} text={'Latest'} icon={<FlameIcon/>}/>
-          <NavigationItem link={'/moto'} text={'Moto'} icon={<MotoIcon/>}/>
-          <NavigationItem link={'/aboutMe'} text={'About Me'} icon={<AboutMeIcon/>}/>
+          <NavigationItem link={'/'} text={STRINGS.navigation.item1} icon={<FlameIcon/>}/>
+          <NavigationItem link={'/moto'} text={STRINGS.navigation.item2} icon={<MotoIcon/>}/>
+          <NavigationItem link={'/aboutMe'} text={STRINGS.navigation.item3} icon={<AboutMeIcon/>}/>
         </Stack>
       </nav>
       
