@@ -86,7 +86,20 @@ const STRINGS = {
             }
         },
 
-        qualifications: {},
+        qualifications: {
+            title: 'Qualifications',
+            qualification1: {
+                title: 'Romanian Baccalaureate Exam',
+                date: '07/2019',
+                grade: 'Grade: 9.78/10'
+            },
+
+            qualification2: {
+                title: 'Cambridge English Level 2 Certificate in ESOL International (Advanced)',
+                date: '07/2018',
+                grade: 'Level: C1'
+            }
+        },
 
     }
 
