@@ -79,35 +79,59 @@ const mockData = {
     ],
 
     aboutMe: {
-        resume: '',
         skills: [
             {
                 title: 'IOS',
-                skills: ['', '', '', '','', '','', '','', '','']
+                skills: [
+                    'Swift', 
+                    'SwiftUI', 
+                    'UIKit', 
+                    'CocoaPods', 
+                    'fastlane', 
+                    'Unit/UI Snapshot Testing', 
+                    'XCTest', 
+                    'Firebase',
+                    'TestFlight', 
+                    'git', 
+                    'CI/CD'
+                ]
             },
             {
                 title: 'Web',
-                skills: ['', '', '', '','', '','', '','', '','']
+                skills: [
+                    'React', 
+                    'JavaScript', 
+                    'HTML', 
+                    'CSS'
+                ]
             },
             {
                 title: 'Game Development',
-                skills: ['', '', '', '','', '','', '','', '','']
+                skills: [
+                    'Java', 
+                    'libGDX', 
+                    'C#', 
+                    'Unity 2D', 
+                    'Python', 
+                    'Phaser 3', 
+                    'OOP'
+                ]
             },
             {
                 title: 'Word Processing',
-                skills: ['', '', '', '','', '','', '','', '','']
+                skills: [
+                    'LATEX'
+                ]
             },
             {
                 title: 'Video Editing',
-                skills: ['', '', '', '','', '','', '','', '','']
+                skills: [ 
+                    'Procreate',
+                    'Final Cut Pro', 
+                    'GarageBand'
+                ]
             }
         ],
-        academicPapers: [
-            {
-                title: '',
-                file: ''
-            }
-        ]
     }
 };
 

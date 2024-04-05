@@ -21,6 +21,7 @@ import SpatiumExplorationis from "components/aboutMe/projects_section/SpatiumExp
 import JechelDev from "components/aboutMe/projects_section/JechelDev";
 import Qualifcation from "components/aboutMe/qualifications_section/Qualifcation";
 import CustomPieChart from "components/aboutMe/skills_section/custom_pie_chart/CustomPieChart";
+import Skill from "components/aboutMe/skills_section/Skill";
 
 // icons
 import AboutMeIcon from "components/icons/AboutMeIcon";
@@ -82,6 +83,7 @@ export {
     JechelDev,
     Qualifcation,
     CustomPieChart,
+    Skill,
 
     //icons
     AboutMeIcon,

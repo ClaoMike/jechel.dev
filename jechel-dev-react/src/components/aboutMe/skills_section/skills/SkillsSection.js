@@ -1,11 +1,14 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import skills from '../Skills';
-// import appStyle from 'AppStyle';
 import style from './SkillsSectionStyle';
-import { CustomPieChart } from "Components";
+import { CustomPieChart, Skill, mockData} from "Components";
 
 const SkillsSection = () => {  
+  const skills = [];
+  mockData.aboutMe.skills.forEach(skill => {
+    skills.push(new Skill(skill.title, skill.skills));
+  });
+
   return (
     <Stack 
       direction="row" 
@@ -15,11 +18,9 @@ const SkillsSection = () => {
       flexWrap="wrap"
       style={style}
     >
-      <CustomPieChart category={'IOS'} data={skills.data_IOS} />
-      <CustomPieChart category={'Web'} data={skills.data_WEB} />
-      <CustomPieChart category={'Game Development'} data={skills.data_GAMEDEV} />
-      <CustomPieChart category={'Word Processing'} data={skills.data_WORDPROCESSING} />
-      <CustomPieChart category={'Video Editing'} data={skills.data_VIDEOEDITING} />
+      {skills.map((skill) => (
+        <CustomPieChart category={skill.title} data={skill.pieChartData} />
+      ))}
     </Stack>
     
   );
