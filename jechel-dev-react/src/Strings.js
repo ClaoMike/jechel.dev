@@ -71,6 +71,11 @@ const STRINGS = {
             title: 'Academic papers',
             paper1: 'How to build a video game using Procedural Content Generation?'
         },
+
+        projects: {},
+
+        qualifications: {},
+        
     }
 
 };
