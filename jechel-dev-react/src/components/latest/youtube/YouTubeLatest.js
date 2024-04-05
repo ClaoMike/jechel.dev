@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { Stack } from '@mui/material';
 import { isMobile } from 'react-device-detect';
 import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeDescription, YouTubeRedirectLink } from 'Components';
@@ -21,10 +20,6 @@ const YouTubeLatest = ({ video }) => {
         </Stack>
     </>
   );
-};
-
-YouTubeLatest.propTypes = {
-  link: PropTypes.string.isRequired
 };
 
 export default YouTubeLatest;
