@@ -48,8 +48,8 @@ import Subtitle from "components/main/header_section/subtitle/Subtitle";
 import Title from "components/main/header_section/title/Title";
 
 // main - navigationBar
-import NavigationBar from "components/main/navigationBar/NavigationBar";
-import NavigationItem from "components/main/navigationBar/NavigationItem";
+import NavigationBar from "components/main/navBar/navigationBar/NavigationBar";
+import NavigationItem from "components/main/navBar/NavigationItem";
 
 // moto
 import Moto from "components/moto/Moto";
