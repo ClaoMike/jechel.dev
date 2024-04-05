@@ -47,6 +47,7 @@ npm run build
 - ~~Imports refactoring~~
 - ~~CSS file for each component~~
 - Mock data
+- Strings file
 - Improve views
 - Under maintenance
 - Contact form
