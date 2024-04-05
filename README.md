@@ -33,7 +33,7 @@ npm run build
 
 ***
 
-## ToDo
+## To Do
 ### Sprint 1
 - ~~Add some kind of Press me icon on the YouTube episodes in the moto section~~
 - ~~Center everything in About Me section~~
@@ -47,7 +47,13 @@ npm run build
 - ~~Imports refactoring~~
 - ~~CSS file for each component~~
 - ~~Mock data~~
-- Strings file
+- ~~Strings file~~
+
+### Sprint 2
+- Database schema
+- Normalization
+- PostgreSQL db
+***
 - Add the highschool education
 - Improve views
 - Under maintenance
@@ -59,11 +65,6 @@ npm run build
 - Login page
 - Edit data
 - Upload the browser's icon
-
-### Sprint 2
-- Database schema
-- Normalization
-- PostgreSQL db
 
 ### Sprint 3
 - Setup API
