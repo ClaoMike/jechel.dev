@@ -1,5 +1,5 @@
 import { Container, Box, Stack } from '@mui/material';
-import { SubtitleIcon, DLSwitch } from 'Components';
+import { SubtitleIcon, DLSwitch, STRINGS } from 'Components';
 import style from './SubtitleStyle';
 
 const Subtitle = ({theme, setTheme}) => {
@@ -8,7 +8,7 @@ const Subtitle = ({theme, setTheme}) => {
       <Box sx={style}>
         <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">            
           <SubtitleIcon/>
-          <p>Software Engineer</p>
+          <p>{STRINGS.main.subtitle}</p>
           <DLSwitch theme={theme} setTheme={setTheme} className="press-pointer"/>
         </Stack>
       </Box>

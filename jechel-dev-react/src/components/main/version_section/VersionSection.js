@@ -4,6 +4,7 @@ import JSIcon from 'components/icons/JSIcon';
 import HTMLIcon from 'components/icons/HTMLIcon';
 import CSSIcon from 'components/icons/CSSIcon';
 import style from './VersionSectionStyle';
+import STRINGS from 'Strings';
 
 const VersionSection = () => {
     return (
@@ -19,7 +20,7 @@ const VersionSection = () => {
                     <HTMLIcon/>
                     <CSSIcon/>
                 </Stack>
-                <p> Version 1.1.1 </p>
+                <p>{STRINGS.main.version + STRINGS.EMPTY_SPACE}1.1.1</p>
 
     </div>
   )
