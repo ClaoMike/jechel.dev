@@ -6,7 +6,7 @@ import { CustomPieChart, Skill, mockData} from "Components";
 const SkillsSection = () => {  
   const skills = [];
   mockData.aboutMe.skills.forEach(skill => {
-    skills.push(new Skill(skill.title, skill.skills));
+    skills.push(new Skill(skill.ID, skill.title, skill.skills));
   });
 
   return (
@@ -19,7 +19,7 @@ const SkillsSection = () => {
       style={style}
     >
       {skills.map((skill) => (
-        <CustomPieChart category={skill.title} data={skill.pieChartData} />
+        <CustomPieChart key={skill.ID} category={skill.title} data={skill.pieChartData} />
       ))}
     </Stack>
     

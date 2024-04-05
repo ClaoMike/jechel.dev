@@ -46,7 +46,7 @@ npm run build
 - ~~Add version section on the bottom~~
 - ~~Imports refactoring~~
 - ~~CSS file for each component~~
-- Mock data
+- ~~Mock data~~
 - Strings file
 - Improve views
 - Under maintenance

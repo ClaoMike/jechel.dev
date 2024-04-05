@@ -13,7 +13,8 @@ export default class Skill {
         '#FFB000'
     ];
     
-    constructor(title, skills) {
+    constructor(ID, title, skills) {
+        this.ID = ID;
         this.title = title;
         this.pieChartData = [];
 

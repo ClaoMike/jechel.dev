@@ -81,6 +81,7 @@ const mockData = {
     aboutMe: {
         skills: [
             {
+                ID: '1',
                 title: 'IOS',
                 skills: [
                     'Swift', 
@@ -97,6 +98,7 @@ const mockData = {
                 ]
             },
             {
+                ID: '2',
                 title: 'Web',
                 skills: [
                     'React', 
@@ -106,6 +108,7 @@ const mockData = {
                 ]
             },
             {
+                ID: '3',
                 title: 'Game Development',
                 skills: [
                     'Java', 
@@ -118,12 +121,14 @@ const mockData = {
                 ]
             },
             {
+                ID: '4',
                 title: 'Word Processing',
                 skills: [
                     'LATEX'
                 ]
             },
             {
+                ID: '5',
                 title: 'Video Editing',
                 skills: [ 
                     'Procreate',
