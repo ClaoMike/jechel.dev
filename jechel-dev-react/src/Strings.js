@@ -1,6 +1,6 @@
 const STRINGS = {
     EMPTY_SPACE: ' ',
-    
+
     main: {
         title: 'Claudiu Mihai Jechel',
         subtitle: 'Software Engineer',
