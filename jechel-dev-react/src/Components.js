@@ -59,6 +59,9 @@ import Moto from "components/moto/Moto";
 // mock
 import mockData from "MockData";
 
+// resources
+import STRINGS from "Strings";
+
 export {
     // common 
     ExternalLink,
@@ -121,5 +124,8 @@ export {
     Moto,
 
     // mock 
-    mockData
+    mockData,
+
+    // resources
+    STRINGS,
 }
