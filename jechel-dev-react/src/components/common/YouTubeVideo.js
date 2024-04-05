@@ -1,13 +1,12 @@
 export default class YouTubeVideo {
 
-    constructor(ID, imageUrl, altDescription, title, location, description, youTubeLink) {
+    constructor(ID, link, title, location, description, imageURL) {
       this.ID = ID;
-      this.imageUrl = imageUrl;
-      this.altDescription = altDescription;
+      this.imageURL = imageURL;
       this.title = title;
       this.location = location;
       this.description = description;
-      this.youTubeLink = youTubeLink;
+      this.link = link;
     }
     
   }

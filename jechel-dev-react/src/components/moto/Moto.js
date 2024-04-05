@@ -1,21 +1,34 @@
-import { Accordion, AccordionItemState, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel } from 'react-accessible-accordion';
-import { Stack } from '@mui/material';
+import {Accordion, AccordionItemState, AccordionItem, AccordionItemHeading, AccordionItemButton, AccordionItemPanel} from 'react-accessible-accordion';
+import {Stack} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription, ExternalLinkWithIcon, YouTubeIcon } from 'Components';
-import videoInstances from 'components/common/YouTubeVideos';
+import {mockData, YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription, ExternalLinkWithIcon, YouTubeIcon, YouTubeVideo} from 'Components';
 import style from './MotoStyle';
 
 const Moto = () => {  
+
+  const videos = [];
+  mockData.moto.forEach(videoJSON => {
+    videos.push(
+      new YouTubeVideo(
+        videoJSON.ID, 
+        videoJSON.link, 
+        videoJSON.title, 
+        videoJSON.location, 
+        videoJSON.description, 
+        videoJSON.imageURL)
+    );
+  });
+
   return (
     <>
       <div style={style.title}>
         <p >Watch me riding my motorcycle through Europe on <ExternalLinkWithIcon link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' icon={<YouTubeIcon/>}/></p>
       </div>
       
-      <Accordion allowZeroExpanded style={style.accordion} preExpanded={[videoInstances[0].ID]}>
-        {videoInstances.map((videoInstance) => (
+      <Accordion allowZeroExpanded style={style.accordion} preExpanded={[videos[0].ID]}>
+        {videos.map((videoInstance) => (
     
           <AccordionItem uuid={videoInstance.ID} key={videoInstance.ID} style={style.accordionItem}>
         
@@ -24,7 +37,7 @@ const Moto = () => {
                 
                 <Stack spacing={2} direction="row" justifyContent="space-between" alignItems="center">
                   <Stack spacing={2} direction="row" alignItems="center">
-                    <YouTubeImage style={style.image} imageUrl={videoInstance.imageUrl} altDescription={videoInstance.altDescription} />
+                    <YouTubeImage style={style.image} imageUrl={videoInstance.imageURL} altDescription={videoInstance.description} />
                     <YouTubeTitle title={videoInstance.title} />
                   </Stack>
                   

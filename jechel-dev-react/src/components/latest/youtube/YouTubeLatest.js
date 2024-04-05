@@ -9,7 +9,7 @@ const YouTubeLatest = ({ video }) => {
     <>
         <Stack spacing={2} direction={isMobile ? 'column' : 'row'} className='youtube-container' style={style.mainStack}>
           
-          <YouTubeImage style={style.image} imageUrl={video.imageLink} altDescription={video.description} />
+          <YouTubeImage style={style.image} imageUrl={video.imageURL} altDescription={video.description} />
           
           <Stack spacing={2} direction="column">
             <YouTubeTitle title={video.title} />
