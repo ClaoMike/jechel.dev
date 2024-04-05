@@ -45,7 +45,7 @@ npm run build
 - ~~New resume~~
 - ~~Add version section on the bottom~~
 - ~~Imports refactoring~~
-- CSS file for each component
+- ~~CSS file for each component~~
 - Mock data
 - Improve views
 - Under maintenance
