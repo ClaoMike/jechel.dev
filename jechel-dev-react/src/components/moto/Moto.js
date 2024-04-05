@@ -3,7 +3,7 @@ import {Stack} from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 
-import {mockData, YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription, ExternalLinkWithIcon, YouTubeIcon, YouTubeVideo} from 'Components';
+import {mockData, YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeRedirectLink, YouTubeDescription, ExternalLinkWithIcon, YouTubeIcon, YouTubeVideo, STRINGS} from 'Components';
 import style from './MotoStyle';
 
 const Moto = () => {  
@@ -24,7 +24,7 @@ const Moto = () => {
   return (
     <>
       <div style={style.title}>
-        <p >Watch me riding my motorcycle through Europe on <ExternalLinkWithIcon link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text='YouTube' icon={<YouTubeIcon/>}/></p>
+        <p>{STRINGS.moto.description + STRINGS.EMPTY_SPACE}<ExternalLinkWithIcon link='https://www.youtube.com/channel/UCUQwqa2uppSN0OTQbbHpAtA' text={STRINGS.YOUTUBE} icon={<YouTubeIcon/>}/></p>
       </div>
       
       <Accordion allowZeroExpanded style={style.accordion} preExpanded={[videos[0].ID]}>

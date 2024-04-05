@@ -1,5 +1,7 @@
 const STRINGS = {
     EMPTY_SPACE: ' ',
+    YOUTUBE: 'YouTube',
+    REDIRECT_TO_YOUTUBE: 'Watch it on YouTube',
 
     main: {
         title: 'Claudiu Mihai Jechel',
@@ -13,11 +15,9 @@ const STRINGS = {
         item3: 'About Me'
     },
 
-    latest: {
-        video: {
-            visitYouTube: 'Watch it on YouTube'
-        }
-    },
+    moto: {
+        description: 'Watch me riding my motorcycle through Europe on',
+    }
 
 };
 

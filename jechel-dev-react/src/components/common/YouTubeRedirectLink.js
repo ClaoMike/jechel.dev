@@ -2,7 +2,7 @@ import { ExternalLinkWithIcon, YouTubeIcon , STRINGS} from "Components";
 
 const YouTubeRedirectLink = ({link}) => {
   return (
-    <ExternalLinkWithIcon link={link} text={STRINGS.latest.video.visitYouTube} icon={<YouTubeIcon/>} />
+    <ExternalLinkWithIcon link={link} text={STRINGS.REDIRECT_TO_YOUTUBE} icon={<YouTubeIcon/>} />
   )
 }
 
