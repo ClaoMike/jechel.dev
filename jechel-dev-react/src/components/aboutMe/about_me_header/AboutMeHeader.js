@@ -1,5 +1,5 @@
 import { Stack } from '@mui/material';
-import { ExternalLinkWithIcon, ResumeIcon, GithubIcon, LinkedinIcon } from "Components";
+import { ExternalLinkWithIcon, ResumeIcon, GithubIcon, LinkedinIcon, STRINGS } from "Components";
 import style from "./AboutMeHeaderStyle";
 
 const AboutMeHeader = () => {
@@ -9,9 +9,9 @@ const AboutMeHeader = () => {
         <img src='resources/me.JPEG' alt='Me' style={style.photo}/>
 
         <Stack direction="row" justifyContent="center" alignItems="center" spacing={0}>
-          <ExternalLinkWithIcon link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text='Resume' icon={<ResumeIcon />}/> &nbsp; 
-          <ExternalLinkWithIcon link='https://github.com/ClaoMike' text='GitHub' icon={<GithubIcon />} /> &nbsp; 
-          <ExternalLinkWithIcon link='https://www.linkedin.com/in/claudiumihaijechel/' text='LinkedIn' icon={<LinkedinIcon />} />
+          <ExternalLinkWithIcon link='resources/Claudiu_Mihai_Jechel_Resume.pdf' text={STRINGS.aboutMe.socialMedia.resume} icon={<ResumeIcon />}/> &nbsp; 
+          <ExternalLinkWithIcon link='https://github.com/ClaoMike' text={STRINGS.aboutMe.socialMedia.github} icon={<GithubIcon />} /> &nbsp; 
+          <ExternalLinkWithIcon link='https://www.linkedin.com/in/claudiumihaijechel/' text={STRINGS.aboutMe.socialMedia.linkedIn} icon={<LinkedinIcon />} />
         </Stack>
 
       </Stack>

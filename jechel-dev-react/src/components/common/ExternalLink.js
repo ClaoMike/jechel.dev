@@ -14,10 +14,4 @@ const ExternalLink = ({link, text}) => {
   )
 }
 
-ExternalLink.propTypes = {
-    link: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
-  }
-  
-
 export default ExternalLink

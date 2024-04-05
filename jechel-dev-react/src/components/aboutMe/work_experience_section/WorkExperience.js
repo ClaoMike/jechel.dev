@@ -1,34 +1,34 @@
-import { ExternalLink } from "Components";
+import { ExternalLink, STRINGS } from "Components";
 import style from "./WorkExperienceStyle";
 
 const WorkExperience = () => {
   return (
     <div style={style.mainDiv}>
-        <h2>Work Experience</h2>
+        <h2>{STRINGS.aboutMe.workExperience.title}</h2>
         <h3 style={style.workExperienceSubsection}>
-            IOS Software Engineer, Intern at <ExternalLink link='https://www.apadmi.com/' text='Apadmi' />
+            {STRINGS.aboutMe.workExperience.job1.position} <ExternalLink link='https://www.apadmi.com/' text={STRINGS.aboutMe.workExperience.job1.company} />
         </h3>
 
-        <small>Manchester, UK | 09/2021 - 07/2022</small>
+        <small>{STRINGS.aboutMe.workExperience.job1.location + STRINGS.EMPTY_SPACE + STRINGS.VERTICAL_SEPARATOR + STRINGS.EMPTY_SPACE + STRINGS.aboutMe.workExperience.job1.date}</small>
         
         <ul>
             <li>
-                Maintained, improved, and developed iOS applications, such as &nbsp;
-                <ExternalLink link='https://apps.apple.com/gb/app/charles-stanley-direct/id1297304657' text='Charles Stanley Direct' />, &nbsp;
-                <ExternalLink link='https://apps.apple.com/gb/app/hey-pharmacist/id1078683248' text='Hey Pharmacist' />, &nbsp;
-                <ExternalLink link='https://www.apadmi.com/work/donorpath-app-nhsbt/' text='NHS DonorPath' />, &nbsp;
-                <ExternalLink link='https://apps.apple.com/gb/app/dunnes-stores/id1539398657' text='Dunnes Stores' />, &nbsp;
-                <ExternalLink link='https://apps.apple.com/us/app/street-news-news-that-matters/id1564937523' text='Street News: News that matters' />, &nbsp;
-                and <ExternalLink link='https://apps.apple.com/us/app/wattbike-hub/id961711342?ls=1' text='Wattbike Hub' />,
-                while driving over £11.8 million in revenue.
+                {STRINGS.aboutMe.workExperience.job1.description.line1} &nbsp;
+                <ExternalLink link='https://apps.apple.com/gb/app/charles-stanley-direct/id1297304657' text={STRINGS.aboutMe.workExperience.job1.description.app1} />, &nbsp;
+                <ExternalLink link='https://apps.apple.com/gb/app/hey-pharmacist/id1078683248' text={STRINGS.aboutMe.workExperience.job1.description.app2} />, &nbsp;
+                <ExternalLink link='https://www.apadmi.com/work/donorpath-app-nhsbt/' text={STRINGS.aboutMe.workExperience.job1.description.app3} />, &nbsp;
+                <ExternalLink link='https://apps.apple.com/gb/app/dunnes-stores/id1539398657' text={STRINGS.aboutMe.workExperience.job1.description.app4} />, &nbsp;
+                <ExternalLink link='https://apps.apple.com/us/app/street-news-news-that-matters/id1564937523' text={STRINGS.aboutMe.workExperience.job1.description.app5} />, &nbsp;
+                {STRINGS.AND_SMALL + STRINGS.EMPTY_SPACE}<ExternalLink link='https://apps.apple.com/us/app/wattbike-hub/id961711342?ls=1' text={STRINGS.aboutMe.workExperience.job1.description.app6} />,
+                {STRINGS.aboutMe.workExperience.job1.description.line2}
             </li>
-            <li>Developed the &nbsp;
-                <ExternalLink link='https://apps.apple.com/gb/app/ebury/id1616832949' text='Ebury IOS application' />,
-                helping the client expand its business to the mobile market, using Swift, UIKit, CocoaPods, XCTest, and FBSnapshotTestCase.
+            <li>{STRINGS.aboutMe.workExperience.job1.description.line3 + STRINGS.EMPTY_SPACE}
+                <ExternalLink link='https://apps.apple.com/gb/app/ebury/id1616832949' text={STRINGS.aboutMe.workExperience.job1.description.app7} />,
+                {STRINGS.aboutMe.workExperience.job1.description.line4}
             </li>
-            <li>Automated beta build distribution, app store deployment, and code signing with fastlane, Bitrise and TestFlight.</li>
-            <li>Determined clients' preferences among three versions of the app's user interface by utilizing Firebase and A/B testing.</li>
-            <li>Integrated new features, performed bug fixes, conducted code reviews, beta testing, unit/UI/snapshot testing, and held daily stand-ups with my colleagues and weekly meetings with clients using the Scrum agile framework within a continuous integration and deployment pipeline.</li>
+            <li>{STRINGS.aboutMe.workExperience.job1.description.line5}</li>
+            <li>{STRINGS.aboutMe.workExperience.job1.description.line6}</li>
+            <li>{STRINGS.aboutMe.workExperience.job1.description.line7}</li>
         </ul>
     </div>
   );
