@@ -4,25 +4,18 @@ import { isMobile } from 'react-device-detect';
 import { YouTubeImage, YouTubeTitle, YouTubeLocation, YouTubeDescription, YouTubeRedirectLink } from 'Components';
 import style from './YouTubeLatestStyle';
 
-const YouTubeLatest = ({ link }) => {
-  const imageUrl = 'https://img.youtube.com/vi/i6CfPYxzAFM/0.jpg';
-  const altDescription = 'Description of the image';
-  const title = 'Episode 7';
-  const location = 'Germany';
-  const description = 'Blasting on the highway on my way from Manchester, UK to Bucharest, Romania';
-  const youTubeLink = 'https://www.youtube.com/watch?v=i6CfPYxzAFM&t=902s';
-
+const YouTubeLatest = ({ video }) => {
   return (
     <>
         <Stack spacing={2} direction={isMobile ? 'column' : 'row'} className='youtube-container' style={style.mainStack}>
           
-          <YouTubeImage style={style.image} imageUrl={imageUrl} altDescription={altDescription} />
+          <YouTubeImage style={style.image} imageUrl={video.imageLink} altDescription={video.description} />
           
           <Stack spacing={2} direction="column">
-            <YouTubeTitle title={title} />
-            <YouTubeLocation location={location}/>
-            <YouTubeDescription description={description}/>
-            <YouTubeRedirectLink link={youTubeLink}/>
+            <YouTubeTitle title={video.title} />
+            <YouTubeLocation location={video.location}/>
+            <YouTubeDescription description={video.description}/>
+            <YouTubeRedirectLink link={video.link}/>
           </Stack>
         
         </Stack>

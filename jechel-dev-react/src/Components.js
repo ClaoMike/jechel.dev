@@ -55,6 +55,9 @@ import NavigationItem from "components/main/navBar/NavigationItem";
 // moto
 import Moto from "components/moto/Moto";
 
+// mock
+import mockData from "MockData";
+
 export {
     // common 
     ExternalLink,
@@ -117,4 +120,7 @@ export {
 
     // moto
     Moto,
+
+    // mock 
+    mockData
 }

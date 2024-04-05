@@ -1,10 +1,13 @@
-import { YouTubeLatest } from "Components";
+import { YouTubeLatest, mockData } from "Components";
 
 const Latest = () => {
   return (
     <>
-        <YouTubeLatest link='https://www.youtube.com/embed/i6CfPYxzAFM?si=QgQfUI5fVQCtJXEK' />
-    </>
+      {mockData.latest.type === 'video' && (
+        <YouTubeLatest video={mockData.latest.data} />
+        )
+      }
+        </>
   );
 };
 
