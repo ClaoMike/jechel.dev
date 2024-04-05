@@ -13,11 +13,6 @@ const ExternalLinkWithIcon = ({link, text, icon}) => {
     </>
   )
 }
-
-ExternalLinkWithIcon.propTypes = {
-    link: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
-  }
   
 
 export default ExternalLinkWithIcon
