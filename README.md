@@ -53,6 +53,16 @@ npm run build
 - Database schema
 - Normalization
 - PostgreSQL db
+
+### Sprint 3
+- Setup API
+- Connect with db
+- Connect with frontend
+
+***
+- Integrate the YouTube API
+- Dockerize
+
 ***
 - Add the highschool education
 - Improve views
@@ -65,13 +75,6 @@ npm run build
 - Login page
 - Edit data
 - Upload the browser's icon
-
-### Sprint 3
-- Setup API
-- Connect with db
-- Connect with frontend
-- Integrate the YouTube API
-- Dockerize
 
 ### Sprint 4
 - Automatic version update
