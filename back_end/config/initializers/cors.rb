@@ -14,3 +14,14 @@
 #       methods: [:get, :post, :put, :patch, :delete, :options, :head]
 #   end
 # end
+if Rails.env.development?
+    Rails.application.config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins 'http://localhost:3000' # Replace this with your React app's URL
+        resource '*',
+          headers: :any,
+          methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      end
+    end
+  end
+  
