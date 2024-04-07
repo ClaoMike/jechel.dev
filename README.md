@@ -31,10 +31,15 @@ npm start
 npm run build
 ```
 
+- Start the rails server
+```console
+rails server
+```
+
 ***
 
 ## To Do
-### Sprint 1
+### ~~Sprint 1~~
 - ~~Add some kind of Press me icon on the YouTube episodes in the moto section~~
 - ~~Center everything in About Me section~~
 - ~~Refactor the YouYube item~~
@@ -49,14 +54,14 @@ npm run build
 - ~~Mock data~~
 - ~~Strings file~~
 
-### Sprint 2
-- Database schema
-- Normalization
-- PostgreSQL db
+### ~~Sprint 2~~
+- ~~Database schema~~
+- ~~Normalization~~
+- ~~PostgreSQL db~~
 
 ### Sprint 3
-- Setup API
-- Connect with db
+- ~~Setup API~~
+- ~~Connect with db~~
 - Connect with frontend
 
 ***
