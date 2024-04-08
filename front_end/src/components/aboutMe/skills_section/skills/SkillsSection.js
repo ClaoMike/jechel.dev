@@ -11,6 +11,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import SectionAccordion from 'components/aboutMe/section_accordion/SectionAccordion';
 
 const SkillsSection = () => {  
   const { loading, error, skills } = useSelector((state) => state.skills);
@@ -24,13 +25,11 @@ const SkillsSection = () => {
   if (!skills || skills.length === 0) return <div>No skills found</div>;
 
   return (
-    <Accordion defaultExpanded style={style}>
-      
-      <AccordionSummary style={{ borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', borderBottom: '2px solid green' }} expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}>
+    <SectionAccordion 
+      header={
         <h2 style={{ textDecoration: 'underline' }} className='episode-text-font episode-text-colour'>Skills</h2>
-      </AccordionSummary>
-        
-      <AccordionDetails>
+      }
+      content={
         <Stack 
           direction="row"
           spacing={2}
@@ -42,9 +41,9 @@ const SkillsSection = () => {
             <CustomPieChart key={skill.ID} category={skill.title} data={skill.pieChartData} />
           ))}
         </Stack>
-      </AccordionDetails>
-
-      </Accordion>
+      }
+    >
+    </SectionAccordion>
   );
 };
 
