@@ -7,6 +7,11 @@ import { useEffect} from 'react';
 
 import APIService from 'API/APIService';
 
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+
 const SkillsSection = () => {  
   const { loading, error, skills } = useSelector((state) => state.skills);
 
@@ -19,19 +24,27 @@ const SkillsSection = () => {
   if (!skills || skills.length === 0) return <div>No skills found</div>;
 
   return (
-    <Stack 
-      direction="row" 
-      spacing={2} 
-      justifyContent="space-evenly" 
-      alignItems="center" 
-      flexWrap="wrap"
-      style={style}
-    >
-      {skills.map((skill) => (
-        <CustomPieChart key={skill.ID} category={skill.title} data={skill.pieChartData} />
-      ))}
-    </Stack>
-    
+    <Accordion defaultExpanded style={style}>
+      
+      <AccordionSummary expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}>
+        <h2 style={{ textDecoration: 'underline' }} className='episode-text-font episode-text-colour'>Skills</h2>
+      </AccordionSummary>
+        
+      <AccordionDetails>
+        <Stack 
+          direction="row"
+          spacing={2}
+          justifyContent="space-evenly"
+          alignItems="center"
+          flexWrap="wrap"
+        >
+          {skills.map((skill) => (
+            <CustomPieChart key={skill.ID} category={skill.title} data={skill.pieChartData} />
+          ))}
+        </Stack>
+      </AccordionDetails>
+
+      </Accordion>
   );
 };
 
