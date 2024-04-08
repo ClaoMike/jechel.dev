@@ -78,66 +78,6 @@ const mockData = {
 
     ],
 
-    aboutMe: {
-        skills: [
-            {
-                ID: '1',
-                title: 'IOS',
-                skills: [
-                    'Swift', 
-                    'SwiftUI', 
-                    'UIKit', 
-                    'CocoaPods', 
-                    'fastlane', 
-                    'Unit/UI Snapshot Testing', 
-                    'XCTest', 
-                    'Firebase',
-                    'TestFlight', 
-                    'git', 
-                    'CI/CD'
-                ]
-            },
-            {
-                ID: '2',
-                title: 'Web',
-                skills: [
-                    'React', 
-                    'JavaScript', 
-                    'HTML', 
-                    'CSS'
-                ]
-            },
-            {
-                ID: '3',
-                title: 'Game Development',
-                skills: [
-                    'Java', 
-                    'libGDX', 
-                    'C#', 
-                    'Unity 2D', 
-                    'Python', 
-                    'Phaser 3', 
-                    'OOP'
-                ]
-            },
-            {
-                ID: '4',
-                title: 'Word Processing',
-                skills: [
-                    'LATEX'
-                ]
-            },
-            {
-                ID: '5',
-                title: 'Video Editing',
-                skills: [ 
-                    'Procreate',
-                    'Final Cut Pro', 
-                    'GarageBand'
-                ]
-            }
-        ],
-    }
 };
 
 export default mockData;

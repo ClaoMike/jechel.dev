@@ -23,11 +23,14 @@ export default class Skill {
         const coloursCopy = [...this.colours];
 
         skills.forEach(skill => {
+            if(coloursCopy.length == 0) {
+                coloursCopy = [...this.colours];
+            }
             const randomIndex = Math.floor(Math.random() * coloursCopy.length);
             const randomColour = coloursCopy[randomIndex];
             coloursCopy.splice(randomIndex, 1);
 
-            this.pieChartData.push({title: skill, value: value, color: randomColour});
+            this.pieChartData.push({title: skill.name, value: value, color: randomColour});
         });
     }
     

@@ -3,11 +3,34 @@ import { Stack } from '@mui/material';
 import style from './SkillsSectionStyle';
 import { CustomPieChart, Skill, mockData} from "Components";
 
+
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 const SkillsSection = () => {  
-  const skills = [];
-  mockData.aboutMe.skills.forEach(skill => {
-    skills.push(new Skill(skill.ID, skill.title, skill.skills));
-  });
+  const [skills, setSkills] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get('http://localhost:3000/skills');
+        setSkills(response.data.map(skill => new Skill(skill.id, skill.name, skill.skills)));
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error: {error.message}</div>;
+  if (!skills || skills.length === 0) return <div>No skills found</div>;
+
 
   return (
     <Stack 
@@ -18,9 +41,14 @@ const SkillsSection = () => {
       flexWrap="wrap"
       style={style}
     >
+
       {skills.map((skill) => (
         <CustomPieChart key={skill.ID} category={skill.title} data={skill.pieChartData} />
       ))}
+
+      
+
+
     </Stack>
     
   );
