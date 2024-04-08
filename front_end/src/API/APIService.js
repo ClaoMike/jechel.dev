@@ -20,8 +20,13 @@ class APIService {
     }
 
     async fetchSkills(){
+        return this.fetchData(URLGenerator.generateDevelopmentEndpointURL_Skills());
+    }
+
+    async fetchData(url) {
         try {
-            const response = await axios.get(URLGenerator.generateDevelopmentEndpointURL_Skills());
+            const response = await axios.get(url);
+
             return response.data;
           } catch (error) {
             console.error('Error fetching data:', error);

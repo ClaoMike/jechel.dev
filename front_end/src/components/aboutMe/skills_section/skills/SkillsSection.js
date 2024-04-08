@@ -2,11 +2,12 @@ import * as React from 'react';
 import { Stack } from '@mui/material';
 import style from './SkillsSectionStyle';
 import { CustomPieChart, Skill} from "Components";
-import URLGenerator from 'API/URLGenerator';
-
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+
+import URLGenerator from 'API/URLGenerator';
+import APIService from 'API/APIService';
 
 const SkillsSection = () => {  
   const [skills, setSkills] = useState([]);
@@ -16,8 +17,8 @@ const SkillsSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(URLGenerator.generateDevelopmentEndpointURL_Skills());
-        setSkills(response.data.map(skill => new Skill(skill.id, skill.name, skill.skills)));
+        const skillsData = await APIService.getInstance().fetchSkills();
+        setSkills(skillsData.map(skill => new Skill(skill.id, skill.name, skill.skills)));
       } catch (error) {
         setError(error);
       } finally {
