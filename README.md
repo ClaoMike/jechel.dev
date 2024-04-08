@@ -3,13 +3,16 @@
 ***
 
 ## Tech Stack 
-|  Tech      | Details (external libraries, etc.)                                                                        |
-| ---------- | --------------------------------------------------------------------------------------------------------- |
-| HTML   |                                                                                                           |
-| CSS        |                                                                                                           |
-| JavaScript |                                                                                                           |
-| React      | react-router-dom, react-device-detect, react-icons, Material UI, Joy UI, Material Icons, react-responsive |
-| git        | GitHub, GitHub Pages                                                                                      |
+|  Tech         | Details (external libraries, etc.)                                                                                      |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| HTML          |                                                                                                                         |
+| CSS           |                                                                                                                         |
+| JavaScript    |                                                                                                                         |
+| React         | react-router-dom, react-device-detect, react-icons, Material UI, Joy UI, Material Icons, react-responsive, redux, axios |
+| git           | GitHub, GitHub Pages                                                                                                    |
+| Ruby          |                                                                                                                         |
+| Ruby on Rails | --api                                                                                                                   |
+| PostgreSQL    |                                                                                                                         |
 
 ***
 
@@ -40,10 +43,10 @@ rails server
 
 ## To Do
 ### ~~Sprint 1~~
-- ~~Add some kind of Press me icon on the YouTube episodes in the moto section~~
-- ~~Center everything in About Me section~~
-- ~~Refactor the YouYube item~~
-- ~~Complete the About Me section~~
+- ~~Add some kind of ```Press me icon``` on the ```YouTube episodes``` in the ```moto section```~~
+- ~~Center everything in ```About Me``` section~~
+- ~~Refactor the ```YouYube``` item~~
+- ~~Complete the ```About Me``` section~~
 - ~~Style everything -> Decide on some external library (such as ```Material-UI```)~~
 - ~~Update skills' pie chart sizes for mobile~~
 - ~~Fix bugs~~
@@ -55,14 +58,18 @@ rails server
 - ~~Strings file~~
 
 ### ~~Sprint 2~~
-- ~~Database schema~~
+- ~~```Database``` schema~~
 - ~~Normalization~~
-- ~~PostgreSQL db~~
+- ~~```PostgreSQL``` db~~
 
-### ~~Sprint 3~~
-- ~~Setup API~~
-- ~~Connect with db~~
-- ~~Connect with frontend~~
+### Sprint 3
+- ~~Setup ```API```~~
+- Add sensitive variables in an ```.env``` file
+- ~~Connect with the ```db```~~
+- ~~Connect with the frontend~~
+- ~~Integrate ```axios``` and ```redux``` for ```API calls``` and ```state management```~~
+- ~~Get and display the skills~~
+- Refactor
 
 ***
 - Integrate the YouTube API
