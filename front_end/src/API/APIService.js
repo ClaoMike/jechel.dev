@@ -1,6 +1,8 @@
 import axios from 'axios';
 import URLGenerator from './URLGenerator';
 import {Skill} from "Components";
+import { fetchSkillsFailure, fetchSkillsSuccess, fetchSkillsRequest } from './actions';
+import store from './store';
 
 class APIService {
     
@@ -24,19 +26,17 @@ class APIService {
         return this.instance;
     }
 
-    async fetchSkills(){
-        this.loading = true;
-        try {
-            const response = await axios.get(URLGenerator.generateDevelopmentEndpointURL_Skills());
-            this.skills = response.data.map(skill => new Skill(skill.id, skill.name, skill.skills));
-        } catch (error) {
-            this.error = error;
-            console.error('Error fetching data:', error);
-            throw error;
-        } finally {
-            this.loading = false;
-        }
+    async fetchSkills() {
+    store.dispatch(fetchSkillsRequest()); // Dispatch action to set loading state
+    try {
+      const response = await axios.get(URLGenerator.generateDevelopmentEndpointURL_Skills());
+      store.dispatch(fetchSkillsSuccess(response.data.map(skill => new Skill(skill.id, skill.name, skill.skills)))); // Dispatch action to set skills data
+    } catch (error) {
+      store.dispatch(fetchSkillsFailure(error)); // Dispatch action to set error state
+      console.error('Error fetching data:', error);
+      throw error;
     }
+  }
 
     getLoading() {
         return this.loading;

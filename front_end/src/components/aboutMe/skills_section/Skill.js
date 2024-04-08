@@ -20,10 +20,10 @@ export default class Skill {
 
         const value = 100 / skills.length;
       
-        const coloursCopy = [...this.colours];
+        let coloursCopy = [...this.colours];
 
         skills.forEach(skill => {
-            if(coloursCopy.length == 0) {
+            if(coloursCopy.length === 0) {
                 coloursCopy = [...this.colours];
             }
             const randomIndex = Math.floor(Math.random() * coloursCopy.length);
