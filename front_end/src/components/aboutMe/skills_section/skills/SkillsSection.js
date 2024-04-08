@@ -1,28 +1,26 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
 import style from './SkillsSectionStyle';
-import { CustomPieChart, Skill} from "Components";
+import { CustomPieChart} from "Components";
 
 import { useEffect, useState } from 'react';
-import axios from 'axios';
 
-import URLGenerator from 'API/URLGenerator';
 import APIService from 'API/APIService';
 
 const SkillsSection = () => {  
-  const [skills, setSkills] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(APIService.getInstance().getLoading());
+  const [error, setError] = useState(APIService.getInstance().getError());
+  const [skills, setSkills] = useState(APIService.getInstance().getSkills());
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const skillsData = await APIService.getInstance().fetchSkills();
-        setSkills(skillsData.map(skill => new Skill(skill.id, skill.name, skill.skills)));
+        await APIService.getInstance().fetchSkills();
+        setLoading(APIService.getInstance().getLoading());
+        setError(APIService.getInstance().getError());
+        setSkills(APIService.getInstance().getSkills());
       } catch (error) {
-        setError(error);
-      } finally {
-        setLoading(false);
+        console.error('Error fetching data:', error);
       }
     };
 
