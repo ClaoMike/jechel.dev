@@ -26,7 +26,7 @@ const SkillsSection = () => {
   return (
     <Accordion defaultExpanded style={style}>
       
-      <AccordionSummary expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}>
+      <AccordionSummary style={{ borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', borderBottom: '2px solid green' }} expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}>
         <h2 style={{ textDecoration: 'underline' }} className='episode-text-font episode-text-colour'>Skills</h2>
       </AccordionSummary>
         
