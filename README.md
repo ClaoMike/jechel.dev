@@ -5,7 +5,7 @@
 ## Tech Stack 
 |  Tech      | Details (external libraries, etc.)                                                                        |
 | ---------- | --------------------------------------------------------------------------------------------------------- |
-| ~~HTML~~   |                                                                                                           |
+| HTML   |                                                                                                           |
 | CSS        |                                                                                                           |
 | JavaScript |                                                                                                           |
 | React      | react-router-dom, react-device-detect, react-icons, Material UI, Joy UI, Material Icons, react-responsive |
@@ -59,10 +59,10 @@ rails server
 - ~~Normalization~~
 - ~~PostgreSQL db~~
 
-### Sprint 3
+### ~~Sprint 3~~
 - ~~Setup API~~
 - ~~Connect with db~~
-- Connect with frontend
+- ~~Connect with frontend~~
 
 ***
 - Integrate the YouTube API

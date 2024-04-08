@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
 import style from './SkillsSectionStyle';
-import { CustomPieChart, Skill, mockData} from "Components";
+import { CustomPieChart, Skill} from "Components";
+import URLGenerator from 'API/URLGenerator';
 
 
 import { useEffect, useState } from 'react';
@@ -15,7 +16,7 @@ const SkillsSection = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/skills');
+        const response = await axios.get(URLGenerator.generateDevelopmentEndpointURL_Skills());
         setSkills(response.data.map(skill => new Skill(skill.id, skill.name, skill.skills)));
       } catch (error) {
         setError(error);
