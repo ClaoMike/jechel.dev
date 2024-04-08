@@ -1,9 +1,5 @@
 import { combineReducers } from 'redux';
-import {
-  FETCH_SKILLS_REQUEST,
-  FETCH_SKILLS_SUCCESS,
-  FETCH_SKILLS_FAILURE
-} from './actions';
+import { FETCH_SKILLS_REQUEST, FETCH_SKILLS_SUCCESS, FETCH_SKILLS_FAILURE } from './actions';
 
 const initialState = {
   skills: [],
@@ -12,31 +8,29 @@ const initialState = {
 };
 
 const skillsReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case FETCH_SKILLS_REQUEST:
-      return {
-        ...state,
-        loading: true,
-        error: null
-      };
-    case FETCH_SKILLS_SUCCESS:
-      return {
-        ...state,
-        loading: false,
-        skills: action.payload,
-        error: null
-      };
-    case FETCH_SKILLS_FAILURE:
-      return {
-        ...state,
-        loading: false,
-        error: action.payload
-      };
-    default:
-      return state;
-  }
+    switch (action.type) {
+        case FETCH_SKILLS_REQUEST:
+            return {
+                ...state,
+                loading: true,
+                error: null
+            };
+        case FETCH_SKILLS_SUCCESS:
+            return {
+                ...state,
+                loading: false,
+                skills: action.payload,
+                error: null
+            };
+        case FETCH_SKILLS_FAILURE:
+            return {
+                ...state,
+                loading: false,
+                error: action.payload
+            };
+        default:
+            return state;
+    }
 };
 
-export default combineReducers({
-  skills: skillsReducer
-});
+export default combineReducers({ skills: skillsReducer });
