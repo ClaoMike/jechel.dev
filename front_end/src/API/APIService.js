@@ -11,10 +11,6 @@ class APIService {
             return APIService.instance;
         }
 
-        this.loading = false;
-        this.error = null;
-        this.skills = [];
-
         APIService.instance = this;
     }
 

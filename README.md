@@ -69,33 +69,36 @@ rails server
 - ~~Connect with the frontend~~
 - ~~Integrate ```axios``` and ```redux``` for ```API calls``` and ```state management```~~
 - ~~Get and display the skills~~
-- Refactor
+- Improve the ```About Me``` page
+- Login page
+- login setup (back end)
+- Edit data page
+- Edit skills
+
+### Sprint 4
+- Dockerize
+- Upload the browser's icon
+- Host server on Heroku
 
 ***
 - Integrate the YouTube API
-- Dockerize
 
 ***
 - Add the highschool education
-- Improve views
 - Under maintenance
 - Contact form
 - Subscribe to my email
 - Websites
 - Mobile apps
 - Video games
-- Login page
-- Edit data
-- Upload the browser's icon
-
-### Sprint 4
-- Automatic version update
-- Host server on cloud
 
 ### Sprint 5
-- Cookies
+- Automatic version update
 
 ### Sprint 6
+- Cookies
+
+### Sprint 7
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
     - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
