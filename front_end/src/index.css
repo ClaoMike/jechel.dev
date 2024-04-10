@@ -89,6 +89,10 @@ body {
   flex-direction:column;
 }
 
+p {
+  color: var(--text-primary);
+}
+
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
 .episode-text-font {
   font-family: 'Courier New', monospace;

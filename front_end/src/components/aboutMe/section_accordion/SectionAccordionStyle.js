@@ -8,11 +8,11 @@ const style = {
                 padding: '0px'
         },
         accordion_summary: {
-                // backgroundColor: 'black', 
                 paddingLeft: '20%',
                 paddingRight: '20%',
                 marginLeft: '-20%', 
                 marginRight: '-20%', 
+                marginBottom: '20px', 
                 position: 'sticky', 
                 top: isMobile ? '3%' : '7%', 
                 zIndex: 999
