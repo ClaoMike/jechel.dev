@@ -12,7 +12,7 @@ const style = {
         accordion_summary_stack: {
                 width: '100vw',
                 position: 'sticky', 
-                top: isMobile ? '3%' : '12%',
+                top: isMobile ? '3%' : '10%',
                 zIndex: 999,
         },
 
