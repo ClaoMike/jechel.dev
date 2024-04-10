@@ -1,12 +1,17 @@
 import { ExternalLink, STRINGS, SectionHeader } from "Components";
 import { Stack } from "@mui/material";
-import style from "./EducationStyle";
+
+import SectionAccordion from "../section_accordion/SectionAccordion";
 
 const Education = () => {
   return (
-    <div style={style}>
-      <SectionHeader text={STRINGS.aboutMe.education.title} />
-        <h3>{STRINGS.aboutMe.education.ed1.title}</h3>
+    <SectionAccordion
+      header={
+        <SectionHeader text={STRINGS.aboutMe.education.title} />
+      }
+      content={
+        <>
+          <h3>{STRINGS.aboutMe.education.ed1.title}</h3>
         <ul>
           <li>
             <Stack
@@ -20,7 +25,9 @@ const Education = () => {
             </Stack>
           </li>
         </ul>
-    </div>
+        </>
+      }
+    />
   );
 };
 

@@ -1,10 +1,14 @@
 import { Qualifcation, STRINGS, SectionHeader } from "Components";
 import style from "./QualificationsStyle";
+import SectionAccordion from "components/aboutMe/section_accordion/SectionAccordion";
 
 const Qualifications = () => {
   return (
-    <div style={style}>
+    <SectionAccordion
+    header={
       <SectionHeader text={STRINGS.aboutMe.qualifications.title} />
+    }
+    content={
       <ul>
         <li>
           <Qualifcation
@@ -23,7 +27,8 @@ const Qualifications = () => {
           />
         </li>
       </ul>
-    </div>
+    }
+  />
   );
 };
 
