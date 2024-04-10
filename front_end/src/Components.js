@@ -10,10 +10,10 @@ import ExternalLinkWithIcon from "components/common/ExternalLinkWithIcon";
 
 // About Me
 import AboutMe from "components/aboutMe/AboutMe";
-import AcademicPapers from "components/aboutMe/academic_papers_section/AcademicPapers";
-import Qualifications from "components/aboutMe/qualifications_section/qualifications/Qualifications";
-import Projects from "components/aboutMe/projects_section/projects/Projects";
-import Education from "components/aboutMe/education_section/Education";
+import AcademicPapers from "components/aboutMe/AcademicPapers";
+import Qualifications from "components/aboutMe/qualifications_section/Qualifications";
+import Projects from "components/aboutMe/projects_section/Projects";
+import Education from "components/aboutMe/Education";
 import WorkExperience from "components/aboutMe/work_experience_section/WorkExperience";
 import SkillsSection from "components/aboutMe/skills_section/SkillsSection";
 import AboutMeHeader from "components/aboutMe/about_me_header/AboutMeHeader";
