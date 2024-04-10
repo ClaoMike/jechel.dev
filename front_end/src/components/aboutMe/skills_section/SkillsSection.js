@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import { CustomPieChart} from "Components";
+import { CustomPieChart, SectionHeader, STRINGS } from "Components";
 import { useSelector } from 'react-redux';
 import { useEffect} from 'react';
 
@@ -21,7 +21,7 @@ const SkillsSection = () => {
   return (
     <SectionAccordion 
       header={
-        <h2 className='section_header_text'>Skills</h2>
+        <SectionHeader text={STRINGS.aboutMe.skills.title}/>
       }
       content={
         <Stack 

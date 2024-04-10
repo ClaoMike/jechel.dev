@@ -1,10 +1,10 @@
-import { ExternalLink, STRINGS } from "Components";
+import { ExternalLink, STRINGS, SectionHeader } from "Components";
 import style from "./WorkExperienceStyle";
 
 const WorkExperience = () => {
   return (
     <div style={style.mainDiv}>
-        <h2 className='section_header_text'>{STRINGS.aboutMe.workExperience.title}</h2>
+        <SectionHeader text={STRINGS.aboutMe.workExperience.title}/>
         <h3 style={style.workExperienceSubsection}>
             {STRINGS.aboutMe.workExperience.job1.position} <ExternalLink link='https://www.apadmi.com/' text={STRINGS.aboutMe.workExperience.job1.company} />
         </h3>
