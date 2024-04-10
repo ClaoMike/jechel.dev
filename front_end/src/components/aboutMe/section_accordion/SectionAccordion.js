@@ -26,7 +26,7 @@ const SectionAccordion = ({header, content}) => {
 
       </Stack>
       
-      <AccordionDetails>
+      <AccordionDetails style={style.accordion_details}>
         {content}
       </AccordionDetails>
 

@@ -25,6 +25,11 @@ const style = {
                 width: '100%',
                 height: isMobile ? '20px' : '50px',
             },
+        
+        accordion_details: {
+                paddingLeft: '10%',
+                paddingRight: '10%'
+        },
 
 }
 
