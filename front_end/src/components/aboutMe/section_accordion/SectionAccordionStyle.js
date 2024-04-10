@@ -2,21 +2,20 @@ import { isMobile } from 'react-device-detect';
 
 const style = {
         accordion: {
-                marginLeft: isMobile ? '5vw' :'10vw',
-                marginRight: isMobile ? '5vw' :'10vw',
                 backgroundColor: 'transparent',
-                padding: '0px'
         },
-        accordion_summary: {
-                paddingLeft: '20%',
-                paddingRight: '20%',
-                marginLeft: '-20%', 
-                marginRight: '-20%', 
-                marginBottom: '20px', 
-                marginTop: '20px',
+
+        accordion_summary_div: {
+                width: '100vw',
                 position: 'sticky', 
-                top: isMobile ? '3%' : '10%', 
-                zIndex: 999
+                top: isMobile ? '3%' : '10%',
+                zIndex: 999,
+                marginBottom: '50px'
+        },
+
+        accordion_summary: {
+                marginLeft: '10%',
+                marginRight: '10%',
         }
        
         
