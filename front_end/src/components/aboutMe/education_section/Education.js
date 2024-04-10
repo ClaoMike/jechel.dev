@@ -1,11 +1,11 @@
-import { ExternalLink, STRINGS } from "Components";
+import { ExternalLink, STRINGS, SectionHeader } from "Components";
 import { Stack } from "@mui/material";
 import style from "./EducationStyle";
 
 const Education = () => {
   return (
     <div style={style}>
-        <h2>{STRINGS.aboutMe.education.title}</h2>
+      <SectionHeader text={STRINGS.aboutMe.education.title} />
         <h3>{STRINGS.aboutMe.education.ed1.title}</h3>
         <ul>
           <li>

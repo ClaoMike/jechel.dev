@@ -1,10 +1,10 @@
-import { Qualifcation, STRINGS } from "Components";
+import { Qualifcation, STRINGS, SectionHeader } from "Components";
 import style from "./QualificationsStyle";
 
 const Qualifications = () => {
   return (
     <div style={style}>
-      <h2>Qualifications</h2>
+      <SectionHeader text={STRINGS.aboutMe.qualifications.title} />
       <ul>
         <li>
           <Qualifcation

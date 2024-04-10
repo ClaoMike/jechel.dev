@@ -1,10 +1,10 @@
-import { ExternalLink, STRINGS } from "Components";
+import { ExternalLink, STRINGS, SectionHeader } from "Components";
 import style from "./AcademicPapersStyle";
 
 const AcademicPapers = () => {
   return (
     <div style={style}>
-        <h2>{STRINGS.aboutMe.academicPapers.title}</h2>
+      <SectionHeader text={STRINGS.aboutMe.academicPapers.title} />
         <ul>
             <li>
                 <ExternalLink link='resources/Thesis.pdf' text={STRINGS.aboutMe.academicPapers.paper1} />

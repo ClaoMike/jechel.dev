@@ -1,10 +1,10 @@
-import { SpatiumExplorationis, STRINGS } from "Components";
+import { SpatiumExplorationis, STRINGS, SectionHeader } from "Components";
 import style from "./ProjectsStyle";
 
 const Projects = () => {
   return (
     <div style={style}>
-        <h2>{STRINGS.aboutMe.projects.title}</h2>
+      <SectionHeader text={STRINGS.aboutMe.projects.title} />
         <SpatiumExplorationis/>
     </div>
   );
