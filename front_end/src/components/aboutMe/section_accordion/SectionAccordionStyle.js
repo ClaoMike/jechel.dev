@@ -13,8 +13,9 @@ const style = {
                 marginLeft: '-20%', 
                 marginRight: '-20%', 
                 marginBottom: '20px', 
+                marginTop: '20px',
                 position: 'sticky', 
-                top: isMobile ? '3%' : '7%', 
+                top: isMobile ? '3%' : '15%', 
                 zIndex: 999
         }
        
