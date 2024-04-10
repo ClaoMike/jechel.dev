@@ -3,6 +3,7 @@ import { isMobile } from 'react-device-detect';
 const style = {
         accordion: {
                 backgroundColor: 'transparent',
+                boxShadow: 'none'
         },
 
         accordion_summary_stack: {

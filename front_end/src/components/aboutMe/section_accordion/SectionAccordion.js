@@ -8,7 +8,7 @@ import { Box, Stack } from '@mui/material';
 
 const SectionAccordion = ({header, content}) => {
   return (
-    <Accordion defaultExpanded style={style.accordion}>
+    <Accordion defaultExpanded style={style.accordion} >
       
       <Stack direction="column" style={style.accordion_summary_stack}>
 
