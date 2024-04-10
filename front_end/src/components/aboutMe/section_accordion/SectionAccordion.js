@@ -12,6 +12,7 @@ const SectionAccordion = ({header, content}) => {
       <AccordionSummary 
         className='accordion_summary' 
         expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}
+        style={{ position: 'sticky', top: 30, zIndex: 999 }}
       >
         {header}
       </AccordionSummary>
