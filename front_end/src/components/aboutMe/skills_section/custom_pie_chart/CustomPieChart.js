@@ -2,11 +2,40 @@ import { PieChart } from 'react-minimal-pie-chart';
 import { Stack } from '@mui/material';
 import style from './CustomPieChartStyle';
 
-const CustomPieChart = ({ category, data }) => {
+const CustomPieChart = ({ category, skills }) => {
     const lineWidth = 15;
     const animationDuration = '1000';
     const radius = 30;
     const labelPosition = 120;
+
+    const colours = [
+            '#3330E4', 
+            '#15F5BA',
+            '#F72798',
+            '#9B4444',
+            '#FF8911',
+            '#910A67',
+            '#0D9276', 
+            '#FF004D', 
+            '#004225', 
+            '#16FF00',
+            '#FFB000'
+        ];
+
+    const data = []
+    const value = 100 / skills.length;
+
+    let coloursCopy = [...colours];
+    skills.forEach(skill => {
+        if(coloursCopy.length === 0) {
+            coloursCopy = [...this.colours];
+        }
+        const randomIndex = Math.floor(Math.random() * coloursCopy.length);
+        const randomColour = coloursCopy[randomIndex];
+        coloursCopy.splice(randomIndex, 1);
+
+        data.push({title: skill.name, value: value, color: randomColour});
+    });
 
     return (
         <Stack

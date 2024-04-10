@@ -33,7 +33,7 @@ const SkillsSection = () => {
           flexWrap="wrap"
         >
           {skills.map((skill) => (
-            <CustomPieChart key={skill.ID} category={skill.title} data={skill.pieChartData} />
+            <CustomPieChart key={skill.id} category={skill.name} skills={skill.skills} />
           ))}
         </Stack>
       }

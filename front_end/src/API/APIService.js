@@ -23,12 +23,11 @@ class APIService {
     }
 
     async fetchSkills() {
-        
         store.dispatch(fetchSkillsRequest()); // Dispatch action to set loading state
         
         try {
             const response = await axios.get(URLGenerator.generateDevelopmentEndpointURL_Skills());
-            store.dispatch(fetchSkillsSuccess(response.data.map(skill => new Skill(skill.id, skill.name, skill.skills)))); // Dispatch action to set skills data
+            store.dispatch(fetchSkillsSuccess(response.data));
         } catch (error) {
             store.dispatch(fetchSkillsFailure(error)); // Dispatch action to set error state
             console.error('Error fetching data:', error);
