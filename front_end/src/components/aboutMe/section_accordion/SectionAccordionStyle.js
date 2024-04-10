@@ -8,7 +8,7 @@ const style = {
                 padding: '0px'
         },
         accordion_summary: {
-                backgroundColor: 'black', 
+                // backgroundColor: 'black', 
                 paddingLeft: '20%',
                 paddingRight: '20%',
                 marginLeft: '-20%', 

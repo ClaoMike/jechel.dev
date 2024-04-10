@@ -9,14 +9,13 @@ const SectionAccordion = ({header, content}) => {
   return (
     <Accordion defaultExpanded style={style.accordion}>
 
-      <div style={style.accordion_summary}>
+      <div style={style.accordion_summary} className='accordion_summary_div'>
         <AccordionSummary 
           className='accordion_summary' 
           expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}
         >
-        {header}
-      </AccordionSummary>
-        
+          {header}
+        </AccordionSummary>
       </div>
       
       <AccordionDetails>
