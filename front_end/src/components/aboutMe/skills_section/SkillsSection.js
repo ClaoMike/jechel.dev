@@ -1,11 +1,9 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import { CustomPieChart, SectionHeader, STRINGS } from "Components";
+import { CustomPieChart, SectionHeader, STRINGS, SectionAccordion } from "Components";
 import { useSelector } from 'react-redux';
 import { useEffect} from 'react';
-
 import APIService from 'API/APIService';
-import SectionAccordion from 'components/aboutMe/section_accordion/SectionAccordion';
 
 const SkillsSection = () => {  
   const { loading, error, skills } = useSelector((state) => state.skills);

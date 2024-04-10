@@ -1,17 +1,15 @@
-import { SpatiumExplorationis, STRINGS, SectionHeader } from "Components";
-import style from "./ProjectsStyle";
-import SectionAccordion from "components/aboutMe/section_accordion/SectionAccordion";
+import { SpatiumExplorationis, STRINGS, SectionHeader, SectionAccordion } from "Components";
 
 const Projects = () => {
   return (
     <SectionAccordion
-    header={
-      <SectionHeader text={STRINGS.aboutMe.projects.title} />
-    }
-    content={
-      <SpatiumExplorationis/>
-    }
-  />
+      header={
+        <SectionHeader text={STRINGS.aboutMe.projects.title} />
+      }
+      content={
+        <SpatiumExplorationis/>
+      }
+    />
   );
 };
 

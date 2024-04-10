@@ -11,7 +11,7 @@ const WorkExperience = () => {
         }
         content={
             <>
-                <h3 style={style.workExperienceSubsection}>
+                <h3 style={style}>
                     {STRINGS.aboutMe.workExperience.job1.position} <ExternalLink link='https://www.apadmi.com/' text={STRINGS.aboutMe.workExperience.job1.company} />
                 </h3>
 

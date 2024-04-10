@@ -89,7 +89,7 @@ body {
   flex-direction:column;
 }
 
-p {
+p, small, h3, li {
   color: var(--text-primary);
 }
 

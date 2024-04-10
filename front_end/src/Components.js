@@ -21,6 +21,7 @@ import SpatiumExplorationis from "components/aboutMe/projects_section/SpatiumExp
 import Qualifcation from "components/aboutMe/qualifications_section/Qualifcation";
 import CustomPieChart from "components/aboutMe/skills_section/custom_pie_chart/CustomPieChart";
 import SectionHeader from "components/aboutMe/SectionHeader";
+import SectionAccordion from "components/aboutMe/section_accordion/SectionAccordion";
 
 // icons
 import AboutMeIcon from "components/icons/AboutMeIcon";
@@ -85,6 +86,7 @@ export {
     Qualifcation,
     CustomPieChart,
     SectionHeader,
+    SectionAccordion,
 
     //icons
     AboutMeIcon,

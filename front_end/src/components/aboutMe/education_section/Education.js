@@ -1,7 +1,5 @@
-import { ExternalLink, STRINGS, SectionHeader } from "Components";
+import { ExternalLink, STRINGS, SectionHeader, SectionAccordion } from "Components";
 import { Stack } from "@mui/material";
-
-import SectionAccordion from "../section_accordion/SectionAccordion";
 
 const Education = () => {
   return (
@@ -12,19 +10,19 @@ const Education = () => {
       content={
         <>
           <h3>{STRINGS.aboutMe.education.ed1.title}</h3>
-        <ul>
-          <li>
-            <Stack
-              direction="column"
-              justifyContent="flex-start"
-              alignItems="flex-start"
-              spacing={0.5}
-            >
-              <ExternalLink link='https://www.manchester.ac.uk/' text='University of Manchester' />
-              <small>{STRINGS.aboutMe.education.ed1.location + STRINGS.EMPTY_SPACE + STRINGS.VERTICAL_SEPARATOR + STRINGS.EMPTY_SPACE + STRINGS.aboutMe.education.ed1.date}</small>
-            </Stack>
-          </li>
-        </ul>
+          <ul>
+            <li>
+              <Stack
+                direction="column"
+                justifyContent="flex-start"
+                alignItems="flex-start"
+                spacing={0.5}
+              >
+                <ExternalLink link='https://www.manchester.ac.uk/' text='University of Manchester' />
+                <small>{STRINGS.aboutMe.education.ed1.location + STRINGS.EMPTY_SPACE + STRINGS.VERTICAL_SEPARATOR + STRINGS.EMPTY_SPACE + STRINGS.aboutMe.education.ed1.date}</small>
+              </Stack>
+            </li>
+          </ul>
         </>
       }
     />
