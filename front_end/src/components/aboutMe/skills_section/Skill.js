@@ -29,6 +29,7 @@ export default class Skill {
             const randomIndex = Math.floor(Math.random() * coloursCopy.length);
             const randomColour = coloursCopy[randomIndex];
             coloursCopy.splice(randomIndex, 1);
+            console.log(randomColour);
 
             this.pieChartData.push({title: skill.name, value: value, color: randomColour});
         });
