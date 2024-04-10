@@ -5,7 +5,8 @@ const style = {
                 backgroundColor: 'transparent',
                 boxShadow: 'none',
                 marginTop: '0px',
-                paddingTop: '0px'
+                paddingTop: '0px',
+                marginBottom: '0px'
         },
 
         accordion_summary_stack: {
@@ -28,7 +29,9 @@ const style = {
         
         accordion_details: {
                 paddingLeft: '10%',
-                paddingRight: '10%'
+                paddingRight: '10%',
+                paddingTop: '0px',
+                paddingBottom: '20px',
         },
 
 }
