@@ -9,7 +9,10 @@ const SectionAccordion = ({header, content}) => {
   return (
     <Accordion defaultExpanded style={style}>
 
-      <AccordionSummary style={{ borderBottomLeftRadius: '10px', borderBottomRightRadius: '10px', borderBottom: '2px solid green' }} expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}>
+      <AccordionSummary 
+        className='accordion_summary' 
+        expandIcon={<ExpandMoreIcon className='episode-text-font episode-text-colour' />}
+      >
         {header}
       </AccordionSummary>
         

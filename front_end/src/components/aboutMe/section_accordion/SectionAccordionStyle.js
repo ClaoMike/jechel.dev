@@ -5,6 +5,7 @@ const style = {
         marginRight: isMobile ? '5vw' :'10vw',
         backgroundColor: 'transparent',
         padding: '0px'
+        
 }
 
 export default style;
