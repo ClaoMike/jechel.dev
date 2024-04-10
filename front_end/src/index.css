@@ -107,6 +107,8 @@ p {
   font-family: 'Courier New', monospace;
   color: var(--text-primary);
   text-decoration: underline;
+  margin: 0;
+  padding: 0;
 }
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually --- END */
 

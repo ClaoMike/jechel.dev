@@ -3,13 +3,15 @@ import { isMobile } from 'react-device-detect';
 const style = {
         accordion: {
                 backgroundColor: 'transparent',
-                boxShadow: 'none'
+                boxShadow: 'none',
+                marginTop: '0px',
+                paddingTop: '0px'
         },
 
         accordion_summary_stack: {
                 width: '100vw',
                 position: 'sticky', 
-                top: isMobile ? '3%' : '10%',
+                top: isMobile ? '3%' : '12%',
                 zIndex: 999,
         },
 
