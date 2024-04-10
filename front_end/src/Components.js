@@ -15,7 +15,7 @@ import Qualifications from "components/aboutMe/qualifications_section/qualificat
 import Projects from "components/aboutMe/projects_section/projects/Projects";
 import Education from "components/aboutMe/education_section/Education";
 import WorkExperience from "components/aboutMe/work_experience_section/WorkExperience";
-import SkillsSection from "components/aboutMe/skills_section/skills/SkillsSection";
+import SkillsSection from "components/aboutMe/skills_section/SkillsSection";
 import AboutMeHeader from "components/aboutMe/about_me_header/AboutMeHeader";
 import SpatiumExplorationis from "components/aboutMe/projects_section/SpatiumExplorationis";
 import Qualifcation from "components/aboutMe/qualifications_section/Qualifcation";

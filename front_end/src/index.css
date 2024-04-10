@@ -102,6 +102,12 @@ p {
 .episode-text-colour {
   color: var(--text-primary);
 }
+
+.section_header_text {
+  font-family: 'Courier New', monospace;
+  color: var(--text-primary);
+  text-decoration: underline;
+}
 /* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually --- END */
 
 a {

@@ -4,7 +4,7 @@ import style from "./WorkExperienceStyle";
 const WorkExperience = () => {
   return (
     <div style={style.mainDiv}>
-        <h2>{STRINGS.aboutMe.workExperience.title}</h2>
+        <h2 className='section_header_text'>{STRINGS.aboutMe.workExperience.title}</h2>
         <h3 style={style.workExperienceSubsection}>
             {STRINGS.aboutMe.workExperience.job1.position} <ExternalLink link='https://www.apadmi.com/' text={STRINGS.aboutMe.workExperience.job1.company} />
         </h3>
