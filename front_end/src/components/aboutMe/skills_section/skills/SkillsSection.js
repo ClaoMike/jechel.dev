@@ -6,11 +6,6 @@ import { useSelector } from 'react-redux';
 import { useEffect} from 'react';
 
 import APIService from 'API/APIService';
-
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import SectionAccordion from 'components/aboutMe/section_accordion/SectionAccordion';
 
 const SkillsSection = () => {  
@@ -27,7 +22,7 @@ const SkillsSection = () => {
   return (
     <SectionAccordion 
       header={
-        <h2 style={{ textDecoration: 'underline' }} className='episode-text-font episode-text-colour'>Skills</h2>
+        <h2 style={style} className='episode-text-font episode-text-colour'>Skills</h2>
       }
       content={
         <Stack 
