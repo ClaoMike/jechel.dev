@@ -1,28 +1,13 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState } from 'react';
-import { Header, NavigationBar, Latest, Moto, AboutMe, VersionSection } from "Components";
+import { UserPage, LoginPage } from "Components";
 
 function App() {
-  const [theme, setTheme] = useState('');
-
   return (
     <Router>
-      <div className="App" data-theme={theme}>
-
-        <Header theme={theme} setTheme={setTheme} />
-        <NavigationBar />
-
-        <div className="article">
-          <Routes>
-            <Route path='/' element={<Latest />} />
-            <Route path='/moto' element={<Moto />} />
-            <Route path='/aboutMe' element={<AboutMe />} />
-          </Routes>
-        </div>
-        
-        <VersionSection />
-        
-      </div>
+      <Routes>
+      <Route path='/*' element={<UserPage />} />
+      <Route path='/admin' element={<LoginPage />} />
+      </Routes>
     </Router>
   );
 };

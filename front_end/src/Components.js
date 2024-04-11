@@ -67,6 +67,10 @@ import ErrorDataView from "components/ErrorDataView";
 import LoadingDataView from "components/LoadingDataView";
 import NoDataAvailableView from "components/NoDataAvailableView";
 
+// pages
+import LoginPage from "components/LoginPage";
+import UserPage from "components/UserPage";
+
 export {
     // common 
     ExternalLink,
@@ -138,4 +142,8 @@ export {
     ErrorDataView,
     LoadingDataView,
     NoDataAvailableView,
+
+    // pages
+    UserPage,
+    LoginPage,
 }
