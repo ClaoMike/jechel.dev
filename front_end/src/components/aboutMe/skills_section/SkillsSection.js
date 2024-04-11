@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
-import { CustomPieChart, SectionHeader, STRINGS, SectionAccordion } from "Components";
+import { CustomPieChart, SectionHeader, STRINGS, SectionAccordion, LoadingDataView, ErrorDataView, NoDataAvailableView } from "Components";
 import { useSelector } from 'react-redux';
 import { useEffect} from 'react';
 import APIService from 'API/APIService';
@@ -12,9 +12,38 @@ const SkillsSection = () => {
     APIService.getInstance().fetchSkills();
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error.message}</div>;
-  if (!skills || skills.length === 0) return <div>No skills found</div>;
+  if (loading) return(
+    <SectionAccordion
+    header={
+      <SectionHeader text={STRINGS.aboutMe.skills.title}/>
+    }
+    content={
+      <LoadingDataView />
+    }
+    />
+  );
+
+  if (error) return (
+    <SectionAccordion
+      header={
+        <SectionHeader text={STRINGS.aboutMe.skills.title}/>
+      }
+      content={
+        <ErrorDataView message={error.message} />
+      }
+    />
+  );
+   
+  if (!skills || skills.length === 0) return(
+    <SectionAccordion
+      header={
+        <SectionHeader text={STRINGS.aboutMe.skills.title}/>
+      }
+      content={
+        <NoDataAvailableView />
+      }
+    />
+  );
 
   return (
     <SectionAccordion 

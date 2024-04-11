@@ -8,6 +8,11 @@ const STRINGS = {
     UNIVERSITY_OF_MANCHESTER: 'University of Manchester',
     DOT: '.',
 
+    API: {
+        no_data_message: 'No skills found',
+        error: 'Error: ',
+    },
+
     main: {
         title: 'Claudiu Mihai Jechel',
         subtitle: 'Software Engineer',
