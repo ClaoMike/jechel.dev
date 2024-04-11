@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 import { useEffect} from 'react';
 import APIService from 'API/APIService';
 
-const SkillsSection = () => {  
+const SkillsSection = () => {
   const { loading, error, skills } = useSelector((state) => state.skills);
 
   useEffect(() => {
