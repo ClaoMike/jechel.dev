@@ -13,6 +13,14 @@ const STRINGS = {
         error: 'Error: ',
     },
 
+    admin: {
+        login_page: {
+            username_label: 'Username',
+            password_label: 'Password',
+            login_button_label: 'Login',
+        }
+    },
+
     main: {
         title: 'Claudiu Mihai Jechel',
         subtitle: 'Software Engineer',

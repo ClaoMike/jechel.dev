@@ -103,6 +103,12 @@ p, small, h3, li {
   color: var(--text-primary);
 }
 
+#standard-basic {
+  font-family: 'Courier New', monospace;
+  font-size: min(30px, 4vw);
+  color: var(--text-primary);
+}
+
 .section_header_text {
   font-family: 'Courier New', monospace;
   color: var(--text-primary);
