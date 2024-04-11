@@ -69,7 +69,7 @@ rails server
 - ~~Connect with the frontend~~
 - ~~Integrate ```axios``` and ```redux``` for ```API calls``` and ```state management```~~
 - ~~Get and display the skills~~
-- Improve the ```About Me``` page
+- ~~Improve the ```About Me``` page~~
 - Login page
 - login setup (back end)
 - Edit data page
