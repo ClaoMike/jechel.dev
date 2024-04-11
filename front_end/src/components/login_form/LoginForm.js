@@ -3,7 +3,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import VpnKeyIcon from '@mui/icons-material/VpnKey';
 import Stack from '@mui/material/Stack';
-import {STRINGS} from 'Components';
+import { STRINGS } from 'Components';
 
 import style from './LoginFormStyle';
 

@@ -1,9 +1,6 @@
 import React from 'react';
-import { Header } from "Components";
+import { Header, LoginForm } from "Components";
 import { useState } from 'react';
-
-import LoginForm from './login_form/LoginForm';
-
 
 const LoginPage = () => {
     const [theme, setTheme] = useState('');
