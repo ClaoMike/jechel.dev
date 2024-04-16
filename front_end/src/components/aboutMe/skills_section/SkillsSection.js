@@ -1,7 +1,8 @@
 import * as React from 'react';
 import { Stack } from '@mui/material';
 import { CustomPieChart, SectionHeader, STRINGS, SectionAccordion, LoadingDataView, ErrorDataView, NoDataAvailableView } from "Components";
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
+import { Provider } from 'react-redux';
 import { useEffect} from 'react';
 import APIService from 'API/APIService';
 

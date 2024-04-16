@@ -11,7 +11,7 @@ const style = {
     },
 
     username: {
-        width: '100%'
+        width: '100%',
     },
 
     password: {

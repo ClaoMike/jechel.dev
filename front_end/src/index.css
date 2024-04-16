@@ -99,6 +99,10 @@ p, small, h3, li {
   font-size: min(30px, 4vw);
 }
 
+.x {
+  color: red;
+}
+
 .episode-text-colour {
   color: var(--text-primary);
 }
