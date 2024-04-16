@@ -1,0 +1,250 @@
+:root {
+  /* light palette */
+  --light-1: #FAEF9B;
+  --light-2: #6DA4AA;
+  --light-3: #647D87;
+  --light-4: #F6D776;
+
+  /* dark palette */
+  --dark-1: #000000;
+  --dark-2: #005B41;
+  --dark-3: #232D3F;
+  --dark-4: #5C8374;
+
+  /* DEFINED ONLY ONCE */
+  --astral-entity: #FFC436;
+  --sky-light: #89CFF3;
+  --sky-dark: #0C356A;
+  --white: #DCF2F1;
+  --black: #000000;
+}
+
+:root {
+  --background: var(--light-1);
+  --text-primary: var(--black);
+
+  --link: var(--light-2);
+  --link-hover: var(--light-3);
+
+  --navigation-item-border: var(--light-3);
+  --youtube-container-background: var(--light-4);
+  --container-border: var(--light-2);
+
+  /* DEFINED ONLY ONCE */
+  --icon-about-me: #3E3232;
+  --icon-episode: #765827;
+  --icon-flame: #FF9800;
+  --icon-moto: #820300;
+  --icon-pinpoint: #B80000;
+  --icon-youtube-description: #43766C;
+  --icon-youtube: #B80000;
+  --icon-github: #28007d;
+  --icon-linkedin: #0066c8;
+  --icon-resume: #9B4444;
+  --icon-react: #087a9f;
+  --icon-javascript: #dab92d;
+  --icon-html: #dd4b25;
+  --icon-css: #254bdd;
+
+  /* SWITCH COLOURS */
+  --switch-offColor: var(--sky-light);
+  --switch-offHandleColor: var(--sky-light);
+  --switch-onColor: var(--sky-dark);
+  --switch-onHandleColor: var(--sky-dark);
+  --switch-boxShadow: var(--light-3);
+  --switch-activeBoxShadow: var(--astral-entity);
+  --dlswitch-icon: var(--astral-entity);
+}
+
+[data-theme='dark'] {
+  --background: var(--dark-1);
+  --text-primary: var(--white);
+
+  --link: var(--dark-2);
+  --link-hover: var(--dark-3);
+
+  --navigation-item-border: var(--dark-3);
+  --youtube-container-background: var(--dark-4);
+  --container-border: var(--dark-2);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: var(--background);
+  color: var(--text-primary);
+
+  font-family: 'Courier New', monospace;
+  font-size: min(30px, 4vw);
+
+  height: 100vh;
+  overflow-y: auto;
+
+  transition: all .5s;
+
+  display:flex; 
+  flex-direction:column;
+}
+
+p, small, h3, li {
+  color: var(--text-primary);
+}
+
+/* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually */
+.episode-text-font {
+  font-family: 'Courier New', monospace;
+  font-size: min(30px, 4vw);
+}
+
+.x {
+  color: red;
+}
+
+.episode-text-colour {
+  color: var(--text-primary);
+}
+
+.section_header_text {
+  font-family: 'Courier New', monospace;
+  color: var(--text-primary);
+  text-decoration: underline;
+  margin: 0;
+  padding: 0;
+}
+/* For some reason, the Accordion component from the Jou UI library does not inherit the parent's styling ==> we have to do it manually --- END */
+
+a {
+    text-decoration: none;
+    color: var(--link);
+    cursor: alias;
+}
+
+a:hover{
+  color: var(--link-hover);
+}
+
+.navigation_item {
+  border-bottom: 2px solid var(--navigation-item-border);
+}
+
+.youtube-container {
+  border: 2px solid var(--container-border);
+}
+
+.subtitle-icon {
+  color: var(--link); 
+}
+
+.about-me-icon {
+  color: var(--icon-about-me); 
+}
+
+.episode-icon {
+  color: var(--icon-episode);
+}
+
+.flame-icon {
+  color: var(--icon-flame);
+}
+
+.moto-icon {
+  color: var(--icon-moto);
+}
+
+.pinpoint-icon {
+  color: var(--icon-youtube);
+}
+
+.youtube-description-icon {
+  color: var(--icon-youtube-description);
+}
+
+.youtube-icon {
+  color: var(--icon-youtube);
+}
+
+.dlswitch-icon {
+  color: var(--dlswitch-icon);
+}
+
+.resume-icon {
+  color: var(--icon-resume);
+}
+
+.github-icon {
+  color: var(--icon-github);
+}
+
+.linkedin-icon {
+  color: var(--icon-linkedin);
+}
+
+.react-icon {
+  color: var(--icon-react);
+}
+
+.javascript-icon {
+  color: var(--icon-javascript);
+}
+
+.html-icon {
+  color: var(--icon-html);
+}
+
+.css-icon {
+  color: var(--icon-css);
+}
+
+.navigation-bar-background {
+  background-color: var(--background);
+}
+
+.navigation-bar-bottom-background {
+  background-color: var(--background);
+  background: linear-gradient(to bottom, var(--background), rgba(255, 255, 255, 0)); 
+}
+
+/* Accordions do not have style or sx props :( */
+
+.accordion__button {
+  border: 2px solid var(--container-border);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion__panel {
+  border: 2px solid var(--container-border);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.accordion {
+  display: flex;
+  gap: 10px;
+}
+
+.press-pointer {
+  cursor: pointer;
+}
+.article {
+  flex:1;
+}
+
+.foo {
+  margin-top: 50px;
+}
+
+.MuiAccordionSummary-root.accordion_summary {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 2px solid var(--container-border);
+  
+}
+.accordion_summary_div {
+  background-color: var(--background);
+  transition: all .5s;
+}

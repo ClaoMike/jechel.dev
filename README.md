@@ -70,12 +70,17 @@ rails server
 - ~~Integrate ```axios``` and ```redux``` for ```API calls``` and ```state management```~~
 - ~~Get and display the skills~~
 - ~~Improve the ```About Me``` page~~
+
+### Sprint 4
+- Migrate to ```vite```
+
+### Sprint 5
 - Login page
 - login setup (back end)
 - Edit data page
 - Edit skills
 
-### Sprint 4
+### Sprint 6
 - Dockerize
 - Upload the browser's icon
 - Host server on Heroku
@@ -92,13 +97,13 @@ rails server
 - Mobile apps
 - Video games
 
-### Sprint 5
+### Sprint 7
 - Automatic version update
 
-### Sprint 6
+### Sprint 8
 - Cookies
 
-### Sprint 7
+### Sprint 9
 - Add animations -> -> Decide on some external library (such as ```react-spring``` or ```anime.js```)
 - Automate as much as possible
     - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
