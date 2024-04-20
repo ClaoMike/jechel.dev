@@ -5,9 +5,9 @@ import './index.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import { store } from './states_management/store.jsx'
 import { Provider } from 'react-redux'
-import darkTheme from './app/themes/darkTheme.jsx'
-import lightTheme from './app/themes/LightTheme.jsx'
-import useThemeDetection from './app/useThemeDetection.jsx'
+import darkTheme from './themes/darkTheme.jsx'
+import lightTheme from './themes/lightTheme.jsx'
+import useThemeDetection from './themes/useThemeDetection.jsx'
 import { useSelector } from 'react-redux'
 
 const Root = () => {

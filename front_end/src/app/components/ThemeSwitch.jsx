@@ -1,5 +1,5 @@
 import React from 'react';
-import { toggleTheme } from '../states_management/slices/themeSlice';
+import { toggleTheme } from '../../states_management/slices/themeSlice'
 import { useSelector, useDispatch } from 'react-redux';
 import { Switch } from '@chakra-ui/react';
 
