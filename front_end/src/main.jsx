@@ -10,12 +10,23 @@ import lightTheme from './app/themes/LightTheme.jsx'
 import useThemeDetection from './app/useThemeDetection.jsx'
 import { useSelector } from 'react-redux'
 
+const Root = () => {
+  const theme = useSelector((state) => state.theme.value);
+
+  useThemeDetection();
+
+  return (
+    <ChakraProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
+      <App />
+    </ChakraProvider>
+  );
+};
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <ChakraProvider theme={lightTheme}>
-        <App />
-      </ChakraProvider>
+      <Root />
     </Provider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
+
