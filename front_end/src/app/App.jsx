@@ -1,6 +1,7 @@
 import './App.css'
 import { useSelector } from 'react-redux'
 import useThemeDetection from './useThemeDetection';
+import { Heading } from '@chakra-ui/react'
 
 function App() {
   const theme = useSelector((state) => state.theme.value)
@@ -10,6 +11,7 @@ function App() {
   return (
     <>
       <p>{theme}</p>
+      <Heading>I'm a Heading</Heading>
     </>
   )
 }
