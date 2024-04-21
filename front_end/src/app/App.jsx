@@ -1,15 +1,18 @@
 import React from 'react';
-import { Heading } from '@chakra-ui/react';
+import { Heading, Center, VStack } from '@chakra-ui/react';
 
-import './App.css';
 import ThemeSwitch from './components/ThemeSwitch';
 
 function App() {
   return (
-    <>
-      <Heading>Claudiu Mihai Jechel</Heading>
-      <ThemeSwitch />
-    </>
+    <Center>
+      <VStack>
+
+        <Heading>Claudiu Mihai Jechel</Heading>
+        <ThemeSwitch />
+
+      </VStack>    
+    </Center>
   );
 }
 
