@@ -2,19 +2,18 @@ import React from 'react';
 import { Heading, Center, VStack, HStack } from '@chakra-ui/react';
 
 import ThemeSwitch from './components/ThemeSwitch';
-
-import { Icon } from '@chakra-ui/react'
-import { FaTerminal } from 'react-icons/fa';
+import SubtitleIcon from './components/SubtitleIcon';
+import Title from './components/Title';
 
 function App() {
   return (
     <Center>
-      <VStack>
+      <VStack mt="5vh" mb="5vh">
 
-        <Heading>Claudiu Mihai Jechel</Heading>
+        <Title />
         <HStack>
-          <Icon as={FaTerminal}  boxSize={10}/>
-          <Heading>Software Engineer</Heading>
+          <SubtitleIcon />
+          <Heading as='h2' size='xl' >Software Engineer</Heading>
           <ThemeSwitch />
         </HStack>
         
