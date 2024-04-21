@@ -108,4 +108,9 @@ rails server
 - Automate as much as possible
     - ~~When obtaining the production build, auto-copy it to the ```docs``` folder~~
     - ~~Absolute imports~~
+
+
+## Issues
+- [Color Mode Flash Issue](https://v2.chakra-ui.com/docs/styled-system/color-mode)
+    - In some cases, when switching to dark mode and refreshing the page, the user might experience a quick flash of light mode before it switches correctly. This is a known issue and the ChakraUI team is looking to fix it.
 ***

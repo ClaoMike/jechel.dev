@@ -7,7 +7,6 @@ import { toggleTheme } from '../../states_management/slices/themeSlice'
 const ThemeSwitch = () => {
     const theme = useSelector((state) => state.theme.value);
     const dispatch = useDispatch();
-
     const { toggleColorMode } = useColorMode()
 
     const onChange = () => {
