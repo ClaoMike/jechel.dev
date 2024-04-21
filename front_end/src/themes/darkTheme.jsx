@@ -6,8 +6,8 @@ const darkTheme = extendTheme({
   components: {
     Heading: {
       baseStyle: (props) => ({
-        bg: mode('red.500')(props),
-        color: mode('white')(props),
+        bg: mode('red.500', 'red.500')(props),
+        color: mode('white', 'white')(props),
       }),
     },
     // You can add more components here with their respective base styles
@@ -15,7 +15,7 @@ const darkTheme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        bg: mode(colors.background.dark)(props),
+        bg: mode(colors.background.dark, colors.background.dark)(props),
       },
     }),
   },

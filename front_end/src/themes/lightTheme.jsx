@@ -6,15 +6,15 @@ const lightTheme = extendTheme({
     components: {
       Heading: {
         baseStyle: (props) => ({
-          bg: mode('green.500')(props),
-          color: mode('black')(props),
+          bg: mode('green.500', 'green.500')(props),
+          color: mode('black', 'black')(props),
         }),
       },
     },
     styles: {
       global: (props) => ({
         body: {
-          bg: mode(colors.background.light)(props),
+          bg: mode(colors.background.light,colors.background.light)(props),
         },
       }),
     },
