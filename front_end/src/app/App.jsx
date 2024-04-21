@@ -1,7 +1,10 @@
 import React from 'react';
-import { Heading, Center, VStack } from '@chakra-ui/react';
+import { Heading, Center, VStack, HStack } from '@chakra-ui/react';
 
 import ThemeSwitch from './components/ThemeSwitch';
+
+import { Icon } from '@chakra-ui/react'
+import { FaTerminal } from 'react-icons/fa';
 
 function App() {
   return (
@@ -9,7 +12,12 @@ function App() {
       <VStack>
 
         <Heading>Claudiu Mihai Jechel</Heading>
-        <ThemeSwitch />
+        <HStack>
+          <Icon as={FaTerminal}  boxSize={10}/>
+          <Heading>Software Engineer</Heading>
+          <ThemeSwitch />
+        </HStack>
+        
 
       </VStack>    
     </Center>
