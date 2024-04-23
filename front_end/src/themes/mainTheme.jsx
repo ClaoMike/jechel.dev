@@ -3,6 +3,8 @@ import { mode } from '@chakra-ui/theme-tools';
 import colors from './colors';
 import "@fontsource/courier-prime";
 
+import SubtitleIcon from '../app/components/subtitle_icon/SubtitleIconStyle';
+
 const darkTheme = extendTheme({
   config: {
     initialColorMode: 'system',
@@ -11,8 +13,7 @@ const darkTheme = extendTheme({
 
   styles: {
     global: (props) => ({
-      html: {
-      },
+      html: {},
       body: {
         bg: mode(colors.background.light, colors.background.dark)(props),
         color: mode(colors.text.light, colors.text.dark)(props),
@@ -21,19 +22,16 @@ const darkTheme = extendTheme({
   },
 
   components: {
+    SubtitleIcon,
 
     Heading: {
-      baseStyle: (props) => ({
-        
-      }),
+      baseStyle: (props) => ({}),
     },
-
   },
-
 });
 
 darkTheme.fonts = {
-  body: `Courier Prime`
+  body: `Courier Prime`,
 };
 
 export default darkTheme;

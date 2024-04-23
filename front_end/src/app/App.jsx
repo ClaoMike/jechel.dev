@@ -2,7 +2,7 @@ import React from 'react';
 import { Heading, Center, VStack, HStack } from '@chakra-ui/react';
 
 import ThemeSwitch from './components/ThemeSwitch';
-import SubtitleIcon from './components/SubtitleIcon';
+import SubtitleIcon from './components/subtitle_icon/SubtitleIcon';
 import Title from './components/Title';
 
 function App() {
