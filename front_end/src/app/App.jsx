@@ -4,6 +4,7 @@ import { Heading, Center, VStack, HStack } from '@chakra-ui/react';
 import ThemeSwitch from './components/ThemeSwitch';
 import SubtitleIcon from './components/subtitle_icon/SubtitleIcon';
 import Title from './components/Title';
+import Subtitle from './components/Subtitle';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Title />
         <HStack>
           <SubtitleIcon />
-          <Heading as='h2' size='xl' >Software Engineer</Heading>
+          <Subtitle />
           <ThemeSwitch />
         </HStack>
         
