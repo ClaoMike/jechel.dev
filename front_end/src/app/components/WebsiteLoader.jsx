@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Center } from '@chakra-ui/react';
+import { useSelector } from 'react-redux';
 
-const WebsiteLoader = ({isLoading}) => {
+const WebsiteLoader = () => {
     const [isVisible, setIsVisible] = useState(true);
+    const isLoading = useSelector((state) => state.websiteLoader.value); // redux loading state
 
     useEffect(() => {
         const interval = setInterval(() => {

@@ -1,13 +1,17 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import Contents from './components/Contents';
 import WebsiteLoader from './components/WebsiteLoader';
 
+import { useSelector, useDispatch } from 'react-redux';
+import { doneLoading } from '../states_management/slices/websiteLoadingSlice';
+
 function App() {
-  const [isLoading, setIsLoading] = useState(true);
+  const isLoading = useSelector((state) => state.websiteLoader.value); // redux theme state
+  const dispatch = useDispatch();
 
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setIsLoading(false);
+      dispatch(doneLoading());
     }, 2000);
 
     return () => clearTimeout(timeout);
