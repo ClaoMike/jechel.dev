@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, Center, VStack, HStack } from '@chakra-ui/react';
+import { Center, VStack, HStack } from '@chakra-ui/react';
 
 import ThemeSwitch from './components/ThemeSwitch';
 import SubtitleIcon from './components/subtitle_icon/SubtitleIcon';
