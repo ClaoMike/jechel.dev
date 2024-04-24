@@ -1,16 +1,10 @@
 import React from 'react';
-import { Center, VStack } from '@chakra-ui/react';
-import Header from './components/header/Header';
+import Contents from './Contents';
 
 function App() {
   return (
-    <Center>
-      <VStack mt="5vh" mb="5vh">
-        
-        <Header/>
-        
-      </VStack>    
-    </Center>
+      // <WebsiteLoader />
+      <Contents/>
   );
 }
 
