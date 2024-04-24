@@ -3,31 +3,31 @@ import { useSelector, useDispatch } from 'react-redux';
 import { useColorMode } from '@chakra-ui/react';
 import Switch from "react-switch";
 
-import { FaSun, FaMoon } from 'react-icons/fa';
+import MoonIcon from './icons/MoonIcon';
+import SunIcon from './icons/SunIcon';
 
-import { toggleTheme } from '../../states_management/slices/themeSlice'
+import { toggleTheme } from '../../../../../states_management/slices/themeSlice'
+import style from './ThemeSwitchStyle';
 
 const ThemeSwitch = () => {
-    const theme = useSelector((state) => state.theme.value);
+    // Redux management
+    const theme = useSelector((state) => state.theme.value); // redux theme state
     const dispatch = useDispatch();
+
+    // ChakraUI theme state
     const { colorMode, toggleColorMode } = useColorMode()
 
+    // if ChakraUI saved the theme from before the refresh, update its value to match the browser
     useEffect(() => {
         if (theme !== colorMode) {
             toggleColorMode();
         }
     }, [theme, colorMode]);
 
+    // when toggled, switch themes
     const onChange = () => {
         dispatch(toggleTheme());
         toggleColorMode();
-    };
-
-    const style = {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100%",
     };
 
     return (
@@ -39,25 +39,21 @@ const ThemeSwitch = () => {
             checkedIcon={false}
 
             uncheckedHandleIcon={
-                <div style={style}>
-                    <FaSun/>
-                </div>
+                <SunIcon />
             }
 
             checkedHandleIcon={
-                <div style={style}>
-                    <FaMoon/>
-                </div>
+                <MoonIcon />
             }
 
-            offColor={'#89CFF3'}
-            offHandleColor={'#89CFF3'}
+            offColor={style.offColor}
+            offHandleColor={style.offHandleColor}
 
-            onColor={'#0C356A'}
-            onHandleColor={'#0C356A'}
+            onColor={style.onColor}
+            onHandleColor={style.onHandleColor}
 
-            boxShadow={'0 0 2px 3px #647D87'}
-            activeBoxShadow={'0 0 2px 3px #FFC436'}
+            boxShadow={style.boxShadow}
+            activeBoxShadow={style.activeBoxShadow}
         />
     )
 }

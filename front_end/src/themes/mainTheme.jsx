@@ -3,7 +3,7 @@ import { mode } from '@chakra-ui/theme-tools';
 import colors from './colors';
 import "@fontsource/courier-prime";
 
-import SubtitleIcon from '../app/components/subtitle_icon/SubtitleIconStyle';
+import SubtitleIcon from '../app/components/header/subheader/subtitle_icon/SubtitleIconStyle';
 
 const darkTheme = extendTheme({
   config: {
