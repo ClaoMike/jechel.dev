@@ -1,6 +1,8 @@
 const standard_colors = {
     astral_entity: '#FFC436',
-    black: '#000000'
+    black: '#000000',
+    light_blue: '#6DA4AA',
+    dark_green: '#005B41'
 };
 
 const colors = {
@@ -13,8 +15,8 @@ const colors = {
         dark: '#DCF2F1'
     },
     link: {
-        light: '#6DA4AA',
-        dark: '#005B41'
+        light: standard_colors.light_blue,
+        dark: standard_colors.dark_green
     },
     theme_switch: {
         moon_icon: standard_colors.astral_entity,
@@ -23,6 +25,11 @@ const colors = {
         onColour: '#0C356A',
         offBorder: '#647D87',
         onBorder: standard_colors.astral_entity
+    },
+    website_loader: {
+        background: standard_colors.light_blue,
+        greater_sign: standard_colors.dark_green,
+        underscore_sign: standard_colors.dark_green
     }
 };
 

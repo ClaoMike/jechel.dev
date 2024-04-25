@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import Contents from './components/Contents';
-import WebsiteLoader from './components/WebsiteLoader';
+import WebsiteLoader from './components/website_loader/WebsiteLoader';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { doneLoading } from '../states_management/slices/websiteLoadingSlice';

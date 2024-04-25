@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Center } from '@chakra-ui/react';
 import { useSelector } from 'react-redux';
+import style from './WebsiteLoaderStyle';   
 
 const WebsiteLoader = () => {
     const [isVisible, setIsVisible] = useState(true);
@@ -17,28 +18,26 @@ const WebsiteLoader = () => {
     return (
         <>
             {isLoading && (
-                <Center h="100vh" bg="red">
+                <Center h="100vh" bg={style.background}>
                     <svg
-                        width="100"
-                        height="100"
-                        viewBox="0 0 100 100"
+                        width={style.svg.width}
+                        height={style.svg.height}
+                        viewBox={style.svg.viewBox}
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <text
-                            x="10"
-                            y="50"
-                            fontSize="40"
-                            fontFamily="Arial"
-                            fill="black"
+                            x={style.svg.greater_sign.x}
+                            y={style.svg.greater_sign.y}
+                            fontSize={style.svg.greater_sign.fontSize}
+                            fill={style.svg.greater_sign.fill}
                         >
                             &gt;
                         </text>
                         <text
-                            x="30"
-                            y="50"
-                            fontSize="40"
-                            fontFamily="Arial"
-                            fill="black"
+                            x={style.svg.underscore_sign.x}
+                            y={style.svg.underscore_sign.y}
+                            fontSize={style.svg.underscore_sign.fontSize}
+                            fill={style.svg.underscore_sign.fill}
                             visibility={isVisible ? 'hidden' : 'visible'}
                         >
                             _
