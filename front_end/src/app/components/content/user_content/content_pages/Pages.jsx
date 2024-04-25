@@ -1,6 +1,6 @@
 import React from 'react'
 import { TabPanels } from '@chakra-ui/react'
-import Page from './Page'
+import Page from '@components/content/user_content/content_pages/Page'
 
 const Pages = () => {
     return (

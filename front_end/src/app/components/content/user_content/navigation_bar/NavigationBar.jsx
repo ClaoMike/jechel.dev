@@ -1,6 +1,6 @@
 import React from 'react'
 import { TabList } from '@chakra-ui/react'
-import CustomTab from './CustomTab'
+import CustomTab from '@components/content/user_content/navigation_bar/CustomTab'
 
 const NavigationBar = () => {
     return (

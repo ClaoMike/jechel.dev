@@ -1,8 +1,8 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { updateCredentials } from '../../../../../states_management/slices/loginSlice';
+import { updateCredentials } from '@slices/loginSlice';
 
-import CustomFormControl from './textfield_components/CustomFormControl'
+import CustomFormControl from '@components/content/login_page/textfields/textfield_components/CustomFormControl'
 
 const UsernameTextfield = () => {
     const username = useSelector((state) => state.login.username);

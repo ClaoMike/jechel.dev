@@ -1,6 +1,6 @@
 import React from 'react'
 import { FormControl, FormLabel} from '@chakra-ui/react';
-import CustomInput from './CustomInput';
+import CustomInput from '@components/content/login_page/textfields/textfield_components/CustomInput';
 
 const CustomFormControl = ({ id, placeholder, type, value, onChange }) => {
     return (

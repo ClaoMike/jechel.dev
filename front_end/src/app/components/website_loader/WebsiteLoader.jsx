@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import { Center } from '@chakra-ui/react';
-import { useSelector, useDispatch } from 'react-redux';
-import style from './WebsiteLoaderStyle'; 
 
-import { toggle } from '../../../states_management/slices/underscoreVisibilitySlice';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggle } from '@slices/underscoreVisibilitySlice';
+
+import { Center } from '@chakra-ui/react';
+import style from '@components/website_loader/WebsiteLoaderStyle';
 
 const WebsiteLoader = () => {
     const isLoading = useSelector((state) => state.websiteLoader.value); // Redux loading state

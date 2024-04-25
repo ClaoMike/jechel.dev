@@ -1,5 +1,5 @@
 import React from 'react'
-import style from './SwitchIconStyle'
+import style from '@components/content/header/subheader/theme_switch/icons/SwitchIconStyle'
 
 const SwitchIcon = ({ icon }) => {
   return (

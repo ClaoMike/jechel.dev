@@ -3,9 +3,9 @@ import { useSelector } from 'react-redux';
 
 import { Stack } from '@chakra-ui/react';
 
-import SubmitButton from './SubmitButton';
-import UsernameTextfield from './textfields/UsernameTextfield';
-import PasswordTextfield from './textfields/PasswordTextfield';
+import SubmitButton from '@components/content/login_page/SubmitButton';
+import UsernameTextfield from '@components/content/login_page/textfields/UsernameTextfield';
+import PasswordTextfield from '@components/content/login_page/textfields/PasswordTextfield';
 
 const LoginForm = () => {
     const username = useSelector((state) => state.login.username);

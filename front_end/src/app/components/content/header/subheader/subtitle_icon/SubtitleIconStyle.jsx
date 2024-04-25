@@ -1,6 +1,6 @@
 import { defineStyleConfig } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
-import colors from '../../../../../../themes/colors';
+import colors from '@themes/colors';
 
 const SubtitleIcon = defineStyleConfig({
     baseStyle: (props) => ({

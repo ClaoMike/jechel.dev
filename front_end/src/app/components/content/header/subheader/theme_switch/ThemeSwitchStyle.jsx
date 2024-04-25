@@ -1,4 +1,4 @@
-import colors from "../../../../../../themes/colors";
+import colors from "@themes/colors";
 
 const style = {
     offColor: colors.theme_switch.offColour,

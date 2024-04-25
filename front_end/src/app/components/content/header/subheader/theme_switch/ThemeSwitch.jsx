@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleTheme } from '../../../../../../states_management/slices/themeSlice';
+import { toggleTheme } from '@slices/themeSlice';
 
 import { useColorMode } from '@chakra-ui/react';
 import Switch from "react-switch";
 
-import MoonIcon from './icons/MoonIcon';
-import SunIcon from './icons/SunIcon';
-import style from './ThemeSwitchStyle';
+import MoonIcon from '@components/content/header/subheader/theme_switch/icons/MoonIcon';
+import SunIcon from '@components/content/header/subheader/theme_switch/icons/SunIcon';
+import style from '@components/content/header/subheader/theme_switch/ThemeSwitchStyle';
 
 const ThemeSwitch = () => {
     // Redux management

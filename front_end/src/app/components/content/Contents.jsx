@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 import { Center, VStack } from '@chakra-ui/react';
 
-import Header from './header/Header';
-import UserContent from './user_content/UserContent';
-import LoginForm from './login_page/LoginForm';
+import Header from '@components/content/header/Header';
+import UserContent from '@components/content//user_content/UserContent';
+import LoginForm from '@components/content/login_page/LoginForm';
 
 const Contents = () => {
   return (
