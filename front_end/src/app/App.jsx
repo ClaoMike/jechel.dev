@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <WebsiteLoader isLoading={isLoading} />
-      <Contents style={{ position: 'relative', zIndex: 1 }} />
+      <Contents />
     </>
   );
 }

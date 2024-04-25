@@ -4,7 +4,7 @@ import Header from './header/Header';
 
 const Contents = () => {
   return (
-    <Center>
+    <Center style={{ position: 'relative', zIndex: 1 }}>
       <VStack mt="5vh" mb="5vh">
         
         <Header/>
