@@ -7,9 +7,9 @@ const NavigationBar = () => {
     return (
         <TabList>
 
-            <CustomTab path={paths.home} label='Latest' />
-            <CustomTab path={paths.moto} label='Moto' />
-            <CustomTab path={paths.about_me} label='About Me' />
+            <CustomTab path={paths.home.path} label='Latest' />
+            <CustomTab path={paths.moto.path} label='Moto' />
+            <CustomTab path={paths.about_me.path} label='About Me' />
 
         </TabList>
     )

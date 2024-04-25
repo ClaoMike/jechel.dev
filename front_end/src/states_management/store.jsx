@@ -4,6 +4,7 @@ import themeReducer from '@slices/themeSlice'
 import websiteLoaderReducer from '@slices/websiteLoaderSlice'
 import underscoreVisibilityReducer from '@slices/underscoreVisibilitySlice'
 import loginReducer from '@slices/loginSlice'
+import pageSlice from '@slices/pageSlice'
 
 export const store = configureStore({
   reducer: {
@@ -11,5 +12,6 @@ export const store = configureStore({
     websiteLoader: websiteLoaderReducer,
     underscoreVisibility: underscoreVisibilityReducer,
     login: loginReducer,
+    page: pageSlice,
   },
 })

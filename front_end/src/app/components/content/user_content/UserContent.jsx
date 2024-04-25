@@ -1,27 +1,33 @@
-import React, { useState, useEffect } from 'react'
-import { Tabs } from '@chakra-ui/react'
-import NavigationBar from './navigation_bar/NavigationBar'
-import Pages from './content_pages/Pages'
+import React, { useEffect } from 'react'
 import { useLocation } from 'react-router-dom';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { home, moto, aboutMe } from '@slices/pageSlice';
 import paths from '@paths/paths'
 
+import { Tabs } from '@chakra-ui/react'
+import NavigationBar from '@components/content/user_content/navigation_bar/NavigationBar'
+import Pages from '@components/content/user_content/content_pages/Pages'
+
 const UserContent = () => {
-  const [tabIndex, setTabIndex] = useState(0)
   const location = useLocation();
+
+  const tabIndex = useSelector((state) => state.page.tabIndex);
+  const dispatch = useDispatch();
 
   useEffect(() => {
     switch (location.pathname) {
-        case paths.home:
-            setTabIndex(0)
+        case paths.home.path:
+            dispatch(home())
             break;
-        case paths.moto:
-            setTabIndex(1)
+        case paths.moto.path:
+            dispatch(moto())
             break;
-        case paths.about_me:
-            setTabIndex(2)
+        case paths.about_me.path:
+            dispatch(aboutMe())
             break;
         default:
-            setTabIndex(0)
+            dispatch(home())
             break;
       }
   }, [location.pathname]);
