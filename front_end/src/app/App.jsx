@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { doneLoading } from '../states_management/slices/websiteLoaderSlice';
 
-import Contents from './components/Contents';
+import Contents from './components/content/Contents';
 import WebsiteLoader from './components/website_loader/WebsiteLoader';
 
 function App() {

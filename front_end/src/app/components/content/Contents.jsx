@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Center, VStack } from '@chakra-ui/react';
 
 import Header from './header/Header';
-import UserContent from './UserContent';
+import UserContent from './user_content/UserContent';
 import LoginForm from './login_page/LoginForm';
 
 const Contents = () => {

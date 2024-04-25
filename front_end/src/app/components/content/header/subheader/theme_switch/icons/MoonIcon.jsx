@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaMoon } from 'react-icons/fa';
 import SwitchIcon from './SwitchIcon'
-import colors from '../../../../../../themes/colors';
+import colors from '../../../../../../../themes/colors';
 
 const MoonIcon = () => {
   return (

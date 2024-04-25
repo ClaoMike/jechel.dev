@@ -1,7 +1,7 @@
 import React from 'react'
 import SwitchIcon from './SwitchIcon'
 import { FaSun } from 'react-icons/fa';
-import colors from '../../../../../../themes/colors';
+import colors from '../../../../../../../themes/colors';
 
 const SunIcon = () => {
   return (
