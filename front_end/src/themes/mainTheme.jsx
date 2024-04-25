@@ -5,6 +5,9 @@ import "@fontsource/courier-prime";
 
 import SubtitleIcon from '../app/components/header/subheader/subtitle_icon/SubtitleIconStyle';
 
+import { inputTheme } from '../app/components/login_page/InputStyle';
+
+
 const darkTheme = extendTheme({
   config: {
     initialColorMode: 'system',
@@ -23,6 +26,7 @@ const darkTheme = extendTheme({
 
   components: {
     SubtitleIcon,
+    Input: inputTheme,
 
     Button: {
       // baseStyle: {},
