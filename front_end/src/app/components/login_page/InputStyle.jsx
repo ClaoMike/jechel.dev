@@ -13,16 +13,23 @@ const baseStyle = definePartsStyle({
 
 const pill = definePartsStyle({
   field: {
-    background: colors.background.light,
+    background: colors.login_form.textfield_input.background.light,
 
     border: '2px solid',
-    borderColor: colors.link.light,
+    borderColor: colors.login_form.textfield_input.border.normal,
 
     _dark: {
-      background: colors.background.dark,
-      borderColor: colors.link.dark,
+      background: colors.login_form.textfield_input.background.dark,
+      borderColor: colors.login_form.textfield_input.border.normal,
       
     },
+
+    _focusVisible: {
+        borderColor: colors.login_form.textfield_input.border.focused.light,
+        _dark: {
+            borderColor: colors.login_form.textfield_input.border.focused.dark,
+        }
+      },
   },
 })
 
