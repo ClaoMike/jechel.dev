@@ -1,19 +1,25 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Center } from '@chakra-ui/react';
-import { useSelector } from 'react-redux';
-import style from './WebsiteLoaderStyle';   
+import { useSelector, useDispatch } from 'react-redux';
+import style from './WebsiteLoaderStyle'; 
+
+import { toggle } from '../../../states_management/slices/underscoreVisibilitySlice';
 
 const WebsiteLoader = () => {
-    const [isVisible, setIsVisible] = useState(true);
-    const isLoading = useSelector((state) => state.websiteLoader.value); // redux loading state
+    const isLoading = useSelector((state) => state.websiteLoader.value); // Redux loading state
+    const isVisible = useSelector((state) => state.underscoreVisibility.value); // Redux underscore visibility state
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setIsVisible((prev) => !prev);
+            if (isLoading) {
+                // If loading is false, toggle visibility every 500ms
+                dispatch(toggle());
+            }
         }, 500);
 
         return () => clearInterval(interval);
-    }, []);
+    }, [isLoading, dispatch]);
     
     return (
         <>

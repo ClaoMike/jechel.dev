@@ -3,7 +3,7 @@ import Contents from './components/Contents';
 import WebsiteLoader from './components/website_loader/WebsiteLoader';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { doneLoading } from '../states_management/slices/websiteLoadingSlice';
+import { doneLoading } from '../states_management/slices/websiteLoaderSlice';
 
 function App() {
   const isLoading = useSelector((state) => state.websiteLoader.value); // redux theme state
