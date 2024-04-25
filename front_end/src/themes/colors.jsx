@@ -46,6 +46,13 @@ const colors = {
                     dark: standard_colors.dark_green
                 }
             }
+        },
+        button: {
+            background: {
+                light: standard_colors.light_blue,
+                dark: standard_colors.dark_green
+            },
+            border: standard_colors.shadow
         }
     }
 };
