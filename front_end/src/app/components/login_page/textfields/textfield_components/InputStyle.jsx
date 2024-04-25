@@ -1,6 +1,6 @@
 import { inputAnatomy } from '@chakra-ui/anatomy'
 import { createMultiStyleConfigHelpers } from '@chakra-ui/react'
-import colors from '../../../themes/colors'
+import colors from '../../../../../themes/colors'
 
 const { definePartsStyle, defineMultiStyleConfig } =
   createMultiStyleConfigHelpers(inputAnatomy.keys)

@@ -1,9 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import { Center, VStack } from '@chakra-ui/react';
+
 import Header from './header/Header';
 import UserContent from './UserContent';
-import LoginPage from './login_page/LoginPage';
+import LoginForm from './login_page/LoginForm';
 
 const Contents = () => {
   return (
@@ -15,7 +17,7 @@ const Contents = () => {
         <Router>
           <Routes>
             <Route path='/*' element={<UserContent />} />
-            <Route path='/admin' element={<LoginPage />} />
+            <Route path='/admin' element={<LoginForm />} />
           </Routes>
         </Router>
         

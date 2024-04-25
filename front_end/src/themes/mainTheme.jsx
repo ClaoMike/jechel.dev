@@ -5,7 +5,7 @@ import "@fontsource/courier-prime";
 
 import SubtitleIcon from '../app/components/header/subheader/subtitle_icon/SubtitleIconStyle';
 
-import { inputTheme } from '../app/components/login_page/InputStyle';
+import { inputTheme } from '../app/components/login_page/textfields/textfield_components/InputStyle';
 
 
 const darkTheme = extendTheme({
