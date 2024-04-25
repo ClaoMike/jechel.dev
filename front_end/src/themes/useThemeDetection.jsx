@@ -1,8 +1,8 @@
-import { useDispatch } from 'react-redux'
-import { switchToLight, switchToDark } from '../states_management/slices/themeSlice'
 import { useEffect } from 'react';
+import { useDispatch } from 'react-redux'
+import { switchToLight, switchToDark } from '@slices/themeSlice'
 
-const useThemeDetection = () => {
+export const useThemeDetection = () => {
     const dispatch = useDispatch();
     
     useEffect(() => {
@@ -38,4 +38,4 @@ const useThemeDetection = () => {
     }, [dispatch]);
 };
 
-export default useThemeDetection;
+// export default useThemeDetection;

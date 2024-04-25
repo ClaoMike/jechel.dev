@@ -1,13 +1,10 @@
 import { extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
-import colors from './colors';
+import colors from '@themes/colors';
 import "@fontsource/courier-prime";
 
 import SubtitleIcon from '../app/components/content/header/subheader/subtitle_icon/SubtitleIconStyle';
-
-// import { inputTheme } from '../app/components/login_page/textfields/textfield_components/InputStyle';
 import { inputTheme } from '../app/components/content/login_page/textfields/textfield_components/InputStyle'
-
 
 const darkTheme = extendTheme({
   config: {

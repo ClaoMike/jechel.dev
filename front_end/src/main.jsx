@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client'
 import { Provider } from 'react-redux'
 import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 
-import App from './app/App.jsx'
-import { store } from './states_management/store.jsx'
-import useThemeDetection from './themes/useThemeDetection.jsx'
-import mainTheme from './themes/mainTheme.jsx'
+import App from '@/app/App'
+import { store } from '@/states_management/store'
+import { useThemeDetection } from '@themes/useThemeDetection'
+import mainTheme from '@themes/mainTheme'
 
 const Root = () => {
   useThemeDetection();
