@@ -1,18 +1,20 @@
 import React, { useEffect } from 'react';
-import { FormControl, FormLabel, Input, Button, Stack } from '@chakra-ui/react';
+import { FormControl, FormLabel, Input, Stack } from '@chakra-ui/react';
 import { useSelector, useDispatch } from 'react-redux';
-import { updateCredentials } from '../../states_management/slices/loginSlice'
+import { updateCredentials } from '../../../states_management/slices/loginSlice'
+
+import SubmitButton from './SubmitButton';
 
 const LoginPage = () => {
     const username = useSelector((state) => state.login.username);
     const password = useSelector((state) => state.login.password);
-    const allowSubmit = useSelector((state) => state.login.allowSubmit);
 
     const dispatch = useDispatch();
 
     const handleSubmit = (event) => {
-        // event.preventDefault();
+        event.preventDefault();
         // dispatch(updateCredentials({username, password}));
+        console.log("submitted");
     };
 
     const handleUsernameChange = (event) => {
@@ -58,9 +60,7 @@ const LoginPage = () => {
                     />
                 </FormControl>
 
-                <Button type="submit" colorScheme="blue" isDisabled={!allowSubmit}>
-                    Submit
-                </Button>
+                <SubmitButton handleSubmit={handleSubmit}/>
 
             </Stack>
         </form>

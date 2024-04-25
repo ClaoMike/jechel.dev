@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Center, VStack } from '@chakra-ui/react';
 import Header from './header/Header';
 import UserContent from './UserContent';
-import LoginPage from './LoginPage';
+import LoginPage from './login_page/LoginPage';
 
 const Contents = () => {
   return (

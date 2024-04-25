@@ -24,6 +24,22 @@ const darkTheme = extendTheme({
   components: {
     SubtitleIcon,
 
+    Button: {
+      // baseStyle: {},
+      // sizes: {},
+      variants: {
+        'with-shadow': (props) => ({
+          bg: mode(colors.link.light, colors.link.dark)(props),
+          boxShadow: '0 0 2px 2px #efdfde',
+        }),
+      },
+      defaultProps: {
+        // size: '',
+        variant: 'with-shadow',
+        // colorScheme: '',
+      },
+    },
+    
     Heading: {
       baseStyle: (props) => ({}),
     },
