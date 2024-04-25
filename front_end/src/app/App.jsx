@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import Contents from './components/Contents';
-import WebsiteLoader from './components/website_loader/WebsiteLoader';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { doneLoading } from '../states_management/slices/websiteLoaderSlice';
+
+import Contents from './components/Contents';
+import WebsiteLoader from './components/website_loader/WebsiteLoader';
 
 function App() {
   const isLoading = useSelector((state) => state.websiteLoader.value); // redux theme state

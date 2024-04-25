@@ -1,21 +1,38 @@
-import React, { useState } from 'react';
-import {
-    FormControl,
-    FormLabel,
-    Input,
-    Button,
-    Stack,
-} from '@chakra-ui/react';
+import React, { useEffect } from 'react';
+import { FormControl, FormLabel, Input, Button, Stack } from '@chakra-ui/react';
+import { useSelector, useDispatch } from 'react-redux';
+import { updateCredentials } from '../../states_management/slices/loginSlice'
 
 const LoginPage = () => {
-    const [username, setUsername] = useState('');
-    const [password, setPassword] = useState('');
+    const username = useSelector((state) => state.login.username);
+    const password = useSelector((state) => state.login.password);
+    const allowSubmit = useSelector((state) => state.login.allowSubmit);
+
+    const dispatch = useDispatch();
 
     const handleSubmit = (event) => {
-        event.preventDefault();
-        console.log('Username:', username);
-        console.log('Password:', password);
+        // event.preventDefault();
+        // dispatch(updateCredentials({username, password}));
     };
+
+    const handleUsernameChange = (event) => {
+        dispatch(updateCredentials({
+            username: event.target.value
+        }));
+    };
+
+    const handlePasswordChange = (event) => {
+        dispatch(updateCredentials({
+            password: event.target.value
+        }));
+    };
+
+    // useEffect(() => {
+    //     console.log('Username:', username);
+    //     console.log('Password:', password);
+    //     console.log('Submit: ' + allowSubmit)
+    // }, [username, password]);
+
 
     return (
         <form onSubmit={handleSubmit}>
@@ -26,7 +43,7 @@ const LoginPage = () => {
                     <Input
                         type="text"
                         value={username}
-                        onChange={(e) => setUsername(e.target.value)}
+                        onChange={handleUsernameChange}
                         placeholder="Enter your username"
                     />
                 </FormControl>
@@ -36,12 +53,12 @@ const LoginPage = () => {
                     <Input
                         type="password"
                         value={password}
-                        onChange={(e) => setPassword(e.target.value)}
+                        onChange={handlePasswordChange}
                         placeholder="Enter your password"
                     />
                 </FormControl>
 
-                <Button type="submit" colorScheme="blue">
+                <Button type="submit" colorScheme="blue" isDisabled={!allowSubmit}>
                     Submit
                 </Button>
 
