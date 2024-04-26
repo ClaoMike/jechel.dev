@@ -2,9 +2,9 @@ import React from 'react'
 import { Button, Icon } from '@chakra-ui/react'
 import { FaBars } from 'react-icons/fa';
 
-const MenuButton = ({buttonReference, onClick }) => { // open
+const MenuButton = ({buttonReference, onClick }) => {
   return (
-    <Button ref={buttonReference} colorScheme='teal' onClick={onClick} position="fixed" bottom="20px" right="20px" zIndex="1">
+    <Button ref={buttonReference} onClick={onClick} position="fixed" bottom="20px" right="20px" >
         <Icon as={FaBars} boxSize={7}  />
     </Button>
   )

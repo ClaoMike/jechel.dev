@@ -33,6 +33,7 @@ const darkTheme = extendTheme({
         'with-shadow': (props) => ({
           bg: mode(colors.login_form.button.background.light, colors.login_form.button.background.dark)(props),
           boxShadow: '0 0 2px 2px ' + colors.login_form.button.border,
+          borderRadius: '30px',
         }),
       },
       defaultProps: {
