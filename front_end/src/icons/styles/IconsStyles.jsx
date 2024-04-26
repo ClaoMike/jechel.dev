@@ -23,6 +23,31 @@ const iconsTheme = defineStyleConfig({
         'menu': (props) => ({
             color: mode(colors.navigation_bar.icons.menu.light, colors.navigation_bar.icons.menu.dark)(props),
         }),
+
+        'react': {
+            color: colors.version.icons.react,
+        },
+
+        'javascript': {
+            color: colors.version.icons.javascript,
+        },
+
+        'html': {
+            color: colors.version.icons.html,
+        },
+
+        'css': {
+            color: colors.version.icons.css,
+        },
+
+        'ruby': {
+            color: colors.version.icons.ruby,
+        },
+
+        'rails': {
+            color: colors.version.icons.rails,
+        },
+
     }
     
 });

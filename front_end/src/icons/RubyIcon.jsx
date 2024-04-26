@@ -5,7 +5,7 @@ import { FaGem } from 'react-icons/fa';
 const RubyIcon = () => {
     const configuration = {
         icon: FaGem,
-        variant: 'moto',
+        variant: 'ruby',
         boxSize: 7,
     }
 

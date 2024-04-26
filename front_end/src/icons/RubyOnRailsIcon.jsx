@@ -5,7 +5,7 @@ import { FaRoad } from 'react-icons/fa';
 const RubyOnRailsIcon = () => {
     const configuration = {
         icon: FaRoad,
-        variant: 'moto',
+        variant: 'rails',
         boxSize: 7,
     }
 

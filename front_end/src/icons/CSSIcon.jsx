@@ -5,7 +5,7 @@ import { FaCss3 } from 'react-icons/fa';
 const CSSIcon = () => {
     const configuration = {
         icon: FaCss3,
-        variant: 'moto',
+        variant: 'css',
         boxSize: 7,
     }
 

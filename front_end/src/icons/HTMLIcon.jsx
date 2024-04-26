@@ -5,7 +5,7 @@ import { FaHtml5 } from 'react-icons/fa';
 const HTMLIcon = () => {
     const configuration = {
         icon: FaHtml5,
-        variant: 'moto',
+        variant: 'html',
         boxSize: 7,
     }
 

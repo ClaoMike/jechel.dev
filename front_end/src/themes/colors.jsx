@@ -5,7 +5,8 @@ const standard_colors = {
     dark_green: '#005B41',
     pale_yellow: '#FAEF9B',
     shadow: '#647D87',
-    white: '#DCF2F1'
+    white: '#DCF2F1',
+    youtube: '#B80000'
 };
 
 const colors = {
@@ -84,6 +85,16 @@ const colors = {
     loading_spinner: {
         light: standard_colors.light_blue,
         dark: standard_colors.dark_green
+    },
+    version: {
+        icons: {
+            react: '#087a9f',
+            javascript: '#dab92d',
+            html: '#dd4b25',
+            css: '#254bdd',
+            ruby: standard_colors.youtube,
+            rails: standard_colors.youtube
+        }
     }
 };
 

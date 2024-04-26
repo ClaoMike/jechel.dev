@@ -5,7 +5,7 @@ import { FaJs } from 'react-icons/fa';
 const JSIcon = () => {
     const configuration = {
         icon: FaJs,
-        variant: 'moto',
+        variant: 'javascript',
         boxSize: 7,
     }
     

@@ -5,7 +5,7 @@ import { FaReact } from 'react-icons/fa';
 const ReactIcon = () => {
     const configuration = {
         icon: FaReact,
-        variant: 'moto',
+        variant: 'react',
         boxSize: 7,
     }
 
