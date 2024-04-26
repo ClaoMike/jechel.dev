@@ -1,12 +1,17 @@
 import React from 'react'
 import { FaFire } from 'react-icons/fa';
-import { Icon, useStyleConfig } from '@chakra-ui/react'
+import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 
-const LatestIcon = (props) => {
-    const styles = useStyleConfig('SubtitleIcon', { ...props })
+const LatestIcon = () => {
+    const configuration = {
+        icon: FaFire,
+        name: 'SubtitleIcon',
+        boxSize: 5,
+        marginBottom: '-5px'
+    }
 
     return (
-        <Icon as={FaFire} boxSize={7} __css={styles} />
+        <CustomFaIcon configuration={configuration}/>
     )
 }
 

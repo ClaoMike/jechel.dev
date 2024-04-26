@@ -1,12 +1,17 @@
 import React from 'react'
 import { FaUserNinja  } from 'react-icons/fa';
-import { Icon, useStyleConfig } from '@chakra-ui/react'
+import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 
-const AboutMeIcon = (props) => {
-    const styles = useStyleConfig('SubtitleIcon', { ...props })
+const AboutMeIcon = () => {
+    const configuration = {
+        icon: FaUserNinja,
+        name: 'SubtitleIcon',
+        boxSize: 5,
+        marginBottom: '-5px'
+    }
     
     return (
-        <Icon as={FaUserNinja} boxSize={7} __css={styles} />
+        <CustomFaIcon configuration={configuration}/>
     )
 }
 

@@ -2,8 +2,8 @@ import React from 'react'
 import CustomTab from '@components/content/user_content/navigation_bar/CustomTab'
 import paths from '@paths/paths'
 import LatestIcon from '@/icons/LatestIcon'
-import MotoIcon from '@/icons/LatestIcon'
-import AboutMeIcon from '@/icons/LatestIcon'
+import MotoIcon from '@/icons/MotoIcon'
+import AboutMeIcon from '@/icons/AboutMeIcon'
 
 
 const NavigationBarItems = (props) => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaMoon } from 'react-icons/fa';
-import SwitchIcon from '@icons/SwitchIcon'
+import SwitchIcon from '@icons/blueprints/switch/SwitchIcon'
 import colors from '@themes/colors';
 
 const MoonIcon = () => {

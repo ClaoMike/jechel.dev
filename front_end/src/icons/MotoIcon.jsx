@@ -1,12 +1,17 @@
 import React from 'react'
 import { FaMotorcycle } from 'react-icons/fa';
-import { Icon, useStyleConfig } from '@chakra-ui/react'
+import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 
-const MotoIcon = (props) => {
-    const styles = useStyleConfig('SubtitleIcon', { ...props })
+const MotoIcon = () => {
+    const configuration = {
+        icon: FaMotorcycle,
+        name: 'SubtitleIcon',
+        boxSize: 5,
+        marginBottom: '-5px'
+    }
     
     return (
-        <Icon as={FaMotorcycle} boxSize={7} __css={styles} />
+        <CustomFaIcon configuration={configuration}/>
     )
 }
 

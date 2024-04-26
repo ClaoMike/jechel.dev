@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '@icons/SwitchIconStyle'
+import style from '@icons/blueprints/switch/SwitchIconStyle'
 
 const SwitchIcon = ({ icon }) => {
   return (

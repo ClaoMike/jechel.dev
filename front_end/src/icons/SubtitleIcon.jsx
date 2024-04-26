@@ -1,12 +1,17 @@
 import React from 'react';
-import { Icon, useStyleConfig } from '@chakra-ui/react'
 import { FaTerminal } from 'react-icons/fa';
+import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 
-const SubtitleIcon = (props) => {
-    const styles = useStyleConfig('SubtitleIcon', { ...props })
+const SubtitleIcon = () => {
+    const configuration = {
+        icon: FaTerminal,
+        name: 'SubtitleIcon',
+        boxSize: 7,
+        marginBottom: '0px'
+    }
     
     return (
-        <Icon as={FaTerminal} boxSize={7} __css={styles} />
+        <CustomFaIcon configuration={configuration}/>
     )
 }
 

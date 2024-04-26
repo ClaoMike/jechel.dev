@@ -1,5 +1,5 @@
 import React from 'react'
-import SwitchIcon from '@icons/SwitchIcon'
+import SwitchIcon from '@icons/blueprints/switch/SwitchIcon'
 import { FaSun } from 'react-icons/fa';
 import colors from '@themes/colors';
 
