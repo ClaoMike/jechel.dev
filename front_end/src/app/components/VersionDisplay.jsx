@@ -1,7 +1,7 @@
 import React from 'react'
 import { VStack, HStack } from '@chakra-ui/layout'
-import { Text } from '@chakra-ui/react'
-import { Tooltip } from '@chakra-ui/react'
+import { Text, Tooltip  } from '@chakra-ui/react'
+
 import ReactIcon from '@/icons/ReactIcon'
 import JSIcon from '@/icons/JSIcon'
 import HTMLIcon from '@/icons/HTMLIcon'
@@ -9,8 +9,10 @@ import CSSIcon from '@/icons/CSSIcon'
 import RubyIcon from '@/icons/RubyIcon'
 import RubyOnRailsIcon from '@/icons/RubyOnRailsIcon'
 
+import packageJson from '../../../package.json'
+
 const VersionDisplay = () => {
-    const version = '1.0.0'
+    const version = packageJson.version;
 
     return (
         <VStack mb="20px">
