@@ -37,8 +37,8 @@ rails server
 ## To Do
 ### Sprint 1
 - ~~Migrate to ```vite```~~
-- ```Loading``` component
-- ```Error``` component
+- ~~```Loading``` component~~
+- ~~```Error``` component~~
 - ```Current Version``` section on the bottom with ```automatic update```
 - Add detailed description about this project in the ```README``` file
 
