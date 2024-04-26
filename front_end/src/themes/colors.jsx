@@ -4,7 +4,8 @@ const standard_colors = {
     light_blue: '#6DA4AA',
     dark_green: '#005B41',
     pale_yellow: '#FAEF9B',
-    shadow: '#647D87'
+    shadow: '#647D87',
+    white: '#DCF2F1'
 };
 
 const colors = {
@@ -14,7 +15,7 @@ const colors = {
     },
     text: {
         light: standard_colors.black,
-        dark: '#DCF2F1'
+        dark: standard_colors.white
     },
     link: {
         light: standard_colors.light_blue,
@@ -66,6 +67,17 @@ const colors = {
                     light: standard_colors.light_blue,
                     dark: standard_colors.dark_green
                 }
+            }
+        }
+    },
+    navigation_bar: {
+        icons: {
+            latest: '#FF9800',
+            moto: '#820300',
+            aboutMe: '#28007d',
+            menu: {
+                light: standard_colors.pale_yellow,
+                dark: standard_colors.black
             }
         }
     }

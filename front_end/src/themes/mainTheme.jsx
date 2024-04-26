@@ -3,7 +3,7 @@ import { mode } from '@chakra-ui/theme-tools';
 import colors from '@themes/colors';
 import "@fontsource/courier-prime";
 
-import SubtitleIcon from '@icons/SubtitleIconStyle';
+import iconsTheme from '@icons/styles/IconsStyles';
 import { inputTheme } from '@components/content/login_page/textfields/textfield_components/InputStyle'
 import { tabsTheme } from '@/app/components/content/user_content/navigation_bar/TabsStyle';
 
@@ -24,7 +24,7 @@ const darkTheme = extendTheme({
   },
 
   components: {
-    SubtitleIcon,
+    Icon: iconsTheme,
     Input: inputTheme,
     Tabs: tabsTheme,
 

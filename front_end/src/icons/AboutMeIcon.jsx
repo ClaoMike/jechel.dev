@@ -5,7 +5,7 @@ import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 const AboutMeIcon = () => {
     const configuration = {
         icon: FaUserNinja,
-        name: 'SubtitleIcon',
+        variant: 'aboutMe',
         boxSize: 5,
         marginBottom: '-5px'
     }

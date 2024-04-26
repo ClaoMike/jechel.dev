@@ -5,7 +5,7 @@ import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 const MotoIcon = () => {
     const configuration = {
         icon: FaMotorcycle,
-        name: 'SubtitleIcon',
+        variant: 'moto',
         boxSize: 5,
         marginBottom: '-5px'
     }

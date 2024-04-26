@@ -1,13 +1,13 @@
 import React from 'react'
-import { FaFire } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import CustomFaIcon from '@icons/blueprints/CustomFaIcon';
 
-const LatestIcon = () => {
+const MenuIcon = () => {
     const configuration = {
-        icon: FaFire,
-        variant: 'latest',
-        boxSize: 5,
-        marginBottom: '-5px'
+        icon: FaBars,
+        variant: 'menu',
+        boxSize: 7,
+        marginBottom: '0px'
     }
 
     return (
@@ -15,4 +15,4 @@ const LatestIcon = () => {
     )
 }
 
-export default LatestIcon
+export default MenuIcon
