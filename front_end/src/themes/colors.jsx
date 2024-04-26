@@ -80,6 +80,10 @@ const colors = {
                 dark: standard_colors.black
             }
         }
+    },
+    loading_spinner: {
+        light: standard_colors.light_blue,
+        dark: standard_colors.dark_green
     }
 };
 

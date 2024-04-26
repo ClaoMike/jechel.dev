@@ -6,6 +6,7 @@ import "@fontsource/courier-prime";
 import iconsTheme from '@icons/styles/IconsStyles';
 import { inputTheme } from '@components/content/login_page/textfields/textfield_components/InputStyle'
 import { tabsTheme } from '@/app/components/content/user_content/navigation_bar/components/tabs/TabsStyle';
+import { color } from 'framer-motion';
 
 const darkTheme = extendTheme({
   config: {
@@ -42,6 +43,18 @@ const darkTheme = extendTheme({
         // size: '',
         variant: 'with-shadow',
         // colorScheme: '',
+      },
+    },
+
+    Spinner: {
+      variants: {
+        'classic': (props) => ({
+          color: mode(colors.loading_spinner.light, colors.loading_spinner.dark)(props),
+        }),
+      },
+      defaultProps: {
+        size: 'lg',
+        variant: 'classic',
       },
     },
     
