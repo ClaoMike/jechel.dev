@@ -1,5 +1,5 @@
 import React from 'react'
-import CustomTab from '@components/content/user_content/navigation_bar/CustomTab'
+import CustomTab from '@components/content/user_content/navigation_bar/components/tabs/CustomTab'
 import paths from '@paths/paths'
 import LatestIcon from '@/icons/LatestIcon'
 import MotoIcon from '@/icons/MotoIcon'

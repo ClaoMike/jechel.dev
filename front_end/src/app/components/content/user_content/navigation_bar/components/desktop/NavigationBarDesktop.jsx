@@ -1,6 +1,6 @@
 import React from 'react'
 import { HStack } from '@chakra-ui/react'
-import NavigationBarItems from './NavigationBarItems'
+import NavigationBarItems from '../../NavigationBarItems'
 
 const NavigationBarDesktop = () => {
     return (

@@ -10,7 +10,7 @@ import {
     Center
   } from '@chakra-ui/react'
 
-  import NavigationBar from './NavigationBar'
+  import NavigationBar from '../NavigationBar'
   import MenuButton from './MenuButton'
 
 const MobileDrawer = () => {

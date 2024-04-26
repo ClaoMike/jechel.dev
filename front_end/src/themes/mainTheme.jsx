@@ -5,7 +5,7 @@ import "@fontsource/courier-prime";
 
 import iconsTheme from '@icons/styles/IconsStyles';
 import { inputTheme } from '@components/content/login_page/textfields/textfield_components/InputStyle'
-import { tabsTheme } from '@/app/components/content/user_content/navigation_bar/TabsStyle';
+import { tabsTheme } from '@/app/components/content/user_content/navigation_bar/components/tabs/TabsStyle';
 
 const darkTheme = extendTheme({
   config: {
