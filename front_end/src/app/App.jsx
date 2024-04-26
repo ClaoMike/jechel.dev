@@ -19,10 +19,10 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div style={{ position: 'relative' }}>
       <WebsiteLoader isLoading={isLoading} />
       <Contents />
-    </>
+    </div>
   );
 }
 

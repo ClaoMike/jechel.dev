@@ -2,6 +2,13 @@ import colors from "@themes/colors";
 
 const style = {
     background: colors.website_loader.background,
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    zIndex: 2,
+
     svg: {
         width: "100",
         height: "100",
