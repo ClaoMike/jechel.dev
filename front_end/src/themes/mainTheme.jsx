@@ -5,6 +5,7 @@ import "@fontsource/courier-prime";
 
 import SubtitleIcon from '@components/content/header/subheader/subtitle_icon/SubtitleIconStyle';
 import { inputTheme } from '@components/content/login_page/textfields/textfield_components/InputStyle'
+import { tabsTheme } from '@/app/components/content/user_content/navigation_bar/TabsStyle';
 
 const darkTheme = extendTheme({
   config: {
@@ -25,6 +26,7 @@ const darkTheme = extendTheme({
   components: {
     SubtitleIcon,
     Input: inputTheme,
+    Tabs: tabsTheme,
 
     Button: {
       // baseStyle: {},
@@ -54,3 +56,4 @@ darkTheme.fonts = {
 };
 
 export default darkTheme;
+

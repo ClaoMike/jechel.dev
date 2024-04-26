@@ -54,6 +54,20 @@ const colors = {
             },
             border: standard_colors.shadow
         }
+    },
+    tabs: {
+        tab: {
+            borderColor: {
+                light: standard_colors.light_blue,
+                dark: standard_colors.dark_green
+            },
+            selected: {
+                background: {
+                    light: standard_colors.light_blue,
+                    dark: standard_colors.dark_green
+                }
+            }
+        }
     }
 };
 

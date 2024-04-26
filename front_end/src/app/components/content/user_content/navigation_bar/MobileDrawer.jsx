@@ -7,6 +7,7 @@ import {
     DrawerContent,
     DrawerCloseButton,
     useDisclosure,
+    Center
   } from '@chakra-ui/react'
 
   import NavigationBar from './NavigationBar'
@@ -34,7 +35,10 @@ const MobileDrawer = () => {
                     <DrawerHeader>Sections</DrawerHeader>
         
                     <DrawerBody>
-                        <NavigationBar />
+                        <Center>
+                            <NavigationBar />
+                        </Center>
+                        
                     </DrawerBody>
 
                 </DrawerContent>

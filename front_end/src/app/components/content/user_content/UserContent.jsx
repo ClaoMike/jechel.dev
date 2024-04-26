@@ -32,7 +32,7 @@ const UserContent = () => {
   }, [location.pathname]);
 
   return (
-    <Tabs variant="soft-rounded" colorScheme="green" index={tabIndex}>
+    <Tabs index={tabIndex}>
       {isMobile ? (
         <MobileDrawer />
       ) : (
