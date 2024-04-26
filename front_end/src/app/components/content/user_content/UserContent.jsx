@@ -7,22 +7,7 @@ import { Tabs, Box } from '@chakra-ui/react';
 import NavigationBar from '@components/content/user_content/navigation_bar/NavigationBar';
 import Pages from '@components/content/user_content/content_pages/Pages';
 import { isMobile } from 'react-device-detect';
-
-
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  useDisclosure,
-  Button, 
-  Input
-} from '@chakra-ui/react'
-
-
+import MobileDrawer from './navigation_bar/MobileDrawer';
 
 const UserContent = () => {
   const location = useLocation();
@@ -46,46 +31,10 @@ const UserContent = () => {
     }
   }, [location.pathname]);
 
-
-  const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = React.useRef()
-
   return (
     <Tabs variant="soft-rounded" colorScheme="green" index={tabIndex}>
       {isMobile ? (
-        <>
-
-        <Button ref={btnRef} colorScheme='teal' onClick={onOpen}>
-          Menu
-        </Button>
-        
-        <Drawer
-          isOpen={isOpen}
-          placement='right'
-          onClose={onClose}
-          finalFocusRef={btnRef}
-        >
-          <DrawerOverlay />
-          <DrawerContent>
-            <DrawerCloseButton />
-            <DrawerHeader>Sections</DrawerHeader>
-  
-            <DrawerBody>
-              <NavigationBar />
-            </DrawerBody>
-  
-            {/* <DrawerFooter>
-              <Button variant='outline' mr={3} onClick={onClose}>
-                Cancel
-              </Button>
-              <Button colorScheme='blue'>Save</Button>
-            </DrawerFooter> */}
-
-          </DrawerContent>
-        </Drawer>
-
-      </>
-
+        <MobileDrawer />
       ) : (
         <NavigationBar />
       )}
