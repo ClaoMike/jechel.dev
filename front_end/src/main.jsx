@@ -14,7 +14,7 @@ const Root = () => {
   return (
     <ChakraProvider theme={mainTheme}>
       <ColorModeScript initialColorMode={mainTheme.config.initialColorMode} />
-      <App /> 
+      <App />  
     </ChakraProvider>
   );
 };
