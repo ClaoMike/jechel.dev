@@ -1,6 +1,6 @@
 import React from 'react'
 import { HStack } from '@chakra-ui/react'
-import SubtitleIcon from '@components/content/header/subheader/subtitle_icon/SubtitleIcon'
+import SubtitleIcon from '@icons/SubtitleIcon'
 import Subtitle from '@components/content/header/subheader/Subtitle'
 import ThemeSwitch from '@components/content/header/subheader/theme_switch/ThemeSwitch'
 

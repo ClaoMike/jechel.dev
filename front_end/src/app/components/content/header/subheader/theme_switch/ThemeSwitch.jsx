@@ -5,8 +5,8 @@ import { toggleTheme } from '@slices/themeSlice';
 import { useColorMode } from '@chakra-ui/react';
 import Switch from "react-switch";
 
-import MoonIcon from '@components/content/header/subheader/theme_switch/icons/MoonIcon';
-import SunIcon from '@components/content/header/subheader/theme_switch/icons/SunIcon';
+import MoonIcon from '@icons/MoonIcon';
+import SunIcon from '@icons/SunIcon';
 import style from '@components/content/header/subheader/theme_switch/ThemeSwitchStyle';
 
 const ThemeSwitch = () => {

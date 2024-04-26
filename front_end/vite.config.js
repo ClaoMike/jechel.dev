@@ -10,7 +10,8 @@ export default defineConfig({
       "@themes": "/src/themes",
       "@slices": "/src/states_management/slices",
       "@components": '/src/app/components',
-      "@paths": "/src/paths"
+      "@paths": "/src/paths",
+      "@icons": "/src/icons"
     },
   },
 })
