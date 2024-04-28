@@ -16,6 +16,18 @@
 
 ***
 
+## [Semantic versioning](https://semver.org/)
+Version number: ```MAJOR.MINOR.PATCH```
+Increase:
+    - ```MAJOR``` version when you make incompatible API changes;
+    - ```MINOR``` version when you add functionality in a backward compatible manner;
+    - ```PATCH``` version when you make backward compatible bug fixes;
+
+### Notes
+- The ```PATCH``` version is automatically increased when a new commit occurs.
+
+***
+
 ## Commands
 
 - Install dependencies
