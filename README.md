@@ -51,7 +51,7 @@ rails server
 - ~~Migrate to ```vite```~~
 - ~~```Loading``` component~~
 - ~~```Error``` component~~
-- ```Current Version``` section on the bottom with ```automatic update```
+- ~~~```Current Version``` section on the bottom with ```automatic update```~~~
 - Add detailed description about this project in the ```README``` file
 
 ### Sprint 2
