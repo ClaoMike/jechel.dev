@@ -14,15 +14,15 @@ const Root = () => {
   return (
     <ChakraProvider theme={mainTheme}>
       <ColorModeScript initialColorMode={mainTheme.config.initialColorMode} />
-      <App />   
-    </ChakraProvider>  
+      <App />
+    </ChakraProvider>
   );
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <Root /> 
+      <Root />
     </Provider>
   </React.StrictMode>
 );
