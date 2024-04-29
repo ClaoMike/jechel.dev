@@ -1,18 +1,21 @@
 # [jechel.dev](https://jechel.dev/)
 
+## Description
+This is my website. I post updates on my work, achievements and hobbies.
+***
+
+## Screenshots
+| Page | Light mode (Desktop) | Dark mode (Desktop) | Light mode (Mobile) | Dark mode (Mobile) |
+| ---- | ---------- | --------- | ---------- | --------- |
+| Login | ![Login page in light mode](./readme_assets/login_page_desktop_light.png) | ![Login page in dark mode](./readme_assets/login_page_desktop_dark.png "Title") |![Login page in light mode](./readme_assets/login_page_mobile_light.png) | ![Login page in dark mode](./readme_assets/login_page_mobile_dark.png "Title") |                                                                                                                                         
 ***
 
 ## Tech Stack 
-|  Tech         | Details (external libraries, etc.)                                                                                                  |
-| ------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| HTML          |                                                                                                                                     |
-| CSS           |                                                                                                                                     |
-| JavaScript    | JSX                                                                                                                                 |
-| React         | server: vite; libraries: ChakraUI, react-switch, react-router-dom, react-device-detect, react-icons/fa, redux, redux toolkit, axios |
-| git           | GitHub, GitHub Pages                                                                                                                |
-| Ruby          |                                                                                                                                     |
-| Ruby on Rails | --api                                                                                                                               |
-| PostgreSQL    |                                                                                                                                     |
+| Side | Tech |
+| ---- | ---- |
+| frontend | HTML, CSS, JavaScript, React, vite,  |
+| backend | Ruby, Ruby on Rails, PostgreSQL|
+| version control | git |
 
 ***
 
