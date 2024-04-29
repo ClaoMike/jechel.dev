@@ -25,7 +25,7 @@ const YouTubeVideo = ({video}) => {
 
                 <VStack>
                     <YouTubeDescription description={video.description} />
-                    <YouTubeLocation location={video.location} />
+                    {video.location && <YouTubeLocation location={video.location} />}
                     <YouTubeRedirectLink url={video.url} />
                 </VStack>
 
