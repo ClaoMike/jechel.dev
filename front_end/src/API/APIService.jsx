@@ -1,23 +1,30 @@
+// ApiService.js
 import axios from 'axios';
 
+const endpoints = {
+    moto: '/moto'
+}
+const backend_URL = 'http://127.0.0.1:3000'
+
 class ApiService {
-  constructor() {
-    if (ApiService.instance) {
-      return ApiService.instance;
+    constructor() {
+        if (ApiService.instance) {
+            return ApiService.instance;
+        }
+
+        ApiService.instance = this;
     }
 
-    ApiService.instance = this;
-  }
-
-  // Example method for making a GET request
-  getData() {
-    return axios.get('http://127.0.0.1:3000/moto');
-  }
-
-  // Example method for making a POST request
-  postData(data) {
-    return axios.post('http://your-rails-backend.com/api/data', data);
-  }
+    // Method for fetching Moto videos
+    async getMotoVideos() {
+        try {
+            const response = await axios.get(backend_URL + endpoints.moto);
+            return response.data;
+        } catch (error) {
+            console.error('Error fetching Moto videos:', error);
+            throw error;
+        }
+    }
 }
 
 export default new ApiService();

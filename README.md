@@ -84,7 +84,7 @@ npm run major
     - ~~Create API to call from the frontend~~
     - ~~Get ```YT Videos``` details to ```backend``` by calling an ```API```~~
     - ~~Format data~~
-    - Integrate ```axios``` for ```API calls```
+    - ~~Integrate ```axios``` for ```API calls```~~
     - Display YT data on frontend
 
 ### Sprint 3
