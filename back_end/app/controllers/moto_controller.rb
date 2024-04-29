@@ -14,14 +14,21 @@ class MotoController < ApplicationController
         if videos_response.items.any?
             videos = videos_response.items.map do |item|
                 # Extract video details
+                title = item.snippet.title
+                position = item.snippet.position
+                video_id = item.snippet.resource_id.video_id
+                url = video_url(video_id)
+                thumbnail = get_highest_quality_thumbnail(item.snippet.thumbnails)
+                description = filter_description(item.snippet.description)
+                location = get_video_location(youtube, video_id)
+                # Prepare JSON format
                 {
-                    title: item.snippet.title,
-                    position: item.snippet.position,
-                    video_id: item.snippet.resource_id.video_id,
-                    url: "https://www.youtube.com/watch?v=#{item.snippet.resource_id.video_id}",
-                    thumbnail: get_highest_quality_thumbnail(item.snippet.thumbnails),
-                    description: filter_description(item.snippet.description),
-                    location: get_video_location(youtube, item.snippet.resource_id.video_id)
+                    title: title,
+                    position: position,
+                    url: url,
+                    thumbnail: thumbnail,
+                    description: description,
+                    location: location
                 }
             end
 
@@ -63,21 +70,24 @@ class MotoController < ApplicationController
     end
 
     def filter_description(description)
-        remove_new_lines(remove_disclaimer_text(description))
-    end
-
-    # Method to remove new lines from description
-    def remove_new_lines(description)
-        description.gsub("\n", '').strip
-    end
-
-    def remove_disclaimer_text(text)
-        disclaimer_pattern = /(\*{12}DISCLAIMER\*{12}).*?\"\w+\", you can \"\w+\" use my footage for your video, compilation, etc./m
-        text = text.gsub(disclaimer_pattern, '').strip
-        text = text.gsub('Shot on a closed private road, additional vehicles are stunt actors.', '')
-        text = text.gsub('************DISCLAIMER************', '')
-        
-    end
+        # Define the array of patterns to remove
+        patterns = [
+            /(\*{12}DISCLAIMER\*{12}).*?\"\w+\", you can \"\w+\" use my footage for your video, compilation, etc./m,
+            'Shot on a closed private road, additional vehicles are stunt actors.',
+            '************DISCLAIMER************',
+            "\n"
+        ]
     
+        # Iterate over the patterns and perform the substitutions
+        patterns.each do |pattern|
+            description = description.gsub(pattern, '').strip
+        end
+    
+        description
+    end
 
+    def video_url(video_id)
+        "https://www.youtube.com/watch?v=#{video_id}"
+      end
+    
 end
