@@ -42,9 +42,15 @@ Increase:
 ```console
 npm install
 ```
+
 - Start ```frontend``` development server
 ```console
 npm run dev
+```
+
+- Install ```backend``` dependencies
+```console
+bundle install
 ```
 
 - Start the ```backend``` rails server
