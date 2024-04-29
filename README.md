@@ -69,8 +69,9 @@ npm run major
 
 ### Sprint 2
 - ```Moto``` section
-    - Get ```YT Videos``` details to ```backend``` by calling an ```API```
-    - Create API to call from the frontend
+    - ~~Create API to call from the frontend~~
+    - ~~Get ```YT Videos``` details to ```backend``` by calling an ```API```~~
+    - Format data
     - Integrate ```axios``` for ```API calls```
     - Display YT data on frontend
 

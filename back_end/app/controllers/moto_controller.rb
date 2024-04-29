@@ -13,15 +13,17 @@ class MotoController < ApplicationController
 
         # Extract video information from the response
         if videos_response.items.any?
-        #   videos = videos_response.items.map do |item|
-        #     {
-        #       title: item.snippet.title,
-        #       video_id: item.snippet.resource_id.video_id
-        #     }
-        #   end
-            render json: { videos: videos_response }
-
-            # render json: { videos: videos }
+          videos = videos_response.items.map do |item|
+            {
+              title: item.snippet.title,
+              position: item.snippet.position,
+              url: "https://www.youtube.com/watch?v=#{item.snippet.resource_id.video_id}",
+              thumbnail: item.snippet.thumbnails.maxres.url,
+              description: item.snippet.description,
+            #   location:
+            }
+          end
+            render json: { videos: videos }
         else
             render json: { error: 'No videos found in the playlist.' }, status: :not_found
         end
