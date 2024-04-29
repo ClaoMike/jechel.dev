@@ -19,6 +19,11 @@ This is my website. I post updates on my work, achievements and hobbies.
 
 ***
 
+## Docs
+- [YouTube Data API](https://github.com/googleapis/google-api-ruby-client/blob/main/generated/google-apis-youtube_v3/lib/google/apis/youtube_v3/service.rb#L3856)
+
+***
+
 ## [Semantic versioning](https://semver.org/)
 Version number: ```MAJOR.MINOR.PATCH```
 Increase:
