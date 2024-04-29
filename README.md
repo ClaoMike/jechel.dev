@@ -85,7 +85,10 @@ npm run major
     - ~~Get ```YT Videos``` details to ```backend``` by calling an ```API```~~
     - ~~Format data~~
     - ~~Integrate ```axios``` for ```API calls```~~
-    - Display YT data on frontend
+    - ~~Display YT data on ```frontend```~~
+    - Style moto ```frontend```
+    - Manage videos order on ```backend```
+    - Make nav bar stick to the top when scrolling down
 
 ### Sprint 3
 - ```Latest``` section
