@@ -10,7 +10,7 @@ import YouTubeRedirectLink from './YouTubeRedirectLink'
 
 const YouTubeVideo = ({video}) => {
     return (
-        <AccordionItem marginBottom="10px">
+        <AccordionItem marginBottom="10px" >
             <AccordionButton border="2px solid red" borderColor="red" borderRadius="xl">
 
                 <HStack spacing="4">
