@@ -5,6 +5,7 @@ import websiteLoaderReducer from '@slices/websiteLoaderSlice'
 import underscoreVisibilityReducer from '@slices/underscoreVisibilitySlice'
 import loginReducer from '@slices/loginSlice'
 import pageSlice from '@slices/pageSlice'
+import motoSlice from '@slices/motoSlice'
 
 export const store = configureStore({
   reducer: {
@@ -13,5 +14,6 @@ export const store = configureStore({
     underscoreVisibility: underscoreVisibilityReducer,
     login: loginReducer,
     page: pageSlice,
+    moto: motoSlice,
   },
 })

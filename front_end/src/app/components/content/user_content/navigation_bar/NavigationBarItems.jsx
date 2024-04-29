@@ -5,7 +5,6 @@ import LatestIcon from '@/icons/LatestIcon'
 import MotoIcon from '@/icons/MotoIcon'
 import AboutMeIcon from '@/icons/AboutMeIcon'
 
-
 const NavigationBarItems = (props) => {
   return (
     <>
