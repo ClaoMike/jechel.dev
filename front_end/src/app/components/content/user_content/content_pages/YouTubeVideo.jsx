@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, HStack, VStack, Text} from '@chakra-ui/react'
+import { AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, HStack, VStack, Box} from '@chakra-ui/react'
 
 import YouTubeThumbnail from './YouTubeThumbnail'
 import YouTubeTitle from './YouTubeTitle'
@@ -10,8 +10,8 @@ import YouTubeRedirectLink from './YouTubeRedirectLink'
 
 const YouTubeVideo = ({video}) => {
     return (
-        <AccordionItem>
-            <AccordionButton>
+        <AccordionItem marginBottom="10px">
+            <AccordionButton border="2px solid red" borderColor="red" borderRadius="xl">
 
                 <HStack spacing="4">
                     <YouTubeThumbnail thumbnail={video.thumbnail} description={video.description} />
@@ -28,6 +28,8 @@ const YouTubeVideo = ({video}) => {
                     {video.location && <YouTubeLocation location={video.location} />}
                     <YouTubeRedirectLink url={video.url} />
                 </VStack>
+
+                <Box borderBottom="2px solid red" />
 
             </AccordionPanel>
         </AccordionItem>
