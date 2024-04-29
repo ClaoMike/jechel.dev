@@ -3,6 +3,7 @@ import { TabPanels, Center } from '@chakra-ui/react'
 import Page from '@components/content/user_content/content_pages/Page'
 import LoadingSpinner from '@/app/components/LoadingSpinner'
 import ErrorDisplay from '@/app/components/ErrorDisplay'
+import MotoPage from './MotoPage'
 
 const Pages = () => {
     return (
@@ -10,7 +11,7 @@ const Pages = () => {
             <TabPanels>
                 
                 <Page content={ <p>Latest content</p> } />
-                <Page content={ <p>Moto Content</p> } />
+                <Page content={ <MotoPage /> } />
                 <Page content={ <p>About Me content</p> } />
 
             </TabPanels>
