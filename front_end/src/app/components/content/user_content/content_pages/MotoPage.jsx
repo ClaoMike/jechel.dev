@@ -1,22 +1,14 @@
-// MotoPage.js
-import React, { useState, useEffect } from 'react';
-import ApiService from '@/API/APIService';
-import { error as errorAction, success } from '@slices/motoSlice';
+import React, { useEffect } from 'react';
+
 import { useSelector, useDispatch } from 'react-redux';
+import { error as errorAction, success } from '@slices/motoSlice';
+import ApiService from '@/API/APIService';
+
+import { Accordion } from '@chakra-ui/react'
+
 import LoadingSpinner from '@/app/components/LoadingSpinner';
 import ErrorDisplay from '@/app/components/ErrorDisplay';
-
-import {
-    Accordion,
-    AccordionItem,
-    AccordionButton,
-    AccordionPanel,
-    AccordionIcon,
-    Box
-  } from '@chakra-ui/react'
-
-  import { Image, HStack, VStack } from '@chakra-ui/react'
-  import { Text } from '@chakra-ui/react'
+import YouTubeVideo from './YouTubeVideo';
 
 const MotoPage = () => {
     const isLoading = useSelector((state) => state.moto.loading);
@@ -52,45 +44,15 @@ const MotoPage = () => {
     }
 
     return (
-        <>
+        <Accordion>
             {videos.map(video => (
-                <HStack key={video.position}>
-                    <Image  src={video.thumbnail} alt={video.description} />
-                    <Text >{video.title}</Text>
-                    <VStack>
-                        <Text >{video.description}</Text>
-                        <Text >{video.location}</Text>
-                        <Text >{video.url}</Text>
-                    </VStack>
-                    
-                </HStack>
-                
+                <YouTubeVideo key={video.position} video={video} />
             ))}
-            </>
+
+        </Accordion>
     );
 }
 
 
 export default MotoPage;
 
-{/* <Accordion>
-
-  <AccordionItem>
-      <AccordionButton>
-        <HStack>
-            <Image  src={video.thumbnail} alt={video.description} />
-            <Text >{video.title}</Text>
-        </HStack>
-        <AccordionIcon />
-    </AccordionButton>
-
-    <AccordionPanel>
-        <VStack>
-            <Text >{video.description}</Text>
-            <Text >{video.location}</Text>
-            <Text >{video.url}</Text>
-        </VStack>
-    </AccordionPanel>
-  </AccordionItem>
-
-</Accordion> */}
