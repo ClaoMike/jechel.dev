@@ -20,8 +20,8 @@ class MotoController < ApplicationController
                     video_id: item.snippet.resource_id.video_id,
                     url: "https://www.youtube.com/watch?v=#{item.snippet.resource_id.video_id}",
                     thumbnail: get_highest_quality_thumbnail(item.snippet.thumbnails),
-                    description: item.snippet.description,
-                    location: get_video_location(youtube, item.snippet.resource_id.video_id).items.first.recording_details.location_description
+                    description: filter_description(item.snippet.description),
+                    location: get_video_location(youtube, item.snippet.resource_id.video_id)
                 }
             end
 
@@ -51,7 +51,7 @@ class MotoController < ApplicationController
 
     # Method to fetch the location of a video
     def get_video_location(youtube, video_id)
-        youtube.list_videos('recordingDetails', id: video_id)
+        youtube.list_videos('recordingDetails', id: video_id).items.first.recording_details.location_description
     end
 
     # Method to get the highest quality thumbnail URL
@@ -61,4 +61,23 @@ class MotoController < ApplicationController
         end
         nil
     end
+
+    def filter_description(description)
+        remove_new_lines(remove_disclaimer_text(description))
+    end
+
+    # Method to remove new lines from description
+    def remove_new_lines(description)
+        description.gsub("\n", '').strip
+    end
+
+    def remove_disclaimer_text(text)
+        disclaimer_pattern = /(\*{12}DISCLAIMER\*{12}).*?\"\w+\", you can \"\w+\" use my footage for your video, compilation, etc./m
+        text = text.gsub(disclaimer_pattern, '').strip
+        text = text.gsub('Shot on a closed private road, additional vehicles are stunt actors.', '')
+        text = text.gsub('************DISCLAIMER************', '')
+        
+    end
+    
+
 end
