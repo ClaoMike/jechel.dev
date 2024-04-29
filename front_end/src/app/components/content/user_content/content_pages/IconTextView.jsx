@@ -3,7 +3,7 @@ import { HStack, Text} from '@chakra-ui/react'
 
 const IconTextView = ({icon, text}) => {
   return (
-    <HStack>
+    <HStack spacing="4">
         {icon}
         <Text >{text}</Text>
     </HStack>

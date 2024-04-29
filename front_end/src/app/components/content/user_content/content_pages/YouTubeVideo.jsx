@@ -13,12 +13,12 @@ const YouTubeVideo = ({video}) => {
         <AccordionItem>
             <AccordionButton>
 
-                <HStack>
+                <HStack spacing="4">
                     <YouTubeThumbnail thumbnail={video.thumbnail} description={video.description} />
                     <YouTubeTitle title={video.title}/>
+                    <AccordionIcon />
                 </HStack>
                 
-                <AccordionIcon />
             </AccordionButton>
 
             <AccordionPanel>
