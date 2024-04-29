@@ -33,18 +33,28 @@ Increase:
 
 ## Commands
 
-- Install dependencies
+- Install ```frontend``` dependencies
 ```console
 npm install
 ```
-- Start development server
+- Start ```frontend``` development server
 ```console
 npm run dev
 ```
 
-- Start the rails server
+- Start the ```backend``` rails server
 ```console
 rails server
+```
+
+- Increase ```MINOR``` version
+```console
+npm run minor
+```
+
+- Increase ```MAJOR``` version
+```console
+npm run major
 ```
 
 ***
@@ -54,8 +64,8 @@ rails server
 - ~~Migrate to ```vite```~~
 - ~~```Loading``` component~~
 - ~~```Error``` component~~
-- ~~~```Current Version``` section on the bottom with ```automatic update```~~~
-- Add detailed description about this project in the ```README``` file
+- ~~```Current Version``` section on the bottom with ```automatic update```~~
+- ~~Add detailed description about this project in the ```README``` file~~
 
 ### Sprint 2
 - ```Moto``` section
