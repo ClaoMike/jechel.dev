@@ -95,6 +95,14 @@ const colors = {
             ruby: standard_colors.youtube,
             rails: standard_colors.youtube
         }
+    },
+    moto: {
+        icons: {
+            // clip: standard_colors.youtube,
+            comment: standard_colors.dark_green,
+            location: standard_colors.youtube,
+            youtube: standard_colors.youtube
+        }
     }
 };
 

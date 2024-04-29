@@ -5,7 +5,7 @@ import { FaComment } from 'react-icons/fa';
 const CommentIcon = () => {
     const configuration = {
         icon: FaComment,
-        variant: 'css',
+        variant: 'comment',
         boxSize: 7,
     }
 

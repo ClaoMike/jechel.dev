@@ -5,7 +5,7 @@ import { FaVideo } from 'react-icons/fa';
 const MovieIcon = () => {
     const configuration = {
         icon: FaVideo,
-        variant: 'css',
+        variant: 'youtube',
         boxSize: 7,
     }
 

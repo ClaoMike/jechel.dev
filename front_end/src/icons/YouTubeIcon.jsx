@@ -5,7 +5,7 @@ import { FaYoutube } from 'react-icons/fa';
 const YouTubeIcon = () => {
     const configuration = {
         icon: FaYoutube,
-        variant: 'css',
+        variant: 'youtube',
         boxSize: 7,
     }
 

@@ -5,7 +5,7 @@ import { FaMapMarker } from 'react-icons/fa';
 const LocationIcon = () => {
     const configuration = {
         icon: FaMapMarker,
-        variant: 'css',
+        variant: 'location',
         boxSize: 7,
     }
 

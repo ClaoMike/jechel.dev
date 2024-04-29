@@ -47,6 +47,16 @@ const iconsTheme = defineStyleConfig({
         'rails': {
             color: colors.version.icons.rails,
         },
+        'youtube': {
+            color: colors.moto.icons.youtube,
+        },
+        'comment': {
+            color: colors.moto.icons.comment,
+        },
+        'location': {
+            color: colors.moto.icons.location,
+        },
+
 
     }
     
