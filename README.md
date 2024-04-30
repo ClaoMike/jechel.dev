@@ -86,7 +86,7 @@ npm run major
     - ~~Format data~~
     - ~~Integrate ```axios``` for ```API calls```~~
     - ~~Display YT data on ```frontend```~~
-    - Style moto ```frontend```
+    - ~~Style moto ```frontend```~~
     - Manage videos order on ```backend```
     - Make nav bar stick to the top when scrolling down
 

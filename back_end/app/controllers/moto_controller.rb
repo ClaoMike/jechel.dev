@@ -1,5 +1,3 @@
-require 'google/apis/youtube_v3'
-
 class MotoController < ApplicationController
     def index
         # Set up the YouTube service
@@ -12,27 +10,12 @@ class MotoController < ApplicationController
 
         # Extract video information from the response
         if videos_response.items.any?
-            videos = videos_response.items.map do |item|
-                # Extract video details
-                title = item.snippet.title
-                position = item.snippet.position
-                video_id = item.snippet.resource_id.video_id
-                url = video_url(video_id)
-                thumbnail = get_highest_quality_thumbnail(item.snippet.thumbnails)
-                description = filter_description(item.snippet.description)
-                location = get_video_location(youtube, video_id)
-                # Prepare JSON format
-                {
-                    title: title,
-                    position: position,
-                    url: url,
-                    thumbnail: thumbnail,
-                    description: description,
-                    location: location
-                }
+            first_video = extract_video_details(youtube, videos_response.items.first)
+            remaining_videos = videos_response.items[1..].reverse.map do |item|
+                extract_video_details(youtube, item)
             end
 
-            render json: { videos: videos }
+            render json: { videos: [first_video] + remaining_videos }
         else
             render json: { error: 'No videos found in the playlist.' }, status: :not_found
         end
@@ -56,6 +39,27 @@ class MotoController < ApplicationController
         end
     end
 
+    # Method to extract video details
+    def extract_video_details(youtube, item)
+        # Extract video details
+        title = item.snippet.title
+        position = item.snippet.position
+        video_id = item.snippet.resource_id.video_id
+        url = video_url(video_id)
+        thumbnail = get_highest_quality_thumbnail(item.snippet.thumbnails)
+        description = filter_description(item.snippet.description)
+        location = get_video_location(youtube, video_id)
+        # Prepare JSON format
+        {
+            title: title,
+            position: position,
+            url: url,
+            thumbnail: thumbnail,
+            description: description,
+            location: location
+        }
+    end
+
     # Method to fetch the location of a video
     def get_video_location(youtube, video_id)
         youtube.list_videos('recordingDetails', id: video_id).items.first.recording_details.location_description
@@ -69,6 +73,7 @@ class MotoController < ApplicationController
         nil
     end
 
+    # Method to filter video description
     def filter_description(description)
         # Define the array of patterns to remove
         patterns = [
@@ -86,8 +91,8 @@ class MotoController < ApplicationController
         description
     end
 
+    # Method to construct video URL
     def video_url(video_id)
         "https://www.youtube.com/watch?v=#{video_id}"
-      end
-    
+    end
 end
