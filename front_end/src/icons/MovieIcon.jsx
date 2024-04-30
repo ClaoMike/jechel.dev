@@ -10,7 +10,7 @@ const MovieIcon = () => {
     }
 
     return (
-        <CustomFaIcon configuration={configuration}/>
+        <CustomFaIcon configuration={configuration} />
     )
 }
 

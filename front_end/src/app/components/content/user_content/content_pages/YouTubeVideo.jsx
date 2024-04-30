@@ -1,14 +1,14 @@
 import React from 'react'
 
-import { AccordionItem, AccordionButton, AccordionPanel, AccordionIcon, HStack, VStack, Box, useColorModeValue} from '@chakra-ui/react'
+import { AccordionItem, AccordionButton, AccordionPanel, HStack, VStack, Box, useColorModeValue} from '@chakra-ui/react'
 
-import YouTubeThumbnail from './YouTubeThumbnail'
-import YouTubeTitle from './YouTubeTitle'
 import YouTubeDescription from './YouTubeDescription'
 import YouTubeLocation from './YouTubeLocation'
 import YouTubeRedirectLink from './YouTubeRedirectLink'
+import AccordionButtonContent from './AccordionButtonContent'
 
 import colors from '@/themes/colors'
+import { isMobile } from 'react-device-detect'
 
 const YouTubeVideo = ({video}) => {
     const borderColor = useColorModeValue(colors.moto.content.border.light, colors.moto.content.border.dark);
@@ -17,11 +17,17 @@ const YouTubeVideo = ({video}) => {
         <AccordionItem >
             <AccordionButton >
 
-                <HStack spacing="4" padding='10px'>
-                    <YouTubeThumbnail thumbnail={video.thumbnail} description={video.description} />
-                    <YouTubeTitle title={video.title}/>
-                    <AccordionIcon />
-                </HStack>
+                {isMobile ? (
+                    <VStack spacing="4" padding='10px'>
+                        <AccordionButtonContent thumbnail={video.thumbnail} description={video.description} title={video.title} />
+                    </VStack>
+                ) : (
+                    <HStack spacing="4" padding='10px'>
+                        <AccordionButtonContent thumbnail={video.thumbnail} description={video.description} title={video.title} />
+
+                    </HStack>
+                )}
+
                 
             </AccordionButton>
 
