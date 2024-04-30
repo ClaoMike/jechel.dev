@@ -33,7 +33,7 @@ const YouTubeVideo = ({video}) => {
 
             <AccordionPanel>
 
-                <VStack marginBottom="10px">
+                <VStack marginBottom="10px" align='left'>
                     <YouTubeDescription description={video.description} />
                     {video.location && <YouTubeLocation location={video.location} />}
                     <YouTubeRedirectLink url={video.url} />
