@@ -7,7 +7,7 @@ const YouTubeRedirectLink = ({url}) => {
     return (
         <LinkBox as='article'>
             <LinkOverlay href={url} target="_blank" rel="noopener noreferrer">
-                <IconTextView icon={<YouTubeIcon />} text={'Watch it on YouTube'} />
+                <IconTextView icon={<YouTubeIcon />} text={'Watch it on YouTube'} link={true} />
             </LinkOverlay>
         </LinkBox>
     )

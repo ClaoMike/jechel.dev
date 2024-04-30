@@ -130,6 +130,10 @@ const colors = {
                 light: standard_colors.pale_brown,
                 dark: standard_colors.gray_blue
             }
+        },
+        redirect_link: {
+            light: standard_colors.light_blue,
+            dark: standard_colors.dark_green
         }
     }
 };
