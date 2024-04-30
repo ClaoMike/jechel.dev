@@ -44,7 +44,7 @@ const MotoPage = () => {
     }
 
     return (
-        <Accordion allowToggle defaultIndex={0}>
+        <Accordion allowToggle defaultIndex={0} variant='custom'>
             {videos.map(video => (
                 <YouTubeVideo key={video.position} video={video} />
             ))}

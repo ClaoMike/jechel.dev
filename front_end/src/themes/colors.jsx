@@ -6,7 +6,9 @@ const standard_colors = {
     pale_yellow: '#FAEF9B',
     shadow: '#647D87',
     white: '#DCF2F1',
-    youtube: '#B80000'
+    youtube: '#B80000',
+    gray_blue: '#3C5B6F', 
+    pale_brown: '#E8DFCA'
 };
 
 const colors = {
@@ -98,10 +100,36 @@ const colors = {
     },
     moto: {
         icons: {
-            // clip: standard_colors.youtube,
             comment: standard_colors.dark_green,
             location: standard_colors.youtube,
-            youtube: standard_colors.youtube
+            youtube: standard_colors.youtube,
+            expand: {
+                background: {
+                    light: standard_colors.light_blue,
+                    dark: standard_colors.dark_green
+                },
+                color: {
+                    light: standard_colors.dark,
+                    dark: standard_colors.white
+                }
+                
+            }
+        },
+        button: {
+            background: {
+                light: standard_colors.pale_brown,
+                dark: standard_colors.gray_blue
+            },
+            border: {
+                light: standard_colors.pale_brown,
+                dark: standard_colors.gray_blue
+            }
+        },
+        content: {
+            border: {
+                light: standard_colors.pale_brown,
+                dark: standard_colors.gray_blue
+            }
         }
     }
 };
