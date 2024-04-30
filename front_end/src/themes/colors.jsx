@@ -74,6 +74,10 @@ const colors = {
         }
     },
     navigation_bar: {
+        background: {
+            light: standard_colors.pale_yellow,
+            dark: standard_colors.black
+        },
         icons: {
             latest: '#FF9800',
             moto: '#820300',

@@ -88,7 +88,7 @@ npm run major
     - ~~Display YT data on ```frontend```~~
     - ~~Style moto ```frontend```~~
     - ~~Manage videos order on ```backend```~~
-    - Make nav bar stick to the top when scrolling down
+    - ~~Make nav bar stick to the top when scrolling down~~
 
 ### Sprint 3
 - ```Latest``` section
