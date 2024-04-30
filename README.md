@@ -92,6 +92,10 @@ npm run major
 
 ### Sprint 3
 - ```Latest``` section
+    - save yt videos to databse when calling the API
+    - call teh api get, check if its Friday 9AM
+    - if friday 9AM, pull new videos, update db, complete request
+    - when calling the API,
     - Compute the latest item and display it (moto for now)
 
 ### Sprint 4
