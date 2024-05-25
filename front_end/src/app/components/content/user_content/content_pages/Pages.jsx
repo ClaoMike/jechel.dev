@@ -1,8 +1,6 @@
 import React from 'react'
-import { TabPanels, Center } from '@chakra-ui/react'
+import { TabPanels } from '@chakra-ui/react'
 import Page from '@components/content/user_content/content_pages/Page'
-import LoadingSpinner from '@/app/components/LoadingSpinner'
-import ErrorDisplay from '@/app/components/ErrorDisplay'
 import MotoPage from './MotoPage'
 
 const Pages = () => {
@@ -15,10 +13,6 @@ const Pages = () => {
                 <Page content={ <p>About Me content</p> } />
 
             </TabPanels>
-            
-            {/* <LoadingSpinner /> */}
-            {/* <ErrorDisplay code={500} error={'Internal server error'}/> */}
-
         </>
         
     )
