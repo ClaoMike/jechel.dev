@@ -1,11 +1,8 @@
 import React, { useEffect } from 'react';
-
 import { useSelector, useDispatch } from 'react-redux';
 import { error as errorAction, success } from '@slices/motoSlice';
 import ApiService from '@/API/APIService';
-
-import { Accordion } from '@chakra-ui/react'
-
+import { Accordion, Box, Flex } from '@chakra-ui/react';
 import LoadingSpinner from '@/app/components/LoadingSpinner';
 import ErrorDisplay from '@/app/components/ErrorDisplay';
 import YouTubeVideo from './YouTubeVideo';
@@ -20,20 +17,20 @@ const MotoPage = () => {
         const fetchData = async () => {
             try {
                 const data = await ApiService.getMotoVideos();
-                dispatch(success(data.videos))
-                console.log(data)
+                dispatch(success(data.videos));
+                console.log(data);
             } catch (error) {
-                dispatch(errorAction(error))
+                dispatch(errorAction(error));
             }
         };
 
         fetchData();
 
         return () => {};
-    }, []);
+    }, [dispatch]);
 
     if (isLoading) {
-        return <LoadingSpinner />
+        return <LoadingSpinner />;
     }
 
     if (error) {
@@ -44,21 +41,14 @@ const MotoPage = () => {
     }
 
     return (
-        <Accordion 
-            allowToggle 
-            defaultIndex={0} 
-            variant='custom' 
-            // ml='20px' 
-            // mr='20px'
-        >
-            {videos.map(video => (
-                <YouTubeVideo key={video.position} video={video} />
-            ))}
-
-        </Accordion>
+        <Flex justify="center" align="center" minHeight="100vh">
+            <Accordion allowToggle defaultIndex={0} variant='custom'>
+                {videos.map((video, index) => (
+                    <YouTubeVideo key={video.position} video={video} />
+                ))}
+            </Accordion>
+        </Flex>
     );
-}
-
+};
 
 export default MotoPage;
-
