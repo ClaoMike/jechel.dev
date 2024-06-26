@@ -93,7 +93,7 @@ npm run major
 ### Sprint 3
 - ~~Fix ```Moto```~~
 - ```Latest``` section
-    - call the same moto api, but return the latest video only
+    - ~~call the same moto api, but return the latest video only~~
     - implement front end
 
 ### Sprint 4
