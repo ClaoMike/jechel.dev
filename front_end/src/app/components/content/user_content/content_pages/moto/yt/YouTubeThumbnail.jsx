@@ -4,7 +4,9 @@ import { isMobile } from 'react-device-detect'
 
 const YouTubeThumbnail = ({thumbnail, description}) => {
   return (
-    <Image height='150px'  src={thumbnail} alt={description} borderRadius="md"/>
+    // <Image height='150px' src={thumbnail} alt={description} borderRadius="md"/>
+    <Image width='250px' height='150px'  src={thumbnail} alt={description} borderRadius="md"/>
+
   )
 }
 
