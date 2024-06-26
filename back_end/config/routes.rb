@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'latest/index'
   get 'skills/index'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -8,7 +9,6 @@ Rails.application.routes.draw do
 
   get '/skills', to: 'skills#index'
   get '/moto', to: 'moto#index'
+  get '/latest', to: 'latest#index'
 
-  # Defines the root path route ("/")
-  # root "posts#index"
 end

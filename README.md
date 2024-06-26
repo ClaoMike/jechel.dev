@@ -91,10 +91,8 @@ npm run major
     - ~~Make nav bar stick to the top when scrolling down~~
 
 ### Sprint 3
-- Fix ```Moto```
-- Script for starting both servers ```(dev env)```
+- ~~Fix ```Moto```~~
 - ```Latest``` section
-    - make moto accordion and images the same size
     - call the same moto api, but return the latest video only
     - implement front end
 
