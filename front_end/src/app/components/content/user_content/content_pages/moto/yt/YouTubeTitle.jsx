@@ -1,6 +1,6 @@
 import React from 'react'
 import MovieIcon from '@icons/MovieIcon'
-import IconTextView from './IconTextView'
+import IconTextView from '../IconTextView'
 
 
 const YouTubeTitle = ({title}) => {

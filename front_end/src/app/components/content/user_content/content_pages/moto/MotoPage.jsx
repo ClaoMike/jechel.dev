@@ -5,7 +5,7 @@ import ApiService from '@/API/APIService';
 import { Accordion, Box, Flex } from '@chakra-ui/react';
 import LoadingSpinner from '@/app/components/LoadingSpinner';
 import ErrorDisplay from '@/app/components/ErrorDisplay';
-import YouTubeVideo from './YouTubeVideo';
+import YouTubeVideo from './yt/YouTubeVideo';
 
 const MotoPage = () => {
     const isLoading = useSelector((state) => state.moto.loading);

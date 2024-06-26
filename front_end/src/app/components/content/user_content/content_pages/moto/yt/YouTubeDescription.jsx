@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CommentIcon from '@/icons/CommentIcon'
-import IconTextView from './IconTextView'
+import IconTextView from '../IconTextView'
 
 const YouTubeDescription = ({description}) => {
   return (

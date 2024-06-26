@@ -1,7 +1,7 @@
 import React from 'react'
 import YouTubeIcon from '@/icons/YouTubeIcon'
 import { LinkBox, LinkOverlay } from '@chakra-ui/react'
-import IconTextView from './IconTextView'
+import IconTextView from '../IconTextView'
 
 const YouTubeRedirectLink = ({url}) => {
     return (

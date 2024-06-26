@@ -1,8 +1,8 @@
 import React from 'react'
 import { AccordionIcon } from '@chakra-ui/react'
 
-import YouTubeThumbnail from './YouTubeThumbnail'
-import YouTubeTitle from './YouTubeTitle'
+import YouTubeThumbnail from './yt/YouTubeThumbnail'
+import YouTubeTitle from './yt/YouTubeTitle'
 
 const AccordionButtonContent = ({thumbnail, description, title }) => {
   return (

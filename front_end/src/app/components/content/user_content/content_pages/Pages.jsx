@@ -1,7 +1,7 @@
 import React from 'react'
 import { TabPanels } from '@chakra-ui/react'
 import Page from '@components/content/user_content/content_pages/Page'
-import MotoPage from './MotoPage'
+import MotoPage from './moto/MotoPage'
 
 const Pages = () => {
     return (

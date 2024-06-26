@@ -5,7 +5,7 @@ import { AccordionItem, AccordionButton, AccordionPanel, HStack, VStack, Box, us
 import YouTubeDescription from './YouTubeDescription'
 import YouTubeLocation from './YouTubeLocation'
 import YouTubeRedirectLink from './YouTubeRedirectLink'
-import AccordionButtonContent from './AccordionButtonContent'
+import AccordionButtonContent from '../AccordionButtonContent'
 
 import colors from '@/themes/colors'
 import { isMobile } from 'react-device-detect'
@@ -15,8 +15,6 @@ import { AccordionIcon } from '@chakra-ui/react'
 import YouTubeThumbnail from './YouTubeThumbnail'
 import YouTubeTitle from './YouTubeTitle'
 
-import { Flex, Spacer } from '@chakra-ui/react'
-
 import { Wrap, WrapItem , Center} from '@chakra-ui/react'
 
 const YouTubeVideo = ({video}) => {
@@ -25,7 +23,7 @@ const YouTubeVideo = ({video}) => {
     return (
         <AccordionItem width={isMobile ? '80vw' : '50vw'} maxW='1000px'>
             <AccordionButton >
-                <Wrap justify='space-between' align='center'>
+                <Wrap align='center' justify='center'>
 
                     <WrapItem>
                         <Center>
