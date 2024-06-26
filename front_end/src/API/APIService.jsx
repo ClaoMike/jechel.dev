@@ -2,7 +2,8 @@
 import axios from 'axios';
 
 const endpoints = {
-    moto: '/moto'
+    moto: '/moto',
+    latest: '/latest'
 }
 const backend_URL = 'http://127.0.0.1:3000'
 
@@ -25,6 +26,17 @@ class ApiService {
             throw error;
         }
     }
+
+    async getLatestContent() {
+        try {
+            const response = await axios.get(backend_URL + endpoints.latest);
+            return response.data;
+        } catch (error) {
+            console.error('Error fetching tehe latest content:', error);
+            throw error;
+        }
+    }
+
 }
 
 export default new ApiService();
