@@ -6,11 +6,11 @@ import LoadingSpinner from '@/app/components/LoadingSpinner';
 import ErrorDisplay from '@/app/components/ErrorDisplay';
 import YouTubeThumbnail from '../moto/yt/YouTubeThumbnail';
 import IconTextView from '../moto/IconTextView';
-import YouTubeIcon from '@/icons/YouTubeIcon';
 import YouTubeRedirectLink from '../moto/yt/YouTubeRedirectLink';
 import MovieIcon from '@/icons/MovieIcon';
 import YouTubeDescription from '../moto/yt/YouTubeDescription';
 import YouTubeLocation from '../moto/yt/YouTubeLocation';
+import { Box , Center} from '@chakra-ui/react';
 
 const LatestPage = () => {
     const isLoading = useSelector((state) => state.latest.loading);
@@ -47,11 +47,23 @@ const LatestPage = () => {
 
     return (
         <>
-            <YouTubeThumbnail thumbnail={content.thumbnail} description={content.description}/>
-            <IconTextView icon={<MovieIcon/>} text={content.title} />
-            <YouTubeDescription description={content.description} />
-            <YouTubeLocation location={content.location}/>
-            <YouTubeRedirectLink url={content.url}/>
+            <Box bg='tomato' p='5' borderRadius='10px'>
+                <Center>
+                    <YouTubeThumbnail thumbnail={content.thumbnail} description={content.description}/>
+
+                </Center>
+
+                <Box mt='20px'>
+                    <IconTextView icon={<MovieIcon/>} text={content.title} />
+                    <YouTubeDescription description={content.description} />
+                    <YouTubeLocation location={content.location} />
+                    <Box mt='20px'>
+                        <YouTubeRedirectLink url={content.url}/>
+                    </Box>
+                </Box>
+                
+                
+            </Box>
         </>
        
     )
