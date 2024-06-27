@@ -4,6 +4,13 @@ import ApiService from '@/API/APIService';
 import { error as errorAction, success } from '@slices/latestSlice';
 import LoadingSpinner from '@/app/components/LoadingSpinner';
 import ErrorDisplay from '@/app/components/ErrorDisplay';
+import YouTubeThumbnail from '../moto/yt/YouTubeThumbnail';
+import IconTextView from '../moto/IconTextView';
+import YouTubeIcon from '@/icons/YouTubeIcon';
+import YouTubeRedirectLink from '../moto/yt/YouTubeRedirectLink';
+import MovieIcon from '@/icons/MovieIcon';
+import YouTubeDescription from '../moto/yt/YouTubeDescription';
+import YouTubeLocation from '../moto/yt/YouTubeLocation';
 
 const LatestPage = () => {
     const isLoading = useSelector((state) => state.latest.loading);
@@ -40,12 +47,11 @@ const LatestPage = () => {
 
     return (
         <>
-            <div>Title: {content.title}</div>
-            <div>Position: {content.position}</div>
-            <div>URL: {content.url}</div>
-            <div>Thumbnail: {content.thumbnail}</div>
-            <div>Description: {content.description}</div>
-            <div>Location: {content.location}</div>
+            <YouTubeThumbnail thumbnail={content.thumbnail} description={content.description}/>
+            <IconTextView icon={<MovieIcon/>} text={content.title} />
+            <YouTubeDescription description={content.description} />
+            <YouTubeLocation location={content.location}/>
+            <YouTubeRedirectLink url={content.url}/>
         </>
        
     )
