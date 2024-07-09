@@ -72,15 +72,15 @@ npm run major
 ***
 
 ## To Do
-### Sprint 1
+### ~~Sprint 1~~
 - ~~Migrate to ```vite```~~
 - ~~```Loading``` component~~
 - ~~```Error``` component~~
 - ~~```Current Version``` section on the bottom with ```automatic update```~~
 - ~~Add detailed description about this project in the ```README``` file~~
 
-### Sprint 2
-- ```Moto``` section
+### ~~Sprint 2~~
+- ~~```Moto``` section~~
     - ~~Create API to call from the frontend~~
     - ~~Get ```YT Videos``` details to ```backend``` by calling an ```API```~~
     - ~~Format data~~
@@ -90,11 +90,11 @@ npm run major
     - ~~Manage videos order on ```backend```~~
     - ~~Make nav bar stick to the top when scrolling down~~
 
-### Sprint 3
+### ~~Sprint 3~~
 - ~~Fix ```Moto```~~
-- ```Latest``` section
+- ~~```Latest``` section~~
     - ~~call the same moto api, but return the latest video only~~
-    - implement front end
+    - ~~implement front end~~
 
 ### Sprint 4
 - ```Admin``` page
