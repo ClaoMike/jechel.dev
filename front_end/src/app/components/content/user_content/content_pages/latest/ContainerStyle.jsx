@@ -17,10 +17,10 @@ const classicVariant = defineStyle((props) => {
     return {
 
       _light: {
-        bg: colors.latest.background.dark,
+        bg: colors.latest.redirect.light,
       },
       _dark: {
-        bg: colors.latest.background.light,
+        bg: colors.latest.redirect.dark,
       },
     }
   })

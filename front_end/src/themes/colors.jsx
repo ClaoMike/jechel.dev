@@ -8,7 +8,7 @@ const standard_colors = {
     white: '#DCF2F1',
     youtube: '#B80000',
     gray_blue: '#3C5B6F', 
-    pale_brown: '#E8DFCA'
+    pale_orange: '#DCA47C'
 };
 
 const colors = {
@@ -121,17 +121,17 @@ const colors = {
         },
         button: {
             background: {
-                light: standard_colors.pale_brown,
+                light: standard_colors.pale_orange,
                 dark: standard_colors.gray_blue
             },
             border: {
-                light: standard_colors.pale_brown,
+                light: standard_colors.pale_orange,
                 dark: standard_colors.gray_blue
             }
         },
         content: {
             border: {
-                light: standard_colors.pale_brown,
+                light: standard_colors.pale_orange,
                 dark: standard_colors.gray_blue
             }
         },
@@ -142,9 +142,13 @@ const colors = {
     },
     latest: {
         background: {
-                light: standard_colors.pale_brown,
-                dark: standard_colors.gray_blue
-            },
+            light: standard_colors.pale_orange,
+            dark: standard_colors.gray_blue
+        },
+        redirect: {
+            light: standard_colors.pale_yellow ,
+            dark: standard_colors.black
+        }
     }
 };
 
