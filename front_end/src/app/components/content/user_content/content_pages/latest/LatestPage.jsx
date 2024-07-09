@@ -60,12 +60,13 @@ const LatestPage = () => {
                     <IconTextView icon={<MovieIcon/>} text={content.title} />
                     <YouTubeDescription description={content.description} />
                     <YouTubeLocation location={content.location} />
-                    
-                    <Box mt='20px' bg='black' borderRadius='10px' p='5'>
-                        <Center>
+
+                    <Center>
+                        <Container variant='contrast' mt='20px' borderRadius='10px' p='5'>
                             <YouTubeRedirectLink url={content.url}/>
-                        </Center>
-                    </Box>  
+                        </Container>
+                    </Center>
+                    
                 </Box>      
             </Container>
         </>
