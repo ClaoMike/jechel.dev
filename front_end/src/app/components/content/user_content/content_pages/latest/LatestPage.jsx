@@ -49,11 +49,10 @@ const LatestPage = () => {
     }
 
     return (
-        <>
+        <Center>
             <Container variant='classic' p='5' m='5' borderRadius='10px'>
                 <Center>
                     <YouTubeThumbnail thumbnail={content.thumbnail} description={content.description}/>
-
                 </Center>
 
                 <Box mt='20px'>
@@ -69,8 +68,7 @@ const LatestPage = () => {
                     
                 </Box>      
             </Container>
-        </>
-       
+        </Center>
     )
 }
 
