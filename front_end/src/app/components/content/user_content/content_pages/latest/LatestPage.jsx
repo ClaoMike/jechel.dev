@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+
 import ApiService from '@/API/APIService';
 import { error as errorAction, success } from '@slices/latestSlice';
+
 import LoadingSpinner from '@/app/components/LoadingSpinner';
 import ErrorDisplay from '@/app/components/ErrorDisplay';
 import YouTubeThumbnail from '../moto/yt/YouTubeThumbnail';
@@ -10,10 +12,8 @@ import YouTubeRedirectLink from '../moto/yt/YouTubeRedirectLink';
 import MovieIcon from '@/icons/MovieIcon';
 import YouTubeDescription from '../moto/yt/YouTubeDescription';
 import YouTubeLocation from '../moto/yt/YouTubeLocation';
-import { Box , Center} from '@chakra-ui/react';
-import { Container } from '@chakra-ui/react'
 
-import colors from '@/themes/colors';
+import { Box , Center, Container} from '@chakra-ui/react';
 
 const LatestPage = () => {
     const isLoading = useSelector((state) => state.latest.loading);
@@ -50,7 +50,6 @@ const LatestPage = () => {
 
     return (
         <>
-            {/* <Box p='5' m='5' borderRadius='10px'> */}
             <Container variant='classic' p='5' m='5' borderRadius='10px'>
                 <Center>
                     <YouTubeThumbnail thumbnail={content.thumbnail} description={content.description}/>
@@ -61,13 +60,14 @@ const LatestPage = () => {
                     <IconTextView icon={<MovieIcon/>} text={content.title} />
                     <YouTubeDescription description={content.description} />
                     <YouTubeLocation location={content.location} />
-                    <Box mt='20px'>
-                        <YouTubeRedirectLink url={content.url}/>
-                    </Box>
-                </Box>
-                
-                </Container>
-            {/* </Box> */}
+                    
+                    <Box mt='20px' bg='black' borderRadius='10px' p='5'>
+                        <Center>
+                            <YouTubeRedirectLink url={content.url}/>
+                        </Center>
+                    </Box>  
+                </Box>      
+            </Container>
         </>
        
     )
