@@ -26,6 +26,7 @@ const MobileDrawer = () => {
                 placement='bottom'
                 onClose={onClose}
                 finalFocusRef={btnRef}
+                variant='purple'
             >
                 <DrawerOverlay />
 

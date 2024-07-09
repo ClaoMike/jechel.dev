@@ -32,6 +32,14 @@ const darkTheme = extendTheme({
     Accordion: accordionTheme,
     Container: containerTheme,
 
+    Drawer: {
+      baseStyle: props => ({
+        dialog: {
+          bg: mode(colors.navigation_bar.mobile.dialog.background.light, colors.navigation_bar.mobile.dialog.background.dark)(props),
+        },
+      }),
+    },
+
     Button: {
       variants: {
         'with-shadow': (props) => ({

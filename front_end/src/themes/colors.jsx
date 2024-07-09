@@ -78,6 +78,14 @@ const colors = {
             light: standard_colors.pale_yellow,
             dark: standard_colors.black
         },
+        mobile: {
+            dialog:{
+                background: {
+                    light: standard_colors.dark_green,
+                    dark: standard_colors.gray_blue,
+                }
+            }
+        },
         icons: {
             latest: '#FF9800',
             moto: '#820300',
