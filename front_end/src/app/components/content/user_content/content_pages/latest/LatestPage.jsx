@@ -11,6 +11,9 @@ import MovieIcon from '@/icons/MovieIcon';
 import YouTubeDescription from '../moto/yt/YouTubeDescription';
 import YouTubeLocation from '../moto/yt/YouTubeLocation';
 import { Box , Center} from '@chakra-ui/react';
+import { Container } from '@chakra-ui/react'
+
+import colors from '@/themes/colors';
 
 const LatestPage = () => {
     const isLoading = useSelector((state) => state.latest.loading);
@@ -47,7 +50,8 @@ const LatestPage = () => {
 
     return (
         <>
-            <Box bg='tomato' p='5' borderRadius='10px'>
+            {/* <Box p='5' m='5' borderRadius='10px'> */}
+            <Container variant='classic' p='5' m='5' borderRadius='10px'>
                 <Center>
                     <YouTubeThumbnail thumbnail={content.thumbnail} description={content.description}/>
 
@@ -62,8 +66,8 @@ const LatestPage = () => {
                     </Box>
                 </Box>
                 
-                
-            </Box>
+                </Container>
+            {/* </Box> */}
         </>
        
     )

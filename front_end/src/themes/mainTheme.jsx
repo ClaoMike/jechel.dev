@@ -1,4 +1,4 @@
-import { extendTheme } from '@chakra-ui/react';
+import { background, extendTheme } from '@chakra-ui/react';
 import { mode } from '@chakra-ui/theme-tools';
 import colors from '@themes/colors';
 import "@fontsource/courier-prime";
@@ -7,6 +7,7 @@ import iconsTheme from '@icons/styles/IconsStyles';
 import { inputTheme } from '@components/content/login_page/textfields/textfield_components/InputStyle'
 import { tabsTheme } from '@/app/components/content/user_content/navigation_bar/components/tabs/TabsStyle';
 import { accordionTheme } from '@/app/components/content/user_content/content_pages/AccordionStyle';
+import { containerTheme } from '@/app/components/content/user_content/content_pages/latest/ContainerStyle';
 
 const darkTheme = extendTheme({
   config: {
@@ -29,10 +30,9 @@ const darkTheme = extendTheme({
     Input: inputTheme,
     Tabs: tabsTheme,
     Accordion: accordionTheme,
+    Container: containerTheme,
 
     Button: {
-      // baseStyle: {},
-      // sizes: {},
       variants: {
         'with-shadow': (props) => ({
           bg: mode(colors.login_form.button.background.light, colors.login_form.button.background.dark)(props),
@@ -41,9 +41,7 @@ const darkTheme = extendTheme({
         }),
       },
       defaultProps: {
-        // size: '',
         variant: 'with-shadow',
-        // colorScheme: '',
       },
     },
 

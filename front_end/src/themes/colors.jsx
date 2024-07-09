@@ -139,6 +139,12 @@ const colors = {
             light: standard_colors.light_blue,
             dark: standard_colors.dark_green
         }
+    },
+    latest: {
+        background: {
+                light: standard_colors.pale_brown,
+                dark: standard_colors.gray_blue
+            },
     }
 };
 
