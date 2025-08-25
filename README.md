@@ -74,27 +74,33 @@ npm run major
 - Set up the authenticated page
 - Set up the contact me page
 - Move links from About Me to Contact Me
-- Update the tech stack icons
-- Remove the versioning label
+- Set up Production and Development Environments
 - Host server on Heroku
 
 ### Sprint 3
-- Refactor the skills section
+- Update the tech stack icons
+- Remove the versioning label
 
 ### Sprint 4
+- Refactor the skills section
+
+### Sprint 5
 - Set up CI/CD using GitHub actions
 - Set up auto uploading to Heroku once a new release version is available
   
-### Sprint 5
+### Sprint 6
 - Refactor About Me to use reusable components that are submitted via the admin page
 - Add the highschool education, DLF experience, DADIU experience
 
-### Sprint 6
+### Sprint 7
 - Add the Projects page
 - Move projects here
 
-### Sprint 7
+### Sprint 8
 - Cookies
 
-### Sprint 8
+### Sprint 9
 - Upload the browser's icon
+
+### Sprint 10
+- Testing
