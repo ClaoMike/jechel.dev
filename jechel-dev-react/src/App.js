@@ -7,7 +7,7 @@ function App() {
   const [theme, setTheme] = useState('');
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="App" data-theme={theme}>
 
         <Header theme={theme} setTheme={setTheme} />

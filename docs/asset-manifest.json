@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7768fa82.css",
-    "main.js": "/static/js/main.f835bbf7.js",
-    "static/js/453.446e277c.chunk.js": "/static/js/453.446e277c.chunk.js",
-    "index.html": "/index.html",
-    "main.7768fa82.css.map": "/static/css/main.7768fa82.css.map",
-    "main.f835bbf7.js.map": "/static/js/main.f835bbf7.js.map",
-    "453.446e277c.chunk.js.map": "/static/js/453.446e277c.chunk.js.map"
+    "main.css": "/jechel.dev/static/css/main.7768fa82.css",
+    "main.js": "/jechel.dev/static/js/main.e35d90e5.js",
+    "static/js/453.446e277c.chunk.js": "/jechel.dev/static/js/453.446e277c.chunk.js",
+    "index.html": "/jechel.dev/index.html",
+    "main.7768fa82.css.map": "/jechel.dev/static/css/main.7768fa82.css.map",
+    "main.e35d90e5.js.map": "/jechel.dev/static/js/main.e35d90e5.js.map",
+    "453.446e277c.chunk.js.map": "/jechel.dev/static/js/453.446e277c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7768fa82.css",
-    "static/js/main.f835bbf7.js"
+    "static/js/main.e35d90e5.js"
   ]
 }
